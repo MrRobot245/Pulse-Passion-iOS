@@ -22,6 +22,7 @@
 		D846A7B61C9936010030A359 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D846A7B41C9936010030A359 /* libsqlite3.0.tbd */; };
 		D846A7B71C9936010030A359 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D846A7B51C9936010030A359 /* libsqlite3.tbd */; };
 		D846A7B91C993A6D0030A359 /* DB2.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = D846A7B81C993A6D0030A359 /* DB2.sqlite */; };
+		D846A7BB1C993DCA0030A359 /* unknown.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D846A7BA1C993DCA0030A359 /* unknown.jpg */; };
 		D8BA55B71C9931BC002ACAAD /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = D8BA55B61C9931BC002ACAAD /* start.png */; };
 		D8BA55B91C9931C5002ACAAD /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D8BA55B81C9931C5002ACAAD /* logo.jpg */; };
 /* End PBXBuildFile section */
@@ -51,6 +52,7 @@
 		D846A7B41C9936010030A359 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		D846A7B51C9936010030A359 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		D846A7B81C993A6D0030A359 /* DB2.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = DB2.sqlite; sourceTree = "<group>"; };
+		D846A7BA1C993DCA0030A359 /* unknown.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = unknown.jpg; sourceTree = "<group>"; };
 		D8BA55B61C9931BC002ACAAD /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
 		D8BA55B81C9931C5002ACAAD /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +100,7 @@
 				171E0C8B1B8E5B84001E6242 /* Info.plist */,
 				D8BA55B61C9931BC002ACAAD /* start.png */,
 				D8BA55B81C9931C5002ACAAD /* logo.jpg */,
+				D846A7BA1C993DCA0030A359 /* unknown.jpg */,
 				D846A7B31C9935CD0030A359 /* FMDB */,
 			);
 			name = MyPulse;
@@ -185,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				171E0C8A1B8E5B84001E6242 /* LaunchScreen.storyboard in Resources */,
+				D846A7BB1C993DCA0030A359 /* unknown.jpg in Resources */,
 				D8BA55B91C9931C5002ACAAD /* logo.jpg in Resources */,
 				D846A7B91C993A6D0030A359 /* DB2.sqlite in Resources */,
 				171E0C871B8E5B84001E6242 /* Assets.xcassets in Resources */,

@@ -37,7 +37,10 @@ class DetailViewController: UIViewController {
         if let detailCandy = detailCandy {
             if let detailDescriptionLabel = detailDescriptionLabel, candyImageView = candyImageView {
                 detailDescriptionLabel.text = detailCandy.name
-                
+                guard let _ = NSBundle.mainBundle().pathForResource(detailCandy.name, ofType: "png") else {
+                    candyImageView.image = UIImage(named: "unknown")
+                    return
+                }
                 candyImageView.image = UIImage(named: detailCandy.name)
                 title = detailCandy.category
             }
