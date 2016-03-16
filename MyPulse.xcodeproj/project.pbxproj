@@ -69,8 +69,6 @@
 		171E0C711B8E5B84001E6242 = {
 			isa = PBXGroup;
 			children = (
-				D846A7B41C9936010030A359 /* libsqlite3.0.tbd */,
-				D846A7B51C9936010030A359 /* libsqlite3.tbd */,
 				171E0C7C1B8E5B84001E6242 /* MyPulse */,
 				171E0C7B1B8E5B84001E6242 /* Products */,
 			);
@@ -106,6 +104,8 @@
 		D846A7B31C9935CD0030A359 /* FMDB */ = {
 			isa = PBXGroup;
 			children = (
+				D846A7B41C9936010030A359 /* libsqlite3.0.tbd */,
+				D846A7B51C9936010030A359 /* libsqlite3.tbd */,
 				D846A7A31C9935C40030A359 /* FMDatabase.h */,
 				D846A7A41C9935C40030A359 /* FMDatabase.m */,
 				D846A7A51C9935C40030A359 /* FMDatabaseAdditions.h */,
@@ -150,7 +150,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0700;
-				ORGANIZATIONNAME = "Peartree Developers";
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					171E0C791B8E5B84001E6242 = {
 						CreatedOnToolsVersion = 7.0;

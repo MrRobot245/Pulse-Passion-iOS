@@ -22,7 +22,7 @@
 
 import Foundation
 
-class Candy {
+class Food {
   var category : String
   var name : String
   
