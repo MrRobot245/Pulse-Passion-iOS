@@ -23,7 +23,7 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-    
+    @IBOutlet weak var foodRating: UIImageView!
     @IBOutlet weak var detailDescriptionLabel: UILabel!
     @IBOutlet weak var candyImageView: UIImageView!
     
@@ -36,11 +36,13 @@ class DetailViewController: UIViewController {
     func configureView() {
         if let detailCandy = detailCandy {
             if let detailDescriptionLabel = detailDescriptionLabel, candyImageView = candyImageView {
+                foodRating.image = UIImage(named: "green")
                 detailDescriptionLabel.text = detailCandy.name
                 guard let _ = NSBundle.mainBundle().pathForResource(detailCandy.name, ofType: "png") else {
                     candyImageView.image = UIImage(named: "unknown")
                     return
                 }
+             
                 candyImageView.image = UIImage(named: detailCandy.name)
                 title = detailCandy.category
             }

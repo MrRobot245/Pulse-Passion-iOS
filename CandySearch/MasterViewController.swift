@@ -44,7 +44,7 @@ class MasterViewController: UITableViewController {
         let results:FMResultSet? = database.executeQuery(querySQL,
             withArgumentsInArray: nil)
         while(results!.next()) {
-             print("\(results!.stringForColumn("cat"),results!.stringForColumn("food"))")
+             //print("\(results!.stringForColumn("cat"),results!.stringForColumn("food"))")
         
             
                 food.append(Food(category: results!.stringForColumn("cat"), name: results!.stringForColumn("food")))
