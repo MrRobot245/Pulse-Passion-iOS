@@ -30,14 +30,40 @@ class MasterViewController: UITableViewController {
     var detailViewController: DetailViewController? = nil
     var food = [Food]()
     
+    //FMDB
+    func fmdb(){
+        let documents = try! NSFileManager.defaultManager().URLForDirectory(.DocumentDirectory, inDomain: .UserDomainMask, appropriateForURL: nil, create: false)
+        let fileURL = documents.URLByAppendingPathComponent("DB2.sqlite")
+        let database = FMDatabase(path: fileURL.path)
+        if !database.open() {
+            print("Unable to open database")
+            return
+        }
+//        let querySQL = "SELECT cat FROM DB2 WHERE food = '\(SearchField.text!.capitalizedString)'"
+         let querySQL = "SELECT cat,food FROM DB2 WHERE food = food"
+        let results:FMResultSet? = database.executeQuery(querySQL,
+            withArgumentsInArray: nil)
+        while(results!.next()) {
+             print("\(results!.stringForColumn("cat"),results!.stringForColumn("food"))")
+        
+            
+                food.append(Food(category: results!.stringForColumn("cat"), name: results!.stringForColumn("food")))
+            
+            
+        }
+             tableView.reloadData()
+
+    }
     override func viewDidLoad() {
+        copyDatabase()
+        fmdb()
         super.viewDidLoad()
         
         if let splitViewController = splitViewController {
             let controllers = splitViewController.viewControllers
             detailViewController = (controllers[controllers.count - 1] as! UINavigationController).topViewController as? DetailViewController
         }
-        doStuff()
+        //doStuff()
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
         definesPresentationContext = true
@@ -59,6 +85,16 @@ class MasterViewController: UITableViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    func copyDatabase(){
+        let fileManger = NSFileManager.defaultManager()
+        let doumentDirectoryPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as NSString
+        let destinationPath = doumentDirectoryPath.stringByAppendingPathComponent("DB2.sqlite")
+        let sourcePath = NSBundle.mainBundle().pathForResource("DB2", ofType: "sqlite")
+        if (fileManger.fileExistsAtPath(destinationPath)) {
+            try!fileManger.removeItemAtPath(destinationPath)
+        }
+        try! fileManger.copyItemAtPath(sourcePath!, toPath: destinationPath)
     }
     func doStuff(){
         
