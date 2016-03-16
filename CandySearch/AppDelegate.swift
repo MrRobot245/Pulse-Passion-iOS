@@ -37,6 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         UISearchBar.appearance().tintColor = UIColor.blackColor()
         UISearchBar.appearance().barTintColor = UIColor.logoGreen()
         UITextField.appearanceWhenContainedInInstancesOfClasses([UISearchBar.self]).tintColor = UIColor.blackColor()
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
         return true
     }
     
@@ -50,6 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         }
         return false
     }
+    
     
 }
 
