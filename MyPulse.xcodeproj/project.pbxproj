@@ -26,6 +26,7 @@
 		D846A7C11C99459F0030A359 /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = D846A7BE1C99459F0030A359 /* green.png */; };
 		D846A7C21C99459F0030A359 /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = D846A7BF1C99459F0030A359 /* red.png */; };
 		D846A7C31C99459F0030A359 /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = D846A7C01C99459F0030A359 /* yellow.png */; };
+		D8A863171C99E97B007DE46A /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A863161C99E97B007DE46A /* AboutView.swift */; };
 		D8BA55B71C9931BC002ACAAD /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = D8BA55B61C9931BC002ACAAD /* start.png */; };
 		D8BA55B91C9931C5002ACAAD /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D8BA55B81C9931C5002ACAAD /* logo.jpg */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		D846A7BE1C99459F0030A359 /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green.png; sourceTree = "<group>"; };
 		D846A7BF1C99459F0030A359 /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
 		D846A7C01C99459F0030A359 /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow.png; sourceTree = "<group>"; };
+		D8A863161C99E97B007DE46A /* AboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		D8BA55B61C9931BC002ACAAD /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
 		D8BA55B81C9931C5002ACAAD /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +100,7 @@
 				171E0C7D1B8E5B84001E6242 /* AppDelegate.swift */,
 				171E0C7F1B8E5B84001E6242 /* MasterViewController.swift */,
 				171E0C811B8E5B84001E6242 /* DetailViewController.swift */,
+				D8A863161C99E97B007DE46A /* AboutView.swift */,
 				171E0CAD1B8E5C58001E6242 /* Food.swift */,
 				171E0C831B8E5B84001E6242 /* Main.storyboard */,
 				D846A7B81C993A6D0030A359 /* DB2.sqlite */,
@@ -220,6 +223,7 @@
 				D846A7B11C9935C40030A359 /* FMDatabaseQueue.m in Sources */,
 				171E0CAE1B8E5C58001E6242 /* Food.swift in Sources */,
 				171E0C801B8E5B84001E6242 /* MasterViewController.swift in Sources */,
+				D8A863171C99E97B007DE46A /* AboutView.swift in Sources */,
 				D846A7AE1C9935C40030A359 /* FMDatabase.m in Sources */,
 				D846A7B01C9935C40030A359 /* FMDatabasePool.m in Sources */,
 				D846A7B21C9935C40030A359 /* FMResultSet.m in Sources */,

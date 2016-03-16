@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H1p-Uh-vWS">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -192,10 +193,11 @@
             </objects>
             <point key="canvasLocation" x="709" y="-630"/>
         </scene>
-        <!--About-->
+        <!--About View-->
         <scene sceneID="fqg-rY-gP3">
             <objects>
-                <viewController title="About" id="hit-xR-Mw3" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3wv-ag-iSt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="hit-xR-Mw3" customClass="AboutView" customModule="MyPulse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xUS-GI-YX7"/>
                         <viewControllerLayoutGuide type="bottom" id="2m1-cg-VE0"/>
@@ -203,10 +205,48 @@
                     <view key="view" contentMode="scaleToFill" id="ZC1-1W-pUv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mnT-Fe-c7n">
+                                <rect key="frame" x="289" y="30" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="aem-la-8Vx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8u-IP-SS3">
+                                <rect key="frame" x="40" y="218" width="520" height="163"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5nd-zL-Ful">
+                                <rect key="frame" x="262" y="404" width="76" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5nd-zL-Ful" secondAttribute="height" multiplier="38:15" id="WUd-Jt-VtQ"/>
+                                    <constraint firstAttribute="height" constant="30" id="gPf-n9-QVj"/>
+                                    <constraint firstAttribute="width" constant="76" id="rl3-Kg-Ya8"/>
+                                </constraints>
+                                <state key="normal" title="Website"/>
+                                <connections>
+                                    <action selector="webButton:" destination="hit-xR-Mw3" eventType="touchUpInside" id="z4l-1L-5Ty"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xUS-GI-YX7" firstAttribute="top" secondItem="mnT-Fe-c7n" secondAttribute="bottom" constant="4" id="6oG-7w-h1D"/>
+                            <constraint firstItem="5nd-zL-Ful" firstAttribute="centerX" secondItem="ZC1-1W-pUv" secondAttribute="centerX" id="9pd-oG-C68"/>
+                            <constraint firstItem="e8u-IP-SS3" firstAttribute="top" secondItem="xUS-GI-YX7" secondAttribute="bottom" constant="154" id="DBz-xr-1uH"/>
+                            <constraint firstItem="e8u-IP-SS3" firstAttribute="leading" secondItem="ZC1-1W-pUv" secondAttribute="leadingMargin" constant="20" id="IIs-9H-ijp"/>
+                            <constraint firstItem="e8u-IP-SS3" firstAttribute="centerY" secondItem="ZC1-1W-pUv" secondAttribute="centerY" id="bNV-oy-hhT"/>
+                            <constraint firstItem="5nd-zL-Ful" firstAttribute="top" secondItem="e8u-IP-SS3" secondAttribute="bottom" constant="23" id="d0f-WL-vJs"/>
+                            <constraint firstItem="mnT-Fe-c7n" firstAttribute="leading" secondItem="ZC1-1W-pUv" secondAttribute="leading" constant="289" id="kCj-g9-zMw"/>
+                            <constraint firstItem="e8u-IP-SS3" firstAttribute="centerX" secondItem="ZC1-1W-pUv" secondAttribute="centerX" id="yf5-rY-K7h"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3wv-ag-iSt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1436" y="-630"/>
         </scene>
