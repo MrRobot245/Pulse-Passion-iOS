@@ -12,7 +12,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PP" id="vVD-7t-nci">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myPulseWhite.png" id="vVD-7t-nci">
                                 <rect key="frame" x="-8" y="120" width="320" height="328"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -26,6 +26,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="PP" width="5000" height="6495"/>
+        <image name="myPulseWhite.png" width="800" height="1039"/>
     </resources>
 </document>

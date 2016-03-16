@@ -26,6 +26,7 @@
 		D846A7C11C99459F0030A359 /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = D846A7BE1C99459F0030A359 /* green.png */; };
 		D846A7C21C99459F0030A359 /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = D846A7BF1C99459F0030A359 /* red.png */; };
 		D846A7C31C99459F0030A359 /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = D846A7C01C99459F0030A359 /* yellow.png */; };
+		D8A41A321C9A274500D4B544 /* myPulseWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = D8A41A311C9A274500D4B544 /* myPulseWhite.png */; };
 		D8A863171C99E97B007DE46A /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A863161C99E97B007DE46A /* AboutView.swift */; };
 		D8BA55B71C9931BC002ACAAD /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = D8BA55B61C9931BC002ACAAD /* start.png */; };
 		D8BA55B91C9931C5002ACAAD /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D8BA55B81C9931C5002ACAAD /* logo.jpg */; };
@@ -60,6 +61,7 @@
 		D846A7BE1C99459F0030A359 /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green.png; sourceTree = "<group>"; };
 		D846A7BF1C99459F0030A359 /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
 		D846A7C01C99459F0030A359 /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow.png; sourceTree = "<group>"; };
+		D8A41A311C9A274500D4B544 /* myPulseWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myPulseWhite.png; sourceTree = "<group>"; };
 		D8A863161C99E97B007DE46A /* AboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		D8BA55B61C9931BC002ACAAD /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
 		D8BA55B81C9931C5002ACAAD /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				D846A7BE1C99459F0030A359 /* green.png */,
 				D846A7BF1C99459F0030A359 /* red.png */,
 				D846A7C01C99459F0030A359 /* yellow.png */,
+				D8A41A311C9A274500D4B544 /* myPulseWhite.png */,
 				D846A7B31C9935CD0030A359 /* FMDB */,
 			);
 			name = MyPulse;
@@ -207,6 +210,7 @@
 				171E0C871B8E5B84001E6242 /* Assets.xcassets in Resources */,
 				D846A7C11C99459F0030A359 /* green.png in Resources */,
 				D846A7C31C99459F0030A359 /* yellow.png in Resources */,
+				D8A41A321C9A274500D4B544 /* myPulseWhite.png in Resources */,
 				D8BA55B71C9931BC002ACAAD /* start.png in Resources */,
 				171E0C851B8E5B84001E6242 /* Main.storyboard in Resources */,
 			);
