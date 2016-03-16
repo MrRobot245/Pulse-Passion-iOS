@@ -47,7 +47,7 @@ class MasterViewController: UITableViewController {
              //print("\(results!.stringForColumn("cat"),results!.stringForColumn("food"))")
         
             
-                food.append(Food(category: results!.stringForColumn("cat"), name: results!.stringForColumn("food")))
+            food.append(Food(category: results!.stringForColumn("cat"), name: results!.stringForColumn("food"), fRate: 0, iList: ""))
             
             
         }
@@ -96,20 +96,7 @@ class MasterViewController: UITableViewController {
         }
         try! fileManger.copyItemAtPath(sourcePath!, toPath: destinationPath)
     }
-    func doStuff(){
-        
-        food = [
-            Food(category:"Chocolate", name:"Chocolate Bar"),
-            Food(category:"Chocolate", name:"Chocolate Chip"),
-            Food(category:"Chocolate", name:"Dark Chocolate"),
-            Food(category:"Hard", name:"Lollipop"),
-            Food(category:"Hard", name:"Candy Cane"),
-            Food(category:"Hard", name:"Jaw Breaker"),
-            Food(category:"Other", name:"Caramel"),
-            Food(category:"Other", name:"Sour Chew"),
-            Food(category:"Fuck you", name:"Gummi Bear")
-        ]
-    }
+
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
