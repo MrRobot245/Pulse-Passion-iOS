@@ -37,6 +37,7 @@ class DetailViewController: UIViewController {
     func configureView() {
         if let detailCandy = detailCandy {
             if let detailDescriptionLabel = detailDescriptionLabel, candyImageView = candyImageView {
+                
                  iList.text = detailCandy.iList
                 if(detailCandy.fRate == "1")
                 {
@@ -62,7 +63,10 @@ class DetailViewController: UIViewController {
             }
         }
     }
-    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        iList.setContentOffset(CGPointZero, animated: false)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
