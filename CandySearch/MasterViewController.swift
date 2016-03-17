@@ -72,10 +72,15 @@ class MasterViewController: UITableViewController {
     }
     
     func filterContentForSearchText(searchText: String, scope: String = "All") {
+        let searchTerms = searchText.componentsSeparatedByString(" ").filter { $0 != "" }
         filteredFood = food.filter { candy in
-            return candy.name.lowercaseString.containsString(searchText.lowercaseString)
+            for term in searchTerms{
+                if !candy.name.lowercaseString.containsString(term.lowercaseString){
+                    return false
+                }
+            }    
+            return true    
         }
-        
         tableView.reloadData()
     }
     
