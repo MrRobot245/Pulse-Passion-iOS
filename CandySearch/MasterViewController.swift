@@ -32,6 +32,7 @@ class MasterViewController: UITableViewController {
     
     //FMDB
     func fmdb(){
+        
         let documents = try! NSFileManager.defaultManager().URLForDirectory(.DocumentDirectory, inDomain: .UserDomainMask, appropriateForURL: nil, create: false)
         let fileURL = documents.URLByAppendingPathComponent("DB2.sqlite")
         let database = FMDatabase(path: fileURL.path)

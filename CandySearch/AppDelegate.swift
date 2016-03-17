@@ -33,11 +33,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
         navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
         splitViewController.delegate = self
-        
-        UISearchBar.appearance().tintColor = UIColor.blackColor()
+
+       // navigationController.navigationBar.translucent = true
+        UISearchBar.appearance().translucent =  true
+        UISearchBar.appearance().tintColor = UIColor.whiteColor()
         UISearchBar.appearance().barTintColor = UIColor.logoGreen()
         UITextField.appearanceWhenContainedInInstancesOfClasses([UISearchBar.self]).tintColor = UIColor.blackColor()
         UIApplication.sharedApplication().statusBarStyle = .LightContent
+    
+  
         return true
     }
     
@@ -54,10 +58,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     
     
 }
+//http://htmlpreview.github.io/?https://github.com/tparry/Miscellaneous/blob/master/UINavigationBar_UIColor_calculator.html
 
 extension UIColor {
     static func logoGreen() -> UIColor {
-        return UIColor(red: 161.0/255.0, green: 190.0/255.0, blue: 134.0/255.0, alpha: 1)
+        return UIColor(red: 120.0/255.0, green: 170.0/255.0, blue: 76.0/255.0, alpha: 0)
     }
     static func logoBrown() -> UIColor {
         return UIColor(red: 100.0/255.0, green: 49.0/255.0, blue: 46.0/255.0, alpha: 1)
