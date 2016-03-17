@@ -17,5 +17,18 @@ class AboutView: UIViewController {
 
             UIApplication.sharedApplication().openURL(NSURL(string: "http://reymern.wix.com/pulseplus")!)
     }
+    func getVersion(){
+        let info:NSDictionary = NSBundle.mainBundle().infoDictionary!
+        let version:String = info.objectForKey("CFBundleShortVersionString") as! String
+        let build:String = info.objectForKey("CFBundleVersion") as! String
+        vLabel.text = version
+        bLabel.text = build
+        
+        
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        getVersion()
+    }
    
 }
