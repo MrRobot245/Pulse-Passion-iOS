@@ -12,6 +12,11 @@ import UIKit
 class AboutView: UIViewController {
     @IBOutlet weak var vLabel: UILabel!
    
+    @IBAction func supportButton(sender: AnyObject) {
+    }
+
+    @IBAction func contactButton(sender: AnyObject) {
+    }
     @IBOutlet weak var bLabel: UILabel!
     @IBAction func webButton(sender: AnyObject) {
 
