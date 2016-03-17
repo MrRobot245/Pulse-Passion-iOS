@@ -14,6 +14,7 @@
 		171E0C871B8E5B84001E6242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 171E0C861B8E5B84001E6242 /* Assets.xcassets */; };
 		171E0C8A1B8E5B84001E6242 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 171E0C881B8E5B84001E6242 /* LaunchScreen.storyboard */; };
 		171E0CAE1B8E5C58001E6242 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171E0CAD1B8E5C58001E6242 /* Food.swift */; };
+		D805F0251C9A80840036FA48 /* smallMyPulseLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D805F0241C9A80840036FA48 /* smallMyPulseLogo.png */; };
 		D846A7AE1C9935C40030A359 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = D846A7A41C9935C40030A359 /* FMDatabase.m */; };
 		D846A7AF1C9935C40030A359 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D846A7A61C9935C40030A359 /* FMDatabaseAdditions.m */; };
 		D846A7B01C9935C40030A359 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = D846A7A81C9935C40030A359 /* FMDatabasePool.m */; };
@@ -46,6 +47,7 @@
 		171E0C891B8E5B84001E6242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		171E0C8B1B8E5B84001E6242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		171E0CAD1B8E5C58001E6242 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		D805F0241C9A80840036FA48 /* smallMyPulseLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smallMyPulseLogo.png; sourceTree = "<group>"; };
 		D846A7A21C9935C30030A359 /* MyPulse-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyPulse-Bridging-Header.h"; sourceTree = "<group>"; };
 		D846A7A31C9935C40030A359 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		D846A7A41C9935C40030A359 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
@@ -117,6 +119,17 @@
 				171E0C861B8E5B84001E6242 /* Assets.xcassets */,
 				171E0C881B8E5B84001E6242 /* LaunchScreen.storyboard */,
 				171E0C8B1B8E5B84001E6242 /* Info.plist */,
+				D805F0271C9A80970036FA48 /* Fonts */,
+				D805F0261C9A808F0036FA48 /* Pictures */,
+				D846A7B31C9935CD0030A359 /* FMDB */,
+			);
+			name = MyPulse;
+			path = CandySearch;
+			sourceTree = "<group>";
+		};
+		D805F0261C9A808F0036FA48 /* Pictures */ = {
+			isa = PBXGroup;
+			children = (
 				D8BA55B61C9931BC002ACAAD /* start.png */,
 				D8BA55B81C9931C5002ACAAD /* logo.jpg */,
 				D846A7BA1C993DCA0030A359 /* unknown.jpg */,
@@ -124,14 +137,20 @@
 				D846A7BF1C99459F0030A359 /* red.png */,
 				D846A7C01C99459F0030A359 /* yellow.png */,
 				D8A41A311C9A274500D4B544 /* myPulseWhite.png */,
-				D8A41A331C9A2EBA00D4B544 /* montserrat-bold-normal.ttf */,
-				D8A41A341C9A2EBA00D4B544 /* montserrat-normal-normal.ttf */,
 				D8A41A371C9A30C900D4B544 /* food45.jpg */,
 				D8A41A391C9A35D300D4B544 /* food4.jpg */,
-				D846A7B31C9935CD0030A359 /* FMDB */,
+				D805F0241C9A80840036FA48 /* smallMyPulseLogo.png */,
 			);
-			name = MyPulse;
-			path = CandySearch;
+			name = Pictures;
+			sourceTree = "<group>";
+		};
+		D805F0271C9A80970036FA48 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D8A41A331C9A2EBA00D4B544 /* montserrat-bold-normal.ttf */,
+				D8A41A341C9A2EBA00D4B544 /* montserrat-normal-normal.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		D846A7B31C9935CD0030A359 /* FMDB */ = {
@@ -214,6 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D805F0251C9A80840036FA48 /* smallMyPulseLogo.png in Resources */,
 				171E0C8A1B8E5B84001E6242 /* LaunchScreen.storyboard in Resources */,
 				D8A41A351C9A2EBA00D4B544 /* montserrat-bold-normal.ttf in Resources */,
 				D846A7BB1C993DCA0030A359 /* unknown.jpg in Resources */,
