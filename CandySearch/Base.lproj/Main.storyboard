@@ -238,7 +238,32 @@
                                     <action selector="webButton:" destination="hit-xR-Mw3" eventType="touchUpInside" id="z4l-1L-5Ty"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Build:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ee-IW-vOO">
+                                <rect key="frame" x="39" y="223" width="43" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bJ-8F-6xg">
+                                <rect key="frame" x="155" y="194" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5N-5K-JLb">
+                                <rect key="frame" x="124" y="223" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Version:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHp-zR-YTY">
+                                <rect key="frame" x="40" y="194" width="62" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="e8u-IP-SS3" firstAttribute="leading" secondItem="ZC1-1W-pUv" secondAttribute="leadingMargin" constant="20" id="PDV-kV-Cxa"/>
                             <constraint firstItem="e8u-IP-SS3" firstAttribute="centerX" secondItem="ZC1-1W-pUv" secondAttribute="centerX" id="RvI-fO-aVR"/>
@@ -248,6 +273,10 @@
                             <constraint firstItem="2m1-cg-VE0" firstAttribute="top" secondItem="5nd-zL-Ful" secondAttribute="bottom" constant="166" id="zqd-99-Vau"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bLabel" destination="O5N-5K-JLb" id="vbn-iw-aw5"/>
+                        <outlet property="vLabel" destination="3bJ-8F-6xg" id="Swv-YT-5Ku"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3wv-ag-iSt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
