@@ -25,10 +25,10 @@ import Foundation
 class Food {
   var category : String
   var name : String
-    var fRate: Int
+    var fRate: String
     var iList: String
   
-    init(category: String, name: String, fRate: Int, iList: String) {
+    init(category: String, name: String, fRate: String, iList: String) {
     self.category = category
     self.name = name
     self.fRate = fRate

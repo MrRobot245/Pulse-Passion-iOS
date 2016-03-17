@@ -21,12 +21,16 @@
 		D846A7B21C9935C40030A359 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = D846A7AD1C9935C40030A359 /* FMResultSet.m */; };
 		D846A7B61C9936010030A359 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D846A7B41C9936010030A359 /* libsqlite3.0.tbd */; };
 		D846A7B71C9936010030A359 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D846A7B51C9936010030A359 /* libsqlite3.tbd */; };
-		D846A7B91C993A6D0030A359 /* DB2.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = D846A7B81C993A6D0030A359 /* DB2.sqlite */; };
 		D846A7BB1C993DCA0030A359 /* unknown.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D846A7BA1C993DCA0030A359 /* unknown.jpg */; };
 		D846A7C11C99459F0030A359 /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = D846A7BE1C99459F0030A359 /* green.png */; };
 		D846A7C21C99459F0030A359 /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = D846A7BF1C99459F0030A359 /* red.png */; };
 		D846A7C31C99459F0030A359 /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = D846A7C01C99459F0030A359 /* yellow.png */; };
+		D84BC30F1C9A5A09009DDB6A /* DB2.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = D84BC30E1C9A5A09009DDB6A /* DB2.sqlite */; };
 		D8A41A321C9A274500D4B544 /* myPulseWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = D8A41A311C9A274500D4B544 /* myPulseWhite.png */; };
+		D8A41A351C9A2EBA00D4B544 /* montserrat-bold-normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8A41A331C9A2EBA00D4B544 /* montserrat-bold-normal.ttf */; };
+		D8A41A361C9A2EBA00D4B544 /* montserrat-normal-normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8A41A341C9A2EBA00D4B544 /* montserrat-normal-normal.ttf */; };
+		D8A41A381C9A30C900D4B544 /* food45.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D8A41A371C9A30C900D4B544 /* food45.jpg */; };
+		D8A41A3A1C9A35D300D4B544 /* food4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D8A41A391C9A35D300D4B544 /* food4.jpg */; };
 		D8A863171C99E97B007DE46A /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A863161C99E97B007DE46A /* AboutView.swift */; };
 		D8BA55B71C9931BC002ACAAD /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = D8BA55B61C9931BC002ACAAD /* start.png */; };
 		D8BA55B91C9931C5002ACAAD /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D8BA55B81C9931C5002ACAAD /* logo.jpg */; };
@@ -56,12 +60,16 @@
 		D846A7AD1C9935C40030A359 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		D846A7B41C9936010030A359 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		D846A7B51C9936010030A359 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		D846A7B81C993A6D0030A359 /* DB2.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = DB2.sqlite; sourceTree = "<group>"; };
 		D846A7BA1C993DCA0030A359 /* unknown.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = unknown.jpg; sourceTree = "<group>"; };
 		D846A7BE1C99459F0030A359 /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green.png; sourceTree = "<group>"; };
 		D846A7BF1C99459F0030A359 /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
 		D846A7C01C99459F0030A359 /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow.png; sourceTree = "<group>"; };
+		D84BC30E1C9A5A09009DDB6A /* DB2.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = DB2.sqlite; sourceTree = "<group>"; };
 		D8A41A311C9A274500D4B544 /* myPulseWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myPulseWhite.png; sourceTree = "<group>"; };
+		D8A41A331C9A2EBA00D4B544 /* montserrat-bold-normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "montserrat-bold-normal.ttf"; sourceTree = "<group>"; };
+		D8A41A341C9A2EBA00D4B544 /* montserrat-normal-normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "montserrat-normal-normal.ttf"; sourceTree = "<group>"; };
+		D8A41A371C9A30C900D4B544 /* food45.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food45.jpg; sourceTree = "<group>"; };
+		D8A41A391C9A35D300D4B544 /* food4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = food4.jpg; sourceTree = "<group>"; };
 		D8A863161C99E97B007DE46A /* AboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		D8BA55B61C9931BC002ACAAD /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
 		D8BA55B81C9931C5002ACAAD /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
@@ -105,7 +113,7 @@
 				D8A863161C99E97B007DE46A /* AboutView.swift */,
 				171E0CAD1B8E5C58001E6242 /* Food.swift */,
 				171E0C831B8E5B84001E6242 /* Main.storyboard */,
-				D846A7B81C993A6D0030A359 /* DB2.sqlite */,
+				D84BC30E1C9A5A09009DDB6A /* DB2.sqlite */,
 				171E0C861B8E5B84001E6242 /* Assets.xcassets */,
 				171E0C881B8E5B84001E6242 /* LaunchScreen.storyboard */,
 				171E0C8B1B8E5B84001E6242 /* Info.plist */,
@@ -116,6 +124,10 @@
 				D846A7BF1C99459F0030A359 /* red.png */,
 				D846A7C01C99459F0030A359 /* yellow.png */,
 				D8A41A311C9A274500D4B544 /* myPulseWhite.png */,
+				D8A41A331C9A2EBA00D4B544 /* montserrat-bold-normal.ttf */,
+				D8A41A341C9A2EBA00D4B544 /* montserrat-normal-normal.ttf */,
+				D8A41A371C9A30C900D4B544 /* food45.jpg */,
+				D8A41A391C9A35D300D4B544 /* food4.jpg */,
 				D846A7B31C9935CD0030A359 /* FMDB */,
 			);
 			name = MyPulse;
@@ -203,14 +215,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				171E0C8A1B8E5B84001E6242 /* LaunchScreen.storyboard in Resources */,
+				D8A41A351C9A2EBA00D4B544 /* montserrat-bold-normal.ttf in Resources */,
 				D846A7BB1C993DCA0030A359 /* unknown.jpg in Resources */,
 				D8BA55B91C9931C5002ACAAD /* logo.jpg in Resources */,
 				D846A7C21C99459F0030A359 /* red.png in Resources */,
-				D846A7B91C993A6D0030A359 /* DB2.sqlite in Resources */,
 				171E0C871B8E5B84001E6242 /* Assets.xcassets in Resources */,
 				D846A7C11C99459F0030A359 /* green.png in Resources */,
+				D8A41A381C9A30C900D4B544 /* food45.jpg in Resources */,
+				D84BC30F1C9A5A09009DDB6A /* DB2.sqlite in Resources */,
 				D846A7C31C99459F0030A359 /* yellow.png in Resources */,
+				D8A41A361C9A2EBA00D4B544 /* montserrat-normal-normal.ttf in Resources */,
 				D8A41A321C9A274500D4B544 /* myPulseWhite.png in Resources */,
+				D8A41A3A1C9A35D300D4B544 /* food4.jpg in Resources */,
 				D8BA55B71C9931BC002ACAAD /* start.png in Resources */,
 				171E0C851B8E5B84001E6242 /* Main.storyboard in Resources */,
 			);
@@ -350,7 +366,7 @@
 				INFOPLIST_FILE = CandySearch/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pulsePlusFoods.mypulse-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pulsePassion.MyPulseiOS;
 				PRODUCT_NAME = MyPulse;
 				SWIFT_OBJC_BRIDGING_HEADER = "CandySearch/MyPulse-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -367,7 +383,7 @@
 				INFOPLIST_FILE = CandySearch/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pulsePlusFoods.mypulse-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pulsePassion.MyPulseiOS;
 				PRODUCT_NAME = MyPulse;
 				SWIFT_OBJC_BRIDGING_HEADER = "CandySearch/MyPulse-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;

@@ -40,6 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         UISearchBar.appearance().barTintColor = UIColor.logoGreen()
         UITextField.appearanceWhenContainedInInstancesOfClasses([UISearchBar.self]).tintColor = UIColor.blackColor()
         UIApplication.sharedApplication().statusBarStyle = .LightContent
+        
     
   
         return true
@@ -63,8 +64,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 extension UIColor {
     static func logoGreen() -> UIColor {
         return UIColor(red: 120.0/255.0, green: 170.0/255.0, blue: 76.0/255.0, alpha: 0)
-    }
-    static func logoBrown() -> UIColor {
-        return UIColor(red: 100.0/255.0, green: 49.0/255.0, blue: 46.0/255.0, alpha: 1)
     }
 }

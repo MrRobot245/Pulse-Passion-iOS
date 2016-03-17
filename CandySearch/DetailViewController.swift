@@ -27,6 +27,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var detailDescriptionLabel: UILabel!
     @IBOutlet weak var candyImageView: UIImageView!
     
+    @IBOutlet weak var iList: UITextView!
     var detailCandy: Food? {
         didSet {
             configureView()
@@ -36,13 +37,26 @@ class DetailViewController: UIViewController {
     func configureView() {
         if let detailCandy = detailCandy {
             if let detailDescriptionLabel = detailDescriptionLabel, candyImageView = candyImageView {
-                foodRating.image = UIImage(named: "green")
+                 iList.text = detailCandy.iList
+                if(detailCandy.fRate == "1")
+                {
+                foodRating.image = UIImage(named: "red")
+                }
+                if(detailCandy.fRate == "2")
+                {
+                    foodRating.image = UIImage(named: "yellow")
+                }
+                if(detailCandy.fRate == "3")
+                {
+                    foodRating.image = UIImage(named: "green")
+                }
+                
                 detailDescriptionLabel.text = detailCandy.name
                 guard let _ = NSBundle.mainBundle().pathForResource(detailCandy.name, ofType: "png") else {
                     candyImageView.image = UIImage(named: "unknown")
                     return
                 }
-             
+               
                 candyImageView.image = UIImage(named: detailCandy.name)
                 title = detailCandy.category
             }

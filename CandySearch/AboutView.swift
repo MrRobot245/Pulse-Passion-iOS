@@ -10,9 +10,10 @@ import Foundation
 import UIKit
 
 class AboutView: UIViewController {
-
+   
     @IBAction func webButton(sender: AnyObject) {
 
             UIApplication.sharedApplication().openURL(NSURL(string: "http://reymern.wix.com/pulseplus")!)
     }
+   
 }
