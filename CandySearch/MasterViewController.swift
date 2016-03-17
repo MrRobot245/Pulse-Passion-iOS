@@ -41,7 +41,7 @@ class MasterViewController: UITableViewController {
             return
         }
 //        let querySQL = "SELECT cat FROM DB2 WHERE food = '\(SearchField.text!.capitalizedString)'"
-         let querySQL = "SELECT cat,title,fRate,iList FROM DB WHERE title = title"
+         let querySQL = "SELECT cat,title,fRate,iList FROM DB WHERE title = title ORDER BY title COLLATE NOCASE"
         let results:FMResultSet? = database.executeQuery(querySQL,
             withArgumentsInArray: nil)
         while(results!.next()) {
