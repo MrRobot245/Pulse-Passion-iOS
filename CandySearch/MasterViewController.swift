@@ -60,15 +60,12 @@ class MasterViewController: UITableViewController {
         fmdb()
         super.viewDidLoad()
         
-        if let splitViewController = splitViewController {
-            let controllers = splitViewController.viewControllers
-            detailViewController = (controllers[controllers.count - 1] as! UINavigationController).topViewController as? DetailViewController
-        }
-        //doStuff()
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
         definesPresentationContext = true
+        
         tableView.tableHeaderView = searchController.searchBar
+        
     }
     
     func filterContentForSearchText(searchText: String, scope: String = "All") {
@@ -85,7 +82,7 @@ class MasterViewController: UITableViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
-        clearsSelectionOnViewWillAppear = splitViewController!.collapsed
+       // clearsSelectionOnViewWillAppear = splitViewController!.collapsed
         super.viewWillAppear(animated)
     }
     
@@ -130,7 +127,7 @@ class MasterViewController: UITableViewController {
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "showDetail" {
+        if segue.identifier == "showMe" {
             if let indexPath = tableView.indexPathForSelectedRow {
                 let candy: Food
                 if searchController.active && searchController.searchBar.text != "" {
@@ -138,10 +135,10 @@ class MasterViewController: UITableViewController {
                 } else {
                     candy = food[indexPath.row]
                 }
-                let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
+                let controller = (segue.destinationViewController  as!DetailViewController)
                 controller.detailCandy = candy
-                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem()
-                controller.navigationItem.leftItemsSupplementBackButton = true
+//                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem()
+//                controller.navigationItem.leftItemsSupplementBackButton = true
             }
         }
     }
