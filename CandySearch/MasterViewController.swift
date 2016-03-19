@@ -55,6 +55,21 @@ class MasterViewController: UITableViewController {
              tableView.reloadData()
 
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidLoad()
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+        definesPresentationContext = true
+        
+        
+        tableView.tableHeaderView = searchController.searchBar
+          tableView.reloadData()
+         super.viewWillAppear(animated)
+
+    }
+        
+    
     override func viewDidLoad() {
         copyDatabase()
         fmdb()
@@ -63,7 +78,6 @@ class MasterViewController: UITableViewController {
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
         definesPresentationContext = true
-        
         tableView.tableHeaderView = searchController.searchBar
         
     }
@@ -137,8 +151,7 @@ class MasterViewController: UITableViewController {
                 }
                 let controller = (segue.destinationViewController  as!DetailViewController)
                 controller.detailCandy = candy
-//                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem()
-//                controller.navigationItem.leftItemsSupplementBackButton = true
+
             }
         }
     }
