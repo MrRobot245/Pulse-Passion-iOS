@@ -55,31 +55,20 @@ class MasterViewController: UITableViewController {
              tableView.reloadData()
 
     }
-    
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidLoad()
-        searchController.searchResultsUpdater = self
-        searchController.dimsBackgroundDuringPresentation = false
-        definesPresentationContext = true
-        
-        
-        tableView.tableHeaderView = searchController.searchBar
-          tableView.reloadData()
-         super.viewWillAppear(animated)
-
-    }
-        
-    
     override func viewDidLoad() {
         copyDatabase()
         fmdb()
         super.viewDidLoad()
         
+//        if let splitViewController = splitViewController {
+//            let controllers = splitViewController.viewControllers
+//            detailViewController = (controllers[controllers.count - 1] as! UINavigationController).topViewController as? DetailViewController
+//        }
+        //doStuff()
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
         definesPresentationContext = true
         tableView.tableHeaderView = searchController.searchBar
-        
     }
     
     func filterContentForSearchText(searchText: String, scope: String = "All") {
@@ -96,7 +85,7 @@ class MasterViewController: UITableViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
-       // clearsSelectionOnViewWillAppear = splitViewController!.collapsed
+        clearsSelectionOnViewWillAppear = splitViewController!.collapsed
         super.viewWillAppear(animated)
     }
     
@@ -141,7 +130,7 @@ class MasterViewController: UITableViewController {
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "showMe" {
+        if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
                 let candy: Food
                 if searchController.active && searchController.searchBar.text != "" {
@@ -149,9 +138,10 @@ class MasterViewController: UITableViewController {
                 } else {
                     candy = food[indexPath.row]
                 }
-                let controller = (segue.destinationViewController  as!DetailViewController)
+                let controller = (segue.destinationViewController as! DetailViewController)
                 controller.detailCandy = candy
-
+                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem()
+                controller.navigationItem.leftItemsSupplementBackButton = true
             }
         }
     }
