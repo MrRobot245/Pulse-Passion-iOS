@@ -12,10 +12,10 @@ class FeaturedView: UIViewController, UICollectionViewDataSource, UICollectionVi
 {
     @IBOutlet weak var collectionView: UICollectionView!
     
-    let productName = ["Product 1", "Product 2", "Product 3", "Product 4", "Product 5"]
+    let productName = ["Chickpea and Red Lentil Pizza Dough", "Red Lentil Crackers", "Product 3", "Product 4", "Product 5"]
     //        let imageArray = [UIImage(named: "unknown"), UIImage(named: "unknown"), UIImage(named: "unknown"), UIImage(named: "unknown"), UIImage(named: "unknown")]
-    let imageArray = [UIImage(named: "pug"), UIImage(named: "pug2"), UIImage(named: "pug3"), UIImage(named: "pug4"), UIImage(named: "pug4")]
-    let ingredArray = ["BlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlah","BlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlah","BlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlah","BlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlah","BlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlah"]
+    let imageArray = [UIImage(named: "rPizza"), UIImage(named: "Crackers"), UIImage(named: "pug3"), UIImage(named: "pug4"), UIImage(named: "pug4")]
+    let ingredArray = ["Ingredients List WIth stuff","Ingredients List WIth stuff","Ingredients List WIth stuff","Ingredients List WIth stuff","Ingredients List WIth stuff"]
     
     override func viewDidLoad()
     {

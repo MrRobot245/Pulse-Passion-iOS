@@ -45,7 +45,11 @@ class MasterViewController: UITableViewController {
             withArgumentsInArray: nil)
         while(results!.next()) {
              //print("\(results!.stringForColumn("cat"),results!.stringForColumn("food"))")
-            food.append(Food(category: results!.stringForColumn("cat"), name: results!.stringForColumn("title"), fRate: results!.stringForColumn("fRate"), iList: results!.stringForColumn("iList")))
+            food.append(Food(category: results!.stringForColumn("cat"), name: results!.stringForColumn("title"),
+                fRate: results!.stringForColumn("fRate"),
+                iList: results!.stringForColumn("iList"),
+                gList: "",
+                bList: ""))
         }
              tableView.reloadData()
 
@@ -57,6 +61,7 @@ class MasterViewController: UITableViewController {
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
         definesPresentationContext = true
+        //self.navigationItem.titleView = searchController.searchBar ;
         tableView.tableHeaderView = searchController.searchBar
     }
     

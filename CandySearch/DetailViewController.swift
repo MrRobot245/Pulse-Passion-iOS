@@ -76,5 +76,16 @@ class DetailViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+       
+        if segue.identifier == "showMore" {
+            let vc = segue.destinationViewController as! EvenMoreViewController
+            vc.getTopLabel = detailCandy?.name
+//             detailCandy?.bList
+//            detailCandy?.gList
+           }
+    }
+    
 }
 

@@ -38,6 +38,7 @@
 		D8A863171C99E97B007DE46A /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A863161C99E97B007DE46A /* AboutView.swift */; };
 		D8BA55B71C9931BC002ACAAD /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = D8BA55B61C9931BC002ACAAD /* start.png */; };
 		D8BA55B91C9931C5002ACAAD /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D8BA55B81C9931C5002ACAAD /* logo.jpg */; };
+		D8E1908C1C9F41000021F9D9 /* EvenMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E1908B1C9F41000021F9D9 /* EvenMore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 		D8A863161C99E97B007DE46A /* AboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		D8BA55B61C9931BC002ACAAD /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
 		D8BA55B81C9931C5002ACAAD /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
+		D8E1908B1C9F41000021F9D9 /* EvenMore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvenMore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,14 +120,15 @@
 				171E0C7D1B8E5B84001E6242 /* AppDelegate.swift */,
 				171E0C7F1B8E5B84001E6242 /* MasterViewController.swift */,
 				171E0C811B8E5B84001E6242 /* DetailViewController.swift */,
+				D8E1908B1C9F41000021F9D9 /* EvenMore.swift */,
 				D8A863161C99E97B007DE46A /* AboutView.swift */,
 				171E0C831B8E5B84001E6242 /* Main.storyboard */,
-				D84DED941C9E3FDB001A68B5 /* NewView.swift */,
 				D82D31CB1C9E2E470000C447 /* FeaturedView.swift */,
 				D87EDFCB1C9F2DBB00872861 /* DB2.sqlite */,
 				171E0C861B8E5B84001E6242 /* Assets.xcassets */,
 				171E0C881B8E5B84001E6242 /* LaunchScreen.storyboard */,
 				171E0C8B1B8E5B84001E6242 /* Info.plist */,
+				D84DED941C9E3FDB001A68B5 /* NewView.swift */,
 				171E0CAD1B8E5C58001E6242 /* Food.swift */,
 				D84DED921C9E3F66001A68B5 /* ConnView.swift */,
 				D805F0271C9A80970036FA48 /* Fonts */,
@@ -277,6 +280,7 @@
 				D846A7AE1C9935C40030A359 /* FMDatabase.m in Sources */,
 				D84DED931C9E3F66001A68B5 /* ConnView.swift in Sources */,
 				D846A7B01C9935C40030A359 /* FMDatabasePool.m in Sources */,
+				D8E1908C1C9F41000021F9D9 /* EvenMore.swift in Sources */,
 				D82D31CC1C9E2E470000C447 /* FeaturedView.swift in Sources */,
 				D846A7B21C9935C40030A359 /* FMResultSet.m in Sources */,
 				171E0C7E1B8E5B84001E6242 /* AppDelegate.swift in Sources */,

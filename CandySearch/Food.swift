@@ -27,11 +27,15 @@ class Food {
   var name : String
     var fRate: String
     var iList: String
+    var gList: String
+    var bList: String
   
-    init(category: String, name: String, fRate: String, iList: String) {
+    init(category: String, name: String, fRate: String, iList: String, gList: String, bList: String) {
     self.category = category
     self.name = name
     self.fRate = fRate
         self.iList = iList
+        self.gList = gList
+        self.bList = bList
   }
 }
