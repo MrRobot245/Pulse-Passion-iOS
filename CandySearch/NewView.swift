@@ -20,7 +20,6 @@ class NewViewController: UIViewController
     var image = UIImage()
     var getTopLabel:String!
     var getiList:String!
-    var getiRate:String!
     
     override func viewDidLoad()
     {
@@ -29,7 +28,7 @@ class NewViewController: UIViewController
         
         self.imageView.image = self.image
         self.topLabel.text = self.getTopLabel
-        //self.ratingView.image =
+        self.ratingView.image = UIImage(named: "green")
         self.iView.text = self.getiList
     }
     

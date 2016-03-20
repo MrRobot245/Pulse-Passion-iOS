@@ -13,7 +13,7 @@ class FeaturedView: UIViewController, UICollectionViewDataSource, UICollectionVi
     @IBOutlet weak var collectionView: UICollectionView!
     
     let productName = ["P1", "P1", "P3", "P4", "P5"]
-    let imageArray = [UIImage(named: "pug"), UIImage(named: "pug2"), UIImage(named: "pug3"), UIImage(named: "pug4"), UIImage(named: "pug5")]
+    let imageArray = [UIImage(named: "pug"), UIImage(named: "pug2"), UIImage(named: "pug3"), UIImage(named: "pug4"), UIImage(named: "pug4")]
     let ingredArray = ["BlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlah","BlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlah","BlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlah","BlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlah","BlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlah"]
     
     override func viewDidLoad()
@@ -35,15 +35,10 @@ class FeaturedView: UIViewController, UICollectionViewDataSource, UICollectionVi
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell
     {
-        
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cCell", forIndexPath: indexPath) as! CollectionViewCell
-        
         cell.imageView?.image = self.imageArray[indexPath.row]
-        
         cell.titleLabel?.text = self.productName[indexPath.row]
-        
         return cell
-        
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath)
@@ -61,7 +56,6 @@ class FeaturedView: UIViewController, UICollectionViewDataSource, UICollectionVi
             vc.image = self.imageArray[indexPath.row]!
             vc.getTopLabel = self.productName[indexPath.row]
             vc.getiList = self.ingredArray[indexPath.row]
-            //vc.getiRate =
 
             
             vc.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem()
