@@ -39,6 +39,7 @@
 		D8BA55B71C9931BC002ACAAD /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = D8BA55B61C9931BC002ACAAD /* start.png */; };
 		D8BA55B91C9931C5002ACAAD /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D8BA55B81C9931C5002ACAAD /* logo.jpg */; };
 		D8E1908C1C9F41000021F9D9 /* EvenMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E1908B1C9F41000021F9D9 /* EvenMore.swift */; };
+		D8E190901C9F5F9E0021F9D9 /* DB2GB.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = D8E1908F1C9F5F9E0021F9D9 /* DB2GB.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +84,7 @@
 		D8BA55B61C9931BC002ACAAD /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
 		D8BA55B81C9931C5002ACAAD /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
 		D8E1908B1C9F41000021F9D9 /* EvenMore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvenMore.swift; sourceTree = "<group>"; };
+		D8E1908F1C9F5F9E0021F9D9 /* DB2GB.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = DB2GB.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				171E0C831B8E5B84001E6242 /* Main.storyboard */,
 				D82D31CB1C9E2E470000C447 /* FeaturedView.swift */,
 				D87EDFCB1C9F2DBB00872861 /* DB2.sqlite */,
+				D8E1908F1C9F5F9E0021F9D9 /* DB2GB.sqlite */,
 				171E0C861B8E5B84001E6242 /* Assets.xcassets */,
 				171E0C881B8E5B84001E6242 /* LaunchScreen.storyboard */,
 				171E0C8B1B8E5B84001E6242 /* Info.plist */,
@@ -248,6 +251,7 @@
 				D805F0251C9A80840036FA48 /* smallMyPulseLogo.png in Resources */,
 				171E0C8A1B8E5B84001E6242 /* LaunchScreen.storyboard in Resources */,
 				D87EDFCC1C9F2DBB00872861 /* DB2.sqlite in Resources */,
+				D8E190901C9F5F9E0021F9D9 /* DB2GB.sqlite in Resources */,
 				D8A41A351C9A2EBA00D4B544 /* montserrat-bold-normal.ttf in Resources */,
 				D846A7BB1C993DCA0030A359 /* unknown.jpg in Resources */,
 				D8BA55B91C9931C5002ACAAD /* logo.jpg in Resources */,

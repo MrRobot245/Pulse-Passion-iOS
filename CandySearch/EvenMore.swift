@@ -12,6 +12,7 @@ import UIKit
 
 class EvenMoreViewController: UIViewController
 {
+    @IBOutlet weak var badLabel: UILabel!
     @IBOutlet weak var labelView: UILabel!
     
 //    @IBOutlet weak var iView: UITextView!
@@ -22,6 +23,7 @@ class EvenMoreViewController: UIViewController
 //    }
 //    var image = UIImage()
     var getTopLabel:String!
+    var getbadLabel:String!
 //    var getiList:String!
 //    
     override func viewDidLoad()
@@ -31,6 +33,7 @@ class EvenMoreViewController: UIViewController
 //        
 //        self.imageView.image = self.image
         self.labelView.text = self.getTopLabel
+        self.badLabel.text = self.getbadLabel
 //        self.ratingView.image = UIImage(named: "green")
 //        self.iView.text = self.getiList
     }
