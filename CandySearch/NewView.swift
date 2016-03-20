@@ -10,9 +10,13 @@ import UIKit
 
 class NewViewController: UIViewController
 {
+    
+    @IBOutlet weak var iView: UITextView!
+    @IBOutlet weak var ratingView: UIImageView!
+    @IBOutlet weak var topLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
     @IBAction func unwindToThisViewController(segue: UIStoryboardSegue) {
     }
-    @IBOutlet weak var imageView: UIImageView!
     var image = UIImage()
     
     override func viewDidLoad()
