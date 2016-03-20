@@ -9,6 +9,7 @@
         <mutableArray key="montserrat-normal-normal.ttf">
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -398,7 +399,7 @@
             </objects>
             <point key="canvasLocation" x="-1502" y="-1338"/>
         </scene>
-        <!--UICollectionView-->
+        <!--Featured View-->
         <scene sceneID="9gi-pc-c2F">
             <objects>
                 <viewController id="xxQ-1u-g3C" customClass="FeaturedView" customModule="MyPulse" customModuleProvider="target" sceneMemberID="viewController">
@@ -471,7 +472,21 @@
                             <constraint firstItem="bue-Jm-F7c" firstAttribute="leading" secondItem="imD-Uk-eMP" secondAttribute="leading" id="iQv-5q-Xoz"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="UICollectionView" id="MUR-3Q-8hT"/>
+                    <navigationItem key="navigationItem" id="MUR-3Q-8hT">
+                        <nil key="title"/>
+                        <view key="titleView" contentMode="scaleToFill" id="WAw-uj-xG2">
+                            <rect key="frame" x="253" y="5.5" width="94" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MyPulse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pE9-16-AVR">
+                                    <rect key="frame" x="4" y="5" width="87" height="25"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </view>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="bue-Jm-F7c" id="XPI-38-gOm"/>
                         <segue destination="MyU-Dm-1rY" kind="show" identifier="showImage" id="c3m-gx-kNF">
@@ -513,7 +528,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z8e-0G-IIc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-599" y="-337"/>
+            <point key="canvasLocation" x="-667" y="-369"/>
         </scene>
     </scenes>
     <resources>
