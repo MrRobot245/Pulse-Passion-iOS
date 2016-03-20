@@ -27,9 +27,9 @@
 		D846A7C11C99459F0030A359 /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = D846A7BE1C99459F0030A359 /* green.png */; };
 		D846A7C21C99459F0030A359 /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = D846A7BF1C99459F0030A359 /* red.png */; };
 		D846A7C31C99459F0030A359 /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = D846A7C01C99459F0030A359 /* yellow.png */; };
-		D84BC30F1C9A5A09009DDB6A /* DB2.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = D84BC30E1C9A5A09009DDB6A /* DB2.sqlite */; };
 		D84DED931C9E3F66001A68B5 /* ConnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84DED921C9E3F66001A68B5 /* ConnView.swift */; };
 		D84DED951C9E3FDB001A68B5 /* NewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84DED941C9E3FDB001A68B5 /* NewView.swift */; };
+		D87EDFCC1C9F2DBB00872861 /* DB2.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = D87EDFCB1C9F2DBB00872861 /* DB2.sqlite */; };
 		D8A41A321C9A274500D4B544 /* myPulseWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = D8A41A311C9A274500D4B544 /* myPulseWhite.png */; };
 		D8A41A351C9A2EBA00D4B544 /* montserrat-bold-normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8A41A331C9A2EBA00D4B544 /* montserrat-bold-normal.ttf */; };
 		D8A41A361C9A2EBA00D4B544 /* montserrat-normal-normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8A41A341C9A2EBA00D4B544 /* montserrat-normal-normal.ttf */; };
@@ -70,9 +70,9 @@
 		D846A7BE1C99459F0030A359 /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green.png; sourceTree = "<group>"; };
 		D846A7BF1C99459F0030A359 /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
 		D846A7C01C99459F0030A359 /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow.png; sourceTree = "<group>"; };
-		D84BC30E1C9A5A09009DDB6A /* DB2.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = DB2.sqlite; sourceTree = "<group>"; };
 		D84DED921C9E3F66001A68B5 /* ConnView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnView.swift; sourceTree = "<group>"; };
 		D84DED941C9E3FDB001A68B5 /* NewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewView.swift; sourceTree = "<group>"; };
+		D87EDFCB1C9F2DBB00872861 /* DB2.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = DB2.sqlite; sourceTree = "<group>"; };
 		D8A41A311C9A274500D4B544 /* myPulseWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myPulseWhite.png; sourceTree = "<group>"; };
 		D8A41A331C9A2EBA00D4B544 /* montserrat-bold-normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "montserrat-bold-normal.ttf"; sourceTree = "<group>"; };
 		D8A41A341C9A2EBA00D4B544 /* montserrat-normal-normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "montserrat-normal-normal.ttf"; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 				171E0C831B8E5B84001E6242 /* Main.storyboard */,
 				D84DED941C9E3FDB001A68B5 /* NewView.swift */,
 				D82D31CB1C9E2E470000C447 /* FeaturedView.swift */,
-				D84BC30E1C9A5A09009DDB6A /* DB2.sqlite */,
+				D87EDFCB1C9F2DBB00872861 /* DB2.sqlite */,
 				171E0C861B8E5B84001E6242 /* Assets.xcassets */,
 				171E0C881B8E5B84001E6242 /* LaunchScreen.storyboard */,
 				171E0C8B1B8E5B84001E6242 /* Info.plist */,
@@ -244,6 +244,7 @@
 			files = (
 				D805F0251C9A80840036FA48 /* smallMyPulseLogo.png in Resources */,
 				171E0C8A1B8E5B84001E6242 /* LaunchScreen.storyboard in Resources */,
+				D87EDFCC1C9F2DBB00872861 /* DB2.sqlite in Resources */,
 				D8A41A351C9A2EBA00D4B544 /* montserrat-bold-normal.ttf in Resources */,
 				D846A7BB1C993DCA0030A359 /* unknown.jpg in Resources */,
 				D8BA55B91C9931C5002ACAAD /* logo.jpg in Resources */,
@@ -251,7 +252,6 @@
 				171E0C871B8E5B84001E6242 /* Assets.xcassets in Resources */,
 				D846A7C11C99459F0030A359 /* green.png in Resources */,
 				D8A41A381C9A30C900D4B544 /* food45.jpg in Resources */,
-				D84BC30F1C9A5A09009DDB6A /* DB2.sqlite in Resources */,
 				D846A7C31C99459F0030A359 /* yellow.png in Resources */,
 				D8A41A361C9A2EBA00D4B544 /* montserrat-normal-normal.ttf in Resources */,
 				D8A41A321C9A274500D4B544 /* myPulseWhite.png in Resources */,
