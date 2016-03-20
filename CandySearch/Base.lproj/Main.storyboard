@@ -194,7 +194,7 @@
             </objects>
             <point key="canvasLocation" x="257" y="-662"/>
         </scene>
-        <!--About View-->
+        <!--About-->
         <scene sceneID="fqg-rY-gP3">
             <objects>
                 <viewController id="hit-xR-Mw3" customClass="AboutView" customModule="MyPulse" customModuleProvider="target" sceneMemberID="viewController">
@@ -347,7 +347,7 @@
                             <constraint firstItem="ptr-kH-2EO" firstAttribute="top" secondItem="xUS-GI-YX7" secondAttribute="bottom" id="xDj-vq-QFH"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="more" id="H93-DS-Ok9"/>
+                    <tabBarItem key="tabBarItem" title="About" image="Info-60" selectedImage="Info-60" id="H93-DS-Ok9"/>
                     <connections>
                         <outlet property="bLabel" destination="O5N-5K-JLb" id="vbn-iw-aw5"/>
                         <outlet property="vLabel" destination="3bJ-8F-6xg" id="Swv-YT-5Ku"/>
@@ -569,6 +569,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Info-60" width="30" height="30"/>
         <image name="smallMyPulseLogo" width="200" height="260"/>
     </resources>
 </document>

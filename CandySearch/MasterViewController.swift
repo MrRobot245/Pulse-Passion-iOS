@@ -40,17 +40,12 @@ class MasterViewController: UITableViewController {
             print("Unable to open database")
             return
         }
-//        let querySQL = "SELECT cat FROM DB2 WHERE food = '\(SearchField.text!.capitalizedString)'"
          let querySQL = "SELECT cat,title,fRate,iList FROM DB WHERE title = title ORDER BY title COLLATE NOCASE"
         let results:FMResultSet? = database.executeQuery(querySQL,
             withArgumentsInArray: nil)
         while(results!.next()) {
              //print("\(results!.stringForColumn("cat"),results!.stringForColumn("food"))")
-        
-            
             food.append(Food(category: results!.stringForColumn("cat"), name: results!.stringForColumn("title"), fRate: results!.stringForColumn("fRate"), iList: results!.stringForColumn("iList")))
-            
-            
         }
              tableView.reloadData()
 
@@ -59,12 +54,6 @@ class MasterViewController: UITableViewController {
         copyDatabase()
         fmdb()
         super.viewDidLoad()
-        
-//        if let splitViewController = splitViewController {
-//            let controllers = splitViewController.viewControllers
-//            detailViewController = (controllers[controllers.count - 1] as! UINavigationController).topViewController as? DetailViewController
-//        }
-        //doStuff()
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
         definesPresentationContext = true
@@ -103,7 +92,6 @@ class MasterViewController: UITableViewController {
         try! fileManger.copyItemAtPath(sourcePath!, toPath: destinationPath)
     }
 
-    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
