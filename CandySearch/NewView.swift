@@ -18,6 +18,9 @@ class NewViewController: UIViewController
     @IBAction func unwindToThisViewController(segue: UIStoryboardSegue) {
     }
     var image = UIImage()
+    var getTopLabel:String!
+    var getiList:String!
+    var getiRate:String!
     
     override func viewDidLoad()
     {
@@ -25,6 +28,9 @@ class NewViewController: UIViewController
         self.navigationItem.hidesBackButton = false
         
         self.imageView.image = self.image
+        self.topLabel.text = self.getTopLabel
+        //self.ratingView.image =
+        self.iView.text = self.getiList
     }
     
     override func didReceiveMemoryWarning()
