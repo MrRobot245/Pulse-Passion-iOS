@@ -12,7 +12,8 @@ class FeaturedView: UIViewController, UICollectionViewDataSource, UICollectionVi
 {
     @IBOutlet weak var collectionView: UICollectionView!
     
-    let productName = ["P1", "P1", "P3", "P4", "P5"]
+    let productName = ["Product 1", "Product 2", "Product 3", "Product 4", "Product 5"]
+//        let imageArray = [UIImage(named: "unknown"), UIImage(named: "unknown"), UIImage(named: "unknown"), UIImage(named: "unknown"), UIImage(named: "unknown")]
     let imageArray = [UIImage(named: "pug"), UIImage(named: "pug2"), UIImage(named: "pug3"), UIImage(named: "pug4"), UIImage(named: "pug4")]
     let ingredArray = ["BlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlah","BlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlah","BlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlah","BlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlah","BlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlahBlah"]
     
