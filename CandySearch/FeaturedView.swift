@@ -58,7 +58,7 @@ import UIKit
                 let indexPath = indexPaths[0] as NSIndexPath
                 let vc = segue.destinationViewController as! NewViewController
                 vc.image = self.imageArray[indexPath.row]!
-                vc.title = self.appleProducts[indexPath.row]
+                //vc.title = self.appleProducts[indexPath.row]
                 
                 vc.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem()
                 vc.navigationItem.leftItemsSupplementBackButton = true
