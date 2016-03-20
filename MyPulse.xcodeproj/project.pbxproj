@@ -15,6 +15,7 @@
 		171E0C8A1B8E5B84001E6242 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 171E0C881B8E5B84001E6242 /* LaunchScreen.storyboard */; };
 		171E0CAE1B8E5C58001E6242 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171E0CAD1B8E5C58001E6242 /* Food.swift */; };
 		D805F0251C9A80840036FA48 /* smallMyPulseLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D805F0241C9A80840036FA48 /* smallMyPulseLogo.png */; };
+		D82D31CC1C9E2E470000C447 /* FeaturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D31CB1C9E2E470000C447 /* FeaturedView.swift */; };
 		D846A7AE1C9935C40030A359 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = D846A7A41C9935C40030A359 /* FMDatabase.m */; };
 		D846A7AF1C9935C40030A359 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D846A7A61C9935C40030A359 /* FMDatabaseAdditions.m */; };
 		D846A7B01C9935C40030A359 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = D846A7A81C9935C40030A359 /* FMDatabasePool.m */; };
@@ -48,6 +49,7 @@
 		171E0C8B1B8E5B84001E6242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		171E0CAD1B8E5C58001E6242 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		D805F0241C9A80840036FA48 /* smallMyPulseLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smallMyPulseLogo.png; sourceTree = "<group>"; };
+		D82D31CB1C9E2E470000C447 /* FeaturedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedView.swift; sourceTree = "<group>"; };
 		D846A7A21C9935C30030A359 /* MyPulse-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyPulse-Bridging-Header.h"; sourceTree = "<group>"; };
 		D846A7A31C9935C40030A359 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		D846A7A41C9935C40030A359 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				D8A863161C99E97B007DE46A /* AboutView.swift */,
 				171E0CAD1B8E5C58001E6242 /* Food.swift */,
 				171E0C831B8E5B84001E6242 /* Main.storyboard */,
+				D82D31CB1C9E2E470000C447 /* FeaturedView.swift */,
 				D84BC30E1C9A5A09009DDB6A /* DB2.sqlite */,
 				171E0C861B8E5B84001E6242 /* Assets.xcassets */,
 				171E0C881B8E5B84001E6242 /* LaunchScreen.storyboard */,
@@ -266,6 +269,7 @@
 				D8A863171C99E97B007DE46A /* AboutView.swift in Sources */,
 				D846A7AE1C9935C40030A359 /* FMDatabase.m in Sources */,
 				D846A7B01C9935C40030A359 /* FMDatabasePool.m in Sources */,
+				D82D31CC1C9E2E470000C447 /* FeaturedView.swift in Sources */,
 				D846A7B21C9935C40030A359 /* FMResultSet.m in Sources */,
 				171E0C7E1B8E5B84001E6242 /* AppDelegate.swift in Sources */,
 				D846A7AF1C9935C40030A359 /* FMDatabaseAdditions.m in Sources */,
