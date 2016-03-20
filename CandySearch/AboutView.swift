@@ -11,8 +11,6 @@ import UIKit
 
 class AboutView: UIViewController {
     @IBOutlet weak var vLabel: UILabel!
-   
-
     @IBAction func facebookButton(sender: AnyObject) {
         
          UIApplication.sharedApplication().openURL(NSURL(string: "https://www.facebook.com/Pulse-Passion-564611067026281/")!)

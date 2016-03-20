@@ -60,10 +60,10 @@ class MasterViewController: UITableViewController {
         fmdb()
         super.viewDidLoad()
         
-        if let splitViewController = splitViewController {
-            let controllers = splitViewController.viewControllers
-            detailViewController = (controllers[controllers.count - 1] as! UINavigationController).topViewController as? DetailViewController
-        }
+//        if let splitViewController = splitViewController {
+//            let controllers = splitViewController.viewControllers
+//            detailViewController = (controllers[controllers.count - 1] as! UINavigationController).topViewController as? DetailViewController
+//        }
         //doStuff()
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
@@ -85,7 +85,7 @@ class MasterViewController: UITableViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
-        clearsSelectionOnViewWillAppear = splitViewController!.collapsed
+       // clearsSelectionOnViewWillAppear = splitViewController!.collapsed
         super.viewWillAppear(animated)
     }
     
@@ -138,7 +138,7 @@ class MasterViewController: UITableViewController {
                 } else {
                     candy = food[indexPath.row]
                 }
-                let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
+                let controller = (segue.destinationViewController as! DetailViewController)
                 controller.detailCandy = candy
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem()
                 controller.navigationItem.leftItemsSupplementBackButton = true
