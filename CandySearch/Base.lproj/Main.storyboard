@@ -731,58 +731,71 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vuU-uM-EzP">
                                 <rect key="frame" x="28" y="176" width="386" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="386" id="vxw-aY-7pW"/>
-                                    <constraint firstAttribute="height" constant="21" id="yj2-Ld-wj4"/>
+                                    <constraint firstAttribute="width" constant="386" id="NOC-5N-8MO"/>
+                                    <constraint firstAttribute="height" constant="21" id="zqz-sl-VDj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Good:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tnh-DC-xjn">
-                                <rect key="frame" x="15" y="147" width="81" height="21"/>
+                                <rect key="frame" x="15" y="147" width="126" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="81" id="JYC-de-4OR"/>
-                                    <constraint firstAttribute="height" constant="21" id="Ono-1w-ATE"/>
+                                    <constraint firstAttribute="height" constant="21" id="3sH-PA-XDu"/>
+                                    <constraint firstAttribute="width" constant="126" id="euc-DE-DIj"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Bad:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9s-Iu-hye">
-                                <rect key="frame" x="15" y="315" width="69" height="21"/>
+                                <rect key="frame" x="15" y="315" width="89" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="69" id="qPT-D0-Jda"/>
-                                    <constraint firstAttribute="height" constant="21" id="wgB-7w-bcJ"/>
+                                    <constraint firstAttribute="height" constant="21" id="dWQ-5q-K2s"/>
+                                    <constraint firstAttribute="width" constant="89" id="nmz-As-yJA"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9Y-vn-Bx4">
                                 <rect key="frame" x="28" y="344" width="369" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="Hh9-gr-PSs"/>
-                                    <constraint firstAttribute="width" constant="369" id="hG5-DR-Hmf"/>
+                                    <constraint firstAttribute="height" constant="21" id="ImC-6V-m3B"/>
+                                    <constraint firstAttribute="width" constant="369" id="zFG-Lt-Ijq"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FoodLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CM7-BG-TXc">
+                                <rect key="frame" x="162" y="72" width="276" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="276" id="CpG-QG-vmQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="vuU-uM-EzP" firstAttribute="leading" secondItem="a13-5f-pav" secondAttribute="leadingMargin" constant="8" id="0dP-JC-8Vd"/>
-                            <constraint firstItem="zXl-kL-WYU" firstAttribute="top" secondItem="e9Y-vn-Bx4" secondAttribute="bottom" constant="186" id="2KW-kO-4pg"/>
-                            <constraint firstItem="Tnh-DC-xjn" firstAttribute="top" secondItem="uQ8-ur-IEG" secondAttribute="bottom" constant="83" id="9Mh-YD-Kw8"/>
-                            <constraint firstItem="Tnh-DC-xjn" firstAttribute="leading" secondItem="T9s-Iu-hye" secondAttribute="leading" id="PhQ-Io-mcb"/>
-                            <constraint firstItem="Tnh-DC-xjn" firstAttribute="leading" secondItem="a13-5f-pav" secondAttribute="leadingMargin" constant="-5" id="aTp-Rd-8pb"/>
-                            <constraint firstItem="vuU-uM-EzP" firstAttribute="top" secondItem="Tnh-DC-xjn" secondAttribute="bottom" constant="8" symbolic="YES" id="cDY-wN-aLh"/>
-                            <constraint firstItem="e9Y-vn-Bx4" firstAttribute="top" secondItem="T9s-Iu-hye" secondAttribute="bottom" constant="8" symbolic="YES" id="gjt-6D-Ct5"/>
-                            <constraint firstItem="vuU-uM-EzP" firstAttribute="leading" secondItem="e9Y-vn-Bx4" secondAttribute="leading" id="q5e-ed-6aW"/>
+                            <constraint firstItem="CM7-BG-TXc" firstAttribute="centerX" secondItem="a13-5f-pav" secondAttribute="centerX" id="01U-bN-Rwv"/>
+                            <constraint firstItem="vuU-uM-EzP" firstAttribute="top" secondItem="CM7-BG-TXc" secondAttribute="bottom" constant="83" id="6EO-Ue-pEH"/>
+                            <constraint firstItem="zXl-kL-WYU" firstAttribute="top" secondItem="e9Y-vn-Bx4" secondAttribute="bottom" constant="186" id="7MC-3U-fi2"/>
+                            <constraint firstItem="Tnh-DC-xjn" firstAttribute="leading" secondItem="a13-5f-pav" secondAttribute="leadingMargin" constant="-5" id="POY-ga-ADw"/>
+                            <constraint firstItem="CM7-BG-TXc" firstAttribute="top" secondItem="uQ8-ur-IEG" secondAttribute="bottom" constant="8" symbolic="YES" id="R0l-dF-IlI"/>
+                            <constraint firstItem="e9Y-vn-Bx4" firstAttribute="leading" secondItem="vuU-uM-EzP" secondAttribute="leading" id="R7G-U0-Jbq"/>
+                            <constraint firstItem="Tnh-DC-xjn" firstAttribute="leading" secondItem="T9s-Iu-hye" secondAttribute="leading" id="WXN-Hu-xc7"/>
+                            <constraint firstItem="vuU-uM-EzP" firstAttribute="leading" secondItem="a13-5f-pav" secondAttribute="leadingMargin" constant="8" id="efJ-jO-pbG"/>
+                            <constraint firstItem="vuU-uM-EzP" firstAttribute="top" secondItem="Tnh-DC-xjn" secondAttribute="bottom" constant="8" symbolic="YES" id="iH2-td-w9m"/>
+                            <constraint firstItem="Tnh-DC-xjn" firstAttribute="top" secondItem="uQ8-ur-IEG" secondAttribute="bottom" constant="83" id="jd4-lB-ghT"/>
+                            <constraint firstItem="e9Y-vn-Bx4" firstAttribute="top" secondItem="T9s-Iu-hye" secondAttribute="bottom" constant="8" symbolic="YES" id="oSY-Zd-qqH"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="badLabel" destination="e9Y-vn-Bx4" id="NVz-JO-ciR"/>
+                        <outlet property="foodLabel" destination="CM7-BG-TXc" id="DPK-qX-tZf"/>
                         <outlet property="labelView" destination="vuU-uM-EzP" id="HnW-1A-tEl"/>
                     </connections>
                 </viewController>

@@ -81,8 +81,9 @@ class DetailViewController: UIViewController {
        
         if segue.identifier == "showMore" {
             let vc = segue.destinationViewController as! EvenMoreViewController
-            vc.getTopLabel = detailCandy?.gList
+            vc.getTopLabel = detailCandy?.name
             vc.getbadLabel = detailCandy?.bList
+            vc.getgoodLabel = detailCandy?.gList
 //             detailCandy?.bList
 //            detailCandy?.gList
            }

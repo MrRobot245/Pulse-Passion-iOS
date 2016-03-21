@@ -12,6 +12,7 @@ import UIKit
 
 class EvenMoreViewController: UIViewController
 {
+    @IBOutlet weak var foodLabel: UILabel!
     @IBOutlet weak var badLabel: UILabel!
     @IBOutlet weak var labelView: UILabel!
     
@@ -23,6 +24,7 @@ class EvenMoreViewController: UIViewController
 //    }
 //    var image = UIImage()
     var getTopLabel:String!
+    var getgoodLabel:String!
     var getbadLabel:String!
 //    var getiList:String!
 //    
@@ -32,7 +34,8 @@ class EvenMoreViewController: UIViewController
 //        self.navigationItem.hidesBackButton = false
 //        
 //        self.imageView.image = self.image
-        self.labelView.text = self.getTopLabel
+        self.foodLabel.text = self.getTopLabel
+        self.labelView.text = self.getgoodLabel
         self.badLabel.text = self.getbadLabel
 //        self.ratingView.image = UIImage(named: "green")
 //        self.iView.text = self.getiList
