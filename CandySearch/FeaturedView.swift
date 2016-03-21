@@ -59,7 +59,6 @@ class FeaturedView: UIViewController, UICollectionViewDataSource, UICollectionVi
             vc.getTopLabel = self.productName[indexPath.row]
             vc.getiList = self.ingredArray[indexPath.row]
             
-            
             vc.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem()
             vc.navigationItem.leftItemsSupplementBackButton = true
         }

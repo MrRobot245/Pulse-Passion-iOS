@@ -41,28 +41,28 @@ class MasterViewController: UITableViewController {
             return
         }
         
-//        let querySQL = "SELECT cat,title,fRate,iList,gList,bList FROM DB WHERE title = title ORDER BY title COLLATE NOCASE"
-//        let results:FMResultSet? = database.executeQuery(querySQL,
-//            withArgumentsInArray: nil)
-//        while(results!.next()) {
-//            //print("\(results!.stringForColumn("cat"),results!.stringForColumn("food"))")
-//            food.append(Food(category: results!.stringForColumn("cat"), name: results!.stringForColumn("title"),
-//                fRate: results!.stringForColumn("fRate"),
-//                iList: results!.stringForColumn("iList"),
-//                gList: results!.stringForColumn("gList"),
-//                bList: results!.stringForColumn("bList")))
-        
-            
-         let querySQL = "SELECT cat,title,fRate,iList FROM DB WHERE title = title ORDER BY title COLLATE NOCASE"
+        let querySQL = "SELECT cat,title,fRate,iList,gList,bList FROM DB WHERE title = title ORDER BY title COLLATE NOCASE"
         let results:FMResultSet? = database.executeQuery(querySQL,
             withArgumentsInArray: nil)
         while(results!.next()) {
-             //print("\(results!.stringForColumn("cat"),results!.stringForColumn("food"))")
+            //print("\(results!.stringForColumn("cat"),results!.stringForColumn("food"))")
             food.append(Food(category: results!.stringForColumn("cat"), name: results!.stringForColumn("title"),
                 fRate: results!.stringForColumn("fRate"),
                 iList: results!.stringForColumn("iList"),
-                gList: "",
-                bList: ""))
+                gList: results!.stringForColumn("gList"),
+                bList: results!.stringForColumn("bList")))
+        
+            
+//         let querySQL = "SELECT cat,title,fRate,iList FROM DB WHERE title = title ORDER BY title COLLATE NOCASE"
+//        let results:FMResultSet? = database.executeQuery(querySQL,
+//            withArgumentsInArray: nil)
+//        while(results!.next()) {
+//             //print("\(results!.stringForColumn("cat"),results!.stringForColumn("food"))")
+//            food.append(Food(category: results!.stringForColumn("cat"), name: results!.stringForColumn("title"),
+//                fRate: results!.stringForColumn("fRate"),
+//                iList: results!.stringForColumn("iList"),
+//                gList: "",
+//                bList: ""))
         }
              tableView.reloadData()
 
