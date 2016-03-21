@@ -28,7 +28,7 @@ class NewViewController: UIViewController
         
         self.imageView.image = self.image
         self.topLabel.text = self.getTopLabel
-        self.ratingView.image = UIImage(named: "Ngreen")
+        self.ratingView.image = UIImage(named: "Ugreen")
         self.iView.text = self.getiList
     }
     
