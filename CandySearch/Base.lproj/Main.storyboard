@@ -560,34 +560,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bue-Jm-F7c">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="2" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bue-Jm-F7c">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Y4t-Oi-8wo">
-                                    <size key="itemSize" width="184" height="186"/>
+                                    <size key="itemSize" width="111" height="110"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cCell" id="i1T-ZC-9L2" customClass="CollectionViewCell" customModule="MyPulse" customModuleProvider="target">
-                                        <rect key="frame" x="10" y="74" width="184" height="186"/>
+                                        <rect key="frame" x="10" y="74" width="111" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="184" height="186"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="111" height="110"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Me3-YL-PqY">
-                                                    <rect key="frame" x="0.0" y="0.0" width="184" height="186"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="111" height="110"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="Me3-YL-PqY" secondAttribute="trailing" id="6PN-JW-Jzh"/>
-                                            <constraint firstAttribute="bottom" secondItem="Me3-YL-PqY" secondAttribute="bottom" id="Nq5-Yh-Byg"/>
-                                            <constraint firstItem="Me3-YL-PqY" firstAttribute="centerY" secondItem="i1T-ZC-9L2" secondAttribute="centerY" id="Vyf-UI-qDT"/>
-                                            <constraint firstItem="Me3-YL-PqY" firstAttribute="leading" secondItem="i1T-ZC-9L2" secondAttribute="leading" id="uDf-EA-ChW"/>
+                                            <constraint firstItem="Me3-YL-PqY" firstAttribute="top" secondItem="i1T-ZC-9L2" secondAttribute="top" id="E3Z-dm-Lt6"/>
+                                            <constraint firstItem="Me3-YL-PqY" firstAttribute="leading" secondItem="i1T-ZC-9L2" secondAttribute="leading" id="ECC-LD-MIw"/>
+                                            <constraint firstAttribute="bottom" secondItem="Me3-YL-PqY" secondAttribute="bottom" id="aeO-6z-Nbf"/>
+                                            <constraint firstAttribute="trailing" secondItem="Me3-YL-PqY" secondAttribute="trailing" id="sfl-q8-TgU"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="imageView" destination="Me3-YL-PqY" id="kNP-FH-yht"/>
@@ -602,10 +602,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="bue-Jm-F7c" secondAttribute="bottom" id="7QF-Uy-xCo"/>
-                            <constraint firstItem="bue-Jm-F7c" firstAttribute="top" secondItem="imD-Uk-eMP" secondAttribute="top" id="R8x-U1-GRO"/>
-                            <constraint firstAttribute="trailing" secondItem="bue-Jm-F7c" secondAttribute="trailing" id="ZVp-px-MTa"/>
-                            <constraint firstItem="bue-Jm-F7c" firstAttribute="leading" secondItem="imD-Uk-eMP" secondAttribute="leading" id="iQv-5q-Xoz"/>
+                            <constraint firstAttribute="bottom" secondItem="bue-Jm-F7c" secondAttribute="bottom" id="7IH-qm-9SS"/>
+                            <constraint firstAttribute="trailing" secondItem="bue-Jm-F7c" secondAttribute="trailing" id="kdj-1I-GkC"/>
+                            <constraint firstItem="bue-Jm-F7c" firstAttribute="top" secondItem="imD-Uk-eMP" secondAttribute="top" id="tMW-e6-r3f"/>
+                            <constraint firstItem="bue-Jm-F7c" firstAttribute="leading" secondItem="imD-Uk-eMP" secondAttribute="leading" id="w9o-3o-eaB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MUR-3Q-8hT">
@@ -614,13 +614,19 @@
                             <rect key="frame" x="253" y="5.5" width="94" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MyPulse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pE9-16-AVR">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyPulse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pE9-16-AVR">
                                     <rect key="frame" x="4" y="5" width="87" height="25"/>
                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
+                            <constraints>
+                                <constraint firstItem="pE9-16-AVR" firstAttribute="centerX" secondItem="WAw-uj-xG2" secondAttribute="centerX" id="43f-gi-J3v"/>
+                                <constraint firstItem="pE9-16-AVR" firstAttribute="leading" secondItem="WAw-uj-xG2" secondAttribute="leading" constant="4" id="Izg-UB-69F"/>
+                                <constraint firstAttribute="bottom" secondItem="pE9-16-AVR" secondAttribute="bottom" constant="3" id="SWA-Hy-UMp"/>
+                                <constraint firstItem="pE9-16-AVR" firstAttribute="top" secondItem="WAw-uj-xG2" secondAttribute="top" constant="5" id="XwV-b9-AVy"/>
+                            </constraints>
                         </view>
                     </navigationItem>
                     <connections>
