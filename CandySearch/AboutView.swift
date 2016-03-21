@@ -16,9 +16,15 @@ class AboutView: UIViewController {
          UIApplication.sharedApplication().openURL(NSURL(string: "https://www.facebook.com/Pulse-Passion-564611067026281/")!)
     }
     @IBAction func supportButton(sender: AnyObject) {
+        let url = NSURL(string: "mailto:PulsePassionCo@gmail.com")
+        UIApplication.sharedApplication().openURL(url!)
     }
 
     @IBAction func contactButton(sender: AnyObject) {
+        let url = NSURL(string: "mailto:PulsePassionCo@gmail.com")
+        UIApplication.sharedApplication().openURL(url!)
+        
+        
     }
     @IBOutlet weak var bLabel: UILabel!
     @IBAction func webButton(sender: AnyObject) {
