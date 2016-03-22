@@ -34,15 +34,15 @@ class EvenMoreViewController: UIViewController
         
         if(self.getRatingPic == "1")
         {
-            ratingView.image = UIImage(named: "Ured")
+            ratingView.image = UIImage(named: "nnRed")
         }
         if(self.getRatingPic == "2")
         {
-            ratingView.image = UIImage(named: "Uyellow")
+            ratingView.image = UIImage(named: "nnYellow")
         }
         if(self.getRatingPic == "3")
         {
-            ratingView.image = UIImage(named: "Ugreen")
+            ratingView.image = UIImage(named: "nnGreen")
         }
     }
 
