@@ -1,24 +1,24 @@
 /*
-* Copyright (c) 2015 Razeware LLC
-*
-* Permission is hereby granted, free of charge, to any person obtaining a copy
-* of this software and associated documentation files (the "Software"), to deal
-* in the Software without restriction, including without limitation the rights
-* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-* copies of the Software, and to permit persons to whom the Software is
-* furnished to do so, subject to the following conditions:
-*
-* The above copyright notice and this permission notice shall be included in
-* all copies or substantial portions of the Software.
-*
-* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-* OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-* THE SOFTWARE.
-*/
+ * Copyright (c) 2015 Razeware LLC
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
 
 import UIKit
 
@@ -43,7 +43,7 @@ class MasterViewController: UITableViewController {
         
         let querySQL = "SELECT cat,title,fRate,iList,gList,bList FROM DB WHERE title = title ORDER BY title COLLATE NOCASE"
         let results:FMResultSet? = database.executeQuery(querySQL,
-            withArgumentsInArray: nil)
+                                                         withArgumentsInArray: nil)
         while(results!.next()) {
             //print("\(results!.stringForColumn("cat"),results!.stringForColumn("food"))")
             food.append(Food(category: results!.stringForColumn("cat"), name: results!.stringForColumn("title"),
@@ -51,21 +51,21 @@ class MasterViewController: UITableViewController {
                 iList: results!.stringForColumn("iList"),
                 gList: results!.stringForColumn("gList"),
                 bList: results!.stringForColumn("bList")))
-        
             
-//         let querySQL = "SELECT cat,title,fRate,iList FROM DB WHERE title = title ORDER BY title COLLATE NOCASE"
-//        let results:FMResultSet? = database.executeQuery(querySQL,
-//            withArgumentsInArray: nil)
-//        while(results!.next()) {
-//             //print("\(results!.stringForColumn("cat"),results!.stringForColumn("food"))")
-//            food.append(Food(category: results!.stringForColumn("cat"), name: results!.stringForColumn("title"),
-//                fRate: results!.stringForColumn("fRate"),
-//                iList: results!.stringForColumn("iList"),
-//                gList: "",
-//                bList: ""))
+            
+            //         let querySQL = "SELECT cat,title,fRate,iList FROM DB WHERE title = title ORDER BY title COLLATE NOCASE"
+            //        let results:FMResultSet? = database.executeQuery(querySQL,
+            //            withArgumentsInArray: nil)
+            //        while(results!.next()) {
+            //             //print("\(results!.stringForColumn("cat"),results!.stringForColumn("food"))")
+            //            food.append(Food(category: results!.stringForColumn("cat"), name: results!.stringForColumn("title"),
+            //                fRate: results!.stringForColumn("fRate"),
+            //                iList: results!.stringForColumn("iList"),
+            //                gList: "",
+            //                bList: ""))
         }
-             tableView.reloadData()
-
+        tableView.reloadData()
+        
     }
     override func viewDidLoad() {
         copyDatabase()
@@ -76,30 +76,43 @@ class MasterViewController: UITableViewController {
         definesPresentationContext = true
         //self.navigationItem.titleView = searchController.searchBar ;
         tableView.tableHeaderView = searchController.searchBar
-        searchController.searchBar.scopeButtonTitles = ["All", "Green", "Yellow", "Red"]
+        searchController.searchBar.scopeButtonTitles = ["All", "1", "2", "3"]
         searchController.searchBar.delegate = self
     }
-
+    
     func filterContentForSearchText(searchText: String, scope: String = "All") {
+        
         let searchTerms = searchText.componentsSeparatedByString(" ").filter { $0 != "" }
         filteredFood = food.filter { candy in
-               let categoryMatch = (scope == "All") || (candy.category == scope)
+            let categoryMatch = (scope == "All") || (candy.fRate == scope)
+            if searchTerms == [] && !categoryMatch {
+                return false
+            }
             for term in searchTerms{
                 if !candy.name.lowercaseString.containsString(term.lowercaseString) {
                     return false
                 }
+                if !categoryMatch {
+                    return false
+                }
+                
+            }
             
-            }
-            if !categoryMatch {
-                return false
-            }
             return true
         }
         tableView.reloadData()
     }
-    
+//    func filterContentForScope(scope: String = "All") {
+//        filteredFood = food.filter { candy in
+//            let categoryMatch = (scope == "All") || (candy.fRate == scope)
+//            return  categoryMatch
+//        }
+//        tableView.reloadData()
+//    }
+//    
+//    
     override func viewWillAppear(animated: Bool) {
-       // clearsSelectionOnViewWillAppear = splitViewController!.collapsed
+        // clearsSelectionOnViewWillAppear = splitViewController!.collapsed
         super.viewWillAppear(animated)
     }
     
@@ -116,7 +129,7 @@ class MasterViewController: UITableViewController {
         }
         try! fileManger.copyItemAtPath(sourcePath!, toPath: destinationPath)
     }
-
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
@@ -127,6 +140,7 @@ class MasterViewController: UITableViewController {
         }
         return food.count
     }
+    
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
@@ -169,6 +183,7 @@ extension MasterViewController: UISearchResultsUpdating {
 }
 extension MasterViewController: UISearchBarDelegate {
     func searchBar(searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+         //filterContentForScope(searchBar.scopeButtonTitles![selectedScope])
         filterContentForSearchText(searchBar.text!, scope: searchBar.scopeButtonTitles![selectedScope])
     }
 }
