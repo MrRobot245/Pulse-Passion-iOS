@@ -77,17 +77,23 @@ class MasterViewController: UITableViewController {
         //self.navigationItem.titleView = searchController.searchBar ;
         tableView.tableHeaderView = searchController.searchBar
         searchController.searchBar.scopeButtonTitles = ["All", "Green", "Yellow", "Red"]
+        searchController.searchBar.delegate = self
     }
-    
+
     func filterContentForSearchText(searchText: String, scope: String = "All") {
         let searchTerms = searchText.componentsSeparatedByString(" ").filter { $0 != "" }
         filteredFood = food.filter { candy in
+               let categoryMatch = (scope == "All") || (candy.category == scope)
             for term in searchTerms{
-                if !candy.name.lowercaseString.containsString(term.lowercaseString){
+                if !candy.name.lowercaseString.containsString(term.lowercaseString) {
                     return false
                 }
-            }    
-            return true    
+            
+            }
+            if !categoryMatch {
+                return false
+            }
+            return true
         }
         tableView.reloadData()
     }
