@@ -76,6 +76,7 @@ class MasterViewController: UITableViewController {
         definesPresentationContext = true
         //self.navigationItem.titleView = searchController.searchBar ;
         tableView.tableHeaderView = searchController.searchBar
+        searchController.searchBar.scopeButtonTitles = ["All", "Green", "Yellow", "Red"]
     }
     
     func filterContentForSearchText(searchText: String, scope: String = "All") {
@@ -155,7 +156,14 @@ class MasterViewController: UITableViewController {
 }
 extension MasterViewController: UISearchResultsUpdating {
     func updateSearchResultsForSearchController(searchController: UISearchController) {
-        filterContentForSearchText(searchController.searchBar.text!)
+        let searchBar = searchController.searchBar
+        let scope = searchBar.scopeButtonTitles![searchBar.selectedScopeButtonIndex]
+        filterContentForSearchText(searchController.searchBar.text!, scope: scope)
+    }
+}
+extension MasterViewController: UISearchBarDelegate {
+    func searchBar(searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+        filterContentForSearchText(searchBar.text!, scope: searchBar.scopeButtonTitles![selectedScope])
     }
 }
 
