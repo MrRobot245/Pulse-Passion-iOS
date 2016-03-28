@@ -83,6 +83,7 @@ class MasterViewController: UITableViewController {
     func filterContentForSearchText(searchText: String, scope: String = "All") {
         
         let searchTerms = searchText.componentsSeparatedByString(" ").filter { $0 != "" }
+        
         filteredFood = food.filter { candy in
             let categoryMatch = (scope == "All") || (candy.fRate == scope)
             if searchTerms == [] && !categoryMatch {
@@ -185,6 +186,7 @@ extension MasterViewController: UISearchBarDelegate {
     func searchBar(searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
          //filterContentForScope(searchBar.scopeButtonTitles![selectedScope])
         filterContentForSearchText(searchBar.text!, scope: searchBar.scopeButtonTitles![selectedScope])
+        
     }
 }
 

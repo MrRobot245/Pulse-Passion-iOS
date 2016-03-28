@@ -38,6 +38,10 @@ class FeaturedView: UIViewController, UICollectionViewDataSource, UICollectionVi
     {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cCell", forIndexPath: indexPath) as! CollectionViewCell
         cell.imageView?.image = self.imageArray[indexPath.row]
+//        cell.imageView?.layer.cornerRadius = cell.imageView.bounds.size.width / 2.0
+//        cell.imageView.layer.borderWidth = 2.0
+//        cell.imageView.layer.borderColor = UIColor.whiteColor().CGColor
+//        cell.imageView.layer.masksToBounds = true
         
         cell.titleLabel?.text = self.productName[indexPath.row]
         return cell

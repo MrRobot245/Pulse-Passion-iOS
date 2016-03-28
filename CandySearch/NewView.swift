@@ -27,6 +27,13 @@ class NewViewController: UIViewController
         self.navigationItem.hidesBackButton = false
         
         self.imageView.image = self.image
+        
+//        self.imageView?.layer.cornerRadius = self.imageView.bounds.size.width / 2.0
+//        self.imageView.layer.borderWidth = 2.0
+//        self.imageView.layer.borderColor = UIColor.whiteColor().CGColor
+//        self.imageView.layer.masksToBounds = true
+//        
+        
         self.topLabel.text = self.getTopLabel
         self.ratingView.image = UIImage(named: "nnGreen")
         self.iView.text = self.getiList
