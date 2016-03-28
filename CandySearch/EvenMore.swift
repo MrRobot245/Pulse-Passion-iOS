@@ -32,15 +32,15 @@ class EvenMoreViewController: UIViewController
         self.badLabel.text = self.getbadLabel
        
         
-        if(self.getRatingPic == "1")
+        if(self.getRatingPic == "Red")
         {
             ratingView.image = UIImage(named: "nnRed")
         }
-        if(self.getRatingPic == "2")
+        if(self.getRatingPic == "Yellow")
         {
             ratingView.image = UIImage(named: "nnYellow")
         }
-        if(self.getRatingPic == "3")
+        if(self.getRatingPic == "Green")
         {
             ratingView.image = UIImage(named: "nnGreen")
         }
