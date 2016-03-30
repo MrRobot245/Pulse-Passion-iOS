@@ -424,21 +424,33 @@
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHx-vI-9s8">
-                                <rect key="frame" x="112" y="151" width="97" height="30"/>
+                                <rect key="frame" x="90" y="162" width="140" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="l2A-E1-wrK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Heart Disease"/>
                                 <connections>
                                     <segue destination="vE2-zC-OLx" kind="show" id="RaY-36-0pM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDY-k6-S4v">
-                                <rect key="frame" x="145" y="225" width="30" height="30"/>
+                                <rect key="frame" x="128" y="225" width="65" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="3PX-Bu-a3i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Diet"/>
                                 <connections>
                                     <segue destination="HwP-iL-pA6" kind="show" id="Vy8-08-E9a"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYb-ye-ngT">
-                                <rect key="frame" x="142" y="295" width="36" height="30"/>
+                                <rect key="frame" x="131" y="281" width="59" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="59" id="pBt-JV-S5x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="More"/>
                                 <connections>
                                     <segue destination="upR-SE-SGA" kind="show" id="XxW-0u-tiK"/>
@@ -447,19 +459,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="bottom" secondItem="zxt-0f-jDN" secondAttribute="bottom" id="09T-Kq-G2X"/>
-                            <constraint firstAttribute="trailing" secondItem="1HA-Wp-LXA" secondAttribute="trailing" id="1ji-BL-7Rl"/>
-                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="trailing" secondItem="Te7-1i-Jlb" secondAttribute="trailing" id="66o-Cm-jUF"/>
-                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="leading" secondItem="Te7-1i-Jlb" secondAttribute="leading" id="8Zd-oP-mTv"/>
-                            <constraint firstItem="jDY-k6-S4v" firstAttribute="centerY" secondItem="jcL-up-CdG" secondAttribute="centerY" id="BDF-QN-INM"/>
-                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="top" secondItem="jcL-up-CdG" secondAttribute="top" id="DWr-Jx-vsc"/>
-                            <constraint firstItem="wYb-ye-ngT" firstAttribute="top" secondItem="jDY-k6-S4v" secondAttribute="bottom" constant="40" id="FA1-M6-Msm"/>
-                            <constraint firstItem="jDY-k6-S4v" firstAttribute="centerX" secondItem="wYb-ye-ngT" secondAttribute="centerX" id="JuF-qn-gxK"/>
-                            <constraint firstItem="jDY-k6-S4v" firstAttribute="top" secondItem="RHx-vI-9s8" secondAttribute="bottom" constant="44" id="V5L-yu-cNr"/>
-                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="centerX" secondItem="RHx-vI-9s8" secondAttribute="centerX" id="ZYx-6E-W5C"/>
-                            <constraint firstItem="RHx-vI-9s8" firstAttribute="centerX" secondItem="jDY-k6-S4v" secondAttribute="centerX" id="dCN-QK-h7b"/>
-                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="top" secondItem="1HA-Wp-LXA" secondAttribute="bottom" id="vUz-gU-rjC"/>
-                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="leading" secondItem="jcL-up-CdG" secondAttribute="leading" id="zFI-a8-PA0"/>
+                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="trailing" secondItem="Te7-1i-Jlb" secondAttribute="trailing" id="A3L-78-y3b"/>
+                            <constraint firstAttribute="trailing" secondItem="1HA-Wp-LXA" secondAttribute="trailing" id="DmE-3r-fPA"/>
+                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="bottom" secondItem="zxt-0f-jDN" secondAttribute="bottom" id="FG0-S6-XOI"/>
+                            <constraint firstItem="RHx-vI-9s8" firstAttribute="top" secondItem="zxt-0f-jDN" secondAttribute="bottom" constant="98" id="ItN-OX-pbu"/>
+                            <constraint firstItem="wYb-ye-ngT" firstAttribute="top" secondItem="jDY-k6-S4v" secondAttribute="bottom" constant="26" id="NdW-3W-Ee8"/>
+                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="leading" secondItem="jcL-up-CdG" secondAttribute="leading" id="PKh-hX-Z5j"/>
+                            <constraint firstItem="RHx-vI-9s8" firstAttribute="leading" secondItem="jcL-up-CdG" secondAttribute="leadingMargin" constant="74" id="QZY-94-5US"/>
+                            <constraint firstItem="jDY-k6-S4v" firstAttribute="centerX" secondItem="wYb-ye-ngT" secondAttribute="centerX" id="TTb-i3-bdF"/>
+                            <constraint firstItem="RHx-vI-9s8" firstAttribute="centerX" secondItem="jDY-k6-S4v" secondAttribute="centerX" id="cc1-rl-KCE"/>
+                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="centerX" secondItem="RHx-vI-9s8" secondAttribute="centerX" id="epj-Xr-0Pc"/>
+                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="leading" secondItem="Te7-1i-Jlb" secondAttribute="leading" id="fQg-OY-F2K"/>
+                            <constraint firstItem="RCc-a1-3LW" firstAttribute="top" secondItem="wYb-ye-ngT" secondAttribute="bottom" constant="120" id="h6n-LK-mDL"/>
+                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="top" secondItem="1HA-Wp-LXA" secondAttribute="bottom" id="ilb-tE-sY5"/>
+                            <constraint firstItem="jDY-k6-S4v" firstAttribute="centerY" secondItem="jcL-up-CdG" secondAttribute="centerY" id="jp3-kg-EnS"/>
+                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="top" secondItem="jcL-up-CdG" secondAttribute="top" id="lk3-A1-YnB"/>
+                            <constraint firstItem="jDY-k6-S4v" firstAttribute="top" secondItem="RHx-vI-9s8" secondAttribute="bottom" constant="33" id="zeS-9b-hkp"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Learn More" image="Learn" id="zAf-Zm-n1x"/>
@@ -469,13 +484,19 @@
                             <rect key="frame" x="96" y="5.5" width="128" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MyPulse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SeY-US-kch">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyPulse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SeY-US-kch">
                                     <rect key="frame" x="0.0" y="1" width="128" height="33"/>
                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="SeY-US-kch" secondAttribute="bottom" constant="-1" id="Erq-Ug-Wb9"/>
+                                <constraint firstItem="SeY-US-kch" firstAttribute="leading" secondItem="1gx-Rh-I83" secondAttribute="leading" id="KJZ-Iv-W4a"/>
+                                <constraint firstItem="SeY-US-kch" firstAttribute="top" secondItem="1gx-Rh-I83" secondAttribute="top" constant="1" id="NQz-6X-XBK"/>
+                                <constraint firstAttribute="trailing" secondItem="SeY-US-kch" secondAttribute="trailing" id="pCH-YU-leA"/>
+                            </constraints>
                         </view>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
@@ -861,18 +882,43 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0yx-pb-gFY">
+                                <rect key="frame" x="40" y="101" width="240" height="301"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Modifiable risk factors for cardiovascular disease
+
+• Smoking
+
+• Overweight or obese
+
+• Less than 5 servings of fruits and vegetables a day
+
+• Physical inactivity
+
+• Diabetes
+
+• High blood pressure
+
+• Stress</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xdB-aI-rOI" firstAttribute="leading" secondItem="FBg-XG-mYc" secondAttribute="leading" id="98y-I9-4fO"/>
-                            <constraint firstItem="FBg-XG-mYc" firstAttribute="centerX" secondItem="Z6n-Vr-IOl" secondAttribute="centerX" id="DGN-vk-YdJ"/>
-                            <constraint firstItem="xdB-aI-rOI" firstAttribute="leading" secondItem="06P-1M-H6W" secondAttribute="leading" id="DqU-El-42M"/>
-                            <constraint firstItem="FBg-XG-mYc" firstAttribute="bottom" secondItem="paT-V4-Qx3" secondAttribute="bottom" id="RzG-5T-EGK"/>
-                            <constraint firstItem="FBg-XG-mYc" firstAttribute="top" secondItem="xdB-aI-rOI" secondAttribute="bottom" id="TlH-a5-GZY"/>
-                            <constraint firstItem="Z6n-Vr-IOl" firstAttribute="top" secondItem="paT-V4-Qx3" secondAttribute="bottom" constant="8" symbolic="YES" id="ZWE-RF-0Jm"/>
-                            <constraint firstItem="xdB-aI-rOI" firstAttribute="top" secondItem="06P-1M-H6W" secondAttribute="top" id="cDt-Zn-zcD"/>
-                            <constraint firstItem="xdB-aI-rOI" firstAttribute="trailing" secondItem="FBg-XG-mYc" secondAttribute="trailing" id="nAr-Oz-b3g"/>
-                            <constraint firstAttribute="trailing" secondItem="xdB-aI-rOI" secondAttribute="trailing" id="xRJ-tv-zGg"/>
+                            <constraint firstItem="0yx-pb-gFY" firstAttribute="leading" secondItem="06P-1M-H6W" secondAttribute="leadingMargin" constant="24" id="0rd-iw-vzE"/>
+                            <constraint firstItem="xdB-aI-rOI" firstAttribute="trailing" secondItem="FBg-XG-mYc" secondAttribute="trailing" id="4pj-ph-5Oi"/>
+                            <constraint firstItem="xdB-aI-rOI" firstAttribute="leading" secondItem="FBg-XG-mYc" secondAttribute="leading" id="6Rm-Zv-fBU"/>
+                            <constraint firstItem="Z6n-Vr-IOl" firstAttribute="top" secondItem="paT-V4-Qx3" secondAttribute="bottom" constant="8" symbolic="YES" id="I1z-Mr-4xK"/>
+                            <constraint firstAttribute="trailing" secondItem="xdB-aI-rOI" secondAttribute="trailing" id="JJR-ZA-I6L"/>
+                            <constraint firstItem="xdB-aI-rOI" firstAttribute="leading" secondItem="06P-1M-H6W" secondAttribute="leading" id="M2P-IZ-liX"/>
+                            <constraint firstItem="0yx-pb-gFY" firstAttribute="top" secondItem="Z6n-Vr-IOl" secondAttribute="bottom" constant="8" symbolic="YES" id="SXL-c9-KcD"/>
+                            <constraint firstItem="tuC-Mt-Vnb" firstAttribute="top" secondItem="0yx-pb-gFY" secondAttribute="bottom" constant="29" id="c5B-WT-CpD"/>
+                            <constraint firstItem="Z6n-Vr-IOl" firstAttribute="centerX" secondItem="0yx-pb-gFY" secondAttribute="centerX" id="hjC-du-YUu"/>
+                            <constraint firstItem="FBg-XG-mYc" firstAttribute="top" secondItem="xdB-aI-rOI" secondAttribute="bottom" id="jy6-Ef-1dU"/>
+                            <constraint firstItem="FBg-XG-mYc" firstAttribute="centerX" secondItem="Z6n-Vr-IOl" secondAttribute="centerX" id="oc8-yU-pXM"/>
+                            <constraint firstItem="xdB-aI-rOI" firstAttribute="top" secondItem="06P-1M-H6W" secondAttribute="top" id="tPM-rE-d38"/>
+                            <constraint firstItem="FBg-XG-mYc" firstAttribute="bottom" secondItem="paT-V4-Qx3" secondAttribute="bottom" id="vS6-RO-kUn"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Learn More" image="Learn" id="6ew-KY-TfY"/>
@@ -881,7 +927,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gN5-vS-NsJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2121" y="-1212"/>
+            <point key="canvasLocation" x="2463" y="-1006"/>
         </scene>
         <!--Learn More-->
         <scene sceneID="ULy-ag-YvG">
@@ -932,18 +978,36 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xh0-mY-IkI">
+                                <rect key="frame" x="40" y="106" width="240" height="267"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">• Changing how you eat can help you reduce your risk for heart attack or stroke
+
+• Trans fats are 5 times worse for you than saturated fats
+
+• Eating foods that are high in saturated fats will cause your bad cholesterol to go up
+
+• Eating foods with added sugar can make you more at risk for heart attack and stroke
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="lsI-Pu-fkS" firstAttribute="leading" secondItem="2Q9-N0-jKg" secondAttribute="leading" id="08E-4Q-w5Q"/>
-                            <constraint firstItem="cwW-TN-gZa" firstAttribute="top" secondItem="sWp-aH-3pD" secondAttribute="bottom" constant="8" symbolic="YES" id="GHr-r2-JuN"/>
-                            <constraint firstItem="ljj-Sy-nL7" firstAttribute="top" secondItem="lsI-Pu-fkS" secondAttribute="bottom" id="HVI-Tu-31U"/>
-                            <constraint firstAttribute="trailing" secondItem="lsI-Pu-fkS" secondAttribute="trailing" id="PUh-IE-HWa"/>
-                            <constraint firstItem="ljj-Sy-nL7" firstAttribute="centerX" secondItem="cwW-TN-gZa" secondAttribute="centerX" id="f3S-WJ-QZF"/>
-                            <constraint firstItem="lsI-Pu-fkS" firstAttribute="trailing" secondItem="ljj-Sy-nL7" secondAttribute="trailing" id="imt-yH-MJQ"/>
-                            <constraint firstItem="ljj-Sy-nL7" firstAttribute="bottom" secondItem="sWp-aH-3pD" secondAttribute="bottom" id="mLL-JW-Nrk"/>
-                            <constraint firstItem="lsI-Pu-fkS" firstAttribute="top" secondItem="2Q9-N0-jKg" secondAttribute="top" id="wCp-CD-hXl"/>
-                            <constraint firstItem="lsI-Pu-fkS" firstAttribute="leading" secondItem="ljj-Sy-nL7" secondAttribute="leading" id="wEk-2L-aBj"/>
+                            <constraint firstItem="lsI-Pu-fkS" firstAttribute="top" secondItem="2Q9-N0-jKg" secondAttribute="top" id="8Cy-QM-2FF"/>
+                            <constraint firstItem="ljj-Sy-nL7" firstAttribute="top" secondItem="lsI-Pu-fkS" secondAttribute="bottom" id="PO3-Rc-HJA"/>
+                            <constraint firstItem="ljj-Sy-nL7" firstAttribute="bottom" secondItem="sWp-aH-3pD" secondAttribute="bottom" id="ZUj-LY-rzS"/>
+                            <constraint firstItem="cwW-TN-gZa" firstAttribute="centerX" secondItem="xh0-mY-IkI" secondAttribute="centerX" id="aqV-2b-Byh"/>
+                            <constraint firstItem="ljj-Sy-nL7" firstAttribute="centerX" secondItem="cwW-TN-gZa" secondAttribute="centerX" id="c90-Oc-iK9"/>
+                            <constraint firstItem="xh0-mY-IkI" firstAttribute="centerY" secondItem="2Q9-N0-jKg" secondAttribute="centerY" id="fEZ-wG-NHD"/>
+                            <constraint firstItem="lsI-Pu-fkS" firstAttribute="leading" secondItem="ljj-Sy-nL7" secondAttribute="leading" id="foe-tD-Lfc"/>
+                            <constraint firstItem="xh0-mY-IkI" firstAttribute="leading" secondItem="2Q9-N0-jKg" secondAttribute="leadingMargin" constant="24" id="ojB-0Q-2pf"/>
+                            <constraint firstItem="xh0-mY-IkI" firstAttribute="top" secondItem="cwW-TN-gZa" secondAttribute="bottom" constant="13" id="ptk-PQ-ukd"/>
+                            <constraint firstItem="lsI-Pu-fkS" firstAttribute="leading" secondItem="2Q9-N0-jKg" secondAttribute="leading" id="qnl-Lp-q2y"/>
+                            <constraint firstItem="cwW-TN-gZa" firstAttribute="top" secondItem="sWp-aH-3pD" secondAttribute="bottom" constant="8" symbolic="YES" id="vdw-ZR-yM6"/>
+                            <constraint firstItem="lsI-Pu-fkS" firstAttribute="trailing" secondItem="ljj-Sy-nL7" secondAttribute="trailing" id="vmk-ir-XaD"/>
+                            <constraint firstAttribute="trailing" secondItem="lsI-Pu-fkS" secondAttribute="trailing" id="w8H-IR-bWB"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Learn More" image="Learn" id="BN8-du-jdr"/>
@@ -951,7 +1015,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kvs-q1-8wf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2513" y="-1212"/>
+            <point key="canvasLocation" x="2463" y="-454"/>
         </scene>
         <!--Learn More-->
         <scene sceneID="eq8-Id-fcx">
@@ -1002,18 +1066,35 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EAP-Uc-C8n">
+                                <rect key="frame" x="40" y="156" width="240" height="167"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">What else can you do
+
+• Maintain a healthy weight
+
+• Aim for 150 minutes of physical activity per week
+
+• Do not smoke and avoid second hand smoke </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="4c6-60-cSN" firstAttribute="top" secondItem="Meu-R4-OrK" secondAttribute="bottom" id="A5I-b0-xYD"/>
-                            <constraint firstItem="Meu-R4-OrK" firstAttribute="leading" secondItem="4c6-60-cSN" secondAttribute="leading" id="L4h-bB-tbN"/>
-                            <constraint firstItem="4c6-60-cSN" firstAttribute="bottom" secondItem="L1j-6h-tdj" secondAttribute="bottom" id="LOV-Ro-5jL"/>
-                            <constraint firstItem="Meu-R4-OrK" firstAttribute="trailing" secondItem="4c6-60-cSN" secondAttribute="trailing" id="PK2-3p-trF"/>
-                            <constraint firstItem="Meu-R4-OrK" firstAttribute="leading" secondItem="mbk-0k-sEl" secondAttribute="leading" id="Rzu-fT-9bR"/>
-                            <constraint firstItem="Meu-R4-OrK" firstAttribute="top" secondItem="mbk-0k-sEl" secondAttribute="top" id="Zvz-Ah-TVs"/>
-                            <constraint firstItem="Lef-uw-YaN" firstAttribute="top" secondItem="L1j-6h-tdj" secondAttribute="bottom" constant="8" symbolic="YES" id="qR4-cW-8vG"/>
-                            <constraint firstAttribute="trailing" secondItem="Meu-R4-OrK" secondAttribute="trailing" id="qwW-Ey-3nQ"/>
-                            <constraint firstItem="4c6-60-cSN" firstAttribute="centerX" secondItem="Lef-uw-YaN" secondAttribute="centerX" id="yHh-DL-SAb"/>
+                            <constraint firstItem="Lef-uw-YaN" firstAttribute="centerX" secondItem="EAP-Uc-C8n" secondAttribute="centerX" id="DWa-cU-6zr"/>
+                            <constraint firstItem="Meu-R4-OrK" firstAttribute="leading" secondItem="4c6-60-cSN" secondAttribute="leading" id="Kwg-4P-TDR"/>
+                            <constraint firstItem="4c6-60-cSN" firstAttribute="bottom" secondItem="L1j-6h-tdj" secondAttribute="bottom" id="Qch-J8-uax"/>
+                            <constraint firstItem="Meu-R4-OrK" firstAttribute="top" secondItem="mbk-0k-sEl" secondAttribute="top" id="Sxl-J4-FbE"/>
+                            <constraint firstItem="4c6-60-cSN" firstAttribute="top" secondItem="Meu-R4-OrK" secondAttribute="bottom" id="Z0n-rb-do8"/>
+                            <constraint firstItem="Lef-uw-YaN" firstAttribute="top" secondItem="L1j-6h-tdj" secondAttribute="bottom" constant="8" symbolic="YES" id="Z98-lM-wg5"/>
+                            <constraint firstItem="EAP-Uc-C8n" firstAttribute="leading" secondItem="mbk-0k-sEl" secondAttribute="leadingMargin" constant="24" id="eOw-Vb-6bP"/>
+                            <constraint firstItem="EAP-Uc-C8n" firstAttribute="top" secondItem="Lef-uw-YaN" secondAttribute="bottom" constant="63" id="h5Q-d8-cyf"/>
+                            <constraint firstItem="EAP-Uc-C8n" firstAttribute="centerY" secondItem="mbk-0k-sEl" secondAttribute="centerY" id="li1-dZ-7mB"/>
+                            <constraint firstAttribute="trailing" secondItem="Meu-R4-OrK" secondAttribute="trailing" id="prA-Ug-QUN"/>
+                            <constraint firstItem="Meu-R4-OrK" firstAttribute="leading" secondItem="mbk-0k-sEl" secondAttribute="leading" id="uNa-EO-ACo"/>
+                            <constraint firstItem="4c6-60-cSN" firstAttribute="centerX" secondItem="Lef-uw-YaN" secondAttribute="centerX" id="vBQ-3O-r5G"/>
+                            <constraint firstItem="Meu-R4-OrK" firstAttribute="trailing" secondItem="4c6-60-cSN" secondAttribute="trailing" id="vfb-gz-OBT"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Learn More" image="Learn" id="RB9-Q4-qro"/>
@@ -1021,7 +1102,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yFc-YL-YkI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2867" y="-1212"/>
+            <point key="canvasLocation" x="2463" y="112"/>
         </scene>
         <!--Master-->
         <scene sceneID="eMO-vu-KIj">
