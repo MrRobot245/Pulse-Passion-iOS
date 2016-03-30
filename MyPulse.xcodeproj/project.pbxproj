@@ -29,6 +29,7 @@
 		D846A7C31C99459F0030A359 /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = D846A7C01C99459F0030A359 /* yellow.png */; };
 		D84DED931C9E3F66001A68B5 /* ConnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84DED921C9E3F66001A68B5 /* ConnView.swift */; };
 		D84DED951C9E3FDB001A68B5 /* NewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84DED941C9E3FDB001A68B5 /* NewView.swift */; };
+		D88033D31CABA81300D86C48 /* LearnMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88033D21CABA81300D86C48 /* LearnMore.swift */; };
 		D8A41A321C9A274500D4B544 /* myPulseWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = D8A41A311C9A274500D4B544 /* myPulseWhite.png */; };
 		D8A41A351C9A2EBA00D4B544 /* montserrat-bold-normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8A41A331C9A2EBA00D4B544 /* montserrat-bold-normal.ttf */; };
 		D8A41A361C9A2EBA00D4B544 /* montserrat-normal-normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8A41A341C9A2EBA00D4B544 /* montserrat-normal-normal.ttf */; };
@@ -73,6 +74,7 @@
 		D846A7C01C99459F0030A359 /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow.png; sourceTree = "<group>"; };
 		D84DED921C9E3F66001A68B5 /* ConnView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnView.swift; sourceTree = "<group>"; };
 		D84DED941C9E3FDB001A68B5 /* NewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewView.swift; sourceTree = "<group>"; };
+		D88033D21CABA81300D86C48 /* LearnMore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnMore.swift; sourceTree = "<group>"; };
 		D8A41A311C9A274500D4B544 /* myPulseWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myPulseWhite.png; sourceTree = "<group>"; };
 		D8A41A331C9A2EBA00D4B544 /* montserrat-bold-normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "montserrat-bold-normal.ttf"; sourceTree = "<group>"; };
 		D8A41A341C9A2EBA00D4B544 /* montserrat-normal-normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "montserrat-normal-normal.ttf"; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				171E0C811B8E5B84001E6242 /* DetailViewController.swift */,
 				D8E1908B1C9F41000021F9D9 /* EvenMore.swift */,
 				171E0C831B8E5B84001E6242 /* Main.storyboard */,
+				D88033D21CABA81300D86C48 /* LearnMore.swift */,
 				D8E690841CA8B7E300C9FDBA /* DB2.sqlite */,
 				D82D31CB1C9E2E470000C447 /* FeaturedView.swift */,
 				171E0C861B8E5B84001E6242 /* Assets.xcassets */,
@@ -284,6 +287,7 @@
 				D82D31CC1C9E2E470000C447 /* FeaturedView.swift in Sources */,
 				D846A7B21C9935C40030A359 /* FMResultSet.m in Sources */,
 				171E0C7E1B8E5B84001E6242 /* AppDelegate.swift in Sources */,
+				D88033D31CABA81300D86C48 /* LearnMore.swift in Sources */,
 				D846A7AF1C9935C40030A359 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

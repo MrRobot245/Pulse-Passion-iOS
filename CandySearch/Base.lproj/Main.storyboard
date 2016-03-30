@@ -842,21 +842,21 @@
                         <viewControllerLayoutGuide type="bottom" id="tuC-Mt-Vnb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="06P-1M-H6W">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xdB-aI-rOI">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="20"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
                                 <color key="backgroundColor" red="0.47058823529999999" green="0.66666666669999997" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FBg-XG-mYc">
-                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <color key="barTintColor" red="0.37254901959999998" green="0.60392156860000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem id="iAL-SK-YsF">
                                         <nil key="title"/>
                                         <view key="titleView" contentMode="scaleToFill" id="nH0-Br-M0b">
-                                            <rect key="frame" x="108" y="5.5" width="104" height="33"/>
+                                            <rect key="frame" x="135.5" y="5.5" width="104" height="33"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyPulse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ume-Pw-REw">
@@ -877,13 +877,13 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heart Disease" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6n-Vr-IOl">
-                                <rect key="frame" x="106" y="72" width="108" height="21"/>
+                                <rect key="frame" x="133" y="72" width="108" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0yx-pb-gFY">
-                                <rect key="frame" x="40" y="101" width="240" height="301"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0yx-pb-gFY">
+                                <rect key="frame" x="40" y="101" width="295" height="517"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Modifiable risk factors for cardiovascular disease
 
@@ -906,28 +906,28 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="0yx-pb-gFY" firstAttribute="leading" secondItem="06P-1M-H6W" secondAttribute="leadingMargin" constant="24" id="0rd-iw-vzE"/>
-                            <constraint firstItem="xdB-aI-rOI" firstAttribute="trailing" secondItem="FBg-XG-mYc" secondAttribute="trailing" id="4pj-ph-5Oi"/>
-                            <constraint firstItem="xdB-aI-rOI" firstAttribute="leading" secondItem="FBg-XG-mYc" secondAttribute="leading" id="6Rm-Zv-fBU"/>
-                            <constraint firstItem="Z6n-Vr-IOl" firstAttribute="top" secondItem="paT-V4-Qx3" secondAttribute="bottom" constant="8" symbolic="YES" id="I1z-Mr-4xK"/>
-                            <constraint firstAttribute="trailing" secondItem="xdB-aI-rOI" secondAttribute="trailing" id="JJR-ZA-I6L"/>
-                            <constraint firstItem="xdB-aI-rOI" firstAttribute="leading" secondItem="06P-1M-H6W" secondAttribute="leading" id="M2P-IZ-liX"/>
-                            <constraint firstItem="0yx-pb-gFY" firstAttribute="top" secondItem="Z6n-Vr-IOl" secondAttribute="bottom" constant="8" symbolic="YES" id="SXL-c9-KcD"/>
-                            <constraint firstItem="tuC-Mt-Vnb" firstAttribute="top" secondItem="0yx-pb-gFY" secondAttribute="bottom" constant="29" id="c5B-WT-CpD"/>
-                            <constraint firstItem="Z6n-Vr-IOl" firstAttribute="centerX" secondItem="0yx-pb-gFY" secondAttribute="centerX" id="hjC-du-YUu"/>
-                            <constraint firstItem="FBg-XG-mYc" firstAttribute="top" secondItem="xdB-aI-rOI" secondAttribute="bottom" id="jy6-Ef-1dU"/>
-                            <constraint firstItem="FBg-XG-mYc" firstAttribute="centerX" secondItem="Z6n-Vr-IOl" secondAttribute="centerX" id="oc8-yU-pXM"/>
-                            <constraint firstItem="xdB-aI-rOI" firstAttribute="top" secondItem="06P-1M-H6W" secondAttribute="top" id="tPM-rE-d38"/>
-                            <constraint firstItem="FBg-XG-mYc" firstAttribute="bottom" secondItem="paT-V4-Qx3" secondAttribute="bottom" id="vS6-RO-kUn"/>
+                            <constraint firstItem="xdB-aI-rOI" firstAttribute="leading" secondItem="FBg-XG-mYc" secondAttribute="leading" id="BXN-1o-BRh"/>
+                            <constraint firstItem="xdB-aI-rOI" firstAttribute="top" secondItem="06P-1M-H6W" secondAttribute="top" id="Bpa-ib-NMz"/>
+                            <constraint firstItem="xdB-aI-rOI" firstAttribute="leading" secondItem="06P-1M-H6W" secondAttribute="leading" id="FWQ-gQ-ag5"/>
+                            <constraint firstItem="FBg-XG-mYc" firstAttribute="bottom" secondItem="paT-V4-Qx3" secondAttribute="bottom" id="Gmj-M4-Jr7"/>
+                            <constraint firstItem="0yx-pb-gFY" firstAttribute="top" secondItem="Z6n-Vr-IOl" secondAttribute="bottom" constant="8" symbolic="YES" id="KYb-Fg-GWn"/>
+                            <constraint firstItem="xdB-aI-rOI" firstAttribute="trailing" secondItem="FBg-XG-mYc" secondAttribute="trailing" id="Qqo-WJ-t0V"/>
+                            <constraint firstItem="FBg-XG-mYc" firstAttribute="top" secondItem="xdB-aI-rOI" secondAttribute="bottom" id="RZd-qC-EdE"/>
+                            <constraint firstItem="0yx-pb-gFY" firstAttribute="leading" secondItem="06P-1M-H6W" secondAttribute="leadingMargin" constant="24" id="TJs-Ge-jjH"/>
+                            <constraint firstItem="Z6n-Vr-IOl" firstAttribute="top" secondItem="paT-V4-Qx3" secondAttribute="bottom" constant="8" symbolic="YES" id="fck-Nz-7lC"/>
+                            <constraint firstItem="FBg-XG-mYc" firstAttribute="centerX" secondItem="Z6n-Vr-IOl" secondAttribute="centerX" id="ocB-6g-fMh"/>
+                            <constraint firstItem="0yx-pb-gFY" firstAttribute="bottom" secondItem="tuC-Mt-Vnb" secondAttribute="top" id="pbo-Vh-4D3"/>
+                            <constraint firstItem="Z6n-Vr-IOl" firstAttribute="centerX" secondItem="0yx-pb-gFY" secondAttribute="centerX" id="uIK-7F-exF"/>
+                            <constraint firstAttribute="trailing" secondItem="xdB-aI-rOI" secondAttribute="trailing" id="xZa-qU-SA1"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Learn More" image="Learn" id="6ew-KY-TfY"/>
                     <navigationItem key="navigationItem" id="Xzt-Eb-L7g"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gN5-vS-NsJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2463" y="-1006"/>
+            <point key="canvasLocation" x="2435.5" y="-1134.5"/>
         </scene>
         <!--Learn More-->
         <scene sceneID="ULy-ag-YvG">
@@ -938,21 +938,21 @@
                         <viewControllerLayoutGuide type="bottom" id="ecn-jL-Cis"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2Q9-N0-jKg">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lsI-Pu-fkS">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="20"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
                                 <color key="backgroundColor" red="0.47058823529999999" green="0.66666666669999997" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ljj-Sy-nL7">
-                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <color key="barTintColor" red="0.37254901959999998" green="0.60392156860000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem id="yRj-do-5cS">
                                         <nil key="title"/>
                                         <view key="titleView" contentMode="scaleToFill" id="Ixh-oh-2uZ">
-                                            <rect key="frame" x="108" y="5.5" width="104" height="33"/>
+                                            <rect key="frame" x="135.5" y="5.5" width="104" height="33"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyPulse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqf-rX-LeR">
@@ -973,49 +973,54 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwW-TN-gZa">
-                                <rect key="frame" x="145" y="72" width="31" height="21"/>
+                                <rect key="frame" x="172" y="72" width="31" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xh0-mY-IkI">
-                                <rect key="frame" x="40" y="106" width="240" height="267"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xh0-mY-IkI">
+                                <rect key="frame" x="40" y="101" width="295" height="517"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">• Changing how you eat can help you reduce your risk for heart attack or stroke
+                                <mutableString key="text">• Changing how you eat can help you reduce your risk for heart attack or stroke
 
 • Trans fats are 5 times worse for you than saturated fats
 
 • Eating foods that are high in saturated fats will cause your bad cholesterol to go up
 
 • Eating foods with added sugar can make you more at risk for heart attack and stroke
-</string>
+
+• EPA and DHA are great for your cardiovascular health
+
+• Adding soy protein to your diet will help lower your bad cholesterol.
+
+• Eating foods fortified with phytosterols makes it harder for your body to absorb cholesterol from your food.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="lsI-Pu-fkS" firstAttribute="top" secondItem="2Q9-N0-jKg" secondAttribute="top" id="8Cy-QM-2FF"/>
-                            <constraint firstItem="ljj-Sy-nL7" firstAttribute="top" secondItem="lsI-Pu-fkS" secondAttribute="bottom" id="PO3-Rc-HJA"/>
-                            <constraint firstItem="ljj-Sy-nL7" firstAttribute="bottom" secondItem="sWp-aH-3pD" secondAttribute="bottom" id="ZUj-LY-rzS"/>
-                            <constraint firstItem="cwW-TN-gZa" firstAttribute="centerX" secondItem="xh0-mY-IkI" secondAttribute="centerX" id="aqV-2b-Byh"/>
-                            <constraint firstItem="ljj-Sy-nL7" firstAttribute="centerX" secondItem="cwW-TN-gZa" secondAttribute="centerX" id="c90-Oc-iK9"/>
-                            <constraint firstItem="xh0-mY-IkI" firstAttribute="centerY" secondItem="2Q9-N0-jKg" secondAttribute="centerY" id="fEZ-wG-NHD"/>
-                            <constraint firstItem="lsI-Pu-fkS" firstAttribute="leading" secondItem="ljj-Sy-nL7" secondAttribute="leading" id="foe-tD-Lfc"/>
-                            <constraint firstItem="xh0-mY-IkI" firstAttribute="leading" secondItem="2Q9-N0-jKg" secondAttribute="leadingMargin" constant="24" id="ojB-0Q-2pf"/>
-                            <constraint firstItem="xh0-mY-IkI" firstAttribute="top" secondItem="cwW-TN-gZa" secondAttribute="bottom" constant="13" id="ptk-PQ-ukd"/>
-                            <constraint firstItem="lsI-Pu-fkS" firstAttribute="leading" secondItem="2Q9-N0-jKg" secondAttribute="leading" id="qnl-Lp-q2y"/>
-                            <constraint firstItem="cwW-TN-gZa" firstAttribute="top" secondItem="sWp-aH-3pD" secondAttribute="bottom" constant="8" symbolic="YES" id="vdw-ZR-yM6"/>
-                            <constraint firstItem="lsI-Pu-fkS" firstAttribute="trailing" secondItem="ljj-Sy-nL7" secondAttribute="trailing" id="vmk-ir-XaD"/>
-                            <constraint firstAttribute="trailing" secondItem="lsI-Pu-fkS" secondAttribute="trailing" id="w8H-IR-bWB"/>
+                            <constraint firstItem="xh0-mY-IkI" firstAttribute="top" secondItem="cwW-TN-gZa" secondAttribute="bottom" constant="8" symbolic="YES" id="9LT-B5-3zn"/>
+                            <constraint firstItem="ljj-Sy-nL7" firstAttribute="centerX" secondItem="cwW-TN-gZa" secondAttribute="centerX" id="FFa-BW-Mgy"/>
+                            <constraint firstItem="lsI-Pu-fkS" firstAttribute="leading" secondItem="ljj-Sy-nL7" secondAttribute="leading" id="Hex-4k-xPc"/>
+                            <constraint firstItem="xh0-mY-IkI" firstAttribute="leading" secondItem="2Q9-N0-jKg" secondAttribute="leadingMargin" constant="24" id="LQo-fW-bt1"/>
+                            <constraint firstItem="lsI-Pu-fkS" firstAttribute="top" secondItem="2Q9-N0-jKg" secondAttribute="top" id="Mz4-lo-nNA"/>
+                            <constraint firstItem="cwW-TN-gZa" firstAttribute="centerX" secondItem="xh0-mY-IkI" secondAttribute="centerX" id="QFW-Qa-k7s"/>
+                            <constraint firstItem="lsI-Pu-fkS" firstAttribute="trailing" secondItem="ljj-Sy-nL7" secondAttribute="trailing" id="dJk-qh-xiX"/>
+                            <constraint firstItem="lsI-Pu-fkS" firstAttribute="leading" secondItem="2Q9-N0-jKg" secondAttribute="leading" id="dpG-WK-5qe"/>
+                            <constraint firstItem="ljj-Sy-nL7" firstAttribute="bottom" secondItem="sWp-aH-3pD" secondAttribute="bottom" id="kUh-Ml-25W"/>
+                            <constraint firstItem="ljj-Sy-nL7" firstAttribute="top" secondItem="lsI-Pu-fkS" secondAttribute="bottom" id="lHh-v7-hZM"/>
+                            <constraint firstItem="xh0-mY-IkI" firstAttribute="bottom" secondItem="ecn-jL-Cis" secondAttribute="top" id="pAg-dE-ky0"/>
+                            <constraint firstAttribute="trailing" secondItem="lsI-Pu-fkS" secondAttribute="trailing" id="vPO-F6-mge"/>
+                            <constraint firstItem="cwW-TN-gZa" firstAttribute="top" secondItem="sWp-aH-3pD" secondAttribute="bottom" constant="8" symbolic="YES" id="wUU-ES-e83"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Learn More" image="Learn" id="BN8-du-jdr"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kvs-q1-8wf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2463" y="-454"/>
+            <point key="canvasLocation" x="2558.5" y="-431.5"/>
         </scene>
         <!--Learn More-->
         <scene sceneID="eq8-Id-fcx">
@@ -1026,21 +1031,21 @@
                         <viewControllerLayoutGuide type="bottom" id="5Ge-ML-f5b"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mbk-0k-sEl">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Meu-R4-OrK">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="20"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
                                 <color key="backgroundColor" red="0.47058823529999999" green="0.66666666669999997" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4c6-60-cSN">
-                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <color key="barTintColor" red="0.37254901959999998" green="0.60392156860000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem id="b1d-re-xyf">
                                         <nil key="title"/>
                                         <view key="titleView" contentMode="scaleToFill" id="Kjb-cv-Wzd">
-                                            <rect key="frame" x="108" y="5.5" width="104" height="33"/>
+                                            <rect key="frame" x="135.5" y="5.5" width="104" height="33"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyPulse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJf-IY-oi2">
@@ -1061,13 +1066,13 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lef-uw-YaN">
-                                <rect key="frame" x="140" y="72" width="40" height="21"/>
+                                <rect key="frame" x="167" y="72" width="40" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EAP-Uc-C8n">
-                                <rect key="frame" x="40" y="156" width="240" height="167"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EAP-Uc-C8n">
+                                <rect key="frame" x="40" y="101" width="295" height="517"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">What else can you do
 
@@ -1082,27 +1087,27 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Lef-uw-YaN" firstAttribute="centerX" secondItem="EAP-Uc-C8n" secondAttribute="centerX" id="DWa-cU-6zr"/>
-                            <constraint firstItem="Meu-R4-OrK" firstAttribute="leading" secondItem="4c6-60-cSN" secondAttribute="leading" id="Kwg-4P-TDR"/>
-                            <constraint firstItem="4c6-60-cSN" firstAttribute="bottom" secondItem="L1j-6h-tdj" secondAttribute="bottom" id="Qch-J8-uax"/>
-                            <constraint firstItem="Meu-R4-OrK" firstAttribute="top" secondItem="mbk-0k-sEl" secondAttribute="top" id="Sxl-J4-FbE"/>
-                            <constraint firstItem="4c6-60-cSN" firstAttribute="top" secondItem="Meu-R4-OrK" secondAttribute="bottom" id="Z0n-rb-do8"/>
-                            <constraint firstItem="Lef-uw-YaN" firstAttribute="top" secondItem="L1j-6h-tdj" secondAttribute="bottom" constant="8" symbolic="YES" id="Z98-lM-wg5"/>
-                            <constraint firstItem="EAP-Uc-C8n" firstAttribute="leading" secondItem="mbk-0k-sEl" secondAttribute="leadingMargin" constant="24" id="eOw-Vb-6bP"/>
-                            <constraint firstItem="EAP-Uc-C8n" firstAttribute="top" secondItem="Lef-uw-YaN" secondAttribute="bottom" constant="63" id="h5Q-d8-cyf"/>
-                            <constraint firstItem="EAP-Uc-C8n" firstAttribute="centerY" secondItem="mbk-0k-sEl" secondAttribute="centerY" id="li1-dZ-7mB"/>
-                            <constraint firstAttribute="trailing" secondItem="Meu-R4-OrK" secondAttribute="trailing" id="prA-Ug-QUN"/>
-                            <constraint firstItem="Meu-R4-OrK" firstAttribute="leading" secondItem="mbk-0k-sEl" secondAttribute="leading" id="uNa-EO-ACo"/>
-                            <constraint firstItem="4c6-60-cSN" firstAttribute="centerX" secondItem="Lef-uw-YaN" secondAttribute="centerX" id="vBQ-3O-r5G"/>
-                            <constraint firstItem="Meu-R4-OrK" firstAttribute="trailing" secondItem="4c6-60-cSN" secondAttribute="trailing" id="vfb-gz-OBT"/>
+                            <constraint firstItem="4c6-60-cSN" firstAttribute="bottom" secondItem="L1j-6h-tdj" secondAttribute="bottom" id="0Ir-sm-ovo"/>
+                            <constraint firstItem="Lef-uw-YaN" firstAttribute="centerX" secondItem="EAP-Uc-C8n" secondAttribute="centerX" id="6Zg-oz-ZkO"/>
+                            <constraint firstItem="Meu-R4-OrK" firstAttribute="top" secondItem="mbk-0k-sEl" secondAttribute="top" id="8hN-BS-q5f"/>
+                            <constraint firstItem="EAP-Uc-C8n" firstAttribute="leading" secondItem="mbk-0k-sEl" secondAttribute="leadingMargin" constant="24" id="IyB-Ya-OhZ"/>
+                            <constraint firstItem="4c6-60-cSN" firstAttribute="centerX" secondItem="Lef-uw-YaN" secondAttribute="centerX" id="Lxa-PK-8Gs"/>
+                            <constraint firstAttribute="trailing" secondItem="Meu-R4-OrK" secondAttribute="trailing" id="N8P-gd-CSk"/>
+                            <constraint firstItem="Lef-uw-YaN" firstAttribute="top" secondItem="L1j-6h-tdj" secondAttribute="bottom" constant="8" symbolic="YES" id="Tqm-kx-igc"/>
+                            <constraint firstItem="EAP-Uc-C8n" firstAttribute="bottom" secondItem="5Ge-ML-f5b" secondAttribute="top" id="VxD-1h-RRs"/>
+                            <constraint firstItem="Meu-R4-OrK" firstAttribute="leading" secondItem="mbk-0k-sEl" secondAttribute="leading" id="gxU-0E-xiD"/>
+                            <constraint firstItem="Meu-R4-OrK" firstAttribute="trailing" secondItem="4c6-60-cSN" secondAttribute="trailing" id="lv2-sr-Rbw"/>
+                            <constraint firstItem="EAP-Uc-C8n" firstAttribute="top" secondItem="Lef-uw-YaN" secondAttribute="bottom" constant="8" symbolic="YES" id="pn0-Zj-bIW"/>
+                            <constraint firstItem="4c6-60-cSN" firstAttribute="top" secondItem="Meu-R4-OrK" secondAttribute="bottom" id="qls-1N-kT9"/>
+                            <constraint firstItem="Meu-R4-OrK" firstAttribute="leading" secondItem="4c6-60-cSN" secondAttribute="leading" id="rl5-cT-60s"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Learn More" image="Learn" id="RB9-Q4-qro"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yFc-YL-YkI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2463" y="112"/>
+            <point key="canvasLocation" x="2398.5" y="282.5"/>
         </scene>
         <!--Master-->
         <scene sceneID="eMO-vu-KIj">
