@@ -65,13 +65,22 @@ class DetailViewController: UIViewController {
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        iList.setContentOffset(CGPointZero, animated: false)
+        self.iList.setContentOffset(CGPointZero, animated: false)
+        self.iList.contentSize = CGSizeMake(iList.frame.size.height,iList.contentSize.height);
+        self.iList.showsHorizontalScrollIndicator = false;
+
+
+
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
+            }
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        self.iList.flashScrollIndicators()
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
