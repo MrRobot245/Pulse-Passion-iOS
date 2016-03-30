@@ -163,18 +163,18 @@
                                 <rect key="frame" x="0.0" y="130" width="600" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WCw-Qf-5nD" id="37f-cq-3Eg">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="49.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="49"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="Arm-wq-HPj">
-                                            <rect key="frame" x="15" y="10" width="27.5" height="17"/>
+                                            <rect key="frame" x="15" y="9" width="28" height="17"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14.5"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yDq-Gz-FBC">
-                                            <rect key="frame" x="15" y="27" width="40.5" height="13.5"/>
+                                            <rect key="frame" x="15" y="26" width="41" height="14"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -198,7 +198,7 @@
                     <navigationItem key="navigationItem" id="Zdf-7t-Un8">
                         <nil key="title"/>
                         <view key="titleView" contentMode="scaleToFill" id="ktS-Qx-ykY">
-                            <rect key="frame" x="246" y="5.5" width="108" height="33"/>
+                            <rect key="frame" x="246" y="6" width="108" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MyPulse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxm-Zh-tb3">
@@ -323,7 +323,7 @@
                                     <navigationItem id="g2v-60-DY8">
                                         <nil key="title"/>
                                         <view key="titleView" contentMode="scaleToFill" id="HJ0-s2-kvw">
-                                            <rect key="frame" x="248" y="5.5" width="104" height="33"/>
+                                            <rect key="frame" x="248" y="6" width="104" height="33"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyPulse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOi-22-v7c">
@@ -403,7 +403,7 @@
                                     <navigationItem id="X4z-X3-754">
                                         <nil key="title"/>
                                         <view key="titleView" contentMode="scaleToFill" id="hPk-N6-tM0">
-                                            <rect key="frame" x="108" y="5.5" width="104" height="33"/>
+                                            <rect key="frame" x="108" y="6" width="104" height="33"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyPulse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oc5-Md-CHw">
@@ -424,9 +424,9 @@
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHx-vI-9s8">
-                                <rect key="frame" x="90" y="162" width="140" height="30"/>
+                                <rect key="frame" x="90" y="225" width="140" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="l2A-E1-wrK"/>
+                                    <constraint firstAttribute="height" constant="30" id="ARY-ed-ODu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Heart Disease"/>
@@ -434,21 +434,13 @@
                                     <segue destination="vE2-zC-OLx" kind="show" id="RaY-36-0pM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDY-k6-S4v">
-                                <rect key="frame" x="128" y="225" width="65" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="65" id="3PX-Bu-a3i"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Diet"/>
-                                <connections>
-                                    <segue destination="HwP-iL-pA6" kind="show" id="Vy8-08-E9a"/>
-                                </connections>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smallMyPulseLogo" translatesAutoresizingMaskIntoConstraints="NO" id="2NF-ZK-dpq">
+                                <rect key="frame" x="105" y="64" width="110" height="153"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYb-ye-ngT">
-                                <rect key="frame" x="131" y="281" width="59" height="30"/>
+                                <rect key="frame" x="131" y="393" width="59" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="59" id="pBt-JV-S5x"/>
+                                    <constraint firstAttribute="width" constant="59" id="hlf-HD-Xrc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="More"/>
@@ -456,32 +448,47 @@
                                     <segue destination="upR-SE-SGA" kind="show" id="XxW-0u-tiK"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDY-k6-S4v">
+                                <rect key="frame" x="128" y="311" width="65" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5k3-p7-iom"/>
+                                    <constraint firstAttribute="width" constant="65" id="BeG-ei-xPG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Diet"/>
+                                <connections>
+                                    <segue destination="HwP-iL-pA6" kind="show" id="Vy8-08-E9a"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="trailing" secondItem="Te7-1i-Jlb" secondAttribute="trailing" id="A3L-78-y3b"/>
-                            <constraint firstAttribute="trailing" secondItem="1HA-Wp-LXA" secondAttribute="trailing" id="DmE-3r-fPA"/>
-                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="bottom" secondItem="zxt-0f-jDN" secondAttribute="bottom" id="FG0-S6-XOI"/>
-                            <constraint firstItem="RHx-vI-9s8" firstAttribute="top" secondItem="zxt-0f-jDN" secondAttribute="bottom" constant="98" id="ItN-OX-pbu"/>
-                            <constraint firstItem="wYb-ye-ngT" firstAttribute="top" secondItem="jDY-k6-S4v" secondAttribute="bottom" constant="26" id="NdW-3W-Ee8"/>
-                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="leading" secondItem="jcL-up-CdG" secondAttribute="leading" id="PKh-hX-Z5j"/>
-                            <constraint firstItem="RHx-vI-9s8" firstAttribute="leading" secondItem="jcL-up-CdG" secondAttribute="leadingMargin" constant="74" id="QZY-94-5US"/>
-                            <constraint firstItem="jDY-k6-S4v" firstAttribute="centerX" secondItem="wYb-ye-ngT" secondAttribute="centerX" id="TTb-i3-bdF"/>
-                            <constraint firstItem="RHx-vI-9s8" firstAttribute="centerX" secondItem="jDY-k6-S4v" secondAttribute="centerX" id="cc1-rl-KCE"/>
-                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="centerX" secondItem="RHx-vI-9s8" secondAttribute="centerX" id="epj-Xr-0Pc"/>
-                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="leading" secondItem="Te7-1i-Jlb" secondAttribute="leading" id="fQg-OY-F2K"/>
-                            <constraint firstItem="RCc-a1-3LW" firstAttribute="top" secondItem="wYb-ye-ngT" secondAttribute="bottom" constant="120" id="h6n-LK-mDL"/>
-                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="top" secondItem="1HA-Wp-LXA" secondAttribute="bottom" id="ilb-tE-sY5"/>
-                            <constraint firstItem="jDY-k6-S4v" firstAttribute="centerY" secondItem="jcL-up-CdG" secondAttribute="centerY" id="jp3-kg-EnS"/>
-                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="top" secondItem="jcL-up-CdG" secondAttribute="top" id="lk3-A1-YnB"/>
-                            <constraint firstItem="jDY-k6-S4v" firstAttribute="top" secondItem="RHx-vI-9s8" secondAttribute="bottom" constant="33" id="zeS-9b-hkp"/>
+                            <constraint firstItem="jDY-k6-S4v" firstAttribute="top" secondItem="RHx-vI-9s8" secondAttribute="bottom" constant="56" id="4Bg-SG-Uqc"/>
+                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="top" secondItem="1HA-Wp-LXA" secondAttribute="bottom" id="9wy-XX-5jZ"/>
+                            <constraint firstItem="2NF-ZK-dpq" firstAttribute="top" secondItem="zxt-0f-jDN" secondAttribute="bottom" id="Bxx-AN-pfi"/>
+                            <constraint firstAttribute="trailing" secondItem="1HA-Wp-LXA" secondAttribute="trailing" id="FLT-tb-7ae"/>
+                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="leading" secondItem="Te7-1i-Jlb" secondAttribute="leading" id="TW3-By-tFb"/>
+                            <constraint firstItem="2NF-ZK-dpq" firstAttribute="centerX" secondItem="RHx-vI-9s8" secondAttribute="centerX" id="U6d-SI-5jB"/>
+                            <constraint firstItem="RHx-vI-9s8" firstAttribute="centerY" secondItem="jcL-up-CdG" secondAttribute="centerY" id="W8H-k1-cIG"/>
+                            <constraint firstItem="2NF-ZK-dpq" firstAttribute="top" secondItem="Te7-1i-Jlb" secondAttribute="bottom" id="WqI-HE-kb1"/>
+                            <constraint firstItem="jDY-k6-S4v" firstAttribute="centerX" secondItem="wYb-ye-ngT" secondAttribute="centerX" id="XcH-CN-HDf"/>
+                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="leading" secondItem="jcL-up-CdG" secondAttribute="leading" id="b1q-CY-AlH"/>
+                            <constraint firstItem="RHx-vI-9s8" firstAttribute="top" secondItem="2NF-ZK-dpq" secondAttribute="bottom" constant="8" symbolic="YES" id="cik-9I-0tW"/>
+                            <constraint firstItem="wYb-ye-ngT" firstAttribute="top" secondItem="jDY-k6-S4v" secondAttribute="bottom" constant="52" id="gqg-zT-LJO"/>
+                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="trailing" secondItem="Te7-1i-Jlb" secondAttribute="trailing" id="hOE-QO-fjI"/>
+                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="top" secondItem="jcL-up-CdG" secondAttribute="top" id="iEE-kH-fBj"/>
+                            <constraint firstItem="2NF-ZK-dpq" firstAttribute="leading" secondItem="jcL-up-CdG" secondAttribute="leadingMargin" constant="89" id="kel-hy-65R"/>
+                            <constraint firstItem="RHx-vI-9s8" firstAttribute="centerX" secondItem="jDY-k6-S4v" secondAttribute="centerX" id="qgq-vT-CHa"/>
+                            <constraint firstItem="RHx-vI-9s8" firstAttribute="leading" secondItem="jcL-up-CdG" secondAttribute="leadingMargin" constant="74" id="rmW-rw-Z5j"/>
+                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="centerX" secondItem="2NF-ZK-dpq" secondAttribute="centerX" id="sfD-LG-Z0o"/>
+                            <constraint firstItem="RCc-a1-3LW" firstAttribute="top" secondItem="wYb-ye-ngT" secondAttribute="bottom" constant="8" symbolic="YES" id="u6q-vE-sh6"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Learn More" image="Learn" id="zAf-Zm-n1x"/>
                     <navigationItem key="navigationItem" id="KBW-ac-yTd">
                         <nil key="title"/>
                         <view key="titleView" contentMode="scaleToFill" id="1gx-Rh-I83">
-                            <rect key="frame" x="96" y="5.5" width="128" height="33"/>
+                            <rect key="frame" x="96" y="6" width="128" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyPulse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SeY-US-kch">
@@ -856,7 +863,7 @@
                                     <navigationItem id="iAL-SK-YsF">
                                         <nil key="title"/>
                                         <view key="titleView" contentMode="scaleToFill" id="nH0-Br-M0b">
-                                            <rect key="frame" x="135.5" y="5.5" width="104" height="33"/>
+                                            <rect key="frame" x="136" y="6" width="104" height="33"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyPulse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ume-Pw-REw">
@@ -885,7 +892,9 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0yx-pb-gFY">
                                 <rect key="frame" x="20" y="107" width="335" height="511"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Modifiable risk factors for cardiovascular disease
+                                <string key="text">Risk factors that you can not change are: having a family history of cardiovascular disease, your ethnicity and age.
+
+Risk factors that you can change are:
 
 • Smoking
 
@@ -899,7 +908,9 @@
 
 • High blood pressure
 
-• Stress</string>
+• Stress
+
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -952,7 +963,7 @@
                                     <navigationItem id="yRj-do-5cS">
                                         <nil key="title"/>
                                         <view key="titleView" contentMode="scaleToFill" id="Ixh-oh-2uZ">
-                                            <rect key="frame" x="135.5" y="5.5" width="104" height="33"/>
+                                            <rect key="frame" x="136" y="6" width="104" height="33"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyPulse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqf-rX-LeR">
@@ -981,7 +992,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xh0-mY-IkI">
                                 <rect key="frame" x="20" y="101" width="335" height="517"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">• Changing how you eat can help you reduce your risk for heart attack or stroke
+                                <string key="text">• Changing how you eat can help you reduce your risk for heart attack or stroke
 
 • Trans fats are 5 times worse for you than saturated fats
 
@@ -993,7 +1004,7 @@
 
 • Adding soy protein to your diet will help lower your bad cholesterol.
 
-• Eating foods fortified with phytosterols makes it harder for your body to absorb cholesterol from your food.</mutableString>
+• Eating foods fortified with phytosterols makes it harder for your body to absorb cholesterol from your food.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -1023,7 +1034,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kvs-q1-8wf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2558.5" y="-431.5"/>
+            <point key="canvasLocation" x="2588.5" y="-418.5"/>
         </scene>
         <!--Learn More-->
         <scene sceneID="eq8-Id-fcx">
@@ -1048,7 +1059,7 @@
                                     <navigationItem id="b1d-re-xyf">
                                         <nil key="title"/>
                                         <view key="titleView" contentMode="scaleToFill" id="Kjb-cv-Wzd">
-                                            <rect key="frame" x="135.5" y="5.5" width="104" height="33"/>
+                                            <rect key="frame" x="136" y="6" width="104" height="33"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyPulse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJf-IY-oi2">
@@ -1077,11 +1088,17 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EAP-Uc-C8n">
                                 <rect key="frame" x="20" y="101" width="335" height="517"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">• Maintain a healthy weight
+                                <mutableString key="text">• Maintain a healthy weight, excess weight can increase your risk for heart attack or stroke
 
-• Aim for 150 minutes of physical activity per week
+• Aim for 150 minutes of moderate physical activity per week! This amount has been shown to reduce your risk of heart attack by 30%
 
-• Do not smoke and avoid second hand smoke </string>
+• Do not smoke and avoid second hand smoke. When you smoke it causes more fat to build up in your blood vessels and increases the risk of blood clots.
+
+• Limit alcohol, pop and sugary drinks. These are all high in calories and contain little to no beneficial nutrients
+
+• Learn to cook and cook more at home.
+
+• Develop healthy sleep habits such as establishing a regular sleep/wake schedule</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -1108,7 +1125,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yFc-YL-YkI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2398.5" y="282.5"/>
+            <point key="canvasLocation" x="2353.5" y="333.5"/>
         </scene>
         <!--Master-->
         <scene sceneID="eMO-vu-KIj">
