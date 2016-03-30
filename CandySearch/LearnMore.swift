@@ -11,14 +11,21 @@ import UIKit
 
 
 class LearnMore: UIViewController
+
 {
-    @IBOutlet weak var HDTView: UITextView!
+@IBOutlet weak var DTView: UITextView!
     override func viewDidLoad()
     {
-      //  self.HDTView.setContentOffset(CGPointZero, animated: false)
+
         
     }
-
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        self.DTView.flashScrollIndicators()
+    }
+    override func viewDidLayoutSubviews() {
+        self.DTView.setContentOffset(CGPointZero, animated: false)
+    }
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
