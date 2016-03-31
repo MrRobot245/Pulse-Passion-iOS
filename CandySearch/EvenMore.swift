@@ -23,7 +23,15 @@ class EvenMoreViewController: UIViewController
     var getbadLabel:String!
     var getRatingPic:String!
 
-   
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        self.goodView.flashScrollIndicators()
+         self.badView.flashScrollIndicators()
+    }
+    override func viewDidLayoutSubviews() {
+        self.goodView.setContentOffset(CGPointZero, animated: false)
+         self.badView.setContentOffset(CGPointZero, animated: false)
+    }
     override func viewDidLoad()
     {
         super.viewDidLoad()
