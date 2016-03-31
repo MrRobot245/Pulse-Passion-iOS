@@ -32,6 +32,7 @@
 		D87F32CB1CAC5171005FD7B7 /* LearnMore-More.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87F32CA1CAC5171005FD7B7 /* LearnMore-More.swift */; };
 		D87F32CD1CAC5261005FD7B7 /* LearnMoreHD.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87F32CC1CAC5261005FD7B7 /* LearnMoreHD.swift */; };
 		D88033D31CABA81300D86C48 /* LearnMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88033D21CABA81300D86C48 /* LearnMore.swift */; };
+		D8A3BA811CACF06B005D44ED /* DB2.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = D8A3BA801CACF06B005D44ED /* DB2.sqlite */; };
 		D8A41A321C9A274500D4B544 /* myPulseWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = D8A41A311C9A274500D4B544 /* myPulseWhite.png */; };
 		D8A41A351C9A2EBA00D4B544 /* montserrat-bold-normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8A41A331C9A2EBA00D4B544 /* montserrat-bold-normal.ttf */; };
 		D8A41A361C9A2EBA00D4B544 /* montserrat-normal-normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8A41A341C9A2EBA00D4B544 /* montserrat-normal-normal.ttf */; };
@@ -41,7 +42,6 @@
 		D8BA55B71C9931BC002ACAAD /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = D8BA55B61C9931BC002ACAAD /* start.png */; };
 		D8BA55B91C9931C5002ACAAD /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D8BA55B81C9931C5002ACAAD /* logo.jpg */; };
 		D8E1908C1C9F41000021F9D9 /* EvenMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E1908B1C9F41000021F9D9 /* EvenMore.swift */; };
-		D8E690851CA8B7E300C9FDBA /* DB2.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = D8E690841CA8B7E300C9FDBA /* DB2.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +79,7 @@
 		D87F32CA1CAC5171005FD7B7 /* LearnMore-More.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LearnMore-More.swift"; sourceTree = "<group>"; };
 		D87F32CC1CAC5261005FD7B7 /* LearnMoreHD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnMoreHD.swift; sourceTree = "<group>"; };
 		D88033D21CABA81300D86C48 /* LearnMore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnMore.swift; sourceTree = "<group>"; };
+		D8A3BA801CACF06B005D44ED /* DB2.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = DB2.sqlite; sourceTree = "<group>"; };
 		D8A41A311C9A274500D4B544 /* myPulseWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myPulseWhite.png; sourceTree = "<group>"; };
 		D8A41A331C9A2EBA00D4B544 /* montserrat-bold-normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "montserrat-bold-normal.ttf"; sourceTree = "<group>"; };
 		D8A41A341C9A2EBA00D4B544 /* montserrat-normal-normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "montserrat-normal-normal.ttf"; sourceTree = "<group>"; };
@@ -88,7 +89,6 @@
 		D8BA55B61C9931BC002ACAAD /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
 		D8BA55B81C9931C5002ACAAD /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
 		D8E1908B1C9F41000021F9D9 /* EvenMore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvenMore.swift; sourceTree = "<group>"; };
-		D8E690841CA8B7E300C9FDBA /* DB2.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = DB2.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +132,7 @@
 				D87F32CC1CAC5261005FD7B7 /* LearnMoreHD.swift */,
 				D88033D21CABA81300D86C48 /* LearnMore.swift */,
 				D87F32CA1CAC5171005FD7B7 /* LearnMore-More.swift */,
-				D8E690841CA8B7E300C9FDBA /* DB2.sqlite */,
+				D8A3BA801CACF06B005D44ED /* DB2.sqlite */,
 				D82D31CB1C9E2E470000C447 /* FeaturedView.swift */,
 				171E0C861B8E5B84001E6242 /* Assets.xcassets */,
 				171E0C881B8E5B84001E6242 /* LaunchScreen.storyboard */,
@@ -256,7 +256,7 @@
 			files = (
 				D805F0251C9A80840036FA48 /* smallMyPulseLogo.png in Resources */,
 				171E0C8A1B8E5B84001E6242 /* LaunchScreen.storyboard in Resources */,
-				D8E690851CA8B7E300C9FDBA /* DB2.sqlite in Resources */,
+				D8A3BA811CACF06B005D44ED /* DB2.sqlite in Resources */,
 				D8A41A351C9A2EBA00D4B544 /* montserrat-bold-normal.ttf in Resources */,
 				D846A7BB1C993DCA0030A359 /* unknown.jpg in Resources */,
 				D8BA55B91C9931C5002ACAAD /* logo.jpg in Resources */,

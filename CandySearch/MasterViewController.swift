@@ -41,7 +41,7 @@ class MasterViewController: UITableViewController {
             return
         }
         
-        let querySQL = "SELECT cat,title,fRate,iList,bad,good FROM DB WHERE title = title ORDER BY title COLLATE NOCASE"
+        let querySQL = "SELECT cat,title,fRate,iList,gList,bList FROM DB WHERE title = title ORDER BY title COLLATE NOCASE"
         let results:FMResultSet? = database.executeQuery(querySQL,
                                                          withArgumentsInArray: nil)
         while(results!.next()) {
@@ -49,8 +49,8 @@ class MasterViewController: UITableViewController {
             food.append(Food(category: results!.stringForColumn("cat"), name: results!.stringForColumn("title"),
                 fRate: results!.stringForColumn("fRate"),
                 iList: results!.stringForColumn("iList"),
-                gList: results!.stringForColumn("bad"),
-                bList: results!.stringForColumn("good")))
+                gList: results!.stringForColumn("gList"),
+                bList: results!.stringForColumn("bList")))
             
             
             //         let querySQL = "SELECT cat,title,fRate,iList FROM DB WHERE title = title ORDER BY title COLLATE NOCASE"
@@ -76,7 +76,8 @@ class MasterViewController: UITableViewController {
         definesPresentationContext = true
         //self.navigationItem.titleView = searchController.searchBar ;
         tableView.tableHeaderView = searchController.searchBar
-        searchController.searchBar.scopeButtonTitles = ["All", "Red", "Yellow", "Green"]
+        searchController.searchBar.scopeButtonTitles = ["All", "Limit", "Sometimes", "Often"]
+        //searchController.searchBar.scopeButtonTitles = ["All", "Red", "Yellow", "Green"]
         searchController.searchBar.delegate = self
     }
     

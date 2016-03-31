@@ -14,7 +14,7 @@ class EvenMoreViewController: UIViewController
 {
     @IBOutlet weak var ratingView: UIImageView!
     @IBOutlet weak var foodLabel: UILabel!
-
+    
     @IBOutlet weak var goodView: UITextView!
     @IBOutlet weak var badView: UITextView!
     
@@ -22,66 +22,55 @@ class EvenMoreViewController: UIViewController
     var getgoodLabel:String!
     var getbadLabel:String!
     var getRatingPic:String!
-
+    var bulletBad: String!
+    var bulletGood: String!
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         self.goodView.flashScrollIndicators()
-         self.badView.flashScrollIndicators()
+        self.badView.flashScrollIndicators()
     }
     override func viewDidLayoutSubviews() {
         self.goodView.setContentOffset(CGPointZero, animated: false)
-         self.badView.setContentOffset(CGPointZero, animated: false)
+        self.badView.setContentOffset(CGPointZero, animated: false)
     }
     override func viewDidLoad()
     {
         super.viewDidLoad()
         self.foodLabel.text = self.getTopLabel
-
-       
-      //  print("\(self.getbadLabel)")
-        var bulletBad: String!
-        var bulletGood: String!
         bulletBad = self.getbadLabel
         bulletGood = self.getgoodLabel
-        
         var NewbulletBad = "• " + bulletBad.stringByReplacingOccurrencesOfString(",", withString: "\n•")
-        
         var NewbulletGood =  "• " + bulletGood.stringByReplacingOccurrencesOfString(",", withString: "\n•")
-        
-       // print("%\(NewbulletGood)%")
         
         
         if (NewbulletGood == "• -")
         {
-            //print("Empty")
             NewbulletGood = "Not Applicable"
         }
         
         if (NewbulletBad == "• -")
         {
-            //print("Empty")
             NewbulletBad = "Not Applicable"
         }
-      //  print("\(NewbulletBad)")
-//
         
         self.goodView.text = NewbulletGood
         self.badView.text = NewbulletBad
         
-        if(self.getRatingPic == "Red")
+        if(self.getRatingPic == "Limit")
         {
             ratingView.image = UIImage(named: "nnRed")
         }
-        if(self.getRatingPic == "Yellow")
+        if(self.getRatingPic == "Sometimes")
         {
             ratingView.image = UIImage(named: "nnYellow")
         }
-        if(self.getRatingPic == "Green")
+        if(self.getRatingPic == "Often")
         {
             ratingView.image = UIImage(named: "nnGreen")
         }
     }
-
+    
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
