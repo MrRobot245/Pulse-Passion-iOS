@@ -1191,27 +1191,17 @@ Risk factors that you can change are:
                         <viewControllerLayoutGuide type="bottom" id="RQm-dE-Vx5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="avj-br-Ape">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1XI-1l-wRy">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="20" y="81" width="280" height="332"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="nnYellowSmall" translatesAutoresizingMaskIntoConstraints="NO" id="9vF-MX-bIp">
-                                        <rect key="frame" x="20" y="249" width="104" height="80"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="80" id="uyO-2V-CFR"/>
-                                        </constraints>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="nnGreenSmall" translatesAutoresizingMaskIntoConstraints="NO" id="lNn-jI-LsD">
+                                        <rect key="frame" x="0.0" y="0.0" width="104" height="80"/>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="nnGreenSmall" translatesAutoresizingMaskIntoConstraints="NO" id="lNn-jI-LsD">
-                                        <rect key="frame" x="20" y="17" width="104" height="80"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="80" id="9tT-3u-qpw"/>
-                                            <constraint firstAttribute="width" constant="104" id="Odq-CJ-0aA"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOI-6J-Eht">
-                                        <rect key="frame" x="61" y="105" width="290" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOI-6J-Eht">
+                                        <rect key="frame" x="41" y="88" width="235" height="20"/>
                                         <attributedString key="attributedText">
                                             <fragment content="4 - 15     Food to eat often">
                                                 <attributes>
@@ -1222,14 +1212,11 @@ Risk factors that you can change are:
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="nnRedSmall" translatesAutoresizingMaskIntoConstraints="NO" id="QB8-WA-Hwp">
-                                        <rect key="frame" x="20" y="133" width="104" height="80"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="80" id="ePe-3C-1t0"/>
-                                        </constraints>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="nnRedSmall" translatesAutoresizingMaskIntoConstraints="NO" id="QB8-WA-Hwp">
+                                        <rect key="frame" x="0.0" y="232" width="104" height="80"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTc-KP-FTS">
-                                        <rect key="frame" x="62" y="221" width="289" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTc-KP-FTS">
+                                        <rect key="frame" x="42" y="204" width="234" height="20"/>
                                         <attributedString key="attributedText">
                                             <fragment content="0 -4   Food to eat sometimes">
                                                 <attributes>
@@ -1241,8 +1228,11 @@ Risk factors that you can change are:
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PxW-cf-WSy">
-                                        <rect key="frame" x="61" y="337" width="166" height="20"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="nnYellowSmall" translatesAutoresizingMaskIntoConstraints="NO" id="9vF-MX-bIp">
+                                        <rect key="frame" x="0.0" y="116" width="104" height="80"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PxW-cf-WSy">
+                                        <rect key="frame" x="41" y="304" width="166" height="20"/>
                                         <attributedString key="attributedText">
                                             <fragment content="-15 - 0    Food to limit">
                                                 <attributes>
@@ -1257,38 +1247,22 @@ Risk factors that you can change are:
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="OOI-6J-Eht" firstAttribute="centerX" secondItem="fTc-KP-FTS" secondAttribute="centerX" id="0k0-bV-r1u"/>
-                                    <constraint firstItem="lNn-jI-LsD" firstAttribute="trailing" secondItem="QB8-WA-Hwp" secondAttribute="trailing" id="49u-TS-cyt"/>
-                                    <constraint firstItem="OOI-6J-Eht" firstAttribute="leading" secondItem="PxW-cf-WSy" secondAttribute="leading" id="A1a-86-5kc"/>
-                                    <constraint firstItem="QB8-WA-Hwp" firstAttribute="trailing" secondItem="9vF-MX-bIp" secondAttribute="trailing" id="BBQ-Th-jMD"/>
-                                    <constraint firstAttribute="trailing" secondItem="OOI-6J-Eht" secondAttribute="trailing" constant="24" id="LEp-zw-80T"/>
-                                    <constraint firstItem="OOI-6J-Eht" firstAttribute="trailing" secondItem="fTc-KP-FTS" secondAttribute="trailing" id="OAw-JO-yLX"/>
-                                    <constraint firstItem="lNn-jI-LsD" firstAttribute="leading" secondItem="QB8-WA-Hwp" secondAttribute="leading" id="Uhu-Jf-JGV"/>
-                                    <constraint firstItem="PxW-cf-WSy" firstAttribute="top" secondItem="9vF-MX-bIp" secondAttribute="bottom" constant="8" symbolic="YES" id="XGB-r3-LMO"/>
-                                    <constraint firstItem="OOI-6J-Eht" firstAttribute="top" secondItem="lNn-jI-LsD" secondAttribute="bottom" constant="8" symbolic="YES" id="bzw-c2-MhK"/>
-                                    <constraint firstItem="OOI-6J-Eht" firstAttribute="leading" secondItem="1XI-1l-wRy" secondAttribute="leading" constant="61" id="gGa-f2-1Qt"/>
-                                    <constraint firstItem="lNn-jI-LsD" firstAttribute="top" secondItem="1XI-1l-wRy" secondAttribute="top" constant="17" id="keH-iP-pEJ"/>
-                                    <constraint firstItem="lNn-jI-LsD" firstAttribute="leading" secondItem="1XI-1l-wRy" secondAttribute="leading" constant="20" id="lDs-53-D42"/>
-                                    <constraint firstItem="QB8-WA-Hwp" firstAttribute="leading" secondItem="9vF-MX-bIp" secondAttribute="leading" id="p6v-p1-KM2"/>
-                                    <constraint firstItem="fTc-KP-FTS" firstAttribute="top" secondItem="QB8-WA-Hwp" secondAttribute="bottom" constant="8" symbolic="YES" id="put-nf-jV8"/>
-                                    <constraint firstItem="9vF-MX-bIp" firstAttribute="top" secondItem="fTc-KP-FTS" secondAttribute="bottom" constant="8" symbolic="YES" id="qNL-WJ-Apw"/>
-                                    <constraint firstItem="QB8-WA-Hwp" firstAttribute="top" secondItem="OOI-6J-Eht" secondAttribute="bottom" constant="8" symbolic="YES" id="zyc-W7-3Qy"/>
+                                    <constraint firstAttribute="width" constant="280" id="Dr8-OG-veI"/>
+                                    <constraint firstAttribute="height" constant="332" id="U5Q-Kv-wjU"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1XI-1l-wRy" firstAttribute="top" secondItem="3h4-NB-O3A" secondAttribute="bottom" id="0pu-aS-5M5"/>
-                            <constraint firstAttribute="trailing" secondItem="1XI-1l-wRy" secondAttribute="trailing" id="EFb-jr-ogV"/>
-                            <constraint firstItem="1XI-1l-wRy" firstAttribute="bottom" secondItem="RQm-dE-Vx5" secondAttribute="top" id="c4D-Iq-L5O"/>
-                            <constraint firstItem="1XI-1l-wRy" firstAttribute="leading" secondItem="avj-br-Ape" secondAttribute="leading" id="gEf-5y-jvr"/>
+                            <constraint firstItem="1XI-1l-wRy" firstAttribute="centerY" secondItem="avj-br-Ape" secondAttribute="centerY" constant="7" id="Sb8-wF-iuL"/>
+                            <constraint firstItem="1XI-1l-wRy" firstAttribute="centerX" secondItem="avj-br-Ape" secondAttribute="centerX" id="c9y-eP-dhm"/>
                         </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sZP-TQ-Ca9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="768.5" y="867.5"/>
+            <point key="canvasLocation" x="768" y="867"/>
         </scene>
     </scenes>
     <resources>
