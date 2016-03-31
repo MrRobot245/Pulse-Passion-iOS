@@ -14,7 +14,7 @@ class FeaturedView: UIViewController, UICollectionViewDataSource, UICollectionVi
     
     let productName = ["Chickpea and Red Lentil Pizza Dough", "Red Lentil Crackers", "Lentil Muffins", "Red Lentil Tortellini", "Chickpea Shake and Bake"]
     //        let imageArray = [UIImage(named: "unknown"), UIImage(named: "unknown"), UIImage(named: "unknown"), UIImage(named: "unknown"), UIImage(named: "unknown")]
-    let imageArray = [UIImage(named: "rPizza"), UIImage(named: "Crackers"), UIImage(named: "pug3"), UIImage(named: "pug4"), UIImage(named: "pug4")]
+    let imageArray = [UIImage(named: "rPizza3"), UIImage(named: "crack2"), UIImage(named: "muff2"), UIImage(named: "pug4"), UIImage(named: "pug4")]
     let ingredArray = ["Ingredients List WIth stuff","Ingredients List WIth stuff","Ingredients List WIth stuff","Ingredients List WIth stuff","Ingredients List WIth stuff"]
     
     override func viewDidLoad()

@@ -28,9 +28,37 @@ class EvenMoreViewController: UIViewController
     {
         super.viewDidLoad()
         self.foodLabel.text = self.getTopLabel
-        self.goodView.text = self.getgoodLabel
-        self.badView.text = self.getbadLabel
+
        
+      //  print("\(self.getbadLabel)")
+        var bulletBad: String!
+        var bulletGood: String!
+        bulletBad = self.getbadLabel
+        bulletGood = self.getgoodLabel
+        
+        var NewbulletBad = "• " + bulletBad.stringByReplacingOccurrencesOfString(",", withString: "\n•")
+        
+        var NewbulletGood =  "• " + bulletGood.stringByReplacingOccurrencesOfString(",", withString: "\n•")
+        
+       // print("%\(NewbulletGood)%")
+        
+        
+        if (NewbulletGood == "• -")
+        {
+            //print("Empty")
+            NewbulletGood = "Not Applicable"
+        }
+        
+        if (NewbulletBad == "• -")
+        {
+            //print("Empty")
+            NewbulletBad = "Not Applicable"
+        }
+      //  print("\(NewbulletBad)")
+//
+        
+        self.goodView.text = NewbulletGood
+        self.badView.text = NewbulletBad
         
         if(self.getRatingPic == "Red")
         {
