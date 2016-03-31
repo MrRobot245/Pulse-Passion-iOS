@@ -439,8 +439,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smallMyPulseLogo" translatesAutoresizingMaskIntoConstraints="NO" id="4yy-q7-Oid">
                                 <rect key="frame" x="245" y="78" width="110" height="153"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="153" id="RD5-rZ-uKE"/>
-                                    <constraint firstAttribute="width" constant="110" id="d3X-Zr-q1v"/>
+                                    <constraint firstAttribute="width" constant="110" id="apm-de-LHa"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cje-Dm-8kz">
@@ -470,10 +469,10 @@
                                 </subviews>
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LEF-Ja-tMI">
-                                <rect key="frame" x="150" y="246" width="300" height="76"/>
+                                <rect key="frame" x="150" y="262" width="300" height="76"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="76" id="ksH-2R-lMK"/>
-                                    <constraint firstAttribute="width" constant="300" id="zzY-ab-2r2"/>
+                                    <constraint firstAttribute="height" constant="76" id="pjb-kT-FdU"/>
+                                    <constraint firstAttribute="width" constant="300" id="qYe-hD-d8b"/>
                                 </constraints>
                                 <string key="text">Pulse Passion provides this evidence-based service to increase Canadian consumer awareness on healthy food choices for the prevention of cardiovascular disease.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -482,19 +481,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="trailing" secondItem="Te7-1i-Jlb" secondAttribute="trailing" id="0IU-F9-qa2"/>
-                            <constraint firstItem="LEF-Ja-tMI" firstAttribute="top" secondItem="4yy-q7-Oid" secondAttribute="bottom" constant="15" id="0JL-kC-YLT"/>
-                            <constraint firstAttribute="trailing" secondItem="1HA-Wp-LXA" secondAttribute="trailing" id="Bx5-UT-AS3"/>
-                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="bottom" secondItem="zxt-0f-jDN" secondAttribute="bottom" id="GK0-C6-1eO"/>
-                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="top" secondItem="jcL-up-CdG" secondAttribute="top" id="GmM-yA-ySD"/>
-                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="leading" secondItem="jcL-up-CdG" secondAttribute="leading" id="Gz8-g8-tmH"/>
-                            <constraint firstItem="4yy-q7-Oid" firstAttribute="centerX" secondItem="LEF-Ja-tMI" secondAttribute="centerX" id="JM5-bA-60t"/>
-                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="centerX" secondItem="4yy-q7-Oid" secondAttribute="centerX" id="JvZ-jT-6VS"/>
-                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="leading" secondItem="Te7-1i-Jlb" secondAttribute="leading" id="SSD-ae-hms"/>
-                            <constraint firstItem="4yy-q7-Oid" firstAttribute="top" secondItem="zxt-0f-jDN" secondAttribute="bottom" constant="14" id="W6b-du-790"/>
-                            <constraint firstItem="RCc-a1-3LW" firstAttribute="top" secondItem="cje-Dm-8kz" secondAttribute="bottom" constant="8" symbolic="YES" id="aUN-BW-vNv"/>
-                            <constraint firstItem="LEF-Ja-tMI" firstAttribute="centerX" secondItem="cje-Dm-8kz" secondAttribute="centerX" id="lRh-5U-plR"/>
-                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="top" secondItem="1HA-Wp-LXA" secondAttribute="bottom" id="vtT-QW-mUl"/>
+                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="centerX" secondItem="4yy-q7-Oid" secondAttribute="centerX" id="5WK-Ch-sbT"/>
+                            <constraint firstItem="LEF-Ja-tMI" firstAttribute="centerY" secondItem="jcL-up-CdG" secondAttribute="centerY" id="7Or-T8-lm6"/>
+                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="leading" secondItem="jcL-up-CdG" secondAttribute="leading" id="Byy-fZ-YUx"/>
+                            <constraint firstItem="RCc-a1-3LW" firstAttribute="top" secondItem="cje-Dm-8kz" secondAttribute="bottom" constant="8" symbolic="YES" id="DRa-gB-fch"/>
+                            <constraint firstItem="LEF-Ja-tMI" firstAttribute="centerX" secondItem="cje-Dm-8kz" secondAttribute="centerX" id="Hfo-u5-qqj"/>
+                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="top" secondItem="1HA-Wp-LXA" secondAttribute="bottom" id="SGt-va-QF3"/>
+                            <constraint firstAttribute="trailing" secondItem="1HA-Wp-LXA" secondAttribute="trailing" id="XR4-fI-TQb"/>
+                            <constraint firstItem="LEF-Ja-tMI" firstAttribute="top" secondItem="4yy-q7-Oid" secondAttribute="bottom" constant="31" id="fZd-cJ-K7c"/>
+                            <constraint firstItem="4yy-q7-Oid" firstAttribute="top" secondItem="zxt-0f-jDN" secondAttribute="bottom" constant="14" id="hA3-cE-Co5"/>
+                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="bottom" secondItem="zxt-0f-jDN" secondAttribute="bottom" id="iWR-D1-xti"/>
+                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="trailing" secondItem="Te7-1i-Jlb" secondAttribute="trailing" id="nh3-V5-Rxs"/>
+                            <constraint firstItem="4yy-q7-Oid" firstAttribute="centerX" secondItem="LEF-Ja-tMI" secondAttribute="centerX" id="nxX-Jr-rIl"/>
+                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="top" secondItem="jcL-up-CdG" secondAttribute="top" id="sKI-64-sfb"/>
+                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="leading" secondItem="Te7-1i-Jlb" secondAttribute="leading" id="sKX-3I-66k"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Learn More" image="Learn" id="zAf-Zm-n1x"/>
