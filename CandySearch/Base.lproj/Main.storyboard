@@ -309,43 +309,6 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="P6Q-cQ-6oE">
-                                <rect key="frame" x="267" y="428" width="67" height="115"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="5nd-zL-Ful">
-                                        <rect key="frame" x="0.0" y="0.0" width="67" height="25"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="25" id="BlC-6X-Stv"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <state key="normal" title="Website"/>
-                                        <connections>
-                                            <action selector="webButton:" destination="hit-xR-Mw3" eventType="touchUpInside" id="z4l-1L-5Ty"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="A9c-Vs-rO8">
-                                        <rect key="frame" x="0.0" y="25" width="67" height="30"/>
-                                        <state key="normal" title="Contact"/>
-                                        <connections>
-                                            <action selector="contactButton:" destination="hit-xR-Mw3" eventType="touchUpInside" id="KAA-SJ-XPi"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="t9k-dv-sHj">
-                                        <rect key="frame" x="0.0" y="55" width="67" height="30"/>
-                                        <state key="normal" title="Support"/>
-                                        <connections>
-                                            <action selector="supportButton:" destination="hit-xR-Mw3" eventType="touchUpInside" id="OW3-fO-YIL"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="iJg-9H-K0k">
-                                        <rect key="frame" x="0.0" y="85" width="67" height="30"/>
-                                        <state key="normal" title="Facebook"/>
-                                        <connections>
-                                            <action selector="facebookButton:" destination="hit-xR-Mw3" eventType="touchUpInside" id="sdr-hQ-aui"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="e8u-IP-SS3">
                                 <rect key="frame" x="150" y="262" width="300" height="76"/>
                                 <constraints>
@@ -355,6 +318,46 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="P6Q-cQ-6oE">
+                                <rect key="frame" x="261" y="416" width="79" height="127"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="5nd-zL-Ful">
+                                        <rect key="frame" x="0.0" y="0.0" width="79" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="BlC-6X-Stv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Website"/>
+                                        <connections>
+                                            <action selector="webButton:" destination="hit-xR-Mw3" eventType="touchUpInside" id="z4l-1L-5Ty"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="A9c-Vs-rO8">
+                                        <rect key="frame" x="0.0" y="25" width="79" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Contact"/>
+                                        <connections>
+                                            <action selector="contactButton:" destination="hit-xR-Mw3" eventType="touchUpInside" id="KAA-SJ-XPi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="t9k-dv-sHj">
+                                        <rect key="frame" x="0.0" y="59" width="79" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Support"/>
+                                        <connections>
+                                            <action selector="supportButton:" destination="hit-xR-Mw3" eventType="touchUpInside" id="OW3-fO-YIL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="iJg-9H-K0k">
+                                        <rect key="frame" x="0.0" y="93" width="79" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Facebook"/>
+                                        <connections>
+                                            <action selector="facebookButton:" destination="hit-xR-Mw3" eventType="touchUpInside" id="sdr-hQ-aui"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -439,28 +442,41 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smallMyPulseLogo" translatesAutoresizingMaskIntoConstraints="NO" id="4yy-q7-Oid">
                                 <rect key="frame" x="245" y="78" width="110" height="153"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="110" id="apm-de-LHa"/>
+                                    <constraint firstAttribute="width" constant="110" id="8kL-W7-Glm"/>
                                 </constraints>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LEF-Ja-tMI">
+                                <rect key="frame" x="150" y="262" width="300" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Cd0-qC-9rz"/>
+                                    <constraint firstAttribute="height" constant="76" id="FjG-6x-IFr"/>
+                                </constraints>
+                                <string key="text">Pulse Passion provides this evidence-based service to increase Canadian consumer awareness on healthy food choices for the prevention of cardiovascular disease.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cje-Dm-8kz">
-                                <rect key="frame" x="252" y="453" width="97" height="90"/>
+                                <rect key="frame" x="243" y="449" width="114" height="102"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bi-QW-8y7">
-                                        <rect key="frame" x="0.0" y="0.0" width="97" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="114" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="Heart Disease"/>
                                         <connections>
                                             <segue destination="vE2-zC-OLx" kind="show" id="DfA-WX-f0C"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Srd-e7-Er9">
-                                        <rect key="frame" x="0.0" y="30" width="97" height="30"/>
+                                        <rect key="frame" x="0.0" y="34" width="114" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="Diet"/>
                                         <connections>
                                             <segue destination="HwP-iL-pA6" kind="show" id="R0x-Ds-GMQ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTG-f5-sLP">
-                                        <rect key="frame" x="0.0" y="60" width="97" height="30"/>
+                                        <rect key="frame" x="0.0" y="68" width="114" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="More"/>
                                         <connections>
                                             <segue destination="upR-SE-SGA" kind="show" id="Xo9-YB-Y1m"/>
@@ -468,33 +484,23 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LEF-Ja-tMI">
-                                <rect key="frame" x="150" y="262" width="300" height="76"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="76" id="pjb-kT-FdU"/>
-                                    <constraint firstAttribute="width" constant="300" id="qYe-hD-d8b"/>
-                                </constraints>
-                                <string key="text">Pulse Passion provides this evidence-based service to increase Canadian consumer awareness on healthy food choices for the prevention of cardiovascular disease.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="centerX" secondItem="4yy-q7-Oid" secondAttribute="centerX" id="5WK-Ch-sbT"/>
-                            <constraint firstItem="LEF-Ja-tMI" firstAttribute="centerY" secondItem="jcL-up-CdG" secondAttribute="centerY" id="7Or-T8-lm6"/>
-                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="leading" secondItem="jcL-up-CdG" secondAttribute="leading" id="Byy-fZ-YUx"/>
-                            <constraint firstItem="RCc-a1-3LW" firstAttribute="top" secondItem="cje-Dm-8kz" secondAttribute="bottom" constant="8" symbolic="YES" id="DRa-gB-fch"/>
-                            <constraint firstItem="LEF-Ja-tMI" firstAttribute="centerX" secondItem="cje-Dm-8kz" secondAttribute="centerX" id="Hfo-u5-qqj"/>
-                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="top" secondItem="1HA-Wp-LXA" secondAttribute="bottom" id="SGt-va-QF3"/>
-                            <constraint firstAttribute="trailing" secondItem="1HA-Wp-LXA" secondAttribute="trailing" id="XR4-fI-TQb"/>
-                            <constraint firstItem="LEF-Ja-tMI" firstAttribute="top" secondItem="4yy-q7-Oid" secondAttribute="bottom" constant="31" id="fZd-cJ-K7c"/>
-                            <constraint firstItem="4yy-q7-Oid" firstAttribute="top" secondItem="zxt-0f-jDN" secondAttribute="bottom" constant="14" id="hA3-cE-Co5"/>
-                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="bottom" secondItem="zxt-0f-jDN" secondAttribute="bottom" id="iWR-D1-xti"/>
-                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="trailing" secondItem="Te7-1i-Jlb" secondAttribute="trailing" id="nh3-V5-Rxs"/>
-                            <constraint firstItem="4yy-q7-Oid" firstAttribute="centerX" secondItem="LEF-Ja-tMI" secondAttribute="centerX" id="nxX-Jr-rIl"/>
-                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="top" secondItem="jcL-up-CdG" secondAttribute="top" id="sKI-64-sfb"/>
-                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="leading" secondItem="Te7-1i-Jlb" secondAttribute="leading" id="sKX-3I-66k"/>
+                            <constraint firstItem="4yy-q7-Oid" firstAttribute="centerX" secondItem="LEF-Ja-tMI" secondAttribute="centerX" id="03C-Wa-CIC"/>
+                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="leading" secondItem="jcL-up-CdG" secondAttribute="leading" id="068-mc-1G8"/>
+                            <constraint firstItem="cje-Dm-8kz" firstAttribute="bottom" secondItem="RCc-a1-3LW" secondAttribute="top" id="DLH-sd-AP9"/>
+                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="bottom" secondItem="zxt-0f-jDN" secondAttribute="bottom" id="Dfa-Mu-WtQ"/>
+                            <constraint firstItem="LEF-Ja-tMI" firstAttribute="centerY" secondItem="jcL-up-CdG" secondAttribute="centerY" id="KOQ-jB-8Tl"/>
+                            <constraint firstAttribute="trailing" secondItem="1HA-Wp-LXA" secondAttribute="trailing" id="Wbl-Zw-ohg"/>
+                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="top" secondItem="jcL-up-CdG" secondAttribute="top" id="c9g-IJ-JWX"/>
+                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="top" secondItem="1HA-Wp-LXA" secondAttribute="bottom" id="eBW-QP-5gr"/>
+                            <constraint firstItem="4yy-q7-Oid" firstAttribute="top" secondItem="zxt-0f-jDN" secondAttribute="bottom" constant="14" id="i7a-s7-Rwl"/>
+                            <constraint firstItem="LEF-Ja-tMI" firstAttribute="top" secondItem="4yy-q7-Oid" secondAttribute="bottom" constant="31" id="iHF-hz-TPU"/>
+                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="centerX" secondItem="4yy-q7-Oid" secondAttribute="centerX" id="jjw-MF-lL8"/>
+                            <constraint firstItem="LEF-Ja-tMI" firstAttribute="centerX" secondItem="cje-Dm-8kz" secondAttribute="centerX" id="qVn-BN-QDL"/>
+                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="trailing" secondItem="Te7-1i-Jlb" secondAttribute="trailing" id="uS1-R9-93E"/>
+                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="leading" secondItem="Te7-1i-Jlb" secondAttribute="leading" id="zuj-sw-NKU"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Learn More" image="Learn" id="zAf-Zm-n1x"/>
