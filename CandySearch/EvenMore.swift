@@ -14,10 +14,10 @@ class EvenMoreViewController: UIViewController
 {
     @IBOutlet weak var ratingView: UIImageView!
     @IBOutlet weak var foodLabel: UILabel!
-    @IBOutlet weak var badLabel: UILabel!
-    @IBOutlet weak var labelView: UILabel!
-    
 
+    @IBOutlet weak var goodView: UITextView!
+    @IBOutlet weak var badView: UITextView!
+    
     var getTopLabel:String!
     var getgoodLabel:String!
     var getbadLabel:String!
@@ -28,8 +28,8 @@ class EvenMoreViewController: UIViewController
     {
         super.viewDidLoad()
         self.foodLabel.text = self.getTopLabel
-        self.labelView.text = self.getgoodLabel
-        self.badLabel.text = self.getbadLabel
+        self.goodView.text = self.getgoodLabel
+        self.badView.text = self.getbadLabel
        
         
         if(self.getRatingPic == "Red")
