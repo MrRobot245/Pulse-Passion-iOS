@@ -14,7 +14,7 @@ class FeaturedView: UIViewController, UICollectionViewDataSource, UICollectionVi
     
     let productName = ["Chickpea and Red Lentil Pizza Dough", "Red Lentil Crackers", "Lentil Muffins", "Red Lentil Tortellini", "Chickpea Shake and Bake"]
     //        let imageArray = [UIImage(named: "unknown"), UIImage(named: "unknown"), UIImage(named: "unknown"), UIImage(named: "unknown"), UIImage(named: "unknown")]
-    let imageArray = [UIImage(named: "rPizza3"), UIImage(named: "crack2"), UIImage(named: "muff2"), UIImage(named: "pug4"), UIImage(named: "pug4")]
+    let imageArray = [UIImage(named: "rPizza3"), UIImage(named: "crack2"), UIImage(named: "muff2"), UIImage(named: "pug4"), UIImage(named: "shake2")]
     let ingredArray = ["Ingredients List WIth stuff","Ingredients List WIth stuff","Ingredients List WIth stuff","Ingredients List WIth stuff","Ingredients List WIth stuff"]
     
     override func viewDidLoad()
@@ -38,6 +38,7 @@ class FeaturedView: UIViewController, UICollectionViewDataSource, UICollectionVi
     {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cCell", forIndexPath: indexPath) as! CollectionViewCell
         cell.imageView?.image = self.imageArray[indexPath.row]
+        
 //        cell.imageView?.layer.cornerRadius = cell.imageView.bounds.size.width / 2.0
 //        cell.imageView.layer.borderWidth = 2.0
 //        cell.imageView.layer.borderColor = UIColor.whiteColor().CGColor
