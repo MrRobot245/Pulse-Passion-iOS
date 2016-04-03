@@ -42,15 +42,15 @@ class DetailViewController: UIViewController {
                  iList.text = detailCandy.iList
                 if(detailCandy.fRate == "Limit")
                 {
-                foodRating.image = UIImage(named: "nnRedSmall")
+                foodRating.image = UIImage(named: "nnRed")
                 }
                 if(detailCandy.fRate == "Sometimes")
                 {
-                    foodRating.image = UIImage(named: "nnYellowSmall")
+                    foodRating.image = UIImage(named: "nnYellow")
                 }
                 if(detailCandy.fRate == "Often")
                 {
-                    foodRating.image = UIImage(named: "nnGreenSmall")
+                    foodRating.image = UIImage(named: "nnGreen")
                 }
                 
                 detailDescriptionLabel.text = detailCandy.name
