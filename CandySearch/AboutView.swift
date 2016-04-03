@@ -29,7 +29,7 @@ class AboutView: UIViewController {
     @IBOutlet weak var bLabel: UILabel!
     @IBAction func webButton(sender: AnyObject) {
 
-            UIApplication.sharedApplication().openURL(NSURL(string: "http://pulsepassionweb2.s3-website-us-west-2.amazonaws.com")!)
+            UIApplication.sharedApplication().openURL(NSURL(string: "http://pulsepassion.ca")!)
     }
     func getVersion(){
         let info:NSDictionary = NSBundle.mainBundle().infoDictionary!

@@ -13,7 +13,6 @@ class FeaturedView: UIViewController, UICollectionViewDataSource, UICollectionVi
     @IBOutlet weak var collectionView: UICollectionView!
     
     let productName = ["Chickpea and Red Lentil Pizza Dough", "Red Lentil Crackers", "Lentil Muffins", "Black Bean Bread", "Chickpea Shake and Bake"]
-    //        let imageArray = [UIImage(named: "unknown"), UIImage(named: "unknown"), UIImage(named: "unknown"), UIImage(named: "unknown"), UIImage(named: "unknown")]
     let imageArray = [UIImage(named: "rPizza3"), UIImage(named: "crack2"), UIImage(named: "muff2"), UIImage(named: "pug4"), UIImage(named: "shake2")]
     let ingredArray = ["Whole Grain Wheat Flour, Lentil Flour, Chickpea Flour , Cayenne Infused Olive Oil, Sugar, Yeast, Salt",
                        "Lentils, Whole Grain Wheat Flour, Egg, Flaxseed (Ground) , Canola Oil, Baking Powder , Salt, Baking Soda, Rosemary, Pepper, Turmeric",
@@ -42,12 +41,6 @@ class FeaturedView: UIViewController, UICollectionViewDataSource, UICollectionVi
     {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cCell", forIndexPath: indexPath) as! CollectionViewCell
         cell.imageView?.image = self.imageArray[indexPath.row]
-        
-//        cell.imageView?.layer.cornerRadius = cell.imageView.bounds.size.width / 2.0
-//        cell.imageView.layer.borderWidth = 2.0
-//        cell.imageView.layer.borderColor = UIColor.whiteColor().CGColor
-//        cell.imageView.layer.masksToBounds = true
-        
         cell.titleLabel?.text = self.productName[indexPath.row]
         return cell
     }

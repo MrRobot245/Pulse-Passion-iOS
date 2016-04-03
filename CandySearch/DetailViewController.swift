@@ -37,7 +37,7 @@ class DetailViewController: UIViewController {
     func configureView() {
         if let detailCandy = detailCandy {
             if let detailDescriptionLabel = detailDescriptionLabel, candyImageView = candyImageView {
-                
+                candyImageView.image = UIImage(named: "unknown")
                  iList.text = detailCandy.iList
                 if(detailCandy.fRate == "Limit")
                 {
@@ -51,15 +51,21 @@ class DetailViewController: UIViewController {
                 {
                     foodRating.image = UIImage(named: "nnGreenSmall")
                 }
+               // print("%\(detailCandy.category)%")
+                if(detailCandy.category == "Other")
+                {
+                   candyImageView.image = UIImage(named: "Other")
+                }
                 
                 detailDescriptionLabel.text = detailCandy.name
-                guard let _ = NSBundle.mainBundle().pathForResource(detailCandy.name, ofType: "png") else {
-                    candyImageView.image = UIImage(named: "unknown")
-                    return
-                }
+//                guard let _ = NSBundle.mainBundle().pathForResource(detailCandy.name, ofType: "png") else {
+//                    candyImageView.image = UIImage(named: "unknown")
+//                    return
+//                }
+                
                
-                candyImageView.image = UIImage(named: detailCandy.name)
-                title = detailCandy.category
+                //candyImageView.image = UIImage(named: detailCandy.name)
+                //title = detailCandy.category
             }
         }
     }
