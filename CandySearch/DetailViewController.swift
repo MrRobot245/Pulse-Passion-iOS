@@ -52,22 +52,10 @@ class DetailViewController: UIViewController {
                 {
                     foodRating.image = UIImage(named: "nnGreenSmall")
                 }
-               // print("%\(detailCandy.category)%")
-//                if(detailCandy.category == "Other")
-//                {
-//                   candyImageView.image = UIImage(named: "Other")
-//                }
                 
                 detailDescriptionLabel.text = detailCandy.name
                 catLabel.text = detailCandy.category
-//                guard let _ = NSBundle.mainBundle().pathForResource(detailCandy.name, ofType: "png") else {
-//                    candyImageView.image = UIImage(named: "unknown")
-//                    return
-//                }
-                
-               
-                //candyImageView.image = UIImage(named: detailCandy.name)
-                //title = detailCandy.category
+
             }
         }
     }

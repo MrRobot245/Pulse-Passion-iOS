@@ -12,12 +12,11 @@ class FeaturedView: UIViewController, UICollectionViewDataSource, UICollectionVi
 {
     @IBOutlet weak var collectionView: UICollectionView!
     
-    let productName = ["Chickpea and Red Lentil Pizza Dough", "Red Lentil Crackers", "Lentil Muffins", "Black Bean Bread", "Chickpea Shake and Bake"]
-    let imageArray = [UIImage(named: "rPizza3"), UIImage(named: "crack2"), UIImage(named: "muff2"), UIImage(named: "pug4"), UIImage(named: "shake2")]
+    let productName = ["Chickpea and Red Lentil Pizza Dough", "Red Lentil Crackers", "Lentil Muffins", "Chickpea Shake and Bake"]
+    let imageArray = [UIImage(named: "rPizza3"), UIImage(named: "crack2"), UIImage(named: "muff2"),  UIImage(named: "shake2")]
     let ingredArray = ["Whole Grain Wheat Flour, Lentil Flour, Chickpea Flour , Cayenne Infused Olive Oil, Sugar, Yeast, Salt",
                        "Lentils, Whole Grain Wheat Flour, Egg, Flaxseed (Ground) , Canola Oil, Baking Powder , Salt, Baking Soda, Rosemary, Pepper, Turmeric",
                        "Lentils, Skim Milk , Carrots, Brown Sugar, Whole Grain Wheat Flour, Egg, Canola Oil, Flaxseed (Ground) , Wheat Bran, Baking Powder , Baking Soda, Vanilla Extract, Cinnamon",
-                       "Water, Black Bean Flour, Whole Grain Wheat Flour, Powdered Milk, Margarine, Imperial, Cornstarch, Salt, Thyme, Oregano, Basil",
                        "Chickpea Flour , Garlic Powder, Cajun Spice, Paprika, Salt"]
     
     override func viewDidLoad()
