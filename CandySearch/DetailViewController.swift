@@ -91,6 +91,7 @@ class DetailViewController: UIViewController {
             vc.getbadLabel = detailCandy?.bList
             vc.getgoodLabel = detailCandy?.gList
             vc.getRatingPic = detailCandy?.fRate
+            vc.getRatingNum = detailCandy?.iRate
 
            }
     }

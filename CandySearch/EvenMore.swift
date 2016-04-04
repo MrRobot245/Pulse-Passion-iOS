@@ -18,12 +18,14 @@ class EvenMoreViewController: UIViewController
     @IBOutlet weak var goodView: UITextView!
     @IBOutlet weak var badView: UITextView!
     
+    @IBOutlet weak var ratingNum: UILabel!
     var getTopLabel:String!
     var getgoodLabel:String!
     var getbadLabel:String!
     var getRatingPic:String!
     var bulletBad: String!
     var bulletGood: String!
+    var getRatingNum: String!
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
@@ -56,7 +58,7 @@ class EvenMoreViewController: UIViewController
         
         self.goodView.text = NewbulletGood
         self.badView.text = NewbulletBad
-        
+        self.ratingNum.text =  "Rating: "+getRatingNum+"/15"
         if(self.getRatingPic == "Limit")
         {
             ratingView.image = UIImage(named: "nnRed")
