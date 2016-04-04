@@ -58,7 +58,7 @@ class EvenMoreViewController: UIViewController
         
         self.goodView.text = NewbulletGood
         self.badView.text = NewbulletBad
-        self.ratingNum.text =  "Rating: "+getRatingNum+"/15"
+        self.ratingNum.text =  "Rating: "+getRatingNum
         if(self.getRatingPic == "Limit")
         {
             ratingView.image = UIImage(named: "nnRed")

@@ -53,7 +53,7 @@ class DetailViewController: UIViewController {
                 {
                     foodRating.image = UIImage(named: "nnGreen")
                 }
-                ratingNum.text = "Rating: "+detailCandy.iRate+"/15"
+                ratingNum.text = "Rating: "+detailCandy.iRate
                 detailDescriptionLabel.text = detailCandy.name
                 catLabel.text = detailCandy.category
 
