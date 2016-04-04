@@ -27,6 +27,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var detailDescriptionLabel: UILabel!
     @IBOutlet weak var candyImageView: UIImageView!
     
+    @IBOutlet weak var ratingNum: UILabel!
     @IBOutlet weak var catLabel: UILabel!
     @IBOutlet weak var iList: UITextView!
     var detailCandy: Food? {
@@ -52,7 +53,7 @@ class DetailViewController: UIViewController {
                 {
                     foodRating.image = UIImage(named: "nnGreen")
                 }
-                
+                ratingNum.text = "Rating: "+detailCandy.iRate+"/15"
                 detailDescriptionLabel.text = detailCandy.name
                 catLabel.text = detailCandy.category
 

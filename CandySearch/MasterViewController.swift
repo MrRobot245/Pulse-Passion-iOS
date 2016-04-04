@@ -41,7 +41,7 @@ class MasterViewController: UITableViewController {
             return
         }
         
-        let querySQL = "SELECT cat,title,fRate,iList,gList,bList FROM DB WHERE title = title ORDER BY title COLLATE NOCASE"
+        let querySQL = "SELECT cat,title,fRate,iList,gList,bList,iRate FROM DB WHERE title = title ORDER BY title COLLATE NOCASE"
         let results:FMResultSet? = database.executeQuery(querySQL,
                                                          withArgumentsInArray: nil)
         while(results!.next()) {
@@ -50,7 +50,8 @@ class MasterViewController: UITableViewController {
                 fRate: results!.stringForColumn("fRate"),
                 iList: results!.stringForColumn("iList"),
                 gList: results!.stringForColumn("gList"),
-                bList: results!.stringForColumn("bList")))
+                bList: results!.stringForColumn("bList"),
+                iRate: results!.stringForColumn("iRate")))
             
             
             //         let querySQL = "SELECT cat,title,fRate,iList FROM DB WHERE title = title ORDER BY title COLLATE NOCASE"
