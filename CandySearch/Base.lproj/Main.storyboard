@@ -199,18 +199,18 @@
                                 <rect key="frame" x="0.0" y="130" width="600" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WCw-Qf-5nD" id="37f-cq-3Eg">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="49"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="49.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="Arm-wq-HPj">
-                                            <rect key="frame" x="15" y="9" width="28" height="17"/>
+                                            <rect key="frame" x="15" y="10" width="27.5" height="17"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14.5"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yDq-Gz-FBC">
-                                            <rect key="frame" x="15" y="26" width="41" height="14"/>
+                                            <rect key="frame" x="15" y="27" width="40.5" height="13.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -360,7 +360,7 @@
                                     <navigationItem id="g2v-60-DY8">
                                         <nil key="title"/>
                                         <view key="titleView" contentMode="scaleToFill" id="HJ0-s2-kvw">
-                                            <rect key="frame" x="248" y="6" width="104" height="33"/>
+                                            <rect key="frame" x="248" y="5.5" width="104" height="33"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyPulse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOi-22-v7c">
@@ -441,7 +441,7 @@
                                     <navigationItem id="X4z-X3-754">
                                         <nil key="title"/>
                                         <view key="titleView" contentMode="scaleToFill" id="hPk-N6-tM0">
-                                            <rect key="frame" x="248" y="6" width="104" height="33"/>
+                                            <rect key="frame" x="248" y="5.5" width="104" height="33"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyPulse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oc5-Md-CHw">
@@ -937,7 +937,7 @@
                                     <navigationItem id="iAL-SK-YsF">
                                         <nil key="title"/>
                                         <view key="titleView" contentMode="scaleToFill" id="nH0-Br-M0b">
-                                            <rect key="frame" x="136" y="6" width="104" height="33"/>
+                                            <rect key="frame" x="135.5" y="5.5" width="104" height="33"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyPulse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ume-Pw-REw">
@@ -1057,7 +1057,7 @@ Risk factors that you can change are:
                                     <navigationItem id="yRj-do-5cS">
                                         <nil key="title"/>
                                         <view key="titleView" contentMode="scaleToFill" id="Ixh-oh-2uZ">
-                                            <rect key="frame" x="136" y="6" width="104" height="33"/>
+                                            <rect key="frame" x="135.5" y="5.5" width="104" height="33"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyPulse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqf-rX-LeR">
@@ -1153,7 +1153,7 @@ Risk factors that you can change are:
                                     <navigationItem id="b1d-re-xyf">
                                         <nil key="title"/>
                                         <view key="titleView" contentMode="scaleToFill" id="Kjb-cv-Wzd">
-                                            <rect key="frame" x="136" y="6" width="104" height="33"/>
+                                            <rect key="frame" x="135.5" y="5.5" width="104" height="33"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyPulse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJf-IY-oi2">
@@ -1250,7 +1250,6 @@ Risk factors that you can change are:
         <!--Rating Explained-->
         <scene sceneID="OrE-GJ-sWU">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GVk-G6-4tV" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="wAy-30-4zo" customClass="ratingExplained" customModule="MyPulse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="q8M-wn-FpI"/>
@@ -1267,14 +1266,14 @@ Risk factors that you can change are:
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qVK-0l-5N8">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="YaI-cm-Uwy"/>
+                                    <constraint firstAttribute="height" constant="44" id="zew-zR-2fq"/>
                                 </constraints>
                                 <color key="barTintColor" red="0.37254901959999998" green="0.60392156860000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem id="DCS-9J-Fhi">
                                         <nil key="title"/>
                                         <view key="titleView" contentMode="scaleToFill" id="siX-Gq-sBA">
-                                            <rect key="frame" x="108" y="6" width="104" height="33"/>
+                                            <rect key="frame" x="108" y="5.5" width="104" height="33"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyPulse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXa-fa-8Kb">
@@ -1311,31 +1310,32 @@ Risk factors that you can change are:
                                 <rect key="frame" x="0.0" y="434" width="320" height="46"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shakePack" translatesAutoresizingMaskIntoConstraints="NO" id="Upv-Px-6Jj">
-                                <rect key="frame" x="20" y="114" width="280" height="252"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ratings" translatesAutoresizingMaskIntoConstraints="NO" id="Upv-Px-6Jj">
+                                <rect key="frame" x="20" y="67" width="280" height="346"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="qVK-0l-5N8" firstAttribute="leading" secondItem="Tv3-UD-UCZ" secondAttribute="leading" id="3g2-hq-eCY"/>
-                            <constraint firstItem="qVK-0l-5N8" firstAttribute="top" secondItem="qrK-8J-Gmf" secondAttribute="bottom" id="5kO-iH-1wP"/>
-                            <constraint firstItem="Upv-Px-6Jj" firstAttribute="leading" secondItem="WmD-9S-pSL" secondAttribute="leadingMargin" constant="4" id="9KN-0i-qHd"/>
-                            <constraint firstItem="qVK-0l-5N8" firstAttribute="trailing" secondItem="Tv3-UD-UCZ" secondAttribute="trailing" id="CMw-yQ-bKP"/>
-                            <constraint firstItem="Tv3-UD-UCZ" firstAttribute="top" secondItem="Upv-Px-6Jj" secondAttribute="bottom" constant="68" id="FTo-hh-DKZ"/>
-                            <constraint firstItem="qrK-8J-Gmf" firstAttribute="leading" secondItem="WmD-9S-pSL" secondAttribute="leading" id="M3g-Lb-8BW"/>
-                            <constraint firstItem="qrK-8J-Gmf" firstAttribute="trailing" secondItem="qVK-0l-5N8" secondAttribute="trailing" id="N3O-9r-onv"/>
-                            <constraint firstItem="qVK-0l-5N8" firstAttribute="centerX" secondItem="Upv-Px-6Jj" secondAttribute="centerX" id="OmP-AN-lYP"/>
-                            <constraint firstItem="Upv-Px-6Jj" firstAttribute="top" secondItem="qVK-0l-5N8" secondAttribute="bottom" constant="50" id="P1E-D7-Pp8"/>
-                            <constraint firstItem="qrK-8J-Gmf" firstAttribute="leading" secondItem="qVK-0l-5N8" secondAttribute="leading" id="d9f-jl-66e"/>
-                            <constraint firstItem="qrK-8J-Gmf" firstAttribute="top" secondItem="WmD-9S-pSL" secondAttribute="top" id="eAB-Tg-1pi"/>
-                            <constraint firstAttribute="trailing" secondItem="qrK-8J-Gmf" secondAttribute="trailing" id="iiO-GN-Ycu"/>
-                            <constraint firstItem="Upv-Px-6Jj" firstAttribute="centerY" secondItem="WmD-9S-pSL" secondAttribute="centerY" id="q2l-pH-28b"/>
-                            <constraint firstItem="qVK-0l-5N8" firstAttribute="top" secondItem="q8M-wn-FpI" secondAttribute="bottom" id="tn8-sW-yKo"/>
-                            <constraint firstItem="Tv3-UD-UCZ" firstAttribute="bottom" secondItem="xY6-Gs-VW3" secondAttribute="top" id="ztZ-Va-beS"/>
+                            <constraint firstAttribute="trailing" secondItem="qrK-8J-Gmf" secondAttribute="trailing" id="6EJ-qo-xvH"/>
+                            <constraint firstItem="Upv-Px-6Jj" firstAttribute="leading" secondItem="WmD-9S-pSL" secondAttribute="leadingMargin" constant="4" id="9cj-d3-2qJ"/>
+                            <constraint firstItem="qVK-0l-5N8" firstAttribute="top" secondItem="qrK-8J-Gmf" secondAttribute="bottom" id="AjP-at-Tay"/>
+                            <constraint firstItem="qrK-8J-Gmf" firstAttribute="top" secondItem="WmD-9S-pSL" secondAttribute="top" id="GEH-qo-AQd"/>
+                            <constraint firstItem="qrK-8J-Gmf" firstAttribute="trailing" secondItem="qVK-0l-5N8" secondAttribute="trailing" id="O8J-u5-vgL"/>
+                            <constraint firstItem="qrK-8J-Gmf" firstAttribute="leading" secondItem="WmD-9S-pSL" secondAttribute="leading" id="OLX-Vt-XKw"/>
+                            <constraint firstItem="qVK-0l-5N8" firstAttribute="trailing" secondItem="Tv3-UD-UCZ" secondAttribute="trailing" id="Ofh-ey-e3U"/>
+                            <constraint firstItem="Tv3-UD-UCZ" firstAttribute="bottom" secondItem="xY6-Gs-VW3" secondAttribute="top" id="QDU-GE-pUm"/>
+                            <constraint firstItem="Upv-Px-6Jj" firstAttribute="centerY" secondItem="WmD-9S-pSL" secondAttribute="centerY" id="SGL-Yj-7oD"/>
+                            <constraint firstItem="Upv-Px-6Jj" firstAttribute="top" secondItem="qVK-0l-5N8" secondAttribute="bottom" constant="3" id="Tis-Pz-UoU"/>
+                            <constraint firstItem="Tv3-UD-UCZ" firstAttribute="top" secondItem="Upv-Px-6Jj" secondAttribute="bottom" constant="21" id="XHU-tT-fLP"/>
+                            <constraint firstItem="qVK-0l-5N8" firstAttribute="leading" secondItem="Tv3-UD-UCZ" secondAttribute="leading" id="cam-EX-xoW"/>
+                            <constraint firstItem="qrK-8J-Gmf" firstAttribute="leading" secondItem="qVK-0l-5N8" secondAttribute="leading" id="ehk-wB-QVa"/>
+                            <constraint firstItem="qVK-0l-5N8" firstAttribute="centerX" secondItem="Upv-Px-6Jj" secondAttribute="centerX" id="paJ-c2-mEP"/>
+                            <constraint firstItem="qVK-0l-5N8" firstAttribute="top" secondItem="q8M-wn-FpI" secondAttribute="bottom" id="u5e-Q0-XB9"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GVk-G6-4tV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="661" y="940"/>
         </scene>
@@ -1343,7 +1343,7 @@ Risk factors that you can change are:
     <resources>
         <image name="Info-60" width="30" height="30"/>
         <image name="Learn" width="30" height="30"/>
-        <image name="shakePack" width="433" height="500"/>
+        <image name="Ratings" width="500" height="600"/>
         <image name="smallMyPulseLogo" width="200" height="260"/>
     </resources>
     <inferredMetricsTieBreakers>
