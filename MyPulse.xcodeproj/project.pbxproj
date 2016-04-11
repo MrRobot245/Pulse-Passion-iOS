@@ -15,7 +15,6 @@
 		171E0C8A1B8E5B84001E6242 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 171E0C881B8E5B84001E6242 /* LaunchScreen.storyboard */; };
 		171E0CAE1B8E5C58001E6242 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171E0CAD1B8E5C58001E6242 /* Food.swift */; };
 		D805F0251C9A80840036FA48 /* smallMyPulseLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D805F0241C9A80840036FA48 /* smallMyPulseLogo.png */; };
-		D81878481CB22D1700435788 /* ratingExplained.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81878471CB22D1700435788 /* ratingExplained.swift */; };
 		D82D31CC1C9E2E470000C447 /* FeaturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D31CB1C9E2E470000C447 /* FeaturedView.swift */; };
 		D846A7AE1C9935C40030A359 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = D846A7A41C9935C40030A359 /* FMDatabase.m */; };
 		D846A7AF1C9935C40030A359 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D846A7A61C9935C40030A359 /* FMDatabaseAdditions.m */; };
@@ -26,6 +25,10 @@
 		D846A7B71C9936010030A359 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D846A7B51C9936010030A359 /* libsqlite3.tbd */; };
 		D84DED931C9E3F66001A68B5 /* ConnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84DED921C9E3F66001A68B5 /* ConnView.swift */; };
 		D84DED951C9E3FDB001A68B5 /* NewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84DED941C9E3FDB001A68B5 /* NewView.swift */; };
+		D857744A1CBB36E800D65182 /* ratingExplained.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85774491CBB36E800D65182 /* ratingExplained.swift */; };
+		D857744E1CBB372500D65182 /* GhettoGauge.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D857744B1CBB372500D65182 /* GhettoGauge.pdf */; };
+		D857744F1CBB372500D65182 /* GhettoGauge.pptx in Resources */ = {isa = PBXBuildFile; fileRef = D857744C1CBB372500D65182 /* GhettoGauge.pptx */; };
+		D85774501CBB372500D65182 /* GhettoGauge.psd in Resources */ = {isa = PBXBuildFile; fileRef = D857744D1CBB372500D65182 /* GhettoGauge.psd */; };
 		D87F32CB1CAC5171005FD7B7 /* LearnMore-More.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87F32CA1CAC5171005FD7B7 /* LearnMore-More.swift */; };
 		D87F32CD1CAC5261005FD7B7 /* LearnMoreHD.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87F32CC1CAC5261005FD7B7 /* LearnMoreHD.swift */; };
 		D88033D31CABA81300D86C48 /* LearnMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88033D21CABA81300D86C48 /* LearnMore.swift */; };
@@ -50,7 +53,6 @@
 		171E0C8B1B8E5B84001E6242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		171E0CAD1B8E5C58001E6242 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		D805F0241C9A80840036FA48 /* smallMyPulseLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smallMyPulseLogo.png; sourceTree = "<group>"; };
-		D81878471CB22D1700435788 /* ratingExplained.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ratingExplained.swift; path = ../ratingExplained.swift; sourceTree = "<group>"; };
 		D82D31CB1C9E2E470000C447 /* FeaturedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedView.swift; sourceTree = "<group>"; };
 		D846A7A21C9935C30030A359 /* MyPulse-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyPulse-Bridging-Header.h"; sourceTree = "<group>"; };
 		D846A7A31C9935C40030A359 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
@@ -68,6 +70,10 @@
 		D846A7B51C9936010030A359 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		D84DED921C9E3F66001A68B5 /* ConnView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnView.swift; sourceTree = "<group>"; };
 		D84DED941C9E3FDB001A68B5 /* NewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewView.swift; sourceTree = "<group>"; };
+		D85774491CBB36E800D65182 /* ratingExplained.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ratingExplained.swift; sourceTree = "<group>"; };
+		D857744B1CBB372500D65182 /* GhettoGauge.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = GhettoGauge.pdf; sourceTree = "<group>"; };
+		D857744C1CBB372500D65182 /* GhettoGauge.pptx */ = {isa = PBXFileReference; lastKnownFileType = file; path = GhettoGauge.pptx; sourceTree = "<group>"; };
+		D857744D1CBB372500D65182 /* GhettoGauge.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = GhettoGauge.psd; sourceTree = "<group>"; };
 		D87F32CA1CAC5171005FD7B7 /* LearnMore-More.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LearnMore-More.swift"; sourceTree = "<group>"; };
 		D87F32CC1CAC5261005FD7B7 /* LearnMoreHD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnMoreHD.swift; sourceTree = "<group>"; };
 		D88033D21CABA81300D86C48 /* LearnMore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnMore.swift; sourceTree = "<group>"; };
@@ -114,7 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				D8A863161C99E97B007DE46A /* AboutView.swift */,
-				D81878471CB22D1700435788 /* ratingExplained.swift */,
+				D85774491CBB36E800D65182 /* ratingExplained.swift */,
 				171E0C7D1B8E5B84001E6242 /* AppDelegate.swift */,
 				171E0C7F1B8E5B84001E6242 /* MasterViewController.swift */,
 				171E0C811B8E5B84001E6242 /* DetailViewController.swift */,
@@ -131,6 +137,7 @@
 				D84DED941C9E3FDB001A68B5 /* NewView.swift */,
 				171E0CAD1B8E5C58001E6242 /* Food.swift */,
 				D84DED921C9E3F66001A68B5 /* ConnView.swift */,
+				D85774511CBB372A00D65182 /* Gauge */,
 				D805F0271C9A80970036FA48 /* Fonts */,
 				D805F0261C9A808F0036FA48 /* Pictures */,
 				D846A7B31C9935CD0030A359 /* FMDB */,
@@ -178,6 +185,16 @@
 				D846A7A21C9935C30030A359 /* MyPulse-Bridging-Header.h */,
 			);
 			name = FMDB;
+			sourceTree = "<group>";
+		};
+		D85774511CBB372A00D65182 /* Gauge */ = {
+			isa = PBXGroup;
+			children = (
+				D857744B1CBB372500D65182 /* GhettoGauge.pdf */,
+				D857744C1CBB372500D65182 /* GhettoGauge.pptx */,
+				D857744D1CBB372500D65182 /* GhettoGauge.psd */,
+			);
+			name = Gauge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,12 +258,15 @@
 			files = (
 				D805F0251C9A80840036FA48 /* smallMyPulseLogo.png in Resources */,
 				171E0C8A1B8E5B84001E6242 /* LaunchScreen.storyboard in Resources */,
+				D857744F1CBB372500D65182 /* GhettoGauge.pptx in Resources */,
 				D8A41A351C9A2EBA00D4B544 /* montserrat-bold-normal.ttf in Resources */,
 				D8BA55B91C9931C5002ACAAD /* logo.jpg in Resources */,
 				171E0C871B8E5B84001E6242 /* Assets.xcassets in Resources */,
 				D8A41A361C9A2EBA00D4B544 /* montserrat-normal-normal.ttf in Resources */,
 				D8A41A321C9A274500D4B544 /* myPulseWhite.png in Resources */,
 				D8BA55B71C9931BC002ACAAD /* start.png in Resources */,
+				D857744E1CBB372500D65182 /* GhettoGauge.pdf in Resources */,
+				D85774501CBB372500D65182 /* GhettoGauge.psd in Resources */,
 				D8C28B4A1CB2BDB700A6177E /* DB2.sqlite in Resources */,
 				171E0C851B8E5B84001E6242 /* Main.storyboard in Resources */,
 			);
@@ -263,6 +283,7 @@
 				D846A7B11C9935C40030A359 /* FMDatabaseQueue.m in Sources */,
 				171E0CAE1B8E5C58001E6242 /* Food.swift in Sources */,
 				171E0C801B8E5B84001E6242 /* MasterViewController.swift in Sources */,
+				D857744A1CBB36E800D65182 /* ratingExplained.swift in Sources */,
 				D87F32CB1CAC5171005FD7B7 /* LearnMore-More.swift in Sources */,
 				D8A863171C99E97B007DE46A /* AboutView.swift in Sources */,
 				D84DED951C9E3FDB001A68B5 /* NewView.swift in Sources */,
@@ -272,7 +293,6 @@
 				D846A7B01C9935C40030A359 /* FMDatabasePool.m in Sources */,
 				D8E1908C1C9F41000021F9D9 /* EvenMore.swift in Sources */,
 				D82D31CC1C9E2E470000C447 /* FeaturedView.swift in Sources */,
-				D81878481CB22D1700435788 /* ratingExplained.swift in Sources */,
 				D846A7B21C9935C40030A359 /* FMResultSet.m in Sources */,
 				171E0C7E1B8E5B84001E6242 /* AppDelegate.swift in Sources */,
 				D88033D31CABA81300D86C48 /* LearnMore.swift in Sources */,
