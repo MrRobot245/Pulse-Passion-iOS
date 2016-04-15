@@ -454,14 +454,14 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smallMyPulseLogo" translatesAutoresizingMaskIntoConstraints="NO" id="4yy-q7-Oid">
                                 <rect key="frame" x="245" y="78" width="110" height="153"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="110" id="IMM-Do-jBX"/>
+                                    <constraint firstAttribute="width" constant="110" id="MGf-x4-53z"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LEF-Ja-tMI">
                                 <rect key="frame" x="163" y="237" width="274" height="127"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="274" id="HgT-8h-LQ9"/>
-                                    <constraint firstAttribute="height" constant="127" id="ZnZ-NM-7JF"/>
+                                    <constraint firstAttribute="height" constant="127" id="Et1-Uj-qaQ"/>
+                                    <constraint firstAttribute="width" constant="274" id="zGY-XH-bB1"/>
                                 </constraints>
                                 <string key="text">Pulse Plus Foods is committed to providing Canadian consumers with value added food products focused on improving cardiovascular health through the utilization of pulses as a main ingredient. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -470,20 +470,20 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cje-Dm-8kz">
                                 <rect key="frame" x="206" y="407" width="189" height="136"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bi-QW-8y7">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3IB-b8-CMS">
                                         <rect key="frame" x="0.0" y="0.0" width="189" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Are you at Risk?"/>
+                                        <connections>
+                                            <action selector="HeartButton:" destination="eer-nd-QZZ" eventType="touchUpInside" id="a9m-zW-p4F"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bi-QW-8y7">
+                                        <rect key="frame" x="0.0" y="34" width="189" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="Cardiovascular Disease"/>
                                         <connections>
                                             <segue destination="vE2-zC-OLx" kind="show" id="DfA-WX-f0C"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3IB-b8-CMS">
-                                        <rect key="frame" x="0.0" y="34" width="189" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" title="Heart and Stroke"/>
-                                        <connections>
-                                            <action selector="HeartButton:" destination="eer-nd-QZZ" eventType="touchUpInside" id="a9m-zW-p4F"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Srd-e7-Er9">
@@ -507,20 +507,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="LEF-Ja-tMI" firstAttribute="top" secondItem="4yy-q7-Oid" secondAttribute="bottom" constant="6" id="3ZC-eM-7Ze"/>
-                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="bottom" secondItem="zxt-0f-jDN" secondAttribute="bottom" id="Ktr-5c-DbR"/>
-                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="leading" secondItem="jcL-up-CdG" secondAttribute="leading" id="NGl-Un-XNp"/>
-                            <constraint firstItem="LEF-Ja-tMI" firstAttribute="centerX" secondItem="cje-Dm-8kz" secondAttribute="centerX" id="Qj1-Hn-pAd"/>
-                            <constraint firstItem="LEF-Ja-tMI" firstAttribute="centerY" secondItem="jcL-up-CdG" secondAttribute="centerY" id="UxA-Qt-m0y"/>
-                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="centerX" secondItem="4yy-q7-Oid" secondAttribute="centerX" id="cLZ-Ft-lrc"/>
-                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="top" secondItem="jcL-up-CdG" secondAttribute="top" id="fg0-jt-uQc"/>
-                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="leading" secondItem="Te7-1i-Jlb" secondAttribute="leading" id="hlT-5F-JpZ"/>
-                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="trailing" secondItem="Te7-1i-Jlb" secondAttribute="trailing" id="kNl-f3-SRM"/>
-                            <constraint firstAttribute="trailing" secondItem="1HA-Wp-LXA" secondAttribute="trailing" id="qrz-gU-4kC"/>
-                            <constraint firstItem="4yy-q7-Oid" firstAttribute="top" secondItem="zxt-0f-jDN" secondAttribute="bottom" constant="14" id="t4X-3V-LaT"/>
-                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="top" secondItem="1HA-Wp-LXA" secondAttribute="bottom" id="t4t-ET-aI5"/>
-                            <constraint firstItem="4yy-q7-Oid" firstAttribute="centerX" secondItem="LEF-Ja-tMI" secondAttribute="centerX" id="tQC-3L-QuP"/>
-                            <constraint firstItem="RCc-a1-3LW" firstAttribute="top" secondItem="cje-Dm-8kz" secondAttribute="bottom" constant="8" symbolic="YES" id="viE-AR-Fuw"/>
+                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="leading" secondItem="jcL-up-CdG" secondAttribute="leading" id="2mI-rz-cRo"/>
+                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="top" secondItem="1HA-Wp-LXA" secondAttribute="bottom" id="An2-iz-eDu"/>
+                            <constraint firstItem="4yy-q7-Oid" firstAttribute="centerX" secondItem="LEF-Ja-tMI" secondAttribute="centerX" id="N8F-gn-1o6"/>
+                            <constraint firstItem="RCc-a1-3LW" firstAttribute="top" secondItem="cje-Dm-8kz" secondAttribute="bottom" constant="8" symbolic="YES" id="Oih-Ww-sDw"/>
+                            <constraint firstItem="LEF-Ja-tMI" firstAttribute="top" secondItem="4yy-q7-Oid" secondAttribute="bottom" constant="6" id="Uwt-31-8L8"/>
+                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="trailing" secondItem="Te7-1i-Jlb" secondAttribute="trailing" id="WAg-sD-zSZ"/>
+                            <constraint firstAttribute="trailing" secondItem="1HA-Wp-LXA" secondAttribute="trailing" id="Z32-jk-7TW"/>
+                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="centerX" secondItem="4yy-q7-Oid" secondAttribute="centerX" id="ayo-zC-r5x"/>
+                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="bottom" secondItem="zxt-0f-jDN" secondAttribute="bottom" id="bEg-6f-WnQ"/>
+                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="top" secondItem="jcL-up-CdG" secondAttribute="top" id="fPM-ii-5Qg"/>
+                            <constraint firstItem="LEF-Ja-tMI" firstAttribute="centerY" secondItem="jcL-up-CdG" secondAttribute="centerY" id="g2C-xl-4Bb"/>
+                            <constraint firstItem="4yy-q7-Oid" firstAttribute="top" secondItem="zxt-0f-jDN" secondAttribute="bottom" constant="14" id="gnO-HH-cNZ"/>
+                            <constraint firstItem="LEF-Ja-tMI" firstAttribute="centerX" secondItem="cje-Dm-8kz" secondAttribute="centerX" id="x2g-JV-4Ae"/>
+                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="leading" secondItem="Te7-1i-Jlb" secondAttribute="leading" id="zvQ-D1-LuJ"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Learn More" image="Learn" id="zAf-Zm-n1x"/>
