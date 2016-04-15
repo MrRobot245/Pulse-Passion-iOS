@@ -38,6 +38,7 @@
 		D8A863171C99E97B007DE46A /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A863161C99E97B007DE46A /* AboutView.swift */; };
 		D8BA55B71C9931BC002ACAAD /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = D8BA55B61C9931BC002ACAAD /* start.png */; };
 		D8BA55B91C9931C5002ACAAD /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D8BA55B81C9931C5002ACAAD /* logo.jpg */; };
+		D8BC90AA1CC1831800465EF3 /* LearnMoreClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BC90A91CC1831800465EF3 /* LearnMoreClass.swift */; };
 		D8C28B4A1CB2BDB700A6177E /* DB2.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = D8C28B491CB2BDB700A6177E /* DB2.sqlite */; };
 		D8E1908C1C9F41000021F9D9 /* EvenMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E1908B1C9F41000021F9D9 /* EvenMore.swift */; };
 /* End PBXBuildFile section */
@@ -83,6 +84,7 @@
 		D8A863161C99E97B007DE46A /* AboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		D8BA55B61C9931BC002ACAAD /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
 		D8BA55B81C9931C5002ACAAD /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
+		D8BC90A91CC1831800465EF3 /* LearnMoreClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnMoreClass.swift; sourceTree = "<group>"; };
 		D8C28B491CB2BDB700A6177E /* DB2.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = DB2.sqlite; sourceTree = "<group>"; };
 		D8E1908B1C9F41000021F9D9 /* EvenMore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvenMore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,6 +128,7 @@
 				171E0C811B8E5B84001E6242 /* DetailViewController.swift */,
 				D8E1908B1C9F41000021F9D9 /* EvenMore.swift */,
 				171E0C831B8E5B84001E6242 /* Main.storyboard */,
+				D8BC90A91CC1831800465EF3 /* LearnMoreClass.swift */,
 				D8C28B491CB2BDB700A6177E /* DB2.sqlite */,
 				D87F32CC1CAC5261005FD7B7 /* LearnMoreHD.swift */,
 				D88033D21CABA81300D86C48 /* LearnMore.swift */,
@@ -288,6 +291,7 @@
 				D8A863171C99E97B007DE46A /* AboutView.swift in Sources */,
 				D84DED951C9E3FDB001A68B5 /* NewView.swift in Sources */,
 				D846A7AE1C9935C40030A359 /* FMDatabase.m in Sources */,
+				D8BC90AA1CC1831800465EF3 /* LearnMoreClass.swift in Sources */,
 				D84DED931C9E3F66001A68B5 /* ConnView.swift in Sources */,
 				D87F32CD1CAC5261005FD7B7 /* LearnMoreHD.swift in Sources */,
 				D846A7B01C9935C40030A359 /* FMDatabasePool.m in Sources */,

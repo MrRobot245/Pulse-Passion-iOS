@@ -411,7 +411,7 @@
         <!--Learn More-->
         <scene sceneID="YRZ-tk-lXn">
             <objects>
-                <viewController id="eer-nd-QZZ" sceneMemberID="viewController">
+                <viewController id="eer-nd-QZZ" customClass="LearnMoreClass" customModule="MyPulse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zxt-0f-jDN"/>
                         <viewControllerLayoutGuide type="bottom" id="RCc-a1-3LW"/>
@@ -454,22 +454,40 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smallMyPulseLogo" translatesAutoresizingMaskIntoConstraints="NO" id="4yy-q7-Oid">
                                 <rect key="frame" x="245" y="78" width="110" height="153"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="110" id="66q-ga-ag5"/>
+                                    <constraint firstAttribute="width" constant="110" id="IMM-Do-jBX"/>
                                 </constraints>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LEF-Ja-tMI">
+                                <rect key="frame" x="163" y="237" width="274" height="127"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="274" id="HgT-8h-LQ9"/>
+                                    <constraint firstAttribute="height" constant="127" id="ZnZ-NM-7JF"/>
+                                </constraints>
+                                <string key="text">Pulse Plus Foods is committed to providing Canadian consumers with value added food products focused on improving cardiovascular health through the utilization of pulses as a main ingredient. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cje-Dm-8kz">
-                                <rect key="frame" x="243" y="449" width="114" height="102"/>
+                                <rect key="frame" x="206" y="407" width="189" height="136"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bi-QW-8y7">
-                                        <rect key="frame" x="0.0" y="0.0" width="114" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="189" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" title="Heart Disease"/>
+                                        <state key="normal" title="Cardiovascular Disease"/>
                                         <connections>
                                             <segue destination="vE2-zC-OLx" kind="show" id="DfA-WX-f0C"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3IB-b8-CMS">
+                                        <rect key="frame" x="0.0" y="34" width="189" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Heart and Stroke"/>
+                                        <connections>
+                                            <action selector="HeartButton:" destination="eer-nd-QZZ" eventType="touchUpInside" id="a9m-zW-p4F"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Srd-e7-Er9">
-                                        <rect key="frame" x="0.0" y="34" width="114" height="34"/>
+                                        <rect key="frame" x="0.0" y="68" width="189" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="Diet"/>
                                         <connections>
@@ -477,7 +495,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTG-f5-sLP">
-                                        <rect key="frame" x="0.0" y="68" width="114" height="34"/>
+                                        <rect key="frame" x="0.0" y="102" width="189" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="More"/>
                                         <connections>
@@ -486,33 +504,23 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LEF-Ja-tMI">
-                                <rect key="frame" x="163" y="237" width="274" height="127"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="127" id="D3n-Y3-8dV"/>
-                                    <constraint firstAttribute="width" constant="274" id="XlN-56-WdI"/>
-                                </constraints>
-                                <string key="text">Pulse Plus Foods is committed to providing Canadian consumers with value added food products focused on improving cardiovascular health through the utilization of pulses as a main ingredient. </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="4yy-q7-Oid" firstAttribute="top" secondItem="zxt-0f-jDN" secondAttribute="bottom" constant="14" id="E1m-rm-dam"/>
-                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="bottom" secondItem="zxt-0f-jDN" secondAttribute="bottom" id="KEK-7e-nGR"/>
-                            <constraint firstItem="cje-Dm-8kz" firstAttribute="bottom" secondItem="RCc-a1-3LW" secondAttribute="top" id="Qgd-rd-Mtc"/>
-                            <constraint firstItem="LEF-Ja-tMI" firstAttribute="centerX" secondItem="cje-Dm-8kz" secondAttribute="centerX" id="V8P-Oy-wbS"/>
-                            <constraint firstAttribute="trailing" secondItem="1HA-Wp-LXA" secondAttribute="trailing" id="WCE-cI-c9v"/>
-                            <constraint firstItem="LEF-Ja-tMI" firstAttribute="centerY" secondItem="jcL-up-CdG" secondAttribute="centerY" id="Yfr-Nx-Qfn"/>
-                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="trailing" secondItem="Te7-1i-Jlb" secondAttribute="trailing" id="aRS-LE-WKc"/>
-                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="leading" secondItem="jcL-up-CdG" secondAttribute="leading" id="f7y-mW-mS6"/>
-                            <constraint firstItem="LEF-Ja-tMI" firstAttribute="top" secondItem="4yy-q7-Oid" secondAttribute="bottom" constant="6" id="gOD-3b-Abq"/>
-                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="leading" secondItem="Te7-1i-Jlb" secondAttribute="leading" id="gPl-uP-mds"/>
-                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="top" secondItem="jcL-up-CdG" secondAttribute="top" id="hUe-cn-hS9"/>
-                            <constraint firstItem="4yy-q7-Oid" firstAttribute="centerX" secondItem="LEF-Ja-tMI" secondAttribute="centerX" id="jly-vI-WO3"/>
-                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="top" secondItem="1HA-Wp-LXA" secondAttribute="bottom" id="pKk-sl-dEP"/>
-                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="centerX" secondItem="4yy-q7-Oid" secondAttribute="centerX" id="uNJ-ca-mE4"/>
+                            <constraint firstItem="LEF-Ja-tMI" firstAttribute="top" secondItem="4yy-q7-Oid" secondAttribute="bottom" constant="6" id="3ZC-eM-7Ze"/>
+                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="bottom" secondItem="zxt-0f-jDN" secondAttribute="bottom" id="Ktr-5c-DbR"/>
+                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="leading" secondItem="jcL-up-CdG" secondAttribute="leading" id="NGl-Un-XNp"/>
+                            <constraint firstItem="LEF-Ja-tMI" firstAttribute="centerX" secondItem="cje-Dm-8kz" secondAttribute="centerX" id="Qj1-Hn-pAd"/>
+                            <constraint firstItem="LEF-Ja-tMI" firstAttribute="centerY" secondItem="jcL-up-CdG" secondAttribute="centerY" id="UxA-Qt-m0y"/>
+                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="centerX" secondItem="4yy-q7-Oid" secondAttribute="centerX" id="cLZ-Ft-lrc"/>
+                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="top" secondItem="jcL-up-CdG" secondAttribute="top" id="fg0-jt-uQc"/>
+                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="leading" secondItem="Te7-1i-Jlb" secondAttribute="leading" id="hlT-5F-JpZ"/>
+                            <constraint firstItem="1HA-Wp-LXA" firstAttribute="trailing" secondItem="Te7-1i-Jlb" secondAttribute="trailing" id="kNl-f3-SRM"/>
+                            <constraint firstAttribute="trailing" secondItem="1HA-Wp-LXA" secondAttribute="trailing" id="qrz-gU-4kC"/>
+                            <constraint firstItem="4yy-q7-Oid" firstAttribute="top" secondItem="zxt-0f-jDN" secondAttribute="bottom" constant="14" id="t4X-3V-LaT"/>
+                            <constraint firstItem="Te7-1i-Jlb" firstAttribute="top" secondItem="1HA-Wp-LXA" secondAttribute="bottom" id="t4t-ET-aI5"/>
+                            <constraint firstItem="4yy-q7-Oid" firstAttribute="centerX" secondItem="LEF-Ja-tMI" secondAttribute="centerX" id="tQC-3L-QuP"/>
+                            <constraint firstItem="RCc-a1-3LW" firstAttribute="top" secondItem="cje-Dm-8kz" secondAttribute="bottom" constant="8" symbolic="YES" id="viE-AR-Fuw"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Learn More" image="Learn" id="zAf-Zm-n1x"/>
