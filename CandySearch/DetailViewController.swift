@@ -38,8 +38,7 @@ class DetailViewController: UIViewController {
     
     func configureView() {
         if let detailCandy = detailCandy {
-            if let detailDescriptionLabel = detailDescriptionLabel, candyImageView = candyImageView {
-                candyImageView.image = UIImage(named: "logoNoText")
+            if let detailDescriptionLabel = detailDescriptionLabel {
                  iList.text = detailCandy.iList
                 if(detailCandy.fRate == "Limit")
                 {
