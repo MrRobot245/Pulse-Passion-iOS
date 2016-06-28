@@ -227,12 +227,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					171E0C791B8E5B84001E6242 = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = 97MW272B3E;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -422,6 +423,7 @@
 				PRODUCT_NAME = MyPulse;
 				SWIFT_OBJC_BRIDGING_HEADER = "CandySearch/MyPulse-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -438,6 +440,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pulsePassion.MyPulseiOS;
 				PRODUCT_NAME = MyPulse;
 				SWIFT_OBJC_BRIDGING_HEADER = "CandySearch/MyPulse-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

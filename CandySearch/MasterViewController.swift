@@ -33,25 +33,25 @@ class MasterViewController: UITableViewController {
     //FMDB
     func fmdb(){
         
-        let documents = try! NSFileManager.defaultManager().URLForDirectory(.DocumentDirectory, inDomain: .UserDomainMask, appropriateForURL: nil, create: false)
-        let fileURL = documents.URLByAppendingPathComponent("DB2.sqlite")
+        let documents = try! FileManager.default().urlForDirectory(.documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
+        let fileURL = try! documents.appendingPathComponent("DB2.sqlite")
         let database = FMDatabase(path: fileURL.path)
-        if !database.open() {
+        if !(database?.open())! {
             print("Unable to open database")
             return
         }
         
         let querySQL = "SELECT cat,title,fRate,iList,gList,bList,iRate FROM DB WHERE title = title ORDER BY title COLLATE NOCASE"
-        let results:FMResultSet? = database.executeQuery(querySQL,
-                                                         withArgumentsInArray: nil)
+        let results:FMResultSet? = database?.executeQuery(querySQL,
+                                                         withArgumentsIn: nil)
         while(results!.next()) {
             //print("\(results!.stringForColumn("cat"),results!.stringForColumn("food"))")
-            food.append(Food(category: results!.stringForColumn("cat"), name: results!.stringForColumn("title"),
-                fRate: results!.stringForColumn("fRate"),
-                iList: results!.stringForColumn("iList"),
-                gList: results!.stringForColumn("gList"),
-                bList: results!.stringForColumn("bList"),
-                iRate: results!.stringForColumn("iRate")))
+            food.append(Food(category: results!.string(forColumn: "cat"), name: results!.string(forColumn: "title"),
+                fRate: results!.string(forColumn: "fRate"),
+                iList: results!.string(forColumn: "iList"),
+                gList: results!.string(forColumn: "gList"),
+                bList: results!.string(forColumn: "bList"),
+                iRate: results!.string(forColumn: "iRate")))
             
             
             //         let querySQL = "SELECT cat,title,fRate,iList FROM DB WHERE title = title ORDER BY title COLLATE NOCASE"
@@ -82,9 +82,9 @@ class MasterViewController: UITableViewController {
         searchController.searchBar.delegate = self
     }
     
-    func filterContentForSearchText(searchText: String, scope: String = "All") {
+    func filterContentForSearchText(_ searchText: String, scope: String = "All") {
         
-        let searchTerms = searchText.componentsSeparatedByString(" ").filter { $0 != "" }
+        let searchTerms = searchText.components(separatedBy: " ").filter { $0 != "" }
         
         filteredFood = food.filter { candy in
             let categoryMatch = (scope == "All") || (candy.fRate == scope)
@@ -92,7 +92,7 @@ class MasterViewController: UITableViewController {
                 return false
             }
             for term in searchTerms{
-                if !candy.name.lowercaseString.containsString(term.lowercaseString) {
+                if !candy.name.lowercased().contains(term.lowercased()) {
                     return false
                 }
                 if !categoryMatch {
@@ -114,7 +114,7 @@ class MasterViewController: UITableViewController {
 //    }
 //    
 //    
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         // clearsSelectionOnViewWillAppear = splitViewController!.collapsed
         super.viewWillAppear(animated)
     }
@@ -123,35 +123,35 @@ class MasterViewController: UITableViewController {
         super.didReceiveMemoryWarning()
     }
     func copyDatabase(){
-        let fileManger = NSFileManager.defaultManager()
-        let doumentDirectoryPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as NSString
-        let destinationPath = doumentDirectoryPath.stringByAppendingPathComponent("DB2.sqlite")
-        let sourcePath = NSBundle.mainBundle().pathForResource("DB2", ofType: "sqlite")
-        if (fileManger.fileExistsAtPath(destinationPath)) {
-            try!fileManger.removeItemAtPath(destinationPath)
+        let fileManger = FileManager.default()
+        let doumentDirectoryPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString
+        let destinationPath = doumentDirectoryPath.appendingPathComponent("DB2.sqlite")
+        let sourcePath = Bundle.main().pathForResource("DB2", ofType: "sqlite")
+        if (fileManger.fileExists(atPath: destinationPath)) {
+            try!fileManger.removeItem(atPath: destinationPath)
         }
-        try! fileManger.copyItemAtPath(sourcePath!, toPath: destinationPath)
+        try! fileManger.copyItem(atPath: sourcePath!, toPath: destinationPath)
     }
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if searchController.active && searchController.searchBar.text != "" {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if searchController.isActive && searchController.searchBar.text != "" {
             return filteredFood.count
         }
         return food.count
     }
     
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         let candy: Food
-        if searchController.active && searchController.searchBar.text != "" {
-            candy = filteredFood[indexPath.row]
+        if searchController.isActive && searchController.searchBar.text != "" {
+            candy = filteredFood[(indexPath as NSIndexPath).row]
         } else {
-            candy = food[indexPath.row]
+            candy = food[(indexPath as NSIndexPath).row]
         }
         cell.textLabel?.text = candy.name
         cell.detailTextLabel?.text = candy.category
@@ -159,14 +159,14 @@ class MasterViewController: UITableViewController {
     }
     
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
                 let candy: Food
-                if searchController.active && searchController.searchBar.text != "" {
-                    candy = filteredFood[indexPath.row]
+                if searchController.isActive && searchController.searchBar.text != "" {
+                    candy = filteredFood[(indexPath as NSIndexPath).row]
                 } else {
-                    candy = food[indexPath.row]
+                    candy = food[(indexPath as NSIndexPath).row]
                 }
                 let controller = (segue.destinationViewController as! DetailViewController)
                 controller.detailCandy = candy
@@ -178,14 +178,14 @@ class MasterViewController: UITableViewController {
     
 }
 extension MasterViewController: UISearchResultsUpdating {
-    func updateSearchResultsForSearchController(searchController: UISearchController) {
+    func updateSearchResults(for searchController: UISearchController) {
         let searchBar = searchController.searchBar
         let scope = searchBar.scopeButtonTitles![searchBar.selectedScopeButtonIndex]
         filterContentForSearchText(searchController.searchBar.text!, scope: scope)
     }
 }
 extension MasterViewController: UISearchBarDelegate {
-    func searchBar(searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+    func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
          //filterContentForScope(searchBar.scopeButtonTitles![selectedScope])
         filterContentForSearchText(searchBar.text!, scope: searchBar.scopeButtonTitles![selectedScope])
         

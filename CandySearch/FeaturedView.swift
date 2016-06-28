@@ -31,34 +31,34 @@ class FeaturedView: UIViewController, UICollectionViewDataSource, UICollectionVi
         // Dispose of any resources that can be recreated.
     }
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
         return self.productName.count
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cCell", forIndexPath: indexPath) as! CollectionViewCell
-        cell.imageView?.image = self.imageArray[indexPath.row]
-        cell.titleLabel?.text = self.productName[indexPath.row]
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cCell", for: indexPath) as! CollectionViewCell
+        cell.imageView?.image = self.imageArray[(indexPath as NSIndexPath).row]
+        cell.titleLabel?.text = self.productName[(indexPath as NSIndexPath).row]
         return cell
     }
     
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath)
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
     {
-        self.performSegueWithIdentifier("showImage", sender: self)
+        self.performSegue(withIdentifier: "showImage", sender: self)
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
+    override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?)
     {
         if segue.identifier == "showImage"
         {
             let indexPaths = self.collectionView!.indexPathsForSelectedItems()!
-            let indexPath = indexPaths[0] as NSIndexPath
+            let indexPath = indexPaths[0] as IndexPath
             let vc = segue.destinationViewController as! NewViewController
-            vc.image = self.imageArray[indexPath.row]!
-            vc.getTopLabel = self.productName[indexPath.row]
-            vc.getiList = self.ingredArray[indexPath.row]
+            vc.image = self.imageArray[(indexPath as NSIndexPath).row]!
+            vc.getTopLabel = self.productName[(indexPath as NSIndexPath).row]
+            vc.getiList = self.ingredArray[(indexPath as NSIndexPath).row]
             
             vc.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem()
             vc.navigationItem.leftItemsSupplementBackButton = true

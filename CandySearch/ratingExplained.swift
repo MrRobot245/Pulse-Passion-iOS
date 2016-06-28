@@ -14,8 +14,8 @@ import UIKit
 class ratingExplained: UIViewController
 {
 
-    @IBAction func backButt(sender: AnyObject) {
-         self.dismissViewControllerAnimated(true, completion: {});
+    @IBAction func backButt(_ sender: AnyObject) {
+         self.dismiss(animated: true, completion: {});
     }
     
 }

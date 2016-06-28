@@ -11,30 +11,30 @@ import UIKit
 
 class AboutView: UIViewController {
     @IBOutlet weak var vLabel: UILabel!
-    @IBAction func facebookButton(sender: AnyObject) {
+    @IBAction func facebookButton(_ sender: AnyObject) {
         
-         UIApplication.sharedApplication().openURL(NSURL(string: "https://www.facebook.com/Pulse-Passion-564611067026281/")!)
+         UIApplication.shared().openURL(URL(string: "https://www.facebook.com/Pulse-Passion-564611067026281/")!)
     }
-    @IBAction func supportButton(sender: AnyObject) {
-        let url = NSURL(string: "mailto:PulsePassionCo@gmail.com")
-        UIApplication.sharedApplication().openURL(url!)
+    @IBAction func supportButton(_ sender: AnyObject) {
+        let url = URL(string: "mailto:PulsePassionCo@gmail.com")
+        UIApplication.shared().openURL(url!)
     }
 
-    @IBAction func contactButton(sender: AnyObject) {
-        let url = NSURL(string: "mailto:PulsePassionCo@gmail.com")
-        UIApplication.sharedApplication().openURL(url!)
+    @IBAction func contactButton(_ sender: AnyObject) {
+        let url = URL(string: "mailto:PulsePassionCo@gmail.com")
+        UIApplication.shared().openURL(url!)
         
         
     }
     @IBOutlet weak var bLabel: UILabel!
-    @IBAction func webButton(sender: AnyObject) {
+    @IBAction func webButton(_ sender: AnyObject) {
 
-            UIApplication.sharedApplication().openURL(NSURL(string: "http://pulsepassion.ca")!)
+            UIApplication.shared().openURL(URL(string: "http://pulsepassion.ca")!)
     }
     func getVersion(){
-        let info:NSDictionary = NSBundle.mainBundle().infoDictionary!
-        let version:String = info.objectForKey("CFBundleShortVersionString") as! String
-        let build:String = info.objectForKey("CFBundleVersion") as! String
+        let info:NSDictionary = Bundle.main().infoDictionary!
+        let version:String = info.object(forKey: "CFBundleShortVersionString") as! String
+        let build:String = info.object(forKey: "CFBundleVersion") as! String
         vLabel.text = version
         bLabel.text = build
         

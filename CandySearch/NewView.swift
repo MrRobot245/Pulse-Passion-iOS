@@ -15,7 +15,7 @@ class NewViewController: UIViewController
     @IBOutlet weak var ratingView: UIImageView!
     @IBOutlet weak var topLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
-    @IBAction func unwindToThisViewController(segue: UIStoryboardSegue) {
+    @IBAction func unwindToThisViewController(_ segue: UIStoryboardSegue) {
     }
     var image = UIImage()
     var getTopLabel:String!

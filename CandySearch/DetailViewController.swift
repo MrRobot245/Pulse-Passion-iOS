@@ -61,8 +61,8 @@ class DetailViewController: UIViewController {
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        self.iList.setContentOffset(CGPointZero, animated: false)
-        self.iList.contentSize = CGSizeMake(iList.frame.size.height,iList.contentSize.height);
+        self.iList.setContentOffset(CGPoint.zero, animated: false)
+        self.iList.contentSize = CGSize(width: iList.frame.size.height,height: iList.contentSize.height);
         self.iList.showsHorizontalScrollIndicator = false;
 
 
@@ -72,7 +72,7 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         configureView()
             }
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.iList.flashScrollIndicators()
     }
@@ -82,7 +82,7 @@ class DetailViewController: UIViewController {
     }
     
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
        
         if segue.identifier == "showMore" {
             let vc = segue.destinationViewController as! EvenMoreViewController

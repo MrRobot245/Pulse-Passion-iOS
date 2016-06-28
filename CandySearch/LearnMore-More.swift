@@ -20,12 +20,12 @@ class LearnMoreMore: UIViewController
         
         
     }
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.TView.flashScrollIndicators()
     }
     override func viewDidLayoutSubviews() {
-        self.TView.setContentOffset(CGPointZero, animated: false)
+        self.TView.setContentOffset(CGPoint.zero, animated: false)
     }
     override func didReceiveMemoryWarning()
     {
