@@ -27,14 +27,14 @@ class EvenMoreViewController: UIViewController
     var bulletGood: String!
     var getRatingNum: String!
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         self.goodView.flashScrollIndicators()
         self.badView.flashScrollIndicators()
     }
     override func viewDidLayoutSubviews() {
-        self.goodView.setContentOffset(CGPoint.zero, animated: false)
-        self.badView.setContentOffset(CGPoint.zero, animated: false)
+        self.goodView.setContentOffset(CGPointZero, animated: false)
+        self.badView.setContentOffset(CGPointZero, animated: false)
     }
     override func viewDidLoad()
     {
@@ -42,8 +42,8 @@ class EvenMoreViewController: UIViewController
         self.foodLabel.text = self.getTopLabel
         bulletBad = self.getbadLabel
         bulletGood = self.getgoodLabel
-        var NewbulletBad = "• " + bulletBad.replacingOccurrences(of: ",", with: "\n•")
-        var NewbulletGood =  "• " + bulletGood.replacingOccurrences(of: ",", with: "\n•")
+        var NewbulletBad = "• " + bulletBad.stringByReplacingOccurrencesOfString(",", withString: "\n•")
+        var NewbulletGood =  "• " + bulletGood.stringByReplacingOccurrencesOfString(",", withString: "\n•")
         
         
         if (NewbulletGood == "• -")

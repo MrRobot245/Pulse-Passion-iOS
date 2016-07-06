@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     
     var window: UIWindow?
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
 //        let splitViewController = window!.rootViewController as! UISplitViewController
 //        let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
@@ -35,11 +35,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 //        splitViewController.delegate = self
 
        // navigationController.navigationBar.translucent = true
-        UISearchBar.appearance().isTranslucent =  true
-        UISearchBar.appearance().tintColor = UIColor.white()
+        UISearchBar.appearance().translucent =  true
+        UISearchBar.appearance().tintColor = UIColor.whiteColor()
         UISearchBar.appearance().barTintColor = UIColor.logoGreen()
-        UITextField.whenContained(inInstancesOfClasses: [UISearchBar.self]).tintColor = UIColor.black()
-        UIApplication.shared().statusBarStyle = .lightContent
+        UITextField.appearanceWhenContainedInInstancesOfClasses([UISearchBar.self]).tintColor = UIColor.blackColor()
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
         
     
   
@@ -47,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     }
     
     // MARK: - Split view
-    func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController:UIViewController, onto primaryViewController:UIViewController) -> Bool {
+    func splitViewController(splitViewController: UISplitViewController, collapseSecondaryViewController secondaryViewController:UIViewController, ontoPrimaryViewController primaryViewController:UIViewController) -> Bool {
         guard let secondaryAsNavController = secondaryViewController as? UINavigationController else { return false }
         guard let topAsDetailController = secondaryAsNavController.topViewController as? DetailViewController else { return false }
         if topAsDetailController.detailCandy == nil {

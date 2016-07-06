@@ -15,8 +15,8 @@ class LearnMoreClass: UIViewController
     
 {
     
-    @IBAction func HeartButton(_ sender: AnyObject) {
-        UIApplication.shared().openURL(URL(string: "https://ehealth.heartandstroke.ca")!)
+    @IBAction func HeartButton(sender: AnyObject) {
+        UIApplication.sharedApplication().openURL(NSURL(string: "https://ehealth.heartandstroke.ca")!)
     }
 
 
