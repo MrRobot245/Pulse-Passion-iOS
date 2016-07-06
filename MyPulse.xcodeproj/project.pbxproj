@@ -15,6 +15,8 @@
 		171E0C8A1B8E5B84001E6242 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 171E0C881B8E5B84001E6242 /* LaunchScreen.storyboard */; };
 		171E0CAE1B8E5C58001E6242 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171E0CAD1B8E5C58001E6242 /* Food.swift */; };
 		D805F0251C9A80840036FA48 /* smallMyPulseLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D805F0241C9A80840036FA48 /* smallMyPulseLogo.png */; };
+		D82655A21D2DCB400002D0E6 /* RSBarcodes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D82655A11D2DCB400002D0E6 /* RSBarcodes.framework */; };
+		D82655A81D2DCDBE0002D0E6 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82655A71D2DCDBE0002D0E6 /* ScanViewController.swift */; };
 		D82D31CC1C9E2E470000C447 /* FeaturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D31CB1C9E2E470000C447 /* FeaturedView.swift */; };
 		D846A7AE1C9935C40030A359 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = D846A7A41C9935C40030A359 /* FMDatabase.m */; };
 		D846A7AF1C9935C40030A359 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D846A7A61C9935C40030A359 /* FMDatabaseAdditions.m */; };
@@ -54,6 +56,8 @@
 		171E0C8B1B8E5B84001E6242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		171E0CAD1B8E5C58001E6242 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		D805F0241C9A80840036FA48 /* smallMyPulseLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smallMyPulseLogo.png; sourceTree = "<group>"; };
+		D82655A11D2DCB400002D0E6 /* RSBarcodes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RSBarcodes.framework; path = Carthage/Build/iOS/RSBarcodes.framework; sourceTree = "<group>"; };
+		D82655A71D2DCDBE0002D0E6 /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		D82D31CB1C9E2E470000C447 /* FeaturedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedView.swift; sourceTree = "<group>"; };
 		D846A7A21C9935C30030A359 /* MyPulse-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyPulse-Bridging-Header.h"; sourceTree = "<group>"; };
 		D846A7A31C9935C40030A359 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
@@ -96,6 +100,7 @@
 			files = (
 				D846A7B61C9936010030A359 /* libsqlite3.0.tbd in Frameworks */,
 				D846A7B71C9936010030A359 /* libsqlite3.tbd in Frameworks */,
+				D82655A21D2DCB400002D0E6 /* RSBarcodes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +110,7 @@
 		171E0C711B8E5B84001E6242 = {
 			isa = PBXGroup;
 			children = (
+				D82655A11D2DCB400002D0E6 /* RSBarcodes.framework */,
 				171E0C7C1B8E5B84001E6242 /* MyPulse */,
 				171E0C7B1B8E5B84001E6242 /* Products */,
 			);
@@ -128,6 +134,7 @@
 				171E0C811B8E5B84001E6242 /* DetailViewController.swift */,
 				D8E1908B1C9F41000021F9D9 /* EvenMore.swift */,
 				171E0C831B8E5B84001E6242 /* Main.storyboard */,
+				D82655A71D2DCDBE0002D0E6 /* ScanViewController.swift */,
 				D8BC90A91CC1831800465EF3 /* LearnMoreClass.swift */,
 				D8C28B491CB2BDB700A6177E /* DB2.sqlite */,
 				D87F32CC1CAC5261005FD7B7 /* LearnMoreHD.swift */,
@@ -289,6 +296,7 @@
 				D857744A1CBB36E800D65182 /* ratingExplained.swift in Sources */,
 				D87F32CB1CAC5171005FD7B7 /* LearnMore-More.swift in Sources */,
 				D8A863171C99E97B007DE46A /* AboutView.swift in Sources */,
+				D82655A81D2DCDBE0002D0E6 /* ScanViewController.swift in Sources */,
 				D84DED951C9E3FDB001A68B5 /* NewView.swift in Sources */,
 				D846A7AE1C9935C40030A359 /* FMDatabase.m in Sources */,
 				D8BC90AA1CC1831800465EF3 /* LearnMoreClass.swift in Sources */,
@@ -415,6 +423,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CandySearch/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -432,6 +444,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CandySearch/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
