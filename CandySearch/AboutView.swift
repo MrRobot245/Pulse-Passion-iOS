@@ -26,6 +26,9 @@ class AboutView: UIViewController {
         
         
     }
+    @IBAction func HeartButton(sender: AnyObject) {
+        UIApplication.sharedApplication().openURL(NSURL(string: "https://ehealth.heartandstroke.ca")!)
+    }
     @IBOutlet weak var bLabel: UILabel!
     @IBAction func webButton(sender: AnyObject) {
 
