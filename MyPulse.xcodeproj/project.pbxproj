@@ -15,7 +15,6 @@
 		171E0C8A1B8E5B84001E6242 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 171E0C881B8E5B84001E6242 /* LaunchScreen.storyboard */; };
 		171E0CAE1B8E5C58001E6242 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171E0CAD1B8E5C58001E6242 /* Food.swift */; };
 		D805F0251C9A80840036FA48 /* smallMyPulseLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D805F0241C9A80840036FA48 /* smallMyPulseLogo.png */; };
-		D82655A21D2DCB400002D0E6 /* RSBarcodes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D82655A11D2DCB400002D0E6 /* RSBarcodes.framework */; };
 		D82655A81D2DCDBE0002D0E6 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82655A71D2DCDBE0002D0E6 /* ScanViewController.swift */; };
 		D82D31CC1C9E2E470000C447 /* FeaturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D31CB1C9E2E470000C447 /* FeaturedView.swift */; };
 		D846A7AE1C9935C40030A359 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = D846A7A41C9935C40030A359 /* FMDatabase.m */; };
@@ -42,8 +41,24 @@
 		D8BA55B91C9931C5002ACAAD /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D8BA55B81C9931C5002ACAAD /* logo.jpg */; };
 		D8BC90AA1CC1831800465EF3 /* LearnMoreClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BC90A91CC1831800465EF3 /* LearnMoreClass.swift */; };
 		D8C28B4A1CB2BDB700A6177E /* DB2.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = D8C28B491CB2BDB700A6177E /* DB2.sqlite */; };
+		D8D477741D2DD55900CC8710 /* RSBarcodes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D477611D2DD42200CC8710 /* RSBarcodes.framework */; };
+		D8D477751D2DD55900CC8710 /* RSBarcodes.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8D477611D2DD42200CC8710 /* RSBarcodes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D8E1908C1C9F41000021F9D9 /* EvenMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E1908B1C9F41000021F9D9 /* EvenMore.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D8D477761D2DD55900CC8710 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D8D477751D2DD55900CC8710 /* RSBarcodes.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		171E0C7A1B8E5B84001E6242 /* MyPulse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,7 +71,6 @@
 		171E0C8B1B8E5B84001E6242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		171E0CAD1B8E5C58001E6242 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		D805F0241C9A80840036FA48 /* smallMyPulseLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smallMyPulseLogo.png; sourceTree = "<group>"; };
-		D82655A11D2DCB400002D0E6 /* RSBarcodes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RSBarcodes.framework; path = Carthage/Build/iOS/RSBarcodes.framework; sourceTree = "<group>"; };
 		D82655A71D2DCDBE0002D0E6 /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		D82D31CB1C9E2E470000C447 /* FeaturedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedView.swift; sourceTree = "<group>"; };
 		D846A7A21C9935C30030A359 /* MyPulse-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyPulse-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -90,6 +104,7 @@
 		D8BA55B81C9931C5002ACAAD /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
 		D8BC90A91CC1831800465EF3 /* LearnMoreClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnMoreClass.swift; sourceTree = "<group>"; };
 		D8C28B491CB2BDB700A6177E /* DB2.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = DB2.sqlite; sourceTree = "<group>"; };
+		D8D477611D2DD42200CC8710 /* RSBarcodes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RSBarcodes.framework; sourceTree = "<group>"; };
 		D8E1908B1C9F41000021F9D9 /* EvenMore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvenMore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,7 +115,7 @@
 			files = (
 				D846A7B61C9936010030A359 /* libsqlite3.0.tbd in Frameworks */,
 				D846A7B71C9936010030A359 /* libsqlite3.tbd in Frameworks */,
-				D82655A21D2DCB400002D0E6 /* RSBarcodes.framework in Frameworks */,
+				D8D477741D2DD55900CC8710 /* RSBarcodes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +125,6 @@
 		171E0C711B8E5B84001E6242 = {
 			isa = PBXGroup;
 			children = (
-				D82655A11D2DCB400002D0E6 /* RSBarcodes.framework */,
 				171E0C7C1B8E5B84001E6242 /* MyPulse */,
 				171E0C7B1B8E5B84001E6242 /* Products */,
 			);
@@ -127,6 +141,7 @@
 		171E0C7C1B8E5B84001E6242 /* MyPulse */ = {
 			isa = PBXGroup;
 			children = (
+				D8D477611D2DD42200CC8710 /* RSBarcodes.framework */,
 				D8A863161C99E97B007DE46A /* AboutView.swift */,
 				D85774491CBB36E800D65182 /* ratingExplained.swift */,
 				171E0C7D1B8E5B84001E6242 /* AppDelegate.swift */,
@@ -217,6 +232,7 @@
 				171E0C761B8E5B84001E6242 /* Sources */,
 				171E0C771B8E5B84001E6242 /* Frameworks */,
 				171E0C781B8E5B84001E6242 /* Resources */,
+				D8D477761D2DD55900CC8710 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,7 +250,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					171E0C791B8E5B84001E6242 = {
@@ -426,6 +442,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/CandySearch",
 				);
 				INFOPLIST_FILE = CandySearch/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -447,6 +464,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/CandySearch",
 				);
 				INFOPLIST_FILE = CandySearch/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -454,6 +472,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pulsePassion.MyPulseiOS;
 				PRODUCT_NAME = MyPulse;
 				SWIFT_OBJC_BRIDGING_HEADER = "CandySearch/MyPulse-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
