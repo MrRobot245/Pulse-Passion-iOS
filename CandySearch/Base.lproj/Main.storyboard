@@ -47,8 +47,23 @@
                     <view key="view" contentMode="scaleToFill" id="4eH-gd-dqo">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fjc-vn-OFT">
+                                <rect key="frame" x="267" y="72" width="67" height="30"/>
+                                <state key="normal" title="Flashlight">
+                                    <color key="titleColor" red="0.98958333330000003" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fjc-vn-OFT" firstAttribute="top" secondItem="1hA-pa-mnT" secondAttribute="bottom" constant="8" symbolic="YES" id="0vU-rE-bkH"/>
+                            <constraint firstItem="Fjc-vn-OFT" firstAttribute="centerX" secondItem="4eH-gd-dqo" secondAttribute="centerX" id="hr4-2l-NQy"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="flashLight" destination="Fjc-vn-OFT" id="sDh-ew-EdV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RcP-tW-fpW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
