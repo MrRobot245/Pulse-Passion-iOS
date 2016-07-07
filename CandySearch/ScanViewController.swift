@@ -13,14 +13,25 @@ import AVFoundation
 class ScanViewController: RSCodeReaderViewController {
     var barcode: String = ""
     var dispatched: Bool = false
-    
-    @IBOutlet weak var flashLight: UIButton!
-    
-    @IBAction func toggle(sender: AnyObject?) {
-        let isTorchOn = self.toggleTorch()
-        print(isTorchOn)
+
+
+    @IBAction func flashLight(sender: AnyObject) {
+        let device = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
+        if (device.hasTorch) {
+            do {
+                try device.lockForConfiguration()
+                if (device.torchMode == AVCaptureTorchMode.On) {
+                    device.torchMode = AVCaptureTorchMode.Off
+                } else {
+                    try device.setTorchModeOnWithLevel(1.0)
+                }
+                device.unlockForConfiguration()
+            } catch {
+                print(error)
+            }
+        }
+        
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,24 +47,10 @@ class ScanViewController: RSCodeReaderViewController {
             self.view.bringSubviewToFront(subview)
         }
         
-        if !self.hasTorch() {
-            self.flashLight.enabled = false
-        }
-        
-        let device = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
-        if (device.hasTorch) {
-            do {
-                try device.lockForConfiguration()
-                if (device.torchMode == AVCaptureTorchMode.On) {
-                    device.torchMode = AVCaptureTorchMode.Off
-                } else {
-                    try device.setTorchModeOnWithLevel(1.0)
-                }
-                device.unlockForConfiguration()
-            } catch {
-                print(error)
-            }
-        }
+//        if !self.hasTorch() {
+//            self.flashLight.enabled = false
+//        }
+//        
         
         self.barcodesHandler = { barcodes in
             if !self.dispatched { // triggers for only once

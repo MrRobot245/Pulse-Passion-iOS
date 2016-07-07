@@ -49,21 +49,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fjc-vn-OFT">
-                                <rect key="frame" x="267" y="72" width="67" height="30"/>
+                                <rect key="frame" x="250" y="72" width="101" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="101" id="IfS-Sw-ncR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Flashlight">
                                     <color key="titleColor" red="0.98958333330000003" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="flashLight:" destination="NGT-Hw-Aur" eventType="touchUpInside" id="8Wz-Tv-pX9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Fjc-vn-OFT" firstAttribute="top" secondItem="1hA-pa-mnT" secondAttribute="bottom" constant="8" symbolic="YES" id="0vU-rE-bkH"/>
-                            <constraint firstItem="Fjc-vn-OFT" firstAttribute="centerX" secondItem="4eH-gd-dqo" secondAttribute="centerX" id="hr4-2l-NQy"/>
+                            <constraint firstItem="Fjc-vn-OFT" firstAttribute="centerX" secondItem="4eH-gd-dqo" secondAttribute="centerX" id="YQG-BD-JZk"/>
+                            <constraint firstItem="Fjc-vn-OFT" firstAttribute="top" secondItem="1hA-pa-mnT" secondAttribute="bottom" constant="8" symbolic="YES" id="eDw-v1-tLz"/>
+                            <constraint firstItem="knE-JG-q43" firstAttribute="top" secondItem="Fjc-vn-OFT" secondAttribute="bottom" constant="498" id="m36-Dn-cV9"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="flashLight" destination="Fjc-vn-OFT" id="sDh-ew-EdV"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RcP-tW-fpW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
