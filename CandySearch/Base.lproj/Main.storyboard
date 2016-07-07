@@ -48,27 +48,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fjc-vn-OFT">
-                                <rect key="frame" x="250" y="72" width="101" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="101" id="IfS-Sw-ncR"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Flashlight">
-                                    <color key="titleColor" red="0.98958333330000003" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KM7-Xa-Wax">
+                                <rect key="frame" x="530" y="72" width="50" height="50"/>
+                                <state key="normal" image="FlashOff"/>
                                 <connections>
-                                    <action selector="flashLight:" destination="NGT-Hw-Aur" eventType="touchUpInside" id="8Wz-Tv-pX9"/>
+                                    <action selector="flashLight:" destination="NGT-Hw-Aur" eventType="touchUpInside" id="eF7-B2-Imu"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Fjc-vn-OFT" firstAttribute="centerX" secondItem="4eH-gd-dqo" secondAttribute="centerX" id="YQG-BD-JZk"/>
-                            <constraint firstItem="Fjc-vn-OFT" firstAttribute="top" secondItem="1hA-pa-mnT" secondAttribute="bottom" constant="8" symbolic="YES" id="eDw-v1-tLz"/>
-                            <constraint firstItem="knE-JG-q43" firstAttribute="top" secondItem="Fjc-vn-OFT" secondAttribute="bottom" constant="498" id="m36-Dn-cV9"/>
+                            <constraint firstItem="KM7-Xa-Wax" firstAttribute="top" secondItem="1hA-pa-mnT" secondAttribute="bottom" constant="8" symbolic="YES" id="5Se-RE-41v"/>
+                            <constraint firstItem="KM7-Xa-Wax" firstAttribute="trailing" secondItem="4eH-gd-dqo" secondAttribute="trailingMargin" id="6vi-F8-lsw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="FlashButt" destination="KM7-Xa-Wax" id="U6b-BC-Njv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RcP-tW-fpW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1001,6 +997,7 @@ CiA
     </scenes>
     <resources>
         <image name="Barcode Scanner-60" width="30" height="30"/>
+        <image name="FlashOff" width="50" height="50"/>
         <image name="Info-60" width="30" height="30"/>
         <image name="Learn" width="30" height="30"/>
         <image name="Ratings" width="1000" height="1200"/>

@@ -14,6 +14,7 @@ class ScanViewController: RSCodeReaderViewController {
     var barcode: String = ""
     var dispatched: Bool = false
 
+    @IBOutlet weak var FlashButt: UIButton!
 
     @IBAction func flashLight(sender: AnyObject) {
         let device = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
@@ -22,8 +23,12 @@ class ScanViewController: RSCodeReaderViewController {
                 try device.lockForConfiguration()
                 if (device.torchMode == AVCaptureTorchMode.On) {
                     device.torchMode = AVCaptureTorchMode.Off
+                    let image = UIImage(named: "FlashOff")! as UIImage
+                    FlashButt.setImage(image, forState: UIControlState.Normal)
                 } else {
                     try device.setTorchModeOnWithLevel(1.0)
+                    let image = UIImage(named: "FlashOn")! as UIImage
+                    FlashButt.setImage(image, forState: UIControlState.Normal)
                 }
                 device.unlockForConfiguration()
             } catch {
