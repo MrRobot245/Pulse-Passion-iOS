@@ -64,7 +64,7 @@ class ScanViewController: RSCodeReaderViewController {
                 self.dispatched = true
                 for barcode in barcodes {
                     self.barcode = barcode.stringValue
-                    print("Barcode found: type=" + barcode.type + " value=" + barcode.stringValue)
+                   // print("Barcode found: type=" + barcode.type + " value=" + barcode.stringValue)
                     
                     let alert = UIAlertController(title: "Hey-o!", message:barcode.stringValue, preferredStyle: .Alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .Default) { _ in })
@@ -88,7 +88,7 @@ class ScanViewController: RSCodeReaderViewController {
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "barSeg" {
-            //            let vc = segue.destinationViewController as! EvenMoreViewController
+       // let vc = segue.destinationViewController as! DetailViewController
         }
     }
     
