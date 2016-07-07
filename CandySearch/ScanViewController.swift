@@ -45,17 +45,16 @@ class ScanViewController: RSCodeReaderViewController {
         for subview in self.view.subviews {
             self.view.bringSubviewToFront(subview)
         }
-
-//        
+        
         // MARK: NOTE: If you layout views in storyboard, you should these 3 lines
         for subview in self.view.subviews {
             self.view.bringSubviewToFront(subview)
         }
         
-//        if !self.hasTorch() {
-//            self.flashLight.enabled = false
-//        }
-//        
+        if !self.hasTorch() {
+           FlashButt.enabled = false
+        }
+
         
         self.barcodesHandler = { barcodes in
             if !self.dispatched { // triggers for only once
@@ -86,5 +85,14 @@ class ScanViewController: RSCodeReaderViewController {
 //        self.navigationController?.navigationBarHidden = true
         
     }
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        self.navigationController?.navigationBarHidden = false
+//        
+//        if segue.identifier == "nextView" {
+//            let destinationVC = segue.destinationViewController as! BarcodeDisplayViewController
+//            destinationVC.contents = self.barcode
+//        }
+//    }
+
 
 }
