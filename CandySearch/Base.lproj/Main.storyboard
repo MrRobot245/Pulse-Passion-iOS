@@ -274,7 +274,7 @@
                         </view>
                         <barButtonItem key="rightBarButtonItem" image="Barcode Scanner-60" id="zw1-eW-PXn">
                             <connections>
-                                <segue destination="NGT-Hw-Aur" kind="show" id="dg8-un-qok"/>
+                                <segue destination="NGT-Hw-Aur" kind="show" identifier="sendAllBar" id="dg8-un-qok"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1247,6 +1247,7 @@ CiA
         <!--Rating Explained-->
         <scene sceneID="o2m-0z-04F">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d63-Z4-DD3" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="7L8-uC-EKe" customClass="ratingExplained" customModule="MyPulse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="B3q-QU-I9g"/>
@@ -1318,7 +1319,6 @@ CiA
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="d63-Z4-DD3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1737" y="-1552"/>
         </scene>

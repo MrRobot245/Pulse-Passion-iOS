@@ -13,9 +13,10 @@ import AVFoundation
 class ScanViewController: RSCodeReaderViewController {
     var barcode: String = ""
     var dispatched: Bool = false
-
+    var getFood = [Food]()
+    
     @IBOutlet weak var FlashButt: UIButton!
-
+    
     @IBAction func flashLight(sender: AnyObject) {
         let device = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
         if (device.hasTorch) {
@@ -46,15 +47,17 @@ class ScanViewController: RSCodeReaderViewController {
             self.view.bringSubviewToFront(subview)
         }
         
+//        print (getFood.count)
+        
         // MARK: NOTE: If you layout views in storyboard, you should these 3 lines
         for subview in self.view.subviews {
             self.view.bringSubviewToFront(subview)
         }
         
         if !self.hasTorch() {
-           FlashButt.enabled = false
+            FlashButt.enabled = false
         }
-
+        
         
         self.barcodesHandler = { barcodes in
             if !self.dispatched { // triggers for only once
@@ -67,11 +70,11 @@ class ScanViewController: RSCodeReaderViewController {
                     alert.addAction(UIAlertAction(title: "OK", style: .Default) { _ in })
                     self.presentViewController(alert, animated: true){}
                     
-//                    dispatch_async(dispatch_get_main_queue(), {
-//                        self.performSegueWithIdentifier("nextView", sender: self)
-//                        
-//                        // MARK: NOTE: Perform UI related actions here.
-//                    })
+                    dispatch_async(dispatch_get_main_queue(), {
+                        self.performSegueWithIdentifier("barSeg", sender: self)
+                        
+                        // MARK: NOTE: Perform UI related actions here.
+                    })
                 }
             }
         }
@@ -79,20 +82,15 @@ class ScanViewController: RSCodeReaderViewController {
     
     override func viewWillAppear(animated: Bool) {
         self.dispatched = false // reset the flag so user can do another scan
-        
         super.viewWillAppear(animated)
-        
-//        self.navigationController?.navigationBarHidden = true
+        //        self.navigationController?.navigationBarHidden = true
         
     }
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        self.navigationController?.navigationBarHidden = false
-//        
-//        if segue.identifier == "nextView" {
-//            let destinationVC = segue.destinationViewController as! BarcodeDisplayViewController
-//            destinationVC.contents = self.barcode
-//        }
-//    }
-
-
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "barSeg" {
+            //            let vc = segue.destinationViewController as! EvenMoreViewController
+        }
+    }
+    
+    
 }

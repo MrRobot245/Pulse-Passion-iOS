@@ -21,6 +21,7 @@
  */
 
 import UIKit
+import RSBarcodes
 
 class MasterViewController: UITableViewController {
     
@@ -174,9 +175,21 @@ class MasterViewController: UITableViewController {
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
         }
+        if segue.identifier == "sendAllBar" {
+            print ("Barcode")
+            let dbTran = segue.destinationViewController as! ScanViewController
+            dbTran.getFood = food
+
+            
+        }
+        
+            
+        }
+        
+        
     }
     
-}
+
 extension MasterViewController: UISearchResultsUpdating {
     func updateSearchResultsForSearchController(searchController: UISearchController) {
         let searchBar = searchController.searchBar
