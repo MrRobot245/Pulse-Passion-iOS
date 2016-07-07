@@ -254,7 +254,7 @@
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </view>
-                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="zw1-eW-PXn">
+                        <barButtonItem key="rightBarButtonItem" image="Barcode Scanner-60" id="zw1-eW-PXn">
                             <connections>
                                 <segue destination="NGT-Hw-Aur" kind="show" id="dg8-un-qok"/>
                             </connections>
@@ -980,6 +980,7 @@ CiA
         </scene>
     </scenes>
     <resources>
+        <image name="Barcode Scanner-60" width="30" height="30"/>
         <image name="Info-60" width="30" height="30"/>
         <image name="Learn" width="30" height="30"/>
         <image name="Ratings" width="1000" height="1200"/>
