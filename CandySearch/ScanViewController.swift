@@ -13,7 +13,12 @@ import AVFoundation
 class ScanViewController: RSCodeReaderViewController {
     var barcode: String = ""
     var dispatched: Bool = false
+    
     var getFood = [Food]()
+    
+
+    
+        
     
     @IBOutlet weak var FlashButt: UIButton!
     
@@ -70,6 +75,28 @@ class ScanViewController: RSCodeReaderViewController {
                     alert.addAction(UIAlertAction(title: "OK", style: .Default) { _ in })
                     self.presentViewController(alert, animated: true){}
                     
+                
+                        
+                        let documents = try! NSFileManager.defaultManager().URLForDirectory(.DocumentDirectory, inDomain: .UserDomainMask, appropriateForURL: nil, create: false)
+                        let fileURL = documents.URLByAppendingPathComponent("DB2.sqlite")
+                        let database = FMDatabase(path: fileURL.path)
+                        if !database.open() {
+                            print("Unable to open database")
+                            return
+                        }
+                        //let querySQL = "SELECT cat,title,fRate,iList,gList,bList,iRate FROM DB WHERE barcode =" + barcode.stringValue
+                    
+                        let querySQL = "SELECT cat,title,fRate,iList,gList,bList,iRate FROM DB WHERE title = 'Apple Envy'"
+                    
+                        let results:FMResultSet? = database.executeQuery(querySQL,
+                                                                         withArgumentsInArray: nil)
+                        while(results!.next()) {
+                            
+                            print(results!.stringForColumn("title"))
+                        }
+
+                    
+                    
                     dispatch_async(dispatch_get_main_queue(), {
                         self.performSegueWithIdentifier("barSeg", sender: self)
                         
@@ -88,6 +115,7 @@ class ScanViewController: RSCodeReaderViewController {
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "barSeg" {
+   
        // let vc = segue.destinationViewController as! DetailViewController
         }
     }

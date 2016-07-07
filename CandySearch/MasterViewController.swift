@@ -47,7 +47,8 @@ class MasterViewController: UITableViewController {
                                                          withArgumentsInArray: nil)
         while(results!.next()) {
             //print("\(results!.stringForColumn("cat"),results!.stringForColumn("food"))")
-            food.append(Food(category: results!.stringForColumn("cat"), name: results!.stringForColumn("title"),
+            food.append(Food(category: results!.stringForColumn("cat"),
+                name: results!.stringForColumn("title"),
                 fRate: results!.stringForColumn("fRate"),
                 iList: results!.stringForColumn("iList"),
                 gList: results!.stringForColumn("gList"),
@@ -176,7 +177,6 @@ class MasterViewController: UITableViewController {
             }
         }
         if segue.identifier == "sendAllBar" {
-            print ("Barcode")
             let dbTran = segue.destinationViewController as! ScanViewController
             dbTran.getFood = food
 
