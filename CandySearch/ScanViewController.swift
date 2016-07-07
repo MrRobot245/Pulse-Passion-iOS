@@ -71,9 +71,7 @@ class ScanViewController: RSCodeReaderViewController {
                     self.barcode = barcode.stringValue
                    // print("Barcode found: type=" + barcode.type + " value=" + barcode.stringValue)
                     
-                    let alert = UIAlertController(title: "Hey-o!", message:barcode.stringValue, preferredStyle: .Alert)
-                    alert.addAction(UIAlertAction(title: "OK", style: .Default) { _ in })
-                    self.presentViewController(alert, animated: true){}
+                
                     
                 
                         
@@ -84,15 +82,19 @@ class ScanViewController: RSCodeReaderViewController {
                             print("Unable to open database")
                             return
                         }
-                        //let querySQL = "SELECT cat,title,fRate,iList,gList,bList,iRate FROM DB WHERE barcode =" + barcode.stringValue
+                        let querySQL = "SELECT cat,title,fRate,iList,gList,bList,iRate FROM DB WHERE bar =" + barcode.stringValue
                     
-                        let querySQL = "SELECT cat,title,fRate,iList,gList,bList,iRate FROM DB WHERE title = 'Apple Envy'"
+                        //let querySQL = "SELECT cat,title,fRate,iList,gList,bList,iRate FROM DB WHERE title = 'Apple Envy'"
                     
                         let results:FMResultSet? = database.executeQuery(querySQL,
                                                                          withArgumentsInArray: nil)
                         while(results!.next()) {
                             
-                            print(results!.stringForColumn("title"))
+                            
+                            
+                            let alert = UIAlertController(title: results!.stringForColumn("title"), message:barcode.stringValue, preferredStyle: .Alert)
+                            alert.addAction(UIAlertAction(title: "OK", style: .Default) { _ in })
+                            self.presentViewController(alert, animated: true){}
                         }
 
                     
