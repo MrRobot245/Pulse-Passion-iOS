@@ -16,6 +16,10 @@ class ScanViewController: RSCodeReaderViewController {
     
     var getFood = [Food]()
     
+    var barFood = [Food]()
+    
+    var indexTest:String = "boop"
+    
 
     
         
@@ -73,14 +77,12 @@ class ScanViewController: RSCodeReaderViewController {
                     
                 
                     
-                
-                        
+                    
                         let documents = try! NSFileManager.defaultManager().URLForDirectory(.DocumentDirectory, inDomain: .UserDomainMask, appropriateForURL: nil, create: false)
                         let fileURL = documents.URLByAppendingPathComponent("DB2.sqlite")
                         let database = FMDatabase(path: fileURL.path)
                         if !database.open() {
                             print("Unable to open database")
-                            return
                         }
                         let querySQL = "SELECT cat,title,fRate,iList,gList,bList,iRate FROM DB WHERE bar =" + barcode.stringValue
                     
@@ -89,13 +91,22 @@ class ScanViewController: RSCodeReaderViewController {
                         let results:FMResultSet? = database.executeQuery(querySQL,
                                                                          withArgumentsInArray: nil)
                         while(results!.next()) {
+                            self.barFood.append(Food(category: results!.stringForColumn("cat"),
+                                name: results!.stringForColumn("title"),
+                                fRate: results!.stringForColumn("fRate"),
+                                iList: results!.stringForColumn("iList"),
+                                gList: results!.stringForColumn("gList"),
+                                bList: results!.stringForColumn("bList"),
+                                iRate: results!.stringForColumn("iRate")))
                             
                             
                             
-                            let alert = UIAlertController(title: results!.stringForColumn("title"), message:barcode.stringValue, preferredStyle: .Alert)
-                            alert.addAction(UIAlertAction(title: "OK", style: .Default) { _ in })
-                            self.presentViewController(alert, animated: true){}
                         }
+                    
+                    let alert = UIAlertController(title: self.barFood[0].name , message:barcode.stringValue, preferredStyle: .Alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .Default) { _ in })
+                    self.presentViewController(alert, animated: true){}
+
 
                     
                     
@@ -116,6 +127,7 @@ class ScanViewController: RSCodeReaderViewController {
         
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        print(indexTest)
         if segue.identifier == "barSeg" {
    
        // let vc = segue.destinationViewController as! DetailViewController

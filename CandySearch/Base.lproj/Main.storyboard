@@ -1247,7 +1247,6 @@ CiA
         <!--Rating Explained-->
         <scene sceneID="o2m-0z-04F">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="d63-Z4-DD3" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="7L8-uC-EKe" customClass="ratingExplained" customModule="MyPulse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="B3q-QU-I9g"/>
@@ -1319,6 +1318,7 @@ CiA
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d63-Z4-DD3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1737" y="-1552"/>
         </scene>
