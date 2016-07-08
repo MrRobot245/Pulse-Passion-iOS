@@ -36,10 +36,13 @@ class DetailViewController: UIViewController {
         }
     }
     
+    
     func configureView() {
         if let detailCandy = detailCandy {
             if let detailDescriptionLabel = detailDescriptionLabel {
                  iList.text = detailCandy.iList
+                print(detailCandy.name)
+                
                 if(detailCandy.fRate == "Limit")
                 {
                 foodRating.image = UIImage(named: "nnRed")

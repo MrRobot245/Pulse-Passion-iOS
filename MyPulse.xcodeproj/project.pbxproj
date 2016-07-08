@@ -40,10 +40,10 @@
 		D8BA55B71C9931BC002ACAAD /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = D8BA55B61C9931BC002ACAAD /* start.png */; };
 		D8BA55B91C9931C5002ACAAD /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D8BA55B81C9931C5002ACAAD /* logo.jpg */; };
 		D8BC90AA1CC1831800465EF3 /* LearnMoreClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BC90A91CC1831800465EF3 /* LearnMoreClass.swift */; };
-		D8C28B4A1CB2BDB700A6177E /* DB2.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = D8C28B491CB2BDB700A6177E /* DB2.sqlite */; };
 		D8D477741D2DD55900CC8710 /* RSBarcodes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D477611D2DD42200CC8710 /* RSBarcodes.framework */; };
 		D8D477751D2DD55900CC8710 /* RSBarcodes.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8D477611D2DD42200CC8710 /* RSBarcodes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D8E1908C1C9F41000021F9D9 /* EvenMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E1908B1C9F41000021F9D9 /* EvenMore.swift */; };
+		D8E79A781D2F28C000940B36 /* DB2.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = D8E79A771D2F28C000940B36 /* DB2.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -103,9 +103,9 @@
 		D8BA55B61C9931BC002ACAAD /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
 		D8BA55B81C9931C5002ACAAD /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
 		D8BC90A91CC1831800465EF3 /* LearnMoreClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnMoreClass.swift; sourceTree = "<group>"; };
-		D8C28B491CB2BDB700A6177E /* DB2.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = DB2.sqlite; sourceTree = "<group>"; };
 		D8D477611D2DD42200CC8710 /* RSBarcodes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RSBarcodes.framework; sourceTree = "<group>"; };
 		D8E1908B1C9F41000021F9D9 /* EvenMore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvenMore.swift; sourceTree = "<group>"; };
+		D8E79A771D2F28C000940B36 /* DB2.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = DB2.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +151,7 @@
 				171E0C831B8E5B84001E6242 /* Main.storyboard */,
 				D82655A71D2DCDBE0002D0E6 /* ScanViewController.swift */,
 				D8BC90A91CC1831800465EF3 /* LearnMoreClass.swift */,
-				D8C28B491CB2BDB700A6177E /* DB2.sqlite */,
+				D8E79A771D2F28C000940B36 /* DB2.sqlite */,
 				D87F32CC1CAC5261005FD7B7 /* LearnMoreHD.swift */,
 				D88033D21CABA81300D86C48 /* LearnMore.swift */,
 				D87F32CA1CAC5171005FD7B7 /* LearnMore-More.swift */,
@@ -291,9 +291,9 @@
 				D8A41A361C9A2EBA00D4B544 /* montserrat-normal-normal.ttf in Resources */,
 				D8A41A321C9A274500D4B544 /* myPulseWhite.png in Resources */,
 				D8BA55B71C9931BC002ACAAD /* start.png in Resources */,
+				D8E79A781D2F28C000940B36 /* DB2.sqlite in Resources */,
 				D857744E1CBB372500D65182 /* GhettoGauge.pdf in Resources */,
 				D85774501CBB372500D65182 /* GhettoGauge.psd in Resources */,
-				D8C28B4A1CB2BDB700A6177E /* DB2.sqlite in Resources */,
 				171E0C851B8E5B84001E6242 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

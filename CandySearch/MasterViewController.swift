@@ -107,15 +107,15 @@ class MasterViewController: UITableViewController {
         }
         tableView.reloadData()
     }
-//    func filterContentForScope(scope: String = "All") {
-//        filteredFood = food.filter { candy in
-//            let categoryMatch = (scope == "All") || (candy.fRate == scope)
-//            return  categoryMatch
-//        }
-//        tableView.reloadData()
-//    }
-//    
-//    
+    //    func filterContentForScope(scope: String = "All") {
+    //        filteredFood = food.filter { candy in
+    //            let categoryMatch = (scope == "All") || (candy.fRate == scope)
+    //            return  categoryMatch
+    //        }
+    //        tableView.reloadData()
+    //    }
+    //
+    //
     override func viewWillAppear(animated: Bool) {
         // clearsSelectionOnViewWillAppear = splitViewController!.collapsed
         super.viewWillAppear(animated)
@@ -179,15 +179,15 @@ class MasterViewController: UITableViewController {
         if segue.identifier == "sendAllBar" {
             let dbTran = segue.destinationViewController as! ScanViewController
             dbTran.getFood = food
-
+            
             
         }
-            
-        }
-        
         
     }
     
+    
+}
+
 
 extension MasterViewController: UISearchResultsUpdating {
     func updateSearchResultsForSearchController(searchController: UISearchController) {
@@ -198,7 +198,7 @@ extension MasterViewController: UISearchResultsUpdating {
 }
 extension MasterViewController: UISearchBarDelegate {
     func searchBar(searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
-         //filterContentForScope(searchBar.scopeButtonTitles![selectedScope])
+        //filterContentForScope(searchBar.scopeButtonTitles![selectedScope])
         filterContentForSearchText(searchBar.text!, scope: searchBar.scopeButtonTitles![selectedScope])
         
     }

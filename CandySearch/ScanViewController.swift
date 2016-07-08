@@ -18,11 +18,10 @@ class ScanViewController: RSCodeReaderViewController {
     
     var barFood = [Food]()
     
-    var indexTest:String = "boop"
     
-
     
-        
+    
+    
     
     @IBOutlet weak var FlashButt: UIButton!
     
@@ -56,7 +55,7 @@ class ScanViewController: RSCodeReaderViewController {
             self.view.bringSubviewToFront(subview)
         }
         
-//        print (getFood.count)
+        //        print (getFood.count)
         
         // MARK: NOTE: If you layout views in storyboard, you should these 3 lines
         for subview in self.view.subviews {
@@ -73,41 +72,41 @@ class ScanViewController: RSCodeReaderViewController {
                 self.dispatched = true
                 for barcode in barcodes {
                     self.barcode = barcode.stringValue
-                   // print("Barcode found: type=" + barcode.type + " value=" + barcode.stringValue)
-                    
-                
+                    // print("Barcode found: type=" + barcode.type + " value=" + barcode.stringValue)
                     
                     
-                        let documents = try! NSFileManager.defaultManager().URLForDirectory(.DocumentDirectory, inDomain: .UserDomainMask, appropriateForURL: nil, create: false)
-                        let fileURL = documents.URLByAppendingPathComponent("DB2.sqlite")
-                        let database = FMDatabase(path: fileURL.path)
-                        if !database.open() {
-                            print("Unable to open database")
-                        }
-                        let querySQL = "SELECT cat,title,fRate,iList,gList,bList,iRate FROM DB WHERE bar =" + barcode.stringValue
                     
-                        //let querySQL = "SELECT cat,title,fRate,iList,gList,bList,iRate FROM DB WHERE title = 'Apple Envy'"
                     
-                        let results:FMResultSet? = database.executeQuery(querySQL,
-                                                                         withArgumentsInArray: nil)
-                        while(results!.next()) {
-                            self.barFood.append(Food(category: results!.stringForColumn("cat"),
-                                name: results!.stringForColumn("title"),
-                                fRate: results!.stringForColumn("fRate"),
-                                iList: results!.stringForColumn("iList"),
-                                gList: results!.stringForColumn("gList"),
-                                bList: results!.stringForColumn("bList"),
-                                iRate: results!.stringForColumn("iRate")))
-                            
-                            
-                            
-                        }
+                    let documents = try! NSFileManager.defaultManager().URLForDirectory(.DocumentDirectory, inDomain: .UserDomainMask, appropriateForURL: nil, create: false)
+                    let fileURL = documents.URLByAppendingPathComponent("DB2.sqlite")
+                    let database = FMDatabase(path: fileURL.path)
+                    if !database.open() {
+                        print("Unable to open database")
+                    }
+                    let querySQL = "SELECT cat,title,fRate,iList,gList,bList,iRate FROM DB WHERE bar =" + barcode.stringValue
                     
-                    let alert = UIAlertController(title: self.barFood[0].name , message:barcode.stringValue, preferredStyle: .Alert)
-                    alert.addAction(UIAlertAction(title: "OK", style: .Default) { _ in })
-                    self.presentViewController(alert, animated: true){}
-
-
+                    //let querySQL = "SELECT cat,title,fRate,iList,gList,bList,iRate FROM DB WHERE title = 'Apple Envy'"
+                    
+                    let results:FMResultSet? = database.executeQuery(querySQL,
+                                                                     withArgumentsInArray: nil)
+                    while(results!.next()) {
+                        self.barFood.append(Food(category: results!.stringForColumn("cat"),
+                            name: results!.stringForColumn("title"),
+                            fRate: results!.stringForColumn("fRate"),
+                            iList: results!.stringForColumn("iList"),
+                            gList: results!.stringForColumn("gList"),
+                            bList: results!.stringForColumn("bList"),
+                            iRate: results!.stringForColumn("iRate")))
+                        
+                        
+                        
+                    }
+                    
+//                    let alert = UIAlertController(title: self.barFood[0].name , message:barcode.stringValue, preferredStyle: .Alert)
+//                    alert.addAction(UIAlertAction(title: "OK", style: .Default) { _ in })
+//                    self.presentViewController(alert, animated: true){}
+                    
+                    
                     
                     
                     dispatch_async(dispatch_get_main_queue(), {
@@ -127,10 +126,10 @@ class ScanViewController: RSCodeReaderViewController {
         
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        print(indexTest)
-        if segue.identifier == "barSeg" {
-   
-       // let vc = segue.destinationViewController as! DetailViewController
+        if segue.identifier == "barSeg" {       
+            let controller = (segue.destinationViewController as! DetailViewController)
+            controller.detailCandy = barFood[0]
+       
         }
     }
     
