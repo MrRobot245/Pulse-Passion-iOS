@@ -36,6 +36,8 @@ class DetailViewController: UIViewController {
         }
     }
     
+    @IBAction func unwindToDetail(segue: UIStoryboardSegue) {
+    }
     
     func configureView() {
         if let detailCandy = detailCandy {

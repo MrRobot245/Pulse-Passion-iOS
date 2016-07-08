@@ -25,6 +25,8 @@ import RSBarcodes
 
 class MasterViewController: UITableViewController {
     
+    @IBAction func unwindToVC(segue: UIStoryboardSegue) {
+    }
     
     let searchController = UISearchController(searchResultsController: nil)
     var filteredFood = [Food]()
