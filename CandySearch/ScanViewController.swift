@@ -13,10 +13,10 @@ import AVFoundation
 class ScanViewController: RSCodeReaderViewController {
     var barcode: String = ""
     var dispatched: Bool = false
-    
     var getFood = [Food]()
-    
     var barFood = [Food]()
+    
+    var resultCount: Int = 0
     
     
     
@@ -65,12 +65,15 @@ class ScanViewController: RSCodeReaderViewController {
         if !self.hasTorch() {
             FlashButt.enabled = false
         }
-        
+        let types = NSMutableArray(array: self.output.availableMetadataObjectTypes)
+        types.removeObject(AVMetadataObjectTypeQRCode)
+        self.output.metadataObjectTypes = NSArray(array: types) as [AnyObject]
         
         self.barcodesHandler = { barcodes in
             if !self.dispatched { // triggers for only once
                 self.dispatched = true
                 for barcode in barcodes {
+                    self.resultCount = 0
                     self.barcode = barcode.stringValue
                     // print("Barcode found: type=" + barcode.type + " value=" + barcode.stringValue)
                     
@@ -83,13 +86,15 @@ class ScanViewController: RSCodeReaderViewController {
                     if !database.open() {
                         print("Unable to open database")
                     }
-                    let querySQL = "SELECT cat,title,fRate,iList,gList,bList,iRate FROM DB WHERE bar =" + barcode.stringValue
                     
-                    //let querySQL = "SELECT cat,title,fRate,iList,gList,bList,iRate FROM DB WHERE title = 'Apple Envy'"
+                    
+                    let querySQL = "SELECT cat,title,fRate,iList,gList,bList,iRate FROM DB WHERE bar =" + barcode.stringValue
                     
                     let results:FMResultSet? = database.executeQuery(querySQL,
                                                                      withArgumentsInArray: nil)
+                    
                     while(results!.next()) {
+                        self.resultCount += 1
                         self.barFood.append(Food(category: results!.stringForColumn("cat"),
                             name: results!.stringForColumn("title"),
                             fRate: results!.stringForColumn("fRate"),
@@ -101,19 +106,41 @@ class ScanViewController: RSCodeReaderViewController {
                         
                         
                     }
-                    
-//                    let alert = UIAlertController(title: self.barFood[0].name , message:barcode.stringValue, preferredStyle: .Alert)
-//                    alert.addAction(UIAlertAction(title: "OK", style: .Default) { _ in })
-//                    self.presentViewController(alert, animated: true){}
-                    
-                    
-                    
-                    
-                    dispatch_async(dispatch_get_main_queue(), {
-                        self.performSegueWithIdentifier("barSeg", sender: self)
+                    if(self.resultCount != 0)
+                    {
+                        dispatch_async(dispatch_get_main_queue(), {
+                            self.performSegueWithIdentifier("barSeg", sender: self)
+                            
+                            // MARK: NOTE: Perform UI related actions here.
+                        })
+                    }
+                    else{
+                        let time = dispatch_time(dispatch_time_t(DISPATCH_TIME_NOW), 1 * Int64(NSEC_PER_SEC))
+                        dispatch_after(time, dispatch_get_main_queue()) {
+                            let alert = UIAlertController(title: "Error" , message:"Food Not Found!", preferredStyle: .Alert)
+                            alert.addAction(UIAlertAction(title: "OK", style: .Default) { _ in })
+                            self.presentViewController(alert, animated: true){}
+                            let time = dispatch_time(dispatch_time_t(DISPATCH_TIME_NOW), 1 * Int64(NSEC_PER_SEC))
+                            dispatch_after(time, dispatch_get_main_queue()) {
+                                self.dispatched = false
+                                self.resultCount = 0
+                                self.barcode = ""
+                            }
+                            
+                       
+
+                           
+                        }
                         
-                        // MARK: NOTE: Perform UI related actions here.
-                    })
+                    }
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                 }
             }
         }
@@ -126,10 +153,10 @@ class ScanViewController: RSCodeReaderViewController {
         
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "barSeg" {       
+        if segue.identifier == "barSeg" {
             let controller = (segue.destinationViewController as! DetailViewController)
             controller.detailCandy = barFood[0]
-       
+            
         }
     }
     
