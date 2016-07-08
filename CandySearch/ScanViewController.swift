@@ -10,6 +10,12 @@ import UIKit
 import RSBarcodes
 import AVFoundation
 
+
+class ScanViewUIController: UIViewController {
+    @IBAction func unwindToScanner(segue: UIStoryboardSegue) {
+    }
+    
+}
 class ScanViewController: RSCodeReaderViewController {
     var barcode: String = ""
     var dispatched: Bool = false
@@ -17,6 +23,7 @@ class ScanViewController: RSCodeReaderViewController {
     var barFood = [Food]()
     var resultCount: Int = 0
  
+  
 
     @IBOutlet weak var FlashButt: UIButton!
     @IBAction func flashLight(sender: AnyObject) {
