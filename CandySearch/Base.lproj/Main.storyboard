@@ -59,7 +59,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KM7-Xa-Wax">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KM7-Xa-Wax">
                                 <rect key="frame" x="530" y="72" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="iqS-AT-cSH"/>
@@ -141,8 +141,6 @@
         <!--Detail-->
         <scene sceneID="yUG-lL-AsK">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
-                <exit id="r9q-x5-1iV" userLabel="Exit" sceneMemberID="exit"/>
                 <viewController title="Detail" id="JEX-9P-axG" customClass="DetailViewController" customModule="MyPulse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SYR-Wa-9uf"/>
@@ -319,6 +317,8 @@
                         <outlet property="ratingNum" destination="Ycg-5D-rqv" id="bua-Rc-Nli"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
+                <exit id="r9q-x5-1iV" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="661" y="193"/>
         </scene>
@@ -608,8 +608,6 @@
         <!--Even More View Controller-->
         <scene sceneID="huf-MI-age">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7df-Jd-FgE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="PWL-EJ-nZN" userLabel="Exit" sceneMemberID="exit"/>
                 <viewController id="gSY-lH-8wZ" customClass="EvenMoreViewController" customModule="MyPulse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uQ8-ur-IEG"/>
@@ -772,6 +770,8 @@
                         <outlet property="ratingView" destination="fyg-we-iZo" id="6Ha-3D-JUT"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7df-Jd-FgE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="PWL-EJ-nZN" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1404" y="193"/>
         </scene>
@@ -1195,7 +1195,6 @@ CiA
         <!--Rating Explained-->
         <scene sceneID="OrE-GJ-sWU">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GVk-G6-4tV" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="wAy-30-4zo" customClass="ratingExplained" customModule="MyPulse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="q8M-wn-FpI"/>
@@ -1281,6 +1280,7 @@ CiA
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GVk-G6-4tV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="661" y="940"/>
         </scene>
