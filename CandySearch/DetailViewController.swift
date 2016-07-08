@@ -28,8 +28,17 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var candyImageView: UIImageView!
     
     @IBOutlet weak var ratingNum: UILabel!
-    @IBOutlet weak var catLabel: UILabel!
     @IBOutlet weak var iList: UITextView!
+    
+    @IBOutlet weak var goodView: UITextView!
+    @IBOutlet weak var badView: UITextView!
+    var bulletBad: String!
+    var bulletGood: String!
+    
+    
+    
+    
+    
     var detailCandy: Food? {
         didSet {
             configureView()
@@ -42,7 +51,7 @@ class DetailViewController: UIViewController {
     func configureView() {
         if let detailCandy = detailCandy {
             if let detailDescriptionLabel = detailDescriptionLabel {
-                 iList.text = detailCandy.iList
+               //  iList.text = detailCandy.iList
                 
                 if(detailCandy.fRate == "Limit")
                 {
@@ -58,16 +67,36 @@ class DetailViewController: UIViewController {
                 }
                 ratingNum.text = "Rating: "+detailCandy.iRate
                 detailDescriptionLabel.text = detailCandy.name
-                catLabel.text = detailCandy.category
+    
+                
+                
+                bulletBad = detailCandy.bList
+                bulletGood = detailCandy.gList
+                var NewbulletBad = "• " + bulletBad.stringByReplacingOccurrencesOfString(",", withString: "\n•")
+                var NewbulletGood =  "• " + bulletGood.stringByReplacingOccurrencesOfString(",", withString: "\n•")
+                
+                
+                if (NewbulletGood == "• -")
+                {
+                    NewbulletGood = "Not Applicable"
+                }
+                
+                if (NewbulletBad == "• -")
+                {
+                    NewbulletBad = "Not Applicable"
+                }
+                
+                self.goodView.text = NewbulletGood
+                self.badView.text = NewbulletBad
 
             }
         }
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        self.iList.setContentOffset(CGPointZero, animated: false)
-        self.iList.contentSize = CGSizeMake(iList.frame.size.height,iList.contentSize.height);
-        self.iList.showsHorizontalScrollIndicator = false;
+//        self.iList.setContentOffset(CGPointZero, animated: false)
+//        self.iList.contentSize = CGSizeMake(iList.frame.size.height,iList.contentSize.height);
+//        self.iList.showsHorizontalScrollIndicator = false;
 
 
 
@@ -78,7 +107,7 @@ class DetailViewController: UIViewController {
             }
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        self.iList.flashScrollIndicators()
+        //self.iList.flashScrollIndicators()
     }
 
     override func didReceiveMemoryWarning() {
