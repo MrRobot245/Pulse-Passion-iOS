@@ -36,24 +36,61 @@
 		D8A41A321C9A274500D4B544 /* myPulseWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = D8A41A311C9A274500D4B544 /* myPulseWhite.png */; };
 		D8A41A351C9A2EBA00D4B544 /* montserrat-bold-normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8A41A331C9A2EBA00D4B544 /* montserrat-bold-normal.ttf */; };
 		D8A41A361C9A2EBA00D4B544 /* montserrat-normal-normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8A41A341C9A2EBA00D4B544 /* montserrat-normal-normal.ttf */; };
+		D8A4D9CF1D305E8D00C25943 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D8A4D9BB1D305E8D00C25943 /* Info.plist */; };
+		D8A4D9D01D305E8D00C25943 /* RSCode128Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A4D9BC1D305E8D00C25943 /* RSCode128Generator.swift */; };
+		D8A4D9D11D305E8D00C25943 /* RSCode39Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A4D9BD1D305E8D00C25943 /* RSCode39Generator.swift */; };
+		D8A4D9D21D305E8D00C25943 /* RSCode39Mod43Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A4D9BE1D305E8D00C25943 /* RSCode39Mod43Generator.swift */; };
+		D8A4D9D31D305E8D00C25943 /* RSCode93Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A4D9BF1D305E8D00C25943 /* RSCode93Generator.swift */; };
+		D8A4D9D41D305E8D00C25943 /* RSCodeDataMatrixGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A4D9C01D305E8D00C25943 /* RSCodeDataMatrixGenerator.swift */; };
+		D8A4D9D51D305E8D00C25943 /* RSCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A4D9C11D305E8D00C25943 /* RSCodeGenerator.swift */; };
+		D8A4D9D61D305E8D00C25943 /* RSCodeLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A4D9C21D305E8D00C25943 /* RSCodeLayer.swift */; };
+		D8A4D9D71D305E8D00C25943 /* RSCodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A4D9C31D305E8D00C25943 /* RSCodeReaderViewController.swift */; };
+		D8A4D9D81D305E8D00C25943 /* RSCornersLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A4D9C41D305E8D00C25943 /* RSCornersLayer.swift */; };
+		D8A4D9D91D305E8D00C25943 /* RSEANGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A4D9C51D305E8D00C25943 /* RSEANGenerator.swift */; };
+		D8A4D9DA1D305E8D00C25943 /* RSExtendedCode39Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A4D9C61D305E8D00C25943 /* RSExtendedCode39Generator.swift */; };
+		D8A4D9DB1D305E8D00C25943 /* RSFocusMarkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A4D9C71D305E8D00C25943 /* RSFocusMarkLayer.swift */; };
+		D8A4D9DC1D305E8D00C25943 /* RSITF14Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A4D9C81D305E8D00C25943 /* RSITF14Generator.swift */; };
+		D8A4D9DD1D305E8D00C25943 /* RSITFGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A4D9C91D305E8D00C25943 /* RSITFGenerator.swift */; };
+		D8A4D9DE1D305E8D00C25943 /* RSUnifiedCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A4D9CA1D305E8D00C25943 /* RSUnifiedCodeGenerator.swift */; };
+		D8A4D9DF1D305E8D00C25943 /* RSUnifiedCodeValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A4D9CB1D305E8D00C25943 /* RSUnifiedCodeValidator.swift */; };
+		D8A4D9E01D305E8D00C25943 /* RSUPCEGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A4D9CC1D305E8D00C25943 /* RSUPCEGenerator.swift */; };
+		D8A4D9E11D305E8D00C25943 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A4D9CD1D305E8D00C25943 /* StringExtension.swift */; };
+		D8A4D9E21D305E8D00C25943 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A4D9CE1D305E8D00C25943 /* UIColorExtension.swift */; };
+		D8A4D9E61D305EA100C25943 /* RSBarcodes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A4D9E51D305E8D00C25943 /* RSBarcodes.framework */; };
+		D8A4D9E71D305EA100C25943 /* RSBarcodes.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8A4D9E51D305E8D00C25943 /* RSBarcodes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D8A863171C99E97B007DE46A /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A863161C99E97B007DE46A /* AboutView.swift */; };
 		D8BA55B71C9931BC002ACAAD /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = D8BA55B61C9931BC002ACAAD /* start.png */; };
 		D8BA55B91C9931C5002ACAAD /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D8BA55B81C9931C5002ACAAD /* logo.jpg */; };
 		D8BC90AA1CC1831800465EF3 /* LearnMoreClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BC90A91CC1831800465EF3 /* LearnMoreClass.swift */; };
-		D8D477741D2DD55900CC8710 /* RSBarcodes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D477611D2DD42200CC8710 /* RSBarcodes.framework */; };
-		D8D477751D2DD55900CC8710 /* RSBarcodes.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8D477611D2DD42200CC8710 /* RSBarcodes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D8E1908C1C9F41000021F9D9 /* EvenMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E1908B1C9F41000021F9D9 /* EvenMore.swift */; };
 		D8E79A781D2F28C000940B36 /* DB2.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = D8E79A771D2F28C000940B36 /* DB2.sqlite */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D8A4D9E41D305E8D00C25943 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8A4D9B71D305E8D00C25943 /* RSBarcodes.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D08336371A202E81004EE128;
+			remoteInfo = RSBarcodes;
+		};
+		D8A4D9E81D305EA100C25943 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8A4D9B71D305E8D00C25943 /* RSBarcodes.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D08336361A202E81004EE128;
+			remoteInfo = RSBarcodes;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
-		D8D477761D2DD55900CC8710 /* Embed Frameworks */ = {
+		D86BCB291D3057B7000036C3 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D8D477751D2DD55900CC8710 /* RSBarcodes.framework in Embed Frameworks */,
+				D8A4D9E71D305EA100C25943 /* RSBarcodes.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,11 +136,31 @@
 		D8A41A311C9A274500D4B544 /* myPulseWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myPulseWhite.png; sourceTree = "<group>"; };
 		D8A41A331C9A2EBA00D4B544 /* montserrat-bold-normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "montserrat-bold-normal.ttf"; sourceTree = "<group>"; };
 		D8A41A341C9A2EBA00D4B544 /* montserrat-normal-normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "montserrat-normal-normal.ttf"; sourceTree = "<group>"; };
+		D8A4D9B71D305E8D00C25943 /* RSBarcodes.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RSBarcodes.xcodeproj; sourceTree = "<group>"; };
+		D8A4D9BB1D305E8D00C25943 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8A4D9BC1D305E8D00C25943 /* RSCode128Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSCode128Generator.swift; sourceTree = "<group>"; };
+		D8A4D9BD1D305E8D00C25943 /* RSCode39Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSCode39Generator.swift; sourceTree = "<group>"; };
+		D8A4D9BE1D305E8D00C25943 /* RSCode39Mod43Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSCode39Mod43Generator.swift; sourceTree = "<group>"; };
+		D8A4D9BF1D305E8D00C25943 /* RSCode93Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSCode93Generator.swift; sourceTree = "<group>"; };
+		D8A4D9C01D305E8D00C25943 /* RSCodeDataMatrixGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSCodeDataMatrixGenerator.swift; sourceTree = "<group>"; };
+		D8A4D9C11D305E8D00C25943 /* RSCodeGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSCodeGenerator.swift; sourceTree = "<group>"; };
+		D8A4D9C21D305E8D00C25943 /* RSCodeLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSCodeLayer.swift; sourceTree = "<group>"; };
+		D8A4D9C31D305E8D00C25943 /* RSCodeReaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSCodeReaderViewController.swift; sourceTree = "<group>"; };
+		D8A4D9C41D305E8D00C25943 /* RSCornersLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSCornersLayer.swift; sourceTree = "<group>"; };
+		D8A4D9C51D305E8D00C25943 /* RSEANGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSEANGenerator.swift; sourceTree = "<group>"; };
+		D8A4D9C61D305E8D00C25943 /* RSExtendedCode39Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSExtendedCode39Generator.swift; sourceTree = "<group>"; };
+		D8A4D9C71D305E8D00C25943 /* RSFocusMarkLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSFocusMarkLayer.swift; sourceTree = "<group>"; };
+		D8A4D9C81D305E8D00C25943 /* RSITF14Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSITF14Generator.swift; sourceTree = "<group>"; };
+		D8A4D9C91D305E8D00C25943 /* RSITFGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSITFGenerator.swift; sourceTree = "<group>"; };
+		D8A4D9CA1D305E8D00C25943 /* RSUnifiedCodeGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSUnifiedCodeGenerator.swift; sourceTree = "<group>"; };
+		D8A4D9CB1D305E8D00C25943 /* RSUnifiedCodeValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSUnifiedCodeValidator.swift; sourceTree = "<group>"; };
+		D8A4D9CC1D305E8D00C25943 /* RSUPCEGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSUPCEGenerator.swift; sourceTree = "<group>"; };
+		D8A4D9CD1D305E8D00C25943 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		D8A4D9CE1D305E8D00C25943 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		D8A863161C99E97B007DE46A /* AboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		D8BA55B61C9931BC002ACAAD /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
 		D8BA55B81C9931C5002ACAAD /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
 		D8BC90A91CC1831800465EF3 /* LearnMoreClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnMoreClass.swift; sourceTree = "<group>"; };
-		D8D477611D2DD42200CC8710 /* RSBarcodes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RSBarcodes.framework; sourceTree = "<group>"; };
 		D8E1908B1C9F41000021F9D9 /* EvenMore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvenMore.swift; sourceTree = "<group>"; };
 		D8E79A771D2F28C000940B36 /* DB2.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = DB2.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,7 +172,7 @@
 			files = (
 				D846A7B61C9936010030A359 /* libsqlite3.0.tbd in Frameworks */,
 				D846A7B71C9936010030A359 /* libsqlite3.tbd in Frameworks */,
-				D8D477741D2DD55900CC8710 /* RSBarcodes.framework in Frameworks */,
+				D8A4D9E61D305EA100C25943 /* RSBarcodes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,7 +218,7 @@
 				D84DED941C9E3FDB001A68B5 /* NewView.swift */,
 				171E0CAD1B8E5C58001E6242 /* Food.swift */,
 				D84DED921C9E3F66001A68B5 /* ConnView.swift */,
-				D8D477611D2DD42200CC8710 /* RSBarcodes.framework */,
+				D8A4D9B61D305E8D00C25943 /* RSBarcodes */,
 				D85774511CBB372A00D65182 /* Gauge */,
 				D805F0271C9A80970036FA48 /* Fonts */,
 				D805F0261C9A808F0036FA48 /* Pictures */,
@@ -222,6 +279,50 @@
 			name = Gauge;
 			sourceTree = "<group>";
 		};
+		D8A4D9B61D305E8D00C25943 /* RSBarcodes */ = {
+			isa = PBXGroup;
+			children = (
+				D8A4D9B71D305E8D00C25943 /* RSBarcodes.xcodeproj */,
+				D8A4D9BA1D305E8D00C25943 /* Source */,
+			);
+			path = RSBarcodes;
+			sourceTree = "<group>";
+		};
+		D8A4D9B81D305E8D00C25943 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8A4D9E51D305E8D00C25943 /* RSBarcodes.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8A4D9BA1D305E8D00C25943 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D8A4D9BB1D305E8D00C25943 /* Info.plist */,
+				D8A4D9BC1D305E8D00C25943 /* RSCode128Generator.swift */,
+				D8A4D9BD1D305E8D00C25943 /* RSCode39Generator.swift */,
+				D8A4D9BE1D305E8D00C25943 /* RSCode39Mod43Generator.swift */,
+				D8A4D9BF1D305E8D00C25943 /* RSCode93Generator.swift */,
+				D8A4D9C01D305E8D00C25943 /* RSCodeDataMatrixGenerator.swift */,
+				D8A4D9C11D305E8D00C25943 /* RSCodeGenerator.swift */,
+				D8A4D9C21D305E8D00C25943 /* RSCodeLayer.swift */,
+				D8A4D9C31D305E8D00C25943 /* RSCodeReaderViewController.swift */,
+				D8A4D9C41D305E8D00C25943 /* RSCornersLayer.swift */,
+				D8A4D9C51D305E8D00C25943 /* RSEANGenerator.swift */,
+				D8A4D9C61D305E8D00C25943 /* RSExtendedCode39Generator.swift */,
+				D8A4D9C71D305E8D00C25943 /* RSFocusMarkLayer.swift */,
+				D8A4D9C81D305E8D00C25943 /* RSITF14Generator.swift */,
+				D8A4D9C91D305E8D00C25943 /* RSITFGenerator.swift */,
+				D8A4D9CA1D305E8D00C25943 /* RSUnifiedCodeGenerator.swift */,
+				D8A4D9CB1D305E8D00C25943 /* RSUnifiedCodeValidator.swift */,
+				D8A4D9CC1D305E8D00C25943 /* RSUPCEGenerator.swift */,
+				D8A4D9CD1D305E8D00C25943 /* StringExtension.swift */,
+				D8A4D9CE1D305E8D00C25943 /* UIColorExtension.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -232,11 +333,12 @@
 				171E0C761B8E5B84001E6242 /* Sources */,
 				171E0C771B8E5B84001E6242 /* Frameworks */,
 				171E0C781B8E5B84001E6242 /* Resources */,
-				D8D477761D2DD55900CC8710 /* Embed Frameworks */,
+				D86BCB291D3057B7000036C3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D8A4D9E91D305EA100C25943 /* PBXTargetDependency */,
 			);
 			name = MyPulse;
 			productName = CandySearch;
@@ -270,12 +372,28 @@
 			mainGroup = 171E0C711B8E5B84001E6242;
 			productRefGroup = 171E0C7B1B8E5B84001E6242 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D8A4D9B81D305E8D00C25943 /* Products */;
+					ProjectRef = D8A4D9B71D305E8D00C25943 /* RSBarcodes.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				171E0C791B8E5B84001E6242 /* MyPulse */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D8A4D9E51D305E8D00C25943 /* RSBarcodes.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RSBarcodes.framework;
+			remoteRef = D8A4D9E41D305E8D00C25943 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		171E0C781B8E5B84001E6242 /* Resources */ = {
@@ -288,6 +406,7 @@
 				D8A41A351C9A2EBA00D4B544 /* montserrat-bold-normal.ttf in Resources */,
 				D8BA55B91C9931C5002ACAAD /* logo.jpg in Resources */,
 				171E0C871B8E5B84001E6242 /* Assets.xcassets in Resources */,
+				D8A4D9CF1D305E8D00C25943 /* Info.plist in Resources */,
 				D8A41A361C9A2EBA00D4B544 /* montserrat-normal-normal.ttf in Resources */,
 				D8A41A321C9A274500D4B544 /* myPulseWhite.png in Resources */,
 				D8BA55B71C9931BC002ACAAD /* start.png in Resources */,
@@ -308,27 +427,54 @@
 				171E0C821B8E5B84001E6242 /* DetailViewController.swift in Sources */,
 				D846A7B11C9935C40030A359 /* FMDatabaseQueue.m in Sources */,
 				171E0CAE1B8E5C58001E6242 /* Food.swift in Sources */,
+				D8A4D9E01D305E8D00C25943 /* RSUPCEGenerator.swift in Sources */,
+				D8A4D9D11D305E8D00C25943 /* RSCode39Generator.swift in Sources */,
 				171E0C801B8E5B84001E6242 /* MasterViewController.swift in Sources */,
+				D8A4D9DF1D305E8D00C25943 /* RSUnifiedCodeValidator.swift in Sources */,
 				D857744A1CBB36E800D65182 /* ratingExplained.swift in Sources */,
 				D87F32CB1CAC5171005FD7B7 /* LearnMore-More.swift in Sources */,
+				D8A4D9D51D305E8D00C25943 /* RSCodeGenerator.swift in Sources */,
 				D8A863171C99E97B007DE46A /* AboutView.swift in Sources */,
 				D82655A81D2DCDBE0002D0E6 /* ScanViewController.swift in Sources */,
 				D84DED951C9E3FDB001A68B5 /* NewView.swift in Sources */,
 				D846A7AE1C9935C40030A359 /* FMDatabase.m in Sources */,
+				D8A4D9D61D305E8D00C25943 /* RSCodeLayer.swift in Sources */,
 				D8BC90AA1CC1831800465EF3 /* LearnMoreClass.swift in Sources */,
+				D8A4D9E11D305E8D00C25943 /* StringExtension.swift in Sources */,
 				D84DED931C9E3F66001A68B5 /* ConnView.swift in Sources */,
+				D8A4D9D31D305E8D00C25943 /* RSCode93Generator.swift in Sources */,
+				D8A4D9D01D305E8D00C25943 /* RSCode128Generator.swift in Sources */,
 				D87F32CD1CAC5261005FD7B7 /* LearnMoreHD.swift in Sources */,
+				D8A4D9DD1D305E8D00C25943 /* RSITFGenerator.swift in Sources */,
+				D8A4D9D71D305E8D00C25943 /* RSCodeReaderViewController.swift in Sources */,
 				D846A7B01C9935C40030A359 /* FMDatabasePool.m in Sources */,
+				D8A4D9D81D305E8D00C25943 /* RSCornersLayer.swift in Sources */,
 				D8E1908C1C9F41000021F9D9 /* EvenMore.swift in Sources */,
+				D8A4D9DA1D305E8D00C25943 /* RSExtendedCode39Generator.swift in Sources */,
+				D8A4D9DC1D305E8D00C25943 /* RSITF14Generator.swift in Sources */,
 				D82D31CC1C9E2E470000C447 /* FeaturedView.swift in Sources */,
 				D846A7B21C9935C40030A359 /* FMResultSet.m in Sources */,
 				171E0C7E1B8E5B84001E6242 /* AppDelegate.swift in Sources */,
 				D88033D31CABA81300D86C48 /* LearnMore.swift in Sources */,
+				D8A4D9E21D305E8D00C25943 /* UIColorExtension.swift in Sources */,
 				D846A7AF1C9935C40030A359 /* FMDatabaseAdditions.m in Sources */,
+				D8A4D9D91D305E8D00C25943 /* RSEANGenerator.swift in Sources */,
+				D8A4D9D41D305E8D00C25943 /* RSCodeDataMatrixGenerator.swift in Sources */,
+				D8A4D9DE1D305E8D00C25943 /* RSUnifiedCodeGenerator.swift in Sources */,
+				D8A4D9DB1D305E8D00C25943 /* RSFocusMarkLayer.swift in Sources */,
+				D8A4D9D21D305E8D00C25943 /* RSCode39Mod43Generator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8A4D9E91D305EA100C25943 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RSBarcodes;
+			targetProxy = D8A4D9E81D305EA100C25943 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		171E0C831B8E5B84001E6242 /* Main.storyboard */ = {
@@ -386,7 +532,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -425,7 +571,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -438,18 +584,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/CandySearch",
-				);
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Nathan Reymer (97MW272B3E)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = CandySearch/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pulsePassion.MyPulseiOS;
 				PRODUCT_NAME = MyPulse;
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "CandySearch/MyPulse-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -461,18 +605,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/CandySearch",
-				);
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Nathan Reymer (97MW272B3E)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = CandySearch/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pulsePassion.MyPulseiOS;
 				PRODUCT_NAME = MyPulse;
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "CandySearch/MyPulse-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = 1;
