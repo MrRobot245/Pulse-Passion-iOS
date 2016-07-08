@@ -59,7 +59,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KM7-Xa-Wax">
                                 <rect key="frame" x="530" y="72" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="t4W-sD-v5W"/>
+                                    <constraint firstAttribute="width" constant="50" id="iqS-AT-cSH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                 <state key="normal" title="Flash" image="FlashOff2">
@@ -73,9 +73,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
                                 <color key="backgroundColor" red="0.47058823529999999" green="0.66666666669999997" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="38o-cR-rff">
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38o-cR-rff">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
-                                <color key="barTintColor" red="0.37254901959999998" green="0.60392156860000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.47058823529999999" green="0.66666666669999997" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem id="z0d-gV-dbJ">
                                         <nil key="title"/>
@@ -85,6 +85,9 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <state key="normal" title="Back"/>
+                                                <connections>
+                                                    <segue destination="hea-iA-aB4" kind="unwind" unwindAction="unwindToVC:" id="VXg-1P-w98"/>
+                                                </connections>
                                             </button>
                                         </barButtonItem>
                                         <view key="titleView" contentMode="scaleToFill" id="U8i-Gf-vl8">
@@ -111,15 +114,15 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="KM7-Xa-Wax" firstAttribute="top" secondItem="38o-cR-rff" secondAttribute="bottom" constant="8" id="0UO-SI-wtl"/>
-                            <constraint firstItem="GIg-O3-Vw3" firstAttribute="trailing" secondItem="38o-cR-rff" secondAttribute="trailing" id="2cv-6L-r0e"/>
-                            <constraint firstAttribute="trailing" secondItem="GIg-O3-Vw3" secondAttribute="trailing" id="Gtv-hL-GGF"/>
-                            <constraint firstItem="GIg-O3-Vw3" firstAttribute="leading" secondItem="4eH-gd-dqo" secondAttribute="leading" id="ZQd-r1-ePh"/>
-                            <constraint firstItem="38o-cR-rff" firstAttribute="top" secondItem="1hA-pa-mnT" secondAttribute="bottom" id="bvY-oE-xfg"/>
-                            <constraint firstItem="GIg-O3-Vw3" firstAttribute="top" secondItem="4eH-gd-dqo" secondAttribute="top" id="eBR-Ss-uq7"/>
-                            <constraint firstItem="GIg-O3-Vw3" firstAttribute="leading" secondItem="38o-cR-rff" secondAttribute="leading" id="eBn-O0-BD6"/>
-                            <constraint firstItem="KM7-Xa-Wax" firstAttribute="trailing" secondItem="4eH-gd-dqo" secondAttribute="trailingMargin" id="lXx-9V-oek"/>
-                            <constraint firstItem="38o-cR-rff" firstAttribute="top" secondItem="GIg-O3-Vw3" secondAttribute="bottom" id="yBz-mq-gPK"/>
+                            <constraint firstItem="GIg-O3-Vw3" firstAttribute="top" secondItem="4eH-gd-dqo" secondAttribute="top" id="CLS-8F-guk"/>
+                            <constraint firstItem="38o-cR-rff" firstAttribute="top" secondItem="GIg-O3-Vw3" secondAttribute="bottom" id="EP1-PG-AsS"/>
+                            <constraint firstItem="KM7-Xa-Wax" firstAttribute="trailing" secondItem="4eH-gd-dqo" secondAttribute="trailingMargin" id="ES6-kj-ZN5"/>
+                            <constraint firstItem="GIg-O3-Vw3" firstAttribute="trailing" secondItem="38o-cR-rff" secondAttribute="trailing" id="F5B-ub-q5M"/>
+                            <constraint firstAttribute="trailing" secondItem="GIg-O3-Vw3" secondAttribute="trailing" id="Jhz-wg-0MY"/>
+                            <constraint firstItem="38o-cR-rff" firstAttribute="top" secondItem="1hA-pa-mnT" secondAttribute="bottom" id="UGl-fk-cns"/>
+                            <constraint firstItem="GIg-O3-Vw3" firstAttribute="leading" secondItem="4eH-gd-dqo" secondAttribute="leading" id="WWt-Qg-4jo"/>
+                            <constraint firstItem="GIg-O3-Vw3" firstAttribute="leading" secondItem="38o-cR-rff" secondAttribute="leading" id="eaA-tg-mpJ"/>
+                            <constraint firstItem="KM7-Xa-Wax" firstAttribute="top" secondItem="38o-cR-rff" secondAttribute="bottom" constant="8" id="pfw-C3-nfd"/>
                         </constraints>
                     </view>
                     <connections>
@@ -128,6 +131,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RcP-tW-fpW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="hea-iA-aB4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1080" y="-1696"/>
         </scene>
