@@ -41,7 +41,6 @@ class DetailViewController: UIViewController {
         if let detailCandy = detailCandy {
             if let detailDescriptionLabel = detailDescriptionLabel {
                  iList.text = detailCandy.iList
-                print(detailCandy.name)
                 
                 if(detailCandy.fRate == "Limit")
                 {

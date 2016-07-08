@@ -51,16 +51,22 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KM7-Xa-Wax">
                                 <rect key="frame" x="530" y="72" width="50" height="50"/>
-                                <state key="normal" image="FlashOff"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="XZm-TD-Ek8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Flash" image="FlashOff">
+                                    <color key="titleColor" red="0.98958333330000003" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="flashLight:" destination="NGT-Hw-Aur" eventType="touchUpInside" id="eF7-B2-Imu"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="KM7-Xa-Wax" firstAttribute="top" secondItem="1hA-pa-mnT" secondAttribute="bottom" constant="8" symbolic="YES" id="5Se-RE-41v"/>
-                            <constraint firstItem="KM7-Xa-Wax" firstAttribute="trailing" secondItem="4eH-gd-dqo" secondAttribute="trailingMargin" id="6vi-F8-lsw"/>
+                            <constraint firstItem="KM7-Xa-Wax" firstAttribute="trailing" secondItem="4eH-gd-dqo" secondAttribute="trailingMargin" id="GgZ-Ml-geZ"/>
+                            <constraint firstItem="KM7-Xa-Wax" firstAttribute="top" secondItem="1hA-pa-mnT" secondAttribute="bottom" constant="8" symbolic="YES" id="tKb-SQ-r2w"/>
                         </constraints>
                     </view>
                     <connections>
