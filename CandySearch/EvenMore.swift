@@ -12,6 +12,10 @@ import UIKit
 
 class EvenMoreViewController: UIViewController
 {
+    
+    @IBAction func unwindToEvenMore(segue: UIStoryboardSegue) {
+    }
+    
     @IBOutlet weak var ratingView: UIImageView!
     @IBOutlet weak var foodLabel: UILabel!
     
