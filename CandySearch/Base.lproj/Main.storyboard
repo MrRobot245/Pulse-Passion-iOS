@@ -127,7 +127,7 @@
                     </view>
                     <connections>
                         <outlet property="FlashButt" destination="KM7-Xa-Wax" id="U6b-BC-Njv"/>
-                        <segue destination="BjG-RI-UA8" kind="presentation" identifier="barSeg" id="uEh-De-lqo"/>
+                        <segue destination="BjG-RI-UA8" kind="presentation" identifier="barSeg" modalTransitionStyle="coverVertical" id="uEh-De-lqo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RcP-tW-fpW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -245,7 +245,7 @@
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                             <connections>
-                                                <segue destination="gSY-lH-8wZ" kind="presentation" identifier="showMore" modalTransitionStyle="crossDissolve" id="ePk-9u-ZiH"/>
+                                                <segue destination="gSY-lH-8wZ" kind="presentation" identifier="showMore" modalTransitionStyle="flipHorizontal" id="ePk-9u-ZiH"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -353,7 +353,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <segue destination="JEX-9P-axG" kind="presentation" identifier="showDetail" modalTransitionStyle="crossDissolve" id="4zT-Pe-NAt"/>
+                                    <segue destination="JEX-9P-axG" kind="presentation" identifier="showDetail" modalTransitionStyle="coverVertical" id="4zT-Pe-NAt"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -466,7 +466,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="Diet"/>
                                         <connections>
-                                            <segue destination="HwP-iL-pA6" kind="presentation" modalTransitionStyle="crossDissolve" id="dGy-0g-aRO"/>
+                                            <segue destination="HwP-iL-pA6" kind="presentation" modalTransitionStyle="coverVertical" id="dGy-0g-aRO"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYF-8Z-tOg">
@@ -474,7 +474,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="More"/>
                                         <connections>
-                                            <segue destination="upR-SE-SGA" kind="presentation" modalTransitionStyle="crossDissolve" id="MeG-S0-TsC"/>
+                                            <segue destination="upR-SE-SGA" kind="presentation" modalTransitionStyle="coverVertical" id="MeG-S0-TsC"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="A9c-Vs-rO8">
@@ -506,7 +506,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="Cardiovascular Disease"/>
                                         <connections>
-                                            <segue destination="vE2-zC-OLx" kind="presentation" modalTransitionStyle="crossDissolve" id="9x9-wR-ODk"/>
+                                            <segue destination="vE2-zC-OLx" kind="presentation" modalTransitionStyle="coverVertical" id="9x9-wR-ODk"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1332,11 +1332,6 @@ CiA
                                 <items>
                                     <navigationItem id="Dz2-MQ-IXI">
                                         <nil key="title"/>
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="FDn-R4-PC7">
-                                            <connections>
-                                                <segue destination="bJf-2Q-9Hz" kind="unwind" unwindAction="unwindToScanner:" id="h7Y-JV-XD2"/>
-                                            </connections>
-                                        </barButtonItem>
                                         <view key="titleView" contentMode="scaleToFill" id="bae-OE-3Jh">
                                             <rect key="frame" x="108" y="5.5" width="104" height="33"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1363,12 +1358,19 @@ CiA
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                             <connections>
-                                                <segue destination="NnX-qc-rrY" kind="presentation" identifier="showMore" modalTransitionStyle="crossDissolve" id="ViP-c5-p0I"/>
+                                                <segue destination="NnX-qc-rrY" kind="presentation" identifier="showMore" modalTransitionStyle="flipHorizontal" id="ViP-c5-p0I"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pS-FH-YT8">
+                                <rect key="frame" x="10" y="30" width="30" height="30"/>
+                                <state key="normal" image="Search-60"/>
+                                <connections>
+                                    <segue destination="bJf-2Q-9Hz" kind="unwind" unwindAction="unwindToVC:" id="M9N-9D-Uxk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -1684,7 +1686,7 @@ CiA
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="HOh-Mp-XLQ"/>
-        <segue reference="P1B-u6-TmW"/>
-        <segue reference="gQF-id-Ezg"/>
+        <segue reference="tHT-fy-Rmf"/>
+        <segue reference="oU6-bp-biY"/>
     </inferredMetricsTieBreakers>
 </document>
