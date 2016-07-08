@@ -430,7 +430,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3wv-ag-iSt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1921" y="-784"/>
+            <point key="canvasLocation" x="-791" y="-1624"/>
         </scene>
         <!--Even More View Controller-->
         <scene sceneID="huf-MI-age">
@@ -859,10 +859,6 @@ CiA
                                 <items>
                                     <navigationItem id="b1d-re-xyf">
                                         <nil key="title"/>
-                                        <view key="titleView" contentMode="scaleToFill" id="Kjb-cv-Wzd">
-                                            <rect key="frame" x="135.5" y="5.5" width="104" height="33"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </view>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
