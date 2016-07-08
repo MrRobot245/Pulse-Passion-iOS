@@ -55,7 +55,7 @@
                                     <constraint firstAttribute="width" constant="50" id="XZm-TD-Ek8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                <state key="normal" title="Flash" image="FlashOff">
+                                <state key="normal" title="Flash" image="FlashOff2">
                                     <color key="titleColor" red="0.98958333330000003" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -1331,7 +1331,7 @@ CiA
     </scenes>
     <resources>
         <image name="Barcode Scanner-60" width="30" height="30"/>
-        <image name="FlashOff" width="50" height="50"/>
+        <image name="FlashOff2" width="50" height="50"/>
         <image name="Info-60" width="30" height="30"/>
         <image name="Learn" width="30" height="30"/>
         <image name="Ratings" width="1000" height="1200"/>

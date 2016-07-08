@@ -141,7 +141,6 @@
 		171E0C7C1B8E5B84001E6242 /* MyPulse */ = {
 			isa = PBXGroup;
 			children = (
-				D8D477611D2DD42200CC8710 /* RSBarcodes.framework */,
 				D8A863161C99E97B007DE46A /* AboutView.swift */,
 				D85774491CBB36E800D65182 /* ratingExplained.swift */,
 				171E0C7D1B8E5B84001E6242 /* AppDelegate.swift */,
@@ -162,6 +161,7 @@
 				D84DED941C9E3FDB001A68B5 /* NewView.swift */,
 				171E0CAD1B8E5C58001E6242 /* Food.swift */,
 				D84DED921C9E3F66001A68B5 /* ConnView.swift */,
+				D8D477611D2DD42200CC8710 /* RSBarcodes.framework */,
 				D85774511CBB372A00D65182 /* Gauge */,
 				D805F0271C9A80970036FA48 /* Fonts */,
 				D805F0261C9A808F0036FA48 /* Pictures */,
