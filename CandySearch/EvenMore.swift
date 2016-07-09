@@ -16,18 +16,18 @@ class EvenMoreViewController: UIViewController
     @IBAction func unwindToEvenMore(segue: UIStoryboardSegue) {
     }
     
-    @IBOutlet weak var ratingView: UIImageView!
+ 
     @IBOutlet weak var foodLabel: UILabel!
-    
+    @IBOutlet weak var catView: UILabel!
+    @IBOutlet weak var ratingView: UIImageView!
     @IBOutlet weak var iListView: UITextView!
-    @IBOutlet weak var goodView: UITextView!
-    @IBOutlet weak var badView: UITextView!
-    
+
     @IBOutlet weak var ratingNum: UILabel!
     var getTopLabel:String!
     var getIngre:String!
     var getRatingPic:String!
     var getRatingNum: String!
+    var getCat:String!
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
@@ -41,6 +41,7 @@ class EvenMoreViewController: UIViewController
     {
         super.viewDidLoad()
         self.foodLabel.text = self.getTopLabel
+        self.catView.text = self.getCat
         self.iListView.text = self.getIngre
                 self.ratingNum.text =  "Rating: "+getRatingNum
         if(self.getRatingPic == "Limit")
