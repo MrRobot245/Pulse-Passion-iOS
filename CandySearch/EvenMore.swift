@@ -19,50 +19,30 @@ class EvenMoreViewController: UIViewController
     @IBOutlet weak var ratingView: UIImageView!
     @IBOutlet weak var foodLabel: UILabel!
     
+    @IBOutlet weak var iListView: UITextView!
     @IBOutlet weak var goodView: UITextView!
     @IBOutlet weak var badView: UITextView!
     
     @IBOutlet weak var ratingNum: UILabel!
     var getTopLabel:String!
-    var getgoodLabel:String!
-    var getbadLabel:String!
+    var getIngre:String!
     var getRatingPic:String!
-    var bulletBad: String!
-    var bulletGood: String!
     var getRatingNum: String!
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        self.goodView.flashScrollIndicators()
-        self.badView.flashScrollIndicators()
+//        self.goodView.flashScrollIndicators()
+//        self.badView.flashScrollIndicators()
     }
     override func viewDidLayoutSubviews() {
-        self.goodView.setContentOffset(CGPointZero, animated: false)
-        self.badView.setContentOffset(CGPointZero, animated: false)
+
     }
     override func viewDidLoad()
     {
         super.viewDidLoad()
         self.foodLabel.text = self.getTopLabel
-        bulletBad = self.getbadLabel
-        bulletGood = self.getgoodLabel
-        var NewbulletBad = "• " + bulletBad.stringByReplacingOccurrencesOfString(",", withString: "\n•")
-        var NewbulletGood =  "• " + bulletGood.stringByReplacingOccurrencesOfString(",", withString: "\n•")
-        
-        
-        if (NewbulletGood == "• -")
-        {
-            NewbulletGood = "Not Applicable"
-        }
-        
-        if (NewbulletBad == "• -")
-        {
-            NewbulletBad = "Not Applicable"
-        }
-        
-        self.goodView.text = NewbulletGood
-        self.badView.text = NewbulletBad
-        self.ratingNum.text =  "Rating: "+getRatingNum
+        self.iListView.text = self.getIngre
+                self.ratingNum.text =  "Rating: "+getRatingNum
         if(self.getRatingPic == "Limit")
         {
             ratingView.image = UIImage(named: "nnRed")

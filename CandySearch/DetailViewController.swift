@@ -107,6 +107,8 @@ class DetailViewController: UIViewController {
             }
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
+        self.goodView.flashScrollIndicators()
+        self.badView.flashScrollIndicators()
         //self.iList.flashScrollIndicators()
     }
 
@@ -120,10 +122,10 @@ class DetailViewController: UIViewController {
         if segue.identifier == "showMore" {
             let vc = segue.destinationViewController as! EvenMoreViewController
             vc.getTopLabel = detailCandy?.name
-            vc.getbadLabel = detailCandy?.bList
-            vc.getgoodLabel = detailCandy?.gList
             vc.getRatingPic = detailCandy?.fRate
             vc.getRatingNum = detailCandy?.iRate
+            vc.getIngre = detailCandy?.iList
+            
 
            }
     }
