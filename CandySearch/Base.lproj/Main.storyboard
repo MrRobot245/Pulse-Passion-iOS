@@ -1329,8 +1329,8 @@ CiA
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="N20-h6-SIA">
                                                 <rect key="frame" x="16" y="7" width="70" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Back" image="Back">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Search" image="SearchLeft">
+                                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
                                                     <segue destination="mmz-bo-4fi" kind="unwind" unwindAction="unwindToVC:" id="aJs-6b-Plg"/>
@@ -1755,11 +1755,12 @@ CiA
         <image name="Learn" width="30" height="30"/>
         <image name="Ratings" width="1000" height="1200"/>
         <image name="Search-60" width="30" height="30"/>
+        <image name="SearchLeft" width="30" height="30"/>
         <image name="smallMyPulseLogo" width="200" height="260"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="HOh-Mp-XLQ"/>
         <segue reference="jh2-Wf-U5Z"/>
-        <segue reference="Qo9-J6-Ayd"/>
+        <segue reference="ViU-Ys-IAt"/>
     </inferredMetricsTieBreakers>
 </document>
