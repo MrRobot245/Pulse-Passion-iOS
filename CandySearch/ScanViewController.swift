@@ -83,7 +83,7 @@ class ScanViewController: RSCodeReaderViewController {
                     
                     let documents = try! NSFileManager.defaultManager().URLForDirectory(.DocumentDirectory, inDomain: .UserDomainMask, appropriateForURL: nil, create: false)
                     let fileURL = documents.URLByAppendingPathComponent("DB2.sqlite")
-                    let database = FMDatabase(path: fileURL.path)
+                    let database = FMDatabase(path: fileURL!.path)
                     if !database.open() {
                         print("Unable to open database")
                     }
