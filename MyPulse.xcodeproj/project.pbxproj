@@ -64,6 +64,8 @@
 		D8BC90AA1CC1831800465EF3 /* LearnMoreClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BC90A91CC1831800465EF3 /* LearnMoreClass.swift */; };
 		D8E1908C1C9F41000021F9D9 /* EvenMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E1908B1C9F41000021F9D9 /* EvenMore.swift */; };
 		D8E79A781D2F28C000940B36 /* DB2.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = D8E79A771D2F28C000940B36 /* DB2.sqlite */; };
+		D8F352171D4A595B00A01093 /* BWWalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F352151D4A595B00A01093 /* BWWalkthroughPageViewController.swift */; };
+		D8F352181D4A595B00A01093 /* BWWalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F352161D4A595B00A01093 /* BWWalkthroughViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +165,8 @@
 		D8BC90A91CC1831800465EF3 /* LearnMoreClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnMoreClass.swift; sourceTree = "<group>"; };
 		D8E1908B1C9F41000021F9D9 /* EvenMore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EvenMore.swift; sourceTree = "<group>"; };
 		D8E79A771D2F28C000940B36 /* DB2.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = DB2.sqlite; sourceTree = "<group>"; };
+		D8F352151D4A595B00A01093 /* BWWalkthroughPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BWWalkthroughPageViewController.swift; sourceTree = "<group>"; };
+		D8F352161D4A595B00A01093 /* BWWalkthroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BWWalkthroughViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +222,7 @@
 				D84DED941C9E3FDB001A68B5 /* NewView.swift */,
 				171E0CAD1B8E5C58001E6242 /* Food.swift */,
 				D84DED921C9E3F66001A68B5 /* ConnView.swift */,
+				D8F352141D4A594B00A01093 /* Walkthrough */,
 				D8A4D9B61D305E8D00C25943 /* RSBarcodes */,
 				D85774511CBB372A00D65182 /* Gauge */,
 				D805F0271C9A80970036FA48 /* Fonts */,
@@ -321,6 +326,15 @@
 				D8A4D9CE1D305E8D00C25943 /* UIColorExtension.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		D8F352141D4A594B00A01093 /* Walkthrough */ = {
+			isa = PBXGroup;
+			children = (
+				D8F352151D4A595B00A01093 /* BWWalkthroughPageViewController.swift */,
+				D8F352161D4A595B00A01093 /* BWWalkthroughViewController.swift */,
+			);
+			name = Walkthrough;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -453,8 +467,10 @@
 				D8A4D9DA1D305E8D00C25943 /* RSExtendedCode39Generator.swift in Sources */,
 				D8A4D9DC1D305E8D00C25943 /* RSITF14Generator.swift in Sources */,
 				D82D31CC1C9E2E470000C447 /* FeaturedView.swift in Sources */,
+				D8F352171D4A595B00A01093 /* BWWalkthroughPageViewController.swift in Sources */,
 				D846A7B21C9935C40030A359 /* FMResultSet.m in Sources */,
 				171E0C7E1B8E5B84001E6242 /* AppDelegate.swift in Sources */,
+				D8F352181D4A595B00A01093 /* BWWalkthroughViewController.swift in Sources */,
 				D88033D31CABA81300D86C48 /* LearnMore.swift in Sources */,
 				D8A4D9E21D305E8D00C25943 /* UIColorExtension.swift in Sources */,
 				D846A7AF1C9935C40030A359 /* FMDatabaseAdditions.m in Sources */,
