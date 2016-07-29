@@ -108,13 +108,8 @@ class MasterViewController: UITableViewController {
         if segue.identifier == "sendAllBar" {
             let dbTran = segue.destinationViewController as! ScanViewController
             dbTran.getFood = food
-            
-            
         }
-        
     }
-    
-
 }
 
 

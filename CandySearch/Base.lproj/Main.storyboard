@@ -60,13 +60,19 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <action selector="EnterPressed:" destination="Vsz-3J-7sH" eventType="editingDidEndOnExit" id="jqc-k2-tGL"/>
+                                            <segue destination="8Qa-TT-lwq" kind="presentation" id="sU1-6H-6bg"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ld4-hk-0Wm">
                                         <rect key="frame" x="423" y="360" width="46" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="46" id="5yE-6K-uWT"/>
                                         </constraints>
-                                        <state key="normal" image="Barcode Scanner-60"/>
+                                        <state key="normal" image="Barcode Scanner-60">
+                                            <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <segue destination="NGT-Hw-Aur" kind="presentation" modalTransitionStyle="crossDissolve" id="au0-5N-PVF"/>
                                         </connections>
@@ -124,6 +130,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ea2-xA-Udd"/>
+                    <connections>
+                        <outlet property="searchField" destination="jwP-JV-ffs" id="Zog-nh-IKl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lwq-FL-h0h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -500,7 +509,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
                 <exit id="27t-Pu-lpj" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="598" y="-796"/>
+            <point key="canvasLocation" x="420" y="-1228"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2tY-wU-fTi">
@@ -517,7 +526,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f82-7d-Wrp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-80" y="-1034"/>
+            <point key="canvasLocation" x="-260" y="-1138"/>
         </scene>
         <!--About-->
         <scene sceneID="fqg-rY-gP3">
@@ -1852,7 +1861,8 @@ CiA
         <image name="smallMyPulseLogo" width="200" height="260"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jh2-Wf-U5Z"/>
+        <segue reference="IQ9-Iz-4cG"/>
         <segue reference="ViU-Ys-IAt"/>
+        <segue reference="jh2-Wf-U5Z"/>
     </inferredMetricsTieBreakers>
 </document>
