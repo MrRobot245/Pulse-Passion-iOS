@@ -15,6 +15,7 @@
 		171E0C8A1B8E5B84001E6242 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 171E0C881B8E5B84001E6242 /* LaunchScreen.storyboard */; };
 		171E0CAE1B8E5C58001E6242 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171E0CAD1B8E5C58001E6242 /* Food.swift */; };
 		D805F0251C9A80840036FA48 /* smallMyPulseLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D805F0241C9A80840036FA48 /* smallMyPulseLogo.png */; };
+		D82266B21D4BEE23007FF0C1 /* SearchMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82266B11D4BEE23007FF0C1 /* SearchMain.swift */; };
 		D82655A81D2DCDBE0002D0E6 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82655A71D2DCDBE0002D0E6 /* ScanViewController.swift */; };
 		D82D31CC1C9E2E470000C447 /* FeaturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D31CB1C9E2E470000C447 /* FeaturedView.swift */; };
 		D846A7AE1C9935C40030A359 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = D846A7A41C9935C40030A359 /* FMDatabase.m */; };
@@ -108,6 +109,7 @@
 		171E0C8B1B8E5B84001E6242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		171E0CAD1B8E5C58001E6242 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		D805F0241C9A80840036FA48 /* smallMyPulseLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smallMyPulseLogo.png; sourceTree = "<group>"; };
+		D82266B11D4BEE23007FF0C1 /* SearchMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchMain.swift; sourceTree = "<group>"; };
 		D82655A71D2DCDBE0002D0E6 /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		D82D31CB1C9E2E470000C447 /* FeaturedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedView.swift; sourceTree = "<group>"; };
 		D846A7A21C9935C30030A359 /* MyPulse-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyPulse-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				D8A863161C99E97B007DE46A /* AboutView.swift */,
+				D82266B11D4BEE23007FF0C1 /* SearchMain.swift */,
 				D85774491CBB36E800D65182 /* ratingExplained.swift */,
 				171E0C7D1B8E5B84001E6242 /* AppDelegate.swift */,
 				171E0C7F1B8E5B84001E6242 /* MasterViewController.swift */,
@@ -462,6 +465,7 @@
 				D8A4D9D41D305E8D00C25943 /* RSCodeDataMatrixGenerator.swift in Sources */,
 				D8A4D9DE1D305E8D00C25943 /* RSUnifiedCodeGenerator.swift in Sources */,
 				D8A4D9DB1D305E8D00C25943 /* RSFocusMarkLayer.swift in Sources */,
+				D82266B21D4BEE23007FF0C1 /* SearchMain.swift in Sources */,
 				D8A4D9D21D305E8D00C25943 /* RSCode39Mod43Generator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
