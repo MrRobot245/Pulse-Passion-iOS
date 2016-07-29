@@ -465,11 +465,16 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="Zdf-7t-Un8">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" id="P4i-X2-ys2">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="iAH-QT-6cV">
-                                <rect key="frame" x="20" y="11" width="22" height="22"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="P4i-X2-ys2">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iAH-QT-6cV">
+                                <rect key="frame" x="20" y="7" width="70" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back" image="Back"/>
+                                <connections>
+                                    <segue destination="27t-Pu-lpj" kind="unwind" unwindAction="unwindToMainSearch:" id="Ao7-7j-fHp"/>
+                                </connections>
                             </button>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                         <view key="titleView" contentMode="scaleToFill" id="ktS-Qx-ykY">
                             <rect key="frame" x="246" y="5.5" width="108" height="33"/>
@@ -490,15 +495,10 @@
                                 <constraint firstItem="xxm-Zh-tb3" firstAttribute="top" secondItem="ktS-Qx-ykY" secondAttribute="top" constant="1" id="wsm-Mg-I4X"/>
                             </constraints>
                         </view>
-                        <barButtonItem key="rightBarButtonItem" image="Barcode Scanner-60" id="zw1-eW-PXn"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
-                <view contentMode="scaleToFill" id="7gW-jP-XYd">
-                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                </view>
+                <exit id="27t-Pu-lpj" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="598" y="-796"/>
         </scene>

@@ -36,18 +36,7 @@ class MasterViewController: UITableViewController {
                 gList: results!.stringForColumn("gList"),
                 bList: results!.stringForColumn("bList"),
                 iRate: results!.stringForColumn("iRate")))
-            
-            
-            //         let querySQL = "SELECT cat,title,fRate,iList FROM DB WHERE title = title ORDER BY title COLLATE NOCASE"
-            //        let results:FMResultSet? = database.executeQuery(querySQL,
-            //            withArgumentsInArray: nil)
-            //        while(results!.next()) {
-            //             //print("\(results!.stringForColumn("cat"),results!.stringForColumn("food"))")
-            //            food.append(Food(category: results!.stringForColumn("cat"), name: results!.stringForColumn("title"),
-            //                fRate: results!.stringForColumn("fRate"),
-            //                iList: results!.stringForColumn("iList"),
-            //                gList: "",
-            //                bList: ""))
+
         }
         tableView.reloadData()
         
@@ -55,7 +44,8 @@ class MasterViewController: UITableViewController {
     override func viewDidLoad() {
         copyDatabase()
         fmdb()
-        super.viewDidLoad()
+        self.searchController.loadViewIfNeeded()
+        //self.resultSearchController.loadViewIfNeeded()
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -124,8 +114,9 @@ class MasterViewController: UITableViewController {
         
     }
     
-    
+
 }
+
 
 
 extension MasterViewController: UISearchResultsUpdating {
