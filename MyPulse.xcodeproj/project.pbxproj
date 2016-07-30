@@ -27,6 +27,8 @@
 		D846A7B71C9936010030A359 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D846A7B51C9936010030A359 /* libsqlite3.tbd */; };
 		D84DED931C9E3F66001A68B5 /* ConnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84DED921C9E3F66001A68B5 /* ConnView.swift */; };
 		D84DED951C9E3FDB001A68B5 /* NewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84DED941C9E3FDB001A68B5 /* NewView.swift */; };
+		D85301C01D4D04A600E106F1 /* PageItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85301BE1D4D04A600E106F1 /* PageItemController.swift */; };
+		D85301C11D4D04A600E106F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85301BF1D4D04A600E106F1 /* ViewController.swift */; };
 		D857744A1CBB36E800D65182 /* ratingExplained.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85774491CBB36E800D65182 /* ratingExplained.swift */; };
 		D857744E1CBB372500D65182 /* GhettoGauge.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D857744B1CBB372500D65182 /* GhettoGauge.pdf */; };
 		D857744F1CBB372500D65182 /* GhettoGauge.pptx in Resources */ = {isa = PBXBuildFile; fileRef = D857744C1CBB372500D65182 /* GhettoGauge.pptx */; };
@@ -128,6 +130,8 @@
 		D846A7B51C9936010030A359 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		D84DED921C9E3F66001A68B5 /* ConnView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnView.swift; sourceTree = "<group>"; };
 		D84DED941C9E3FDB001A68B5 /* NewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewView.swift; sourceTree = "<group>"; };
+		D85301BE1D4D04A600E106F1 /* PageItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageItemController.swift; sourceTree = "<group>"; };
+		D85301BF1D4D04A600E106F1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D85774491CBB36E800D65182 /* ratingExplained.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ratingExplained.swift; sourceTree = "<group>"; };
 		D857744B1CBB372500D65182 /* GhettoGauge.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = GhettoGauge.pdf; sourceTree = "<group>"; };
 		D857744C1CBB372500D65182 /* GhettoGauge.pptx */ = {isa = PBXFileReference; lastKnownFileType = file; path = GhettoGauge.pptx; sourceTree = "<group>"; };
@@ -221,6 +225,7 @@
 				D84DED941C9E3FDB001A68B5 /* NewView.swift */,
 				171E0CAD1B8E5C58001E6242 /* Food.swift */,
 				D84DED921C9E3F66001A68B5 /* ConnView.swift */,
+				D85301B41D4CFC3200E106F1 /* Walkthrough */,
 				D8A4D9B61D305E8D00C25943 /* RSBarcodes */,
 				D85774511CBB372A00D65182 /* Gauge */,
 				D805F0271C9A80970036FA48 /* Fonts */,
@@ -270,6 +275,15 @@
 				D846A7A21C9935C30030A359 /* MyPulse-Bridging-Header.h */,
 			);
 			name = FMDB;
+			sourceTree = "<group>";
+		};
+		D85301B41D4CFC3200E106F1 /* Walkthrough */ = {
+			isa = PBXGroup;
+			children = (
+				D85301BE1D4D04A600E106F1 /* PageItemController.swift */,
+				D85301BF1D4D04A600E106F1 /* ViewController.swift */,
+			);
+			name = Walkthrough;
 			sourceTree = "<group>";
 		};
 		D85774511CBB372A00D65182 /* Gauge */ = {
@@ -428,6 +442,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				171E0C821B8E5B84001E6242 /* DetailViewController.swift in Sources */,
+				D85301C11D4D04A600E106F1 /* ViewController.swift in Sources */,
 				D846A7B11C9935C40030A359 /* FMDatabaseQueue.m in Sources */,
 				171E0CAE1B8E5C58001E6242 /* Food.swift in Sources */,
 				D8A4D9E01D305E8D00C25943 /* RSUPCEGenerator.swift in Sources */,
@@ -442,6 +457,7 @@
 				D84DED951C9E3FDB001A68B5 /* NewView.swift in Sources */,
 				D846A7AE1C9935C40030A359 /* FMDatabase.m in Sources */,
 				D8A4D9D61D305E8D00C25943 /* RSCodeLayer.swift in Sources */,
+				D85301C01D4D04A600E106F1 /* PageItemController.swift in Sources */,
 				D8BC90AA1CC1831800465EF3 /* LearnMoreClass.swift in Sources */,
 				D8A4D9E11D305E8D00C25943 /* StringExtension.swift in Sources */,
 				D84DED931C9E3F66001A68B5 /* ConnView.swift in Sources */,
