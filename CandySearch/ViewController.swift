@@ -27,6 +27,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
         createPageViewController()
         setupPageControl()
     }
+
     
     private func createPageViewController() {
         

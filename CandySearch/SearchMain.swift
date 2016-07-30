@@ -76,6 +76,10 @@ class SearchMain: UIViewController {
     }
     
     override func viewDidLoad() {
+        dispatch_async(dispatch_get_main_queue(), {
+            self.performSegueWithIdentifier("SendWalk", sender: self)
+        })
+           //performSegueWithIdentifier("SendWalk", sender: self)
         copyDatabase()
         fmdb()
         searchButton.layer.masksToBounds = true
@@ -83,6 +87,8 @@ class SearchMain: UIViewController {
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SearchMain.tap(_:)))
         view.addGestureRecognizer(tapGesture)
+        
+
     }
     
     func tap(gesture: UITapGestureRecognizer) {
