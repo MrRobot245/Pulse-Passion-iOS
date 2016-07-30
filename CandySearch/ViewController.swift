@@ -11,14 +11,15 @@ import UIKit
 class ViewController: UIViewController, UIPageViewControllerDataSource {
     
     
+  
     // MARK: - Variables
     private var pageViewController: UIPageViewController?
     
     // Initialize it right away here
-    private let contentImages = ["nnGreen",
-                                 "nnRed",
-                                 "nnYellow",
-                                 "nnGreen"]
+    private let contentImages = ["phone2",
+                                 "phone3",
+                                 "phone4",
+                                 "phone5"]
 
     // MARK: - View Lifecycle
     override func viewDidLoad() {
@@ -48,7 +49,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
         let appearance = UIPageControl.appearance()
         appearance.pageIndicatorTintColor = UIColor.grayColor()
         appearance.currentPageIndicatorTintColor = UIColor.whiteColor()
-        appearance.backgroundColor = UIColor.darkGrayColor()
+        appearance.backgroundColor = UIColor.clearColor()
     }
     
     // MARK: - UIPageViewControllerDataSource

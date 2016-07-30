@@ -25,8 +25,17 @@ class PageItemController: UIViewController {
     
     @IBOutlet var contentImageView: UIImageView?
     
+    @IBAction func CloseButtonAction(sender: AnyObject) {
+        
+    }
+    
+    
+    @IBOutlet weak var CloseButton: UIButton!
+
     // MARK: - View Lifecycle
     override func viewDidLoad() {
+        CloseButton.layer.masksToBounds = true
+        CloseButton.layer.cornerRadius = 5.0
         super.viewDidLoad()
         contentImageView!.image = UIImage(named: imageName)
     }
