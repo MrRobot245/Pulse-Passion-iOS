@@ -22,13 +22,13 @@ class SearchMain: UIViewController {
     }
     @IBOutlet weak var searchField: UITextField!
     @IBAction func unwindToMainSearch(segue: UIStoryboardSegue) {
+        
     }
     @IBAction func EnterPressed(sender: AnyObject) {
 
     }
     
     @IBAction func ReturnPls(sender: AnyObject) {
-        print("Return")
          performSegueWithIdentifier("sendToTable", sender: self)
     }
     

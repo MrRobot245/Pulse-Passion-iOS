@@ -12,6 +12,9 @@ import UIKit
 class AboutView: UIViewController {
     @IBOutlet weak var vLabel: UILabel!
     
+    @IBAction func SearchButt(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     @IBAction func unwindToAbout(segue: UIStoryboardSegue) {
     }
     
