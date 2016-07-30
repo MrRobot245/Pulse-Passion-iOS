@@ -77,9 +77,8 @@ class SearchMain: UIViewController {
     
     override func viewDidLoad() {
         dispatch_async(dispatch_get_main_queue(), {
-            self.performSegueWithIdentifier("SendWalk", sender: self)
+            //self.performSegueWithIdentifier("SendWalk", sender: self)
         })
-           //performSegueWithIdentifier("SendWalk", sender: self)
         copyDatabase()
         fmdb()
         searchButton.layer.masksToBounds = true
