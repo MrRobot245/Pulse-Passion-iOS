@@ -35,7 +35,9 @@ class DetailViewController: UIViewController {
     var bulletBad: String!
     var bulletGood: String!
     
+    @IBOutlet weak var category: UILabel!
     
+    @IBOutlet weak var ingred: UITextView!
     
     
     
@@ -88,6 +90,8 @@ class DetailViewController: UIViewController {
                 
                 self.goodView.text = NewbulletGood
                 self.badView.text = NewbulletBad
+                self.ingred.text = detailCandy.iList
+                self.category.text = detailCandy.category
 
             }
         }

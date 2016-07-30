@@ -43,19 +43,6 @@ class EvenMoreViewController: UIViewController
         self.foodLabel.text = self.getTopLabel
         self.catView.text = self.getCat
         self.iListView.text = self.getIngre
-                self.ratingNum.text =  "Rating: "+getRatingNum
-        if(self.getRatingPic == "Limit")
-        {
-            ratingView.image = UIImage(named: "nnRed")
-        }
-        if(self.getRatingPic == "Sometimes")
-        {
-            ratingView.image = UIImage(named: "nnYellow")
-        }
-        if(self.getRatingPic == "Often")
-        {
-            ratingView.image = UIImage(named: "nnGreen")
-        }
     }
     
     override func didReceiveMemoryWarning()

@@ -29,6 +29,7 @@ class PageItemController: UIViewController {
         
     }
     
+    @IBOutlet weak var HelpText: UITextView!
     
     @IBOutlet weak var CloseButton: UIButton!
 
