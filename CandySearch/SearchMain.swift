@@ -76,9 +76,7 @@ class SearchMain: UIViewController {
     }
     
     override func viewDidLoad() {
-        dispatch_async(dispatch_get_main_queue(), {
-            //self.performSegueWithIdentifier("SendWalk", sender: self)
-        })
+        isAppAlreadyLaunchedOnce()
         copyDatabase()
         fmdb()
         searchButton.layer.masksToBounds = true
@@ -93,7 +91,21 @@ class SearchMain: UIViewController {
     func tap(gesture: UITapGestureRecognizer) {
         searchField.resignFirstResponder()
     }
-    
+    func isAppAlreadyLaunchedOnce()->Bool{
+        let defaults = NSUserDefaults.standardUserDefaults()
+        
+        if defaults.stringForKey("isAppAlreadyLaunchedOnce") != nil{
+           // print("App already launched")
+            return true
+        }else{
+            defaults.setBool(true, forKey: "isAppAlreadyLaunchedOnce")
+//            print("App launched first time")
+            dispatch_async(dispatch_get_main_queue(), {
+                self.performSegueWithIdentifier("SendWalk", sender: self)
+            })
+            return false
+        }
+    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "sendToTable") {
