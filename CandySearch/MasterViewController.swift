@@ -16,8 +16,7 @@ class MasterViewController: UITableViewController {
       override func viewDidLoad() {
      
         self.searchController.loadViewIfNeeded()
-      print(getFood.count)
-
+        tableView.reloadData()
     }
 
     override func viewWillAppear(animated: Bool) {

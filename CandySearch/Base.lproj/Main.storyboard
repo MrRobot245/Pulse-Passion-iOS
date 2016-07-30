@@ -61,6 +61,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <action selector="ReturnPls:" destination="Vsz-3J-7sH" eventType="primaryActionTriggered" id="DN7-yB-vHF"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ld4-hk-0Wm">
                                         <rect key="frame" x="423" y="360" width="46" height="30"/>
@@ -1858,7 +1861,7 @@ CiA
         <image name="smallMyPulseLogo" width="200" height="260"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ViU-Ys-IAt"/>
         <segue reference="jh2-Wf-U5Z"/>
+        <segue reference="ViU-Ys-IAt"/>
     </inferredMetricsTieBreakers>
 </document>

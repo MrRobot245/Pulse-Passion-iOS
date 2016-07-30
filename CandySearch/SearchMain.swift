@@ -27,6 +27,10 @@ class SearchMain: UIViewController {
 
     }
     
+    @IBAction func ReturnPls(sender: AnyObject) {
+        print("Return")
+         performSegueWithIdentifier("sendToTable", sender: self)
+    }
     
 
     
@@ -90,10 +94,7 @@ class SearchMain: UIViewController {
                     searchedFood.append(food[i])
                 }
             }
-            print(searchedFood.count)
-
             detailVC.getFood = searchedFood
-            print(searchedFood.count)
         }
         if segue.identifier == "sendAllBar" {
             let dbTran = segue.destinationViewController as! ScanViewController
