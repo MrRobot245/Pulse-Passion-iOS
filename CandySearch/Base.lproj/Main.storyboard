@@ -49,6 +49,7 @@
                                             <color key="titleColor" red="0.98958333330000003" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
+                                            <action selector="searchButton:" destination="Vsz-3J-7sH" eventType="touchUpInside" id="6pk-Cd-Jgk"/>
                                             <segue destination="8Qa-TT-lwq" kind="presentation" identifier="sendToTable" id="IQ9-Iz-4cG"/>
                                         </connections>
                                     </button>
@@ -60,10 +61,6 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" enablesReturnKeyAutomatically="YES"/>
-                                        <connections>
-                                            <action selector="EnterPressed:" destination="Vsz-3J-7sH" eventType="editingDidEndOnExit" id="jqc-k2-tGL"/>
-                                            <segue destination="8Qa-TT-lwq" kind="presentation" id="sU1-6H-6bg"/>
-                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ld4-hk-0Wm">
                                         <rect key="frame" x="423" y="360" width="46" height="30"/>
@@ -468,8 +465,8 @@
                         </prototypes>
                         <sections/>
                         <connections>
-                            <outlet property="dataSource" destination="7bK-jq-Zjz" id="Gho-Na-rnu"/>
-                            <outlet property="delegate" destination="7bK-jq-Zjz" id="RA6-mI-bju"/>
+                            <outlet property="dataSource" destination="7bK-jq-Zjz" id="oBM-QG-9d9"/>
+                            <outlet property="delegate" destination="7bK-jq-Zjz" id="hhl-nS-BeS"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Zdf-7t-Un8">
@@ -1861,8 +1858,7 @@ CiA
         <image name="smallMyPulseLogo" width="200" height="260"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sU1-6H-6bg"/>
-        <segue reference="jh2-Wf-U5Z"/>
         <segue reference="ViU-Ys-IAt"/>
+        <segue reference="jh2-Wf-U5Z"/>
     </inferredMetricsTieBreakers>
 </document>

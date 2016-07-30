@@ -12,33 +12,19 @@ import Foundation
 import UIKit
 
 class SearchMain: UIViewController {
+       var searchedFood = [Food]()
     var food = [Food]()
     var barFood = [Food]()
-    var searchedFood = [Food]()
+
     
+    @IBAction func searchButton(sender: AnyObject) {
+        
+    }
     @IBOutlet weak var searchField: UITextField!
     @IBAction func unwindToMainSearch(segue: UIStoryboardSegue) {
     }
     @IBAction func EnterPressed(sender: AnyObject) {
-        //print ("Enter pressed")
-        //print(searchField.text!)
-        for i in 1...food.count-1 {
-            let string = food[i].name
-           // print (string)
-        let result1 = string.containsString(searchField.text!)
-           if result1 == true
-           {
-             searchedFood.append(food[i])
-            }
-            
 
-        
-        }
-        
-
-        
-        
-    print(searchedFood.count)
     }
     
     
@@ -93,7 +79,21 @@ class SearchMain: UIViewController {
             
             let vc: UINavigationController = segue.destinationViewController as! UINavigationController
             let detailVC = vc.topViewController as! MasterViewController
+            
+            searchedFood = []
+            for i in 1...food.count-1 {
+                let string = food[i].name
+                // print (string)
+                let result1 = string.containsString(searchField.text!)
+                if result1 == true
+                {
+                    searchedFood.append(food[i])
+                }
+            }
+            print(searchedFood.count)
+
             detailVC.getFood = searchedFood
+            print(searchedFood.count)
         }
         if segue.identifier == "sendAllBar" {
             let dbTran = segue.destinationViewController as! ScanViewController

@@ -1,7 +1,6 @@
 
 
 import UIKit
-import RSBarcodes
 
 class MasterViewController: UITableViewController {
     
@@ -17,7 +16,8 @@ class MasterViewController: UITableViewController {
       override func viewDidLoad() {
      
         self.searchController.loadViewIfNeeded()
-        //self.resultSearchController.loadViewIfNeeded()
+      print(getFood.count)
+
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -35,7 +35,7 @@ class MasterViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return getFood.count
+        return self.getFood.count
     }
     
     
@@ -68,21 +68,3 @@ class MasterViewController: UITableViewController {
         }
     }
 }
-
-
-
-extension MasterViewController: UISearchResultsUpdating {
-    func updateSearchResultsForSearchController(searchController: UISearchController) {
-        //let searchBar = searchController.searchBar
-       // let scope = searchBar.scopeButtonTitles![searchBar.selectedScopeButtonIndex]
-       // filterContentForSearchText(searchController.searchBar.text!, scope: scope)
-    }
-}
-extension MasterViewController: UISearchBarDelegate {
-    func searchBar(searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
-        //filterContentForScope(searchBar.scopeButtonTitles![selectedScope])
-       // filterContentForSearchText(searchBar.text!, scope: searchBar.scopeButtonTitles![selectedScope])
-        
-    }
-}
-
