@@ -76,7 +76,14 @@ class SearchMain: UIViewController {
         copyDatabase()
         fmdb()
         
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SearchMain.tap(_:)))
+        view.addGestureRecognizer(tapGesture)
     }
+    
+    func tap(gesture: UITapGestureRecognizer) {
+        searchField.resignFirstResponder()
+    }
+    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "sendToTable") {
