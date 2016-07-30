@@ -9,7 +9,6 @@ class MasterViewController: UITableViewController {
     }
     
     let searchController = UISearchController(searchResultsController: nil)
-    var filteredFood = [Food]()
     var detailViewController: DetailViewController? = nil
     
     var getFood = [Food]()
@@ -43,11 +42,9 @@ class MasterViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
         let candy: Food
-        if searchController.active && searchController.searchBar.text != "" {
-            candy = filteredFood[indexPath.row]
-        } else {
+
             candy = getFood[indexPath.row]
-        }
+        
         cell.textLabel?.text = candy.name
         cell.detailTextLabel?.text = candy.category
         return cell
@@ -58,11 +55,7 @@ class MasterViewController: UITableViewController {
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
                 let candy: Food
-                if searchController.active && searchController.searchBar.text != "" {
-                    candy = filteredFood[indexPath.row]
-                } else {
                     candy = getFood[indexPath.row]
-                }
                 let controller = (segue.destinationViewController as! DetailViewController)
                 controller.detailCandy = candy
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem()

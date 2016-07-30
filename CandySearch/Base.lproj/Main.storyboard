@@ -1862,7 +1862,7 @@ CiA
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="sU1-6H-6bg"/>
-        <segue reference="ViU-Ys-IAt"/>
         <segue reference="jh2-Wf-U5Z"/>
+        <segue reference="ViU-Ys-IAt"/>
     </inferredMetricsTieBreakers>
 </document>

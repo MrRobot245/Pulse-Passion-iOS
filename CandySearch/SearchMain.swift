@@ -12,16 +12,37 @@ import Foundation
 import UIKit
 
 class SearchMain: UIViewController {
-   
+    var food = [Food]()
+    var barFood = [Food]()
+    var searchedFood = [Food]()
+    
+    @IBOutlet weak var searchField: UITextField!
     @IBAction func unwindToMainSearch(segue: UIStoryboardSegue) {
     }
-    
     @IBAction func EnterPressed(sender: AnyObject) {
-        print ("Enter pressed")
+        //print ("Enter pressed")
+        //print(searchField.text!)
+        for i in 1...food.count-1 {
+            let string = food[i].name
+           // print (string)
+        let result1 = string.containsString(searchField.text!)
+           if result1 == true
+           {
+             searchedFood.append(food[i])
+            }
+            
+
+        
+        }
+        
+
+        
+        
+    print(searchedFood.count)
     }
-    @IBOutlet weak var searchField: UITextField!
     
-    var food = [Food]()
+    
+
     
     //FMDB
     func fmdb(){
@@ -48,6 +69,7 @@ class SearchMain: UIViewController {
                 iRate: results!.stringForColumn("iRate")))
             
         }
+        barFood  = food
     }
     func copyDatabase(){
         let fileManger = NSFileManager.defaultManager()
@@ -59,36 +81,24 @@ class SearchMain: UIViewController {
         }
         try! fileManger.copyItemAtPath(sourcePath!, toPath: destinationPath)
     }
-
-        override func viewDidLoad() {
-            copyDatabase()
-            fmdb()
-
+    
+    override func viewDidLoad() {
+        copyDatabase()
+        fmdb()
+        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-         if (segue.identifier == "sendToTable") {
-        
-        let vc: UINavigationController = segue.destinationViewController as! UINavigationController
-        let detailVC = vc.topViewController as! MasterViewController
-        detailVC.getFood = food
+        if (segue.identifier == "sendToTable") {
+            
+            let vc: UINavigationController = segue.destinationViewController as! UINavigationController
+            let detailVC = vc.topViewController as! MasterViewController
+            detailVC.getFood = searchedFood
+        }
+        if segue.identifier == "sendAllBar" {
+            let dbTran = segue.destinationViewController as! ScanViewController
+            dbTran.getFood = barFood
         }
         
-//        
-//        if (segue.identifier == "sendToTable") {
-//            let dest = segue.destinationViewController as! MasterViewController
-//            dest.getFood = food
-//            //Assign to dest's properties
-//        }
     }
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-//        
-//        if segue.identifier == "sendToTable" {
-//            let vc = segue.destinationViewController as! MasterViewController
-//            vc.getFood = food
-//        }
-//        
-//        
-//    }
-//    
 }
