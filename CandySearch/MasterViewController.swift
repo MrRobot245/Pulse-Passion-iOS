@@ -55,10 +55,10 @@ class MasterViewController: UITableViewController {
             if let indexPath = tableView.indexPathForSelectedRow {
                 let candy: Food
                     candy = getFood[indexPath.row]
-                let controller = (segue.destinationViewController as! DetailViewController)
+                
+                let vc: UINavigationController = segue.destinationViewController as! UINavigationController
+                let controller = vc.topViewController as! DetailViewController
                 controller.detailCandy = candy
-                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem()
-                controller.navigationItem.leftItemsSupplementBackButton = true
             }
         }
         if segue.identifier == "sendAllBar" {

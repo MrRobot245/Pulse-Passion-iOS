@@ -16,11 +16,14 @@ class SearchMain: UIViewController {
     var food = [Food]()
     var barFood = [Food]()
 
+    @IBOutlet weak var searchButton: UIButton!
     
     @IBAction func searchButton(sender: AnyObject) {
         
     }
     @IBOutlet weak var searchField: UITextField!
+    
+
     @IBAction func unwindToMainSearch(segue: UIStoryboardSegue) {
         
     }
@@ -75,6 +78,8 @@ class SearchMain: UIViewController {
     override func viewDidLoad() {
         copyDatabase()
         fmdb()
+        searchButton.layer.masksToBounds = true
+        searchButton.layer.cornerRadius = 5.0
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SearchMain.tap(_:)))
         view.addGestureRecognizer(tapGesture)

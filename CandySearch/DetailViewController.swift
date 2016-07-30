@@ -120,7 +120,8 @@ class DetailViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
        
         if segue.identifier == "showMore" {
-            let vc = segue.destinationViewController as! EvenMoreViewController
+            let controller: UINavigationController = segue.destinationViewController as! UINavigationController
+             let vc = controller.topViewController as! EvenMoreViewController
             vc.getTopLabel = detailCandy?.name
             vc.getCat = detailCandy?.category
             vc.getRatingPic = detailCandy?.fRate
