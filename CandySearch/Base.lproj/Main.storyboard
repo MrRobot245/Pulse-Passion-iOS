@@ -308,7 +308,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HMQ-wt-fT2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.396078431372549" green="0.60784313725490191" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.45882352941176469" green="0.6588235294117647" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="7bK-jq-Zjz" kind="relationship" relationship="rootViewController" id="4Wz-ck-HLa"/>
@@ -797,22 +797,17 @@ CiA
             </objects>
             <point key="canvasLocation" x="-426.5" y="813.5"/>
         </scene>
-        <!--About-->
+        <!--Navigation Controller-->
         <scene sceneID="GGk-Gh-mny">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Uw6-9Z-rqg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="About" image="Info-60" selectedImage="Info-60" id="H93-DS-Ok9"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pQA-WS-ly6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.396078431372549" green="0.60784313725490191" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.45882352941176469" green="0.6588235294117647" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="mWA-w7-AhA">
-                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </toolbar>
                     <connections>
                         <segue destination="hit-xR-Mw3" kind="relationship" relationship="rootViewController" id="8Au-Ux-ZDR"/>
                     </connections>
@@ -830,7 +825,7 @@ CiA
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="owv-2s-sUx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.396078431372549" green="0.60784313725490191" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.45882352941176469" green="0.6588235294117647" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -850,7 +845,7 @@ CiA
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aBU-tj-twv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.396078431372549" green="0.60784313725490191" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.45882352941176469" green="0.6588235294117647" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -870,7 +865,7 @@ CiA
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="c4d-mt-pJz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.396078431372549" green="0.60784313725490191" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.45882352941176469" green="0.6588235294117647" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1161,7 +1156,7 @@ CiA
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZPO-89-tm1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.396078431372549" green="0.60784313725490191" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.45882352941176469" green="0.6588235294117647" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1376,7 +1371,6 @@ CiA
         <image name="Back" width="30" height="30"/>
         <image name="Barcode Scanner-60-White" width="30" height="30"/>
         <image name="FlashOff2" width="50" height="50"/>
-        <image name="Info-60" width="30" height="30"/>
         <image name="Learn" width="30" height="30"/>
         <image name="Search-60" width="30" height="30"/>
         <image name="logoNoText" width="385" height="451"/>
