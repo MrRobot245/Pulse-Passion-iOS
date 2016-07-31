@@ -104,7 +104,7 @@ class DetailViewController: UIViewController {
                     
                     bestIndex = 0
                     
-                    print (allFood.count)
+                   // print (allFood.count)
                     for i in 0...allFood.count-1 {
                         if allFood[i].category == detailCandy.category && allFood[i].fRate == "Often"
                         {
@@ -159,7 +159,7 @@ class DetailViewController: UIViewController {
 
             sendFood = [Food]()
             sendFood.append(allFood[bestIndex])
-            print(sendFood[0].name)
+           // print(sendFood[0].name)
                 let vc: UINavigationController = segue.destinationViewController as! UINavigationController
                 let controller = vc.topViewController as! EvenMoreViewController
                 controller.getFood = sendFood

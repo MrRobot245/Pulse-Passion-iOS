@@ -16,6 +16,8 @@ class EvenMoreViewController: UIViewController
     
     @IBAction func unwindToEvenMore(segue: UIStoryboardSegue) {
     }
+    var bulletBad: String!
+    var bulletGood: String!
     
     @IBOutlet weak var foodTitle: UILabel!
 
@@ -33,6 +35,15 @@ class EvenMoreViewController: UIViewController
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
+        
+        
+    }
+    override func viewDidLayoutSubviews() {
+
+    }
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
         theGood.scrollEnabled = false;
         theGood.scrollEnabled = true;
         
@@ -54,15 +65,30 @@ class EvenMoreViewController: UIViewController
         {
             foodImg.image = UIImage(named: "nnGreen")
         }
+        bulletBad = getFood[0].bList
+        bulletGood = getFood[0].gList
+        var NewbulletBad = "• " + bulletBad.stringByReplacingOccurrencesOfString(",", withString: "\n•")
+        var NewbulletGood =  "• " + bulletGood.stringByReplacingOccurrencesOfString(",", withString: "\n•")
         
         
-    }
-    override func viewDidLayoutSubviews() {
+        if (NewbulletGood == "• -")
+        {
+            NewbulletGood = "Not Applicable"
+        }
+        
+        if (NewbulletBad == "• -")
+        {
+            NewbulletBad = "Not Applicable"
+        }
+        
+        self.theGood.text = NewbulletGood
+        self.theBad.text = NewbulletBad
+        foodTitle.text = getFood[0].name
+        foodCat.text = getFood[0].category
+        iRating.text = "Rating: "+getFood[0].iRate
+        ingredients.text = getFood[0].iList
+        
 
-    }
-    override func viewDidLoad()
-    {
-        super.viewDidLoad()
 
     }
     
