@@ -315,7 +315,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HMQ-wt-fT2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.45882352941176469" green="0.6588235294117647" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.43529411764705883" green="0.6318734884262085" blue="0.27752918004989624" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="7bK-jq-Zjz" kind="relationship" relationship="rootViewController" id="4Wz-ck-HLa"/>
@@ -1198,7 +1198,7 @@ CiA
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZPO-89-tm1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.45882352941176469" green="0.6588235294117647" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.41176470588235292" green="0.60784313725490191" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

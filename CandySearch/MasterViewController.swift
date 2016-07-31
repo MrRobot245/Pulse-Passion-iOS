@@ -14,7 +14,7 @@ class MasterViewController: UITableViewController {
 
 
       override func viewDidLoad() {
-     
+  
         self.searchController.loadViewIfNeeded()
         tableView.reloadData()
     }
@@ -46,6 +46,23 @@ class MasterViewController: UITableViewController {
         
         cell.textLabel?.text = candy.name
         cell.detailTextLabel?.text = candy.category
+        let bgColorView = UIView()
+        bgColorView.backgroundColor = UIColor.darkGrayColor().colorWithAlphaComponent(0.15)
+        cell.selectedBackgroundView = bgColorView
+        if(candy.fRate == "Limit")
+        {
+            cell.backgroundColor = UIColor.redColor().colorWithAlphaComponent(0.18)
+        }
+        if(candy.fRate == "Sometimes")
+        {
+            cell.backgroundColor = UIColor.yellowColor().colorWithAlphaComponent(0.18)
+        }
+        if(candy.fRate == "Often")
+        {
+            cell.backgroundColor = UIColor.greenColor().colorWithAlphaComponent(0.18)
+        }
+
+        
         return cell
     }
     
