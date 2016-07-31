@@ -12,16 +12,50 @@ import UIKit
 
 class EvenMoreViewController: UIViewController
 {
+    var getFood = [Food]()
     
     @IBAction func unwindToEvenMore(segue: UIStoryboardSegue) {
     }
     
+    @IBOutlet weak var foodTitle: UILabel!
 
+    @IBOutlet weak var foodCat: UILabel!
+    
+    @IBOutlet weak var foodImg: UIImageView!
+    
+    @IBOutlet weak var theGood: UITextView!
+    
+    @IBOutlet weak var ingredients: UITextView!
+    @IBOutlet weak var theBad: UITextView!
+    @IBOutlet weak var iRating: UILabel!
+    
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-//        self.goodView.flashScrollIndicators()
-//        self.badView.flashScrollIndicators()
+        
+        theGood.scrollEnabled = false;
+        theGood.scrollEnabled = true;
+        
+        theBad.scrollEnabled = false;
+        theBad.scrollEnabled = true;
+        self.theGood.flashScrollIndicators()
+        self.theBad.flashScrollIndicators()
+        
+        
+        if(getFood[0].fRate == "Limit")
+        {
+            foodImg.image = UIImage(named: "nnRed")
+        }
+        if(getFood[0].fRate == "Sometimes")
+        {
+            foodImg.image = UIImage(named: "nnYellow")
+        }
+        if(getFood[0].fRate == "Often")
+        {
+            foodImg.image = UIImage(named: "nnGreen")
+        }
+        
+        
     }
     override func viewDidLayoutSubviews() {
 

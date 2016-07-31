@@ -34,7 +34,11 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var badView: UITextView!
     var bulletBad: String!
     var bulletGood: String!
+    var sendFood = [Food]()
+    var allFood = [Food]()
+    var bestRated: Int = -30
     
+    var bestIndex: Int = 0
     @IBOutlet weak var category: UILabel!
     
     @IBOutlet weak var ingred: UITextView!
@@ -92,6 +96,28 @@ class DetailViewController: UIViewController {
                 self.badView.text = NewbulletBad
                 self.ingred.text = detailCandy.iList
                 self.category.text = detailCandy.category
+                
+                
+                if(detailCandy.fRate == "Limit")
+                {
+                    bestRated = -30
+                    
+                    bestIndex = 0
+                    
+                    print (allFood.count)
+                    for i in 0...allFood.count-1 {
+                        if allFood[i].category == detailCandy.category && allFood[i].fRate == "Often"
+                        {
+                            if(Int(allFood[i].iRate) > bestRated)
+                            {
+                                bestRated = Int(allFood[i].iRate)!
+                                bestIndex = i
+                            }
+                            
+                            
+                        }
+                    }
+                }
 
             }
         }
@@ -126,6 +152,19 @@ class DetailViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "goodSend" {
+
+            sendFood = [Food]()
+            sendFood.append(allFood[bestIndex])
+            print(sendFood[0].name)
+                let vc: UINavigationController = segue.destinationViewController as! UINavigationController
+                let controller = vc.topViewController as! EvenMoreViewController
+                controller.getFood = sendFood
+        }
+
     }
     
 

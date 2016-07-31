@@ -76,6 +76,7 @@ class MasterViewController: UITableViewController {
                 let vc: UINavigationController = segue.destinationViewController as! UINavigationController
                 let controller = vc.topViewController as! DetailViewController
                 controller.detailCandy = candy
+                controller.allFood = getFood
             }
         }
         if segue.identifier == "sendAllBar" {

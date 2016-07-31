@@ -1179,7 +1179,7 @@ CiA
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Heart"/>
                                 <connections>
-                                    <segue destination="Mxh-bi-JcS" kind="presentation" id="wP6-Lp-5ti"/>
+                                    <segue destination="Mxh-bi-JcS" kind="presentation" identifier="goodSend" id="wP6-Lp-5ti"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -1582,6 +1582,15 @@ CiA
                         </view>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="foodCat" destination="3wd-Qs-5k3" id="fEP-iS-VYx"/>
+                        <outlet property="foodImg" destination="s7g-AC-guj" id="2pU-bV-qbH"/>
+                        <outlet property="foodTitle" destination="MCV-JE-kUq" id="MrM-b7-PUM"/>
+                        <outlet property="iRating" destination="OaU-uO-L7I" id="YRM-Sm-OPB"/>
+                        <outlet property="ingredients" destination="n2S-o8-rRz" id="Lfi-Ij-Rqw"/>
+                        <outlet property="theBad" destination="guM-1Y-ZYL" id="cqj-4A-4eZ"/>
+                        <outlet property="theGood" destination="0xp-Qe-tWb" id="GRB-gZ-gpZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OBS-lv-e83" sceneMemberID="firstResponder"/>
                 <exit id="mL7-7A-J58" userLabel="Exit" sceneMemberID="exit"/>
