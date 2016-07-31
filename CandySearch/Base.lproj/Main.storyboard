@@ -1417,10 +1417,10 @@ CiA
             </objects>
             <point key="canvasLocation" x="2624" y="-1788"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Even More View Controller-->
         <scene sceneID="kzz-1w-AsM">
             <objects>
-                <viewController id="H9Q-A9-dpv" customClass="DetailViewController" customModule="MyPulse" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="H9Q-A9-dpv" customClass="EvenMoreViewController" customModule="MyPulse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YJZ-jQ-d5R"/>
                         <viewControllerLayoutGuide type="bottom" id="Eal-Im-2aq"/>
@@ -1582,16 +1582,6 @@ CiA
                         </view>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="badView" destination="guM-1Y-ZYL" id="mqx-Oj-uWx"/>
-                        <outlet property="category" destination="3wd-Qs-5k3" id="Hcz-4x-3Vg"/>
-                        <outlet property="detailDescriptionLabel" destination="MCV-JE-kUq" id="kdU-pI-w7E"/>
-                        <outlet property="foodRating" destination="s7g-AC-guj" id="ZgY-pq-rbv"/>
-                        <outlet property="goodView" destination="0xp-Qe-tWb" id="cTu-v5-j7p"/>
-                        <outlet property="iList" destination="n2S-o8-rRz" id="QJg-Rn-edw"/>
-                        <outlet property="ingred" destination="n2S-o8-rRz" id="DJC-nT-1o3"/>
-                        <outlet property="ratingNum" destination="OaU-uO-L7I" id="gDg-gl-g28"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OBS-lv-e83" sceneMemberID="firstResponder"/>
                 <exit id="mL7-7A-J58" userLabel="Exit" sceneMemberID="exit"/>
