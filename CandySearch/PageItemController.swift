@@ -10,14 +10,26 @@ import UIKit
 
 class PageItemController: UIViewController {
     
+    @IBOutlet weak var HelpText: UITextView!
+    @IBOutlet weak var textArea: UITextView!
+
+    
+    @IBAction func QuestionnaireAction(sender: AnyObject) {
+        UIApplication.sharedApplication().openURL(NSURL(string: "https://ehealth.heartandstroke.ca/questions")!)
+    }
+    @IBOutlet weak var QuestionnaireButton: UIButton!
     // MARK: - Variables
     var itemIndex: Int = 0
+    var HelpTextText: String = ""
+    @IBOutlet weak var labelName: UILabel!
     var imageName: String = "" {
+        
         
         didSet {
             
             if let imageView = contentImageView {
                 imageView.image = UIImage(named: imageName)
+              
             }
             
         }
@@ -27,16 +39,25 @@ class PageItemController: UIViewController {
     
     @IBAction func CloseButtonAction(sender: AnyObject) {
         
+        
     }
-    
-    @IBOutlet weak var HelpText: UITextView!
-    
+
     @IBOutlet weak var CloseButton: UIButton!
 
     // MARK: - View Lifecycle
     override func viewDidLoad() {
-        CloseButton.layer.masksToBounds = true
-        CloseButton.layer.cornerRadius = 5.0
+        if itemIndex==3
+        {
+            QuestionnaireButton.hidden=false
+            
+        }
+        else{
+            QuestionnaireButton.hidden=true
+           // print(itemIndex)
+        }
+          textArea.text = HelpTextText
+        QuestionnaireButton.layer.masksToBounds = true
+        QuestionnaireButton.layer.cornerRadius = 5.0
         super.viewDidLoad()
         contentImageView!.image = UIImage(named: imageName)
     }
