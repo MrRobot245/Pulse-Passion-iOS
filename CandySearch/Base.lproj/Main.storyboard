@@ -287,17 +287,24 @@
                                 </label>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <gestureRecognizers/>
                             <constraints>
                                 <constraint firstItem="xxm-Zh-tb3" firstAttribute="centerX" secondItem="ktS-Qx-ykY" secondAttribute="centerX" id="C1T-Zp-aYm"/>
                                 <constraint firstItem="xxm-Zh-tb3" firstAttribute="leading" secondItem="ktS-Qx-ykY" secondAttribute="leading" constant="7" id="hiE-mb-rKY"/>
                                 <constraint firstAttribute="bottom" secondItem="xxm-Zh-tb3" secondAttribute="bottom" constant="-1" id="lQS-mY-SZt"/>
                                 <constraint firstItem="xxm-Zh-tb3" firstAttribute="top" secondItem="ktS-Qx-ykY" secondAttribute="top" constant="1" id="wsm-Mg-I4X"/>
                             </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="Kcy-Um-Hwx" appends="YES" id="SUb-oo-KLG"/>
+                            </connections>
                         </view>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
                 <exit id="27t-Pu-lpj" userLabel="Exit" sceneMemberID="exit"/>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="Kcy-Um-Hwx">
+                    <rectEdge key="edges" right="YES"/>
+                </screenEdgePanGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2066" y="-1006"/>
         </scene>
@@ -1102,6 +1109,7 @@ CiA
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="kVb-Dz-jND" firstAttribute="leading" secondItem="DGa-Xz-eaE" secondAttribute="leadingMargin" id="0dS-et-dtQ"/>
                             <constraint firstItem="MFl-Zm-t4v" firstAttribute="top" secondItem="kmP-yx-1N2" secondAttribute="bottom" constant="8" symbolic="YES" id="1WN-Q0-1DD"/>
@@ -1141,7 +1149,7 @@ CiA
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back" image="Back"/>
                                 <connections>
-                                    <segue destination="y4J-Zd-d8T" kind="unwind" unwindAction="unwindToVC:" id="SYP-KR-yI0"/>
+                                    <segue destination="y4J-Zd-d8T" kind="unwind" unwindAction="unwindToVC:" id="stl-Hk-97Q"/>
                                 </connections>
                             </button>
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1338,7 +1346,7 @@ CiA
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back" image="Back"/>
                                 <connections>
-                                    <segue destination="5yQ-a3-oiW" kind="unwind" unwindAction="unwindToMainSearch:" id="YWP-Nf-vlv"/>
+                                    <segue destination="5yQ-a3-oiW" kind="unwind" unwindAction="unwindToVC:" id="dlV-MA-pOm"/>
                                 </connections>
                             </button>
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
