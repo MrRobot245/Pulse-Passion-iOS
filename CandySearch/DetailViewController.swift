@@ -108,11 +108,19 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
+        goodView.scrollEnabled = false;
+        goodView.scrollEnabled = true;
+        
+        badView.scrollEnabled = false;
+        badView.scrollEnabled = true;
+        
+        
             }
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         self.goodView.flashScrollIndicators()
         self.badView.flashScrollIndicators()
+        self.ingred.flashScrollIndicators()
         //self.iList.flashScrollIndicators()
     }
 
@@ -120,21 +128,7 @@ class DetailViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-       
-        if segue.identifier == "showMore" {
-            let controller: UINavigationController = segue.destinationViewController as! UINavigationController
-             let vc = controller.topViewController as! EvenMoreViewController
-            vc.getTopLabel = detailCandy?.name
-            vc.getCat = detailCandy?.category
-            vc.getRatingPic = detailCandy?.fRate
-            vc.getRatingNum = detailCandy?.iRate
-            vc.getIngre = detailCandy?.iList
-            
 
-           }
-    }
     
 }
 
