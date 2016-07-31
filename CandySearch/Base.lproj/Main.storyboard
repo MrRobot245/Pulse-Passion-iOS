@@ -1346,7 +1346,7 @@ CiA
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back" image="Back"/>
                                 <connections>
-                                    <segue destination="5yQ-a3-oiW" kind="unwind" unwindAction="unwindToVC:" id="dlV-MA-pOm"/>
+                                    <segue destination="5yQ-a3-oiW" kind="unwind" unwindAction="unwindToMainSearch:" id="o3x-nY-T41"/>
                                 </connections>
                             </button>
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
