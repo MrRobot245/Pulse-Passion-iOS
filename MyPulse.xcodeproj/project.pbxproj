@@ -36,6 +36,7 @@
 		D87F32CB1CAC5171005FD7B7 /* LearnMore-More.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87F32CA1CAC5171005FD7B7 /* LearnMore-More.swift */; };
 		D87F32CD1CAC5261005FD7B7 /* LearnMoreHD.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87F32CC1CAC5261005FD7B7 /* LearnMoreHD.swift */; };
 		D88033D31CABA81300D86C48 /* LearnMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88033D21CABA81300D86C48 /* LearnMore.swift */; };
+		D88E19B41D4EEF310054C6EF /* ScanDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88E19B31D4EEF310054C6EF /* ScanDetails.swift */; };
 		D8A41A321C9A274500D4B544 /* myPulseWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = D8A41A311C9A274500D4B544 /* myPulseWhite.png */; };
 		D8A41A351C9A2EBA00D4B544 /* montserrat-bold-normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8A41A331C9A2EBA00D4B544 /* montserrat-bold-normal.ttf */; };
 		D8A41A361C9A2EBA00D4B544 /* montserrat-normal-normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8A41A341C9A2EBA00D4B544 /* montserrat-normal-normal.ttf */; };
@@ -139,6 +140,7 @@
 		D87F32CA1CAC5171005FD7B7 /* LearnMore-More.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LearnMore-More.swift"; sourceTree = "<group>"; };
 		D87F32CC1CAC5261005FD7B7 /* LearnMoreHD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnMoreHD.swift; sourceTree = "<group>"; };
 		D88033D21CABA81300D86C48 /* LearnMore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnMore.swift; sourceTree = "<group>"; };
+		D88E19B31D4EEF310054C6EF /* ScanDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanDetails.swift; sourceTree = "<group>"; };
 		D8A41A311C9A274500D4B544 /* myPulseWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myPulseWhite.png; sourceTree = "<group>"; };
 		D8A41A331C9A2EBA00D4B544 /* montserrat-bold-normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "montserrat-bold-normal.ttf"; sourceTree = "<group>"; };
 		D8A41A341C9A2EBA00D4B544 /* montserrat-normal-normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "montserrat-normal-normal.ttf"; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 				D8E1908B1C9F41000021F9D9 /* EvenMore.swift */,
 				171E0C831B8E5B84001E6242 /* Main.storyboard */,
 				D82655A71D2DCDBE0002D0E6 /* ScanViewController.swift */,
+				D88E19B31D4EEF310054C6EF /* ScanDetails.swift */,
 				D8BC90A91CC1831800465EF3 /* LearnMoreClass.swift */,
 				D8E79A771D2F28C000940B36 /* DB2.sqlite */,
 				D87F32CC1CAC5261005FD7B7 /* LearnMoreHD.swift */,
@@ -458,6 +461,7 @@
 				D846A7AE1C9935C40030A359 /* FMDatabase.m in Sources */,
 				D8A4D9D61D305E8D00C25943 /* RSCodeLayer.swift in Sources */,
 				D85301C01D4D04A600E106F1 /* PageItemController.swift in Sources */,
+				D88E19B41D4EEF310054C6EF /* ScanDetails.swift in Sources */,
 				D8BC90AA1CC1831800465EF3 /* LearnMoreClass.swift in Sources */,
 				D8A4D9E11D305E8D00C25943 /* StringExtension.swift in Sources */,
 				D84DED931C9E3F66001A68B5 /* ConnView.swift in Sources */,

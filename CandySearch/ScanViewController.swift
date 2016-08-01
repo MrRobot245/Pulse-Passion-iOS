@@ -76,7 +76,7 @@ class ScanViewController: RSCodeReaderViewController {
                 for barcode in barcodes {
                     self.resultCount = 0
                     self.barcode = barcode.stringValue
-                    // print("Barcode found: type=" + barcode.type + " value=" + barcode.stringValue)
+                    
                     
                     
                     
@@ -107,6 +107,7 @@ class ScanViewController: RSCodeReaderViewController {
                         
                         
                     }
+           
                     if(self.resultCount != 0)
                     {
                         dispatch_async(dispatch_get_main_queue(), {
@@ -147,7 +148,8 @@ class ScanViewController: RSCodeReaderViewController {
         if segue.identifier == "barSeg" {
             
             let vc: UINavigationController = segue.destinationViewController as! UINavigationController
-            let detailVC = vc.topViewController as! DetailViewController
+            let detailVC = vc.topViewController as! ScanDetails
+                     print(self.barFood[0].name)
             detailVC.detailCandy = barFood[0]
             
         }
