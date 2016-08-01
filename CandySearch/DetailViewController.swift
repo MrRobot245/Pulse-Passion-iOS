@@ -98,6 +98,34 @@ class DetailViewController: UIViewController {
                 self.ingred.text = detailCandy.iList
                 self.category.text = detailCandy.category
                 
+                if(detailCandy.fRate == "Sometimes")
+                {
+                    AltButton.hidden = false
+                    bestRated = -30
+                    
+                    bestIndex = -1
+                    
+                    // print (allFood.count)
+                    for i in 0...allFood.count-1 {
+                        if allFood[i].category == detailCandy.category && allFood[i].fRate == "Often"
+                        {
+                            if(Int(allFood[i].iRate) > bestRated)
+                            {
+                                bestRated = Int(allFood[i].iRate)!
+                                bestIndex = i
+                            }
+                            
+                            
+                        }
+                    }
+                    if(bestIndex == -1)
+                    {
+                        AltButton.hidden = true
+                    }
+                    else{
+                        AltButton.hidden = false
+                    }
+                }
                 
                 if(detailCandy.fRate == "Limit")
                 {
