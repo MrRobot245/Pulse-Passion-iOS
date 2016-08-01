@@ -104,7 +104,7 @@ class DetailViewController: UIViewController {
                     AltButton.hidden = false
                     bestRated = -30
                     
-                    bestIndex = 0
+                    bestIndex = -1
                     
                    // print (allFood.count)
                     for i in 0...allFood.count-1 {
@@ -118,6 +118,10 @@ class DetailViewController: UIViewController {
                             
                             
                         }
+                    }
+                    if(bestIndex == -1)
+                    {
+                        AltButton.hidden = true
                     }
                 }
 
@@ -160,12 +164,17 @@ class DetailViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "goodSend" {
 
-            sendFood = [Food]()
-            sendFood.append(allFood[bestIndex])
+            sendFood.removeAll()
+        
+                sendFood.append(allFood[bestIndex])
+                
+         
+            
            // print(sendFood[0].name)
                 let vc: UINavigationController = segue.destinationViewController as! UINavigationController
                 let controller = vc.topViewController as! EvenMoreViewController
                 controller.getFood = sendFood
+            
         }
 
     }
