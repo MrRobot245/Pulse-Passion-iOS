@@ -27,6 +27,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var detailDescriptionLabel: UILabel!
     @IBOutlet weak var candyImageView: UIImageView!
     
+    @IBOutlet weak var AltButton: UIButton!
     @IBOutlet weak var ratingNum: UILabel!
     @IBOutlet weak var iList: UITextView!
     
@@ -100,6 +101,7 @@ class DetailViewController: UIViewController {
                 
                 if(detailCandy.fRate == "Limit")
                 {
+                    AltButton.hidden = false
                     bestRated = -30
                     
                     bestIndex = 0
@@ -132,6 +134,7 @@ class DetailViewController: UIViewController {
 
     }
     override func viewDidLoad() {
+        AltButton.hidden = true
         super.viewDidLoad()
         configureView()
         goodView.scrollEnabled = false;

@@ -1174,7 +1174,7 @@ CiA
                             </constraints>
                         </view>
                         <barButtonItem key="rightBarButtonItem" id="70d-Pa-HkN">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Cwm-Ns-ohc">
+                            <button key="customView" hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Cwm-Ns-ohc">
                                 <rect key="frame" x="329" y="7" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Heart"/>
@@ -1186,6 +1186,7 @@ CiA
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="AltButton" destination="Cwm-Ns-ohc" id="wUa-tU-92s"/>
                         <outlet property="badView" destination="kmP-yx-1N2" id="a8E-ba-WKP"/>
                         <outlet property="category" destination="nBg-sB-LI4" id="tL1-YL-rzL"/>
                         <outlet property="detailDescriptionLabel" destination="kVb-Dz-jND" id="iXH-rb-Ss5"/>
