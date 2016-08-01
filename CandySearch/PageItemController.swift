@@ -46,7 +46,7 @@ class PageItemController: UIViewController {
 
     // MARK: - View Lifecycle
     override func viewDidLoad() {
-        if itemIndex==3
+        if itemIndex==4
         {
             QuestionnaireButton.hidden=false
             

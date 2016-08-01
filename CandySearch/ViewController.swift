@@ -19,9 +19,10 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
     private let contentImages = ["phone2",
                                  "phone3",
                                  "phone4",
+                                 "phone6",
                                  "phone5"]
     
-    private let Words = ["Purpose\n\nService and educational tool that provides every food product with a rating according to the food’s associated risk with cardiovascular disease in an unbiased and scientifically-based manner","How MyPulse works\n\nStep 1) Pick up any food item in the grocery store\nStep 2) Scan the barcode or manually enter the name of the food into the search bar\nStep 3) Receive a rating","\n\n\nHow Ratings Work","Is this app for me ?\n\nTake the Heart and Stroke Foundations Risk Assessment Questionnaire!"]
+    private let Words = ["Purpose\n\nService and educational tool that provides every food product with a rating according to the food’s associated risk with cardiovascular disease in an unbiased and scientifically-based manner","How MyPulse works\n\nStep 1) Pick up any food item in the grocery store\nStep 2) Scan the barcode or manually enter the name of the food into the search bar\nStep 3) Receive a rating","\n\n\nHow Ratings Work","Heart Friendly Option\n\n\n If this icon appears you can reveal a heart healthy option based on the item you have searched","Is this app for me ?\n\nTake the Heart and Stroke Foundations Risk Assessment Questionnaire!"]
     
  
 

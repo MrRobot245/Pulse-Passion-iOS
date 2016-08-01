@@ -149,7 +149,6 @@ class ScanViewController: RSCodeReaderViewController {
             
             let vc: UINavigationController = segue.destinationViewController as! UINavigationController
             let detailVC = vc.topViewController as! ScanDetails
-                     print(self.barFood[0].name)
             detailVC.detailCandy = barFood[0]
             
         }
