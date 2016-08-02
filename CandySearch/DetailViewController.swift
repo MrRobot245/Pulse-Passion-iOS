@@ -25,6 +25,16 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var ingred: UITextView!
     
     
+    func screenEdgeSwiped(recognizer: UIScreenEdgePanGestureRecognizer) {
+        if recognizer.state == .Recognized {
+            dispatch_async(dispatch_get_main_queue(), {
+                self.performSegueWithIdentifier("UnwindP", sender: self)
+            })
+           // print("Screen edge swiped!")
+        }
+    }
+
+    
     
     var detailCandy: Food? {
         didSet {
@@ -146,6 +156,11 @@ class DetailViewController: UIViewController {
 
     }
     override func viewDidLoad() {
+        let edgePan = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(screenEdgeSwiped))
+        edgePan.edges = .Left
+        
+        view.addGestureRecognizer(edgePan)
+
         AltButton.hidden = true
         super.viewDidLoad()
         configureView()
