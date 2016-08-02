@@ -22,8 +22,9 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
                                  "phone6",
                                  "phone5"]
     
-    private let Words = ["Purpose\n\nService and educational tool that provides every food product with a rating according to the food’s associated risk with cardiovascular disease in an unbiased and scientifically-based manner","How MyPulse works\n\nStep 1) Pick up any food item in the grocery store\nStep 2) Scan the barcode or manually enter the name of the food into the search bar\nStep 3) Receive a rating","\n\n\nHow Ratings Work","Heart Friendly Option\n\n\n If this icon appears you can reveal a heart healthy option based on the item you have searched","Is this app for me ?\n\nTake the Heart and Stroke Foundations Risk Assessment Questionnaire!"]
+    private let Words = ["Service and educational tool that provides every food product with a rating according to the food’s associated risk with cardiovascular disease in an unbiased and scientifically-based manner","Step 1) Pick up any food item in the grocery store\nStep 2) Scan the barcode or manually enter the name of the food into the search bar\nStep 3) Receive a rating","\nGreen - 4-15 (Food to Eat Often)\nYellow - 0-4 (Foods to Eat Sometimes)\nRed - -15-0 (Food to Limit)","If this icon appears you can reveal a heart healthy option based on the item you have searched","Take the Heart and Stroke Foundations Risk Assessment Questionnaire!"]
     
+    private let Titles = ["Purpose","How MyPulse works","How Ratings Work","Heart Friendly Option","Is this app for me?"]
  
 
     // MARK: - View Lifecycle
@@ -90,6 +91,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
             pageItemController.itemIndex = itemIndex
             pageItemController.imageName = contentImages[itemIndex]
            pageItemController.HelpTextText = Words[itemIndex]
+            pageItemController.LabelTextText = Titles[itemIndex]
             //print(Words[itemIndex])
             
             return pageItemController

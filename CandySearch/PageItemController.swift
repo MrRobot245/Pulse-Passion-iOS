@@ -13,6 +13,7 @@ class PageItemController: UIViewController {
     @IBOutlet weak var HelpText: UITextView!
     @IBOutlet weak var textArea: UITextView!
 
+    @IBOutlet weak var titleLabel: UILabel!
     
     @IBAction func QuestionnaireAction(sender: AnyObject) {
         UIApplication.sharedApplication().openURL(NSURL(string: "https://ehealth.heartandstroke.ca/questions")!)
@@ -21,6 +22,7 @@ class PageItemController: UIViewController {
     // MARK: - Variables
     var itemIndex: Int = 0
     var HelpTextText: String = ""
+    var LabelTextText: String = ""
     @IBOutlet weak var labelName: UILabel!
     var imageName: String = "" {
         
@@ -56,6 +58,7 @@ class PageItemController: UIViewController {
            // print(itemIndex)
         }
           textArea.text = HelpTextText
+        titleLabel.text = LabelTextText
         QuestionnaireButton.layer.masksToBounds = true
         QuestionnaireButton.layer.cornerRadius = 5.0
         super.viewDidLoad()
