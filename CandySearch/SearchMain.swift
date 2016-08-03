@@ -79,6 +79,8 @@ class SearchMain: UIViewController {
         isAppAlreadyLaunchedOnce()
         copyDatabase()
         fmdb()
+        searchField.layer.masksToBounds = true
+        searchField.layer.cornerRadius = 7.0
         searchButton.layer.masksToBounds = true
         searchButton.layer.cornerRadius = 5.0
         

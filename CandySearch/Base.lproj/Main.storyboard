@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="montserrat-normal-normal.ttf">
@@ -253,7 +254,10 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <segue destination="gBT-Aj-ant" kind="presentation" identifier="showDetail" id="60e-Zb-zNf"/>
+                                    <segue destination="gBT-Aj-ant" kind="presentation" identifier="showDetail" id="60e-Zb-zNf">
+                                        <segue key="commit" inheritsFrom="parent" id="NoC-f5-1ps"/>
+                                        <segue key="preview" inheritsFrom="commit" id="d1G-U9-fVz"/>
+                                    </segue>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -295,17 +299,11 @@
                                 <constraint firstAttribute="bottom" secondItem="xxm-Zh-tb3" secondAttribute="bottom" constant="-1" id="lQS-mY-SZt"/>
                                 <constraint firstItem="xxm-Zh-tb3" firstAttribute="top" secondItem="ktS-Qx-ykY" secondAttribute="top" constant="1" id="wsm-Mg-I4X"/>
                             </constraints>
-                            <connections>
-                                <outletCollection property="gestureRecognizers" destination="Kcy-Um-Hwx" appends="YES" id="SUb-oo-KLG"/>
-                            </connections>
                         </view>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
                 <exit id="27t-Pu-lpj" userLabel="Exit" sceneMemberID="exit"/>
-                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="Kcy-Um-Hwx">
-                    <rectEdge key="edges" right="YES"/>
-                </screenEdgePanGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2066" y="-1006"/>
         </scene>
@@ -1187,7 +1185,7 @@ CiA
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Heart"/>
                                 <connections>
-                                    <segue destination="Mxh-bi-JcS" kind="presentation" identifier="goodSend" id="wP6-Lp-5ti"/>
+                                    <segue destination="Mxh-bi-JcS" kind="show" identifier="goodSend" id="wP6-Lp-5ti"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -1213,6 +1211,7 @@ CiA
         <!--Navigation Controller-->
         <scene sceneID="F0K-KB-I7B">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QNF-YR-4sr" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gBT-Aj-ant" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZPO-89-tm1">
@@ -1225,7 +1224,6 @@ CiA
                         <segue destination="67R-BQ-Edf" kind="relationship" relationship="rootViewController" id="MdS-mk-XQC"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QNF-YR-4sr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2015" y="-155"/>
         </scene>
@@ -1639,6 +1637,7 @@ CiA
         <image name="smallMyPulseLogo" width="200" height="260"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="52u-fU-tog"/>
+        <segue reference="60e-Zb-zNf"/>
+        <segue reference="SWU-Gc-dAv"/>
     </inferredMetricsTieBreakers>
 </document>
