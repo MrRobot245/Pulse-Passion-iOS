@@ -16,6 +16,8 @@ class LearnMore: UIViewController
 @IBOutlet weak var DTView: UITextView!
     override func viewDidLoad()
     {
+        DTView.scrollEnabled = false;
+        DTView.scrollEnabled = true;
 
         
     }
