@@ -32,9 +32,19 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
         super.viewDidLoad()
         createPageViewController()
         setupPageControl()
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SearchMain.tap(_:)))
+        view.addGestureRecognizer(tapGesture)
+        
     }
 
-
+    func screenEdgeSwiped(recognizer: UIScreenEdgePanGestureRecognizer) {
+        if recognizer.state == .Recognized {
+            dispatch_async(dispatch_get_main_queue(), {
+                self.performSegueWithIdentifier("TutUnwind", sender: self)
+            })
+            // print("Screen edge swiped!")
+        }
+    }
     
     private func createPageViewController() {
         

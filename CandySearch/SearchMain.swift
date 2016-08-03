@@ -21,16 +21,14 @@ class SearchMain: UIViewController {
     @IBAction func searchButton(sender: AnyObject) {
         
     }
-    @IBOutlet weak var searchField: UITextField!
     
-
+    @IBOutlet weak var searchField: UITextField!
     @IBAction func unwindToMainSearch(segue: UIStoryboardSegue) {
         
     }
     @IBAction func EnterPressed(sender: AnyObject) {
 
     }
-    
     @IBAction func ReturnPls(sender: AnyObject) {
          performSegueWithIdentifier("sendToTable", sender: self)
     }
