@@ -40,7 +40,14 @@ class ScanDetails: UIViewController {
     @IBOutlet weak var ingred: UITextView!
     
     
-    
+    func screenEdgeSwiped(recognizer: UIScreenEdgePanGestureRecognizer) {
+        if recognizer.state == .Recognized {
+            dispatch_async(dispatch_get_main_queue(), {
+                self.performSegueWithIdentifier("pUnwindToMain", sender: self)
+            })
+        }
+    }
+
     var detailCandy: Food? {
         didSet {
             configureView()
@@ -106,6 +113,10 @@ class ScanDetails: UIViewController {
         
     }
     override func viewDidLoad() {
+        let edgePan = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(screenEdgeSwiped))
+        edgePan.edges = .Left
+        
+        
         super.viewDidLoad()
         configureView()
         goodView.scrollEnabled = false;

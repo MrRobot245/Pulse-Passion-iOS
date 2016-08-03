@@ -41,8 +41,24 @@ class EvenMoreViewController: UIViewController
     override func viewDidLayoutSubviews() {
 
     }
+    func screenEdgeSwiped(recognizer: UIScreenEdgePanGestureRecognizer) {
+        if recognizer.state == .Recognized {
+            dispatch_async(dispatch_get_main_queue(), {
+                self.performSegueWithIdentifier("pUnwindToDetail", sender: self)
+            })
+        }
+    }
+
+    
+    
     override func viewDidLoad()
     {
+        let edgePan = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(screenEdgeSwiped))
+        edgePan.edges = .Left
+        
+        
+        view.addGestureRecognizer(edgePan)
+
         super.viewDidLoad()
         theGood.scrollEnabled = false;
         theGood.scrollEnabled = true;
