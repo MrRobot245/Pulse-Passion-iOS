@@ -29,7 +29,8 @@ class MasterViewController: UITableViewController {
         self.searchController.loadViewIfNeeded()
         tableView.reloadData()
     }
-
+    
+    
     override func viewWillAppear(animated: Bool) {
         // clearsSelectionOnViewWillAppear = splitViewController!.collapsed
         super.viewWillAppear(animated)
@@ -76,6 +77,7 @@ class MasterViewController: UITableViewController {
         
         return cell
     }
+    
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
