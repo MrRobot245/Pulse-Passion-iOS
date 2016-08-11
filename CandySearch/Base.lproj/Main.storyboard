@@ -279,17 +279,6 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="Zdf-7t-Un8">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="P4i-X2-ys2">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iAH-QT-6cV">
-                                <rect key="frame" x="16" y="7" width="70" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back" image="Back"/>
-                                <connections>
-                                    <segue destination="27t-Pu-lpj" kind="unwind" identifier="pUnwindToMain" unwindAction="unwindToMainSearch:" id="Ao7-7j-fHp"/>
-                                </connections>
-                            </button>
-                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        </barButtonItem>
                         <view key="titleView" contentMode="scaleToFill" id="ktS-Qx-ykY">
                             <rect key="frame" x="133.5" y="5.5" width="108" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -313,7 +302,6 @@
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
-                <exit id="27t-Pu-lpj" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2066" y="-1006"/>
         </scene>
@@ -1150,17 +1138,6 @@ CiA
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="bAE-3T-Vc6">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" id="Clb-2g-Wr9">
-                            <button key="customView" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RBs-Zc-L7l">
-                                <rect key="frame" x="16" y="7" width="70" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back" image="Back"/>
-                                <connections>
-                                    <segue destination="y4J-Zd-d8T" kind="unwind" identifier="UnwindP" unwindAction="unwindToVC:" id="stl-Hk-97Q"/>
-                                </connections>
-                            </button>
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </barButtonItem>
                         <view key="titleView" contentMode="scaleToFill" id="nez-4i-LTq">
                             <rect key="frame" x="135.5" y="5.5" width="104" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1204,7 +1181,6 @@ CiA
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i8U-6T-DKb" sceneMemberID="firstResponder"/>
-                <exit id="y4J-Zd-d8T" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2689.5" y="-127.5"/>
         </scene>
@@ -1539,17 +1515,6 @@ CiA
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="z1N-YH-6Zm">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" id="ttG-ae-omR">
-                            <button key="customView" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4eg-uI-Z2b">
-                                <rect key="frame" x="16" y="7" width="70" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back" image="Back"/>
-                                <connections>
-                                    <segue destination="mL7-7A-J58" kind="unwind" identifier="pUnwindToDetail" unwindAction="unwindToDetail:" id="8kZ-0O-bp7"/>
-                                </connections>
-                            </button>
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </barButtonItem>
                         <view key="titleView" contentMode="scaleToFill" id="KHw-wp-4Eh">
                             <rect key="frame" x="135.5" y="5.5" width="104" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1581,7 +1546,6 @@ CiA
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OBS-lv-e83" sceneMemberID="firstResponder"/>
-                <exit id="mL7-7A-J58" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3747.5" y="-127.5"/>
         </scene>

@@ -178,6 +178,7 @@ class DetailViewController: UIViewController {
         self.goodView.flashScrollIndicators()
         self.badView.flashScrollIndicators()
         self.ingred.flashScrollIndicators()
+        
         }
 
     override func didReceiveMemoryWarning() {
