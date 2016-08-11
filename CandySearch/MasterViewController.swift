@@ -14,19 +14,17 @@ class MasterViewController: UITableViewController {
 
 
       override func viewDidLoad() {
-        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         self.searchController.loadViewIfNeeded()
         tableView.reloadData()
-        
-        
-
-
     }
+
     
     
     override func viewWillAppear(animated: Bool) {
         // clearsSelectionOnViewWillAppear = splitViewController!.collapsed
         super.viewWillAppear(animated)
+        tableView.reloadData()
+        self.tableView.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -66,11 +64,18 @@ class MasterViewController: UITableViewController {
         {
             cell.backgroundColor = UIColor.greenColor().colorWithAlphaComponent(0.18)
         }
+        
 
         
         return cell
     }
-    
+    override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        
+            tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+
+        
+    }
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

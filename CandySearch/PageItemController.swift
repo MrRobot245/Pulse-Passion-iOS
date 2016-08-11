@@ -51,10 +51,13 @@ class PageItemController: UIViewController {
         if itemIndex==4
         {
             QuestionnaireButton.hidden=false
+            CloseButton.hidden = false
+            
             
         }
         else{
             QuestionnaireButton.hidden=true
+            CloseButton.hidden=true
            // print(itemIndex)
         }
           textArea.text = HelpTextText
