@@ -84,7 +84,8 @@ class SearchMain: UIViewController {
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SearchMain.tap(_:)))
         view.addGestureRecognizer(tapGesture)
-        
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarPosition: .Any, barMetrics: .Default)
+        navigationController?.navigationBar.shadowImage = UIImage()
 
     }
     

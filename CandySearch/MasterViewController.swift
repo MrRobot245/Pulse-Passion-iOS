@@ -86,8 +86,7 @@ class MasterViewController: UITableViewController {
                 let candy: Food
                     candy = getFood[indexPath.row]
                 
-                let vc: UINavigationController = segue.destinationViewController as! UINavigationController
-                let controller = vc.topViewController as! DetailViewController
+                let controller = segue.destinationViewController as! DetailViewController
                 controller.detailCandy = candy
                 controller.allFood = getFood
             }
