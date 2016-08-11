@@ -25,14 +25,14 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var ingred: UITextView!
     
     
-    func screenEdgeSwiped(recognizer: UIScreenEdgePanGestureRecognizer) {
-        if recognizer.state == .Recognized {
-            dispatch_async(dispatch_get_main_queue(), {
-                self.performSegueWithIdentifier("UnwindP", sender: self)
-            })
-           // print("Screen edge swiped!")
-        }
-    }
+//    func screenEdgeSwiped(recognizer: UIScreenEdgePanGestureRecognizer) {
+//        if recognizer.state == .Recognized {
+//            dispatch_async(dispatch_get_main_queue(), {
+//                self.performSegueWithIdentifier("UnwindP", sender: self)
+//            })
+//           // print("Screen edge swiped!")
+//        }
+//    }
 
     
     
@@ -157,10 +157,10 @@ class DetailViewController: UIViewController {
 
     }
     override func viewDidLoad() {
-        let edgePan = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(screenEdgeSwiped))
-        edgePan.edges = .Left
-        
-        view.addGestureRecognizer(edgePan)
+//        let edgePan = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(screenEdgeSwiped))
+//        edgePan.edges = .Left
+//        
+//        view.addGestureRecognizer(edgePan)
 
         AltButton.hidden = true
         super.viewDidLoad()
@@ -193,8 +193,8 @@ class DetailViewController: UIViewController {
          
             
            // print(sendFood[0].name)
-                let vc: UINavigationController = segue.destinationViewController as! UINavigationController
-                let controller = vc.topViewController as! EvenMoreViewController
+            let controller = segue.destinationViewController as! EvenMoreViewController
+
                 controller.getFood = sendFood
             
         }

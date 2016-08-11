@@ -111,9 +111,9 @@ class SearchMain: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "sendToTable") {
             
-            let vc: UINavigationController = segue.destinationViewController as! UINavigationController
-            let detailVC = vc.topViewController as! MasterViewController
+            let controller = segue.destinationViewController as! MasterViewController
             
+     
             searchedFood = []
             for i in 1...food.count-1 {
                 let string = food[i].name
@@ -124,7 +124,7 @@ class SearchMain: UIViewController {
                     searchedFood.append(food[i])
                 }
             }
-            detailVC.getFood = searchedFood
+            controller.getFood = searchedFood
         }
         if segue.identifier == "sendAllBar" {
             let dbTran = segue.destinationViewController as! ScanViewController
