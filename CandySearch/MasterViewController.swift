@@ -12,22 +12,15 @@ class MasterViewController: UITableViewController {
     
     var getFood = [Food]()
 
-    func screenEdgeSwiped(recognizer: UIScreenEdgePanGestureRecognizer) {
-        if recognizer.state == .Recognized {
-            dispatch_async(dispatch_get_main_queue(), {
-                self.performSegueWithIdentifier("pUnwindToMain", sender: self)
-            })
-            // print("Screen edge swiped!")
-        }
-    }
+
       override func viewDidLoad() {
-        let edgePan = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(screenEdgeSwiped))
-        edgePan.edges = .Left
-        
-        
-  
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         self.searchController.loadViewIfNeeded()
         tableView.reloadData()
+        
+        
+
+
     }
     
     

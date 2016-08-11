@@ -31,6 +31,7 @@ class SearchMain: UIViewController {
     }
     @IBAction func ReturnPls(sender: AnyObject) {
          performSegueWithIdentifier("sendToTable", sender: self)
+                         self.view.endEditing(true)
     }
     
 
@@ -72,9 +73,9 @@ class SearchMain: UIViewController {
         }
         try! fileManger.copyItemAtPath(sourcePath!, toPath: destinationPath)
     }
-    
+
     override func viewDidLoad() {
-        isAppAlreadyLaunchedOnce()
+
         copyDatabase()
         fmdb()
         searchField.layer.masksToBounds = true
@@ -86,6 +87,8 @@ class SearchMain: UIViewController {
         view.addGestureRecognizer(tapGesture)
         navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarPosition: .Any, barMetrics: .Default)
         navigationController?.navigationBar.shadowImage = UIImage()
+                isAppAlreadyLaunchedOnce()
+
 
     }
     
@@ -96,13 +99,14 @@ class SearchMain: UIViewController {
         let defaults = NSUserDefaults.standardUserDefaults()
         
         if defaults.stringForKey("isAppAlreadyLaunchedOnce") != nil{
-           // print("App already launched")
+            // print("App already launched")
             return true
         }else{
             defaults.setBool(true, forKey: "isAppAlreadyLaunchedOnce")
-//            print("App launched first time")
+            //            print("App launched first time")
             dispatch_async(dispatch_get_main_queue(), {
                 self.performSegueWithIdentifier("SendWalk", sender: self)
+
             })
             return false
         }
@@ -110,7 +114,7 @@ class SearchMain: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "sendToTable") {
-            
+                             self.view.endEditing(true)
             let controller = segue.destinationViewController as! MasterViewController
             
      

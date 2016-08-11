@@ -206,10 +206,10 @@
 		171E0C7C1B8E5B84001E6242 /* MyPulse */ = {
 			isa = PBXGroup;
 			children = (
+				171E0C7D1B8E5B84001E6242 /* AppDelegate.swift */,
 				D8A863161C99E97B007DE46A /* AboutView.swift */,
 				D82266B11D4BEE23007FF0C1 /* SearchMain.swift */,
 				D85774491CBB36E800D65182 /* ratingExplained.swift */,
-				171E0C7D1B8E5B84001E6242 /* AppDelegate.swift */,
 				171E0C7F1B8E5B84001E6242 /* MasterViewController.swift */,
 				171E0C811B8E5B84001E6242 /* DetailViewController.swift */,
 				D8E1908B1C9F41000021F9D9 /* EvenMore.swift */,

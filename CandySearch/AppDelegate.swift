@@ -33,12 +33,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 //        let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
 //        navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
 //        splitViewController.delegate = self
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
 
        // navigationController.navigationBar.translucent = true
-        UISearchBar.appearance().translucent =  true
-        UISearchBar.appearance().tintColor = UIColor.whiteColor()
-        UISearchBar.appearance().barTintColor = UIColor.logoGreen()
-        UITextField.appearanceWhenContainedInInstancesOfClasses([UISearchBar.self]).tintColor = UIColor.blackColor()
+//        UISearchBar.appearance().translucent =  true
+//        UISearchBar.appearance().tintColor = UIColor.whiteColor()
+//        UISearchBar.appearance().barTintColor = UIColor.logoGreen()
+//        UITextField.appearanceWhenContainedInInstancesOfClasses([UISearchBar.self]).tintColor = UIColor.blackColor()
         UIApplication.sharedApplication().statusBarStyle = .LightContent
         
     
