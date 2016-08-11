@@ -147,8 +147,7 @@ class ScanViewController: RSCodeReaderViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "barSeg" {
             
-            let vc: UINavigationController = segue.destinationViewController as! UINavigationController
-            let detailVC = vc.topViewController as! ScanDetails
+            let detailVC = segue.destinationViewController as! ScanDetails
             detailVC.detailCandy = barFood[0]
             
         }
