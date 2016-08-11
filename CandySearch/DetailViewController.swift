@@ -23,19 +23,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var category: UILabel!
     
     @IBOutlet weak var ingred: UITextView!
-    
-    
-//    func screenEdgeSwiped(recognizer: UIScreenEdgePanGestureRecognizer) {
-//        if recognizer.state == .Recognized {
-//            dispatch_async(dispatch_get_main_queue(), {
-//                self.performSegueWithIdentifier("UnwindP", sender: self)
-//            })
-//           // print("Screen edge swiped!")
-//        }
-//    }
 
-    
-    
     var detailCandy: Food? {
         didSet {
             configureView()

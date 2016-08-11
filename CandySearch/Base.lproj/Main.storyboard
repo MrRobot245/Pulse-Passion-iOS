@@ -447,7 +447,6 @@
         <!--Learn MoreHD-->
         <scene sceneID="2x1-Mr-QV7">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gN5-vS-NsJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="vE2-zC-OLx" customClass="LearnMoreHD" customModule="MyPulse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="paT-V4-Qx3"/>
@@ -606,6 +605,7 @@ CiA
                         <outlet property="TView" destination="0yx-pb-gFY" id="YD8-6y-gyk"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gN5-vS-NsJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-156.5" y="-1111.5"/>
         </scene>

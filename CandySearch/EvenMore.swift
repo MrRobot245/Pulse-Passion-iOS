@@ -53,11 +53,6 @@ class EvenMoreViewController: UIViewController
     
     override func viewDidLoad()
     {
-        let edgePan = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(screenEdgeSwiped))
-        edgePan.edges = .Left
-        
-        
-        view.addGestureRecognizer(edgePan)
 
         super.viewDidLoad()
         theGood.scrollEnabled = false;
